@@ -20,7 +20,7 @@
                     </li>
                     <!-- Add more links here -->
                 </ul>
-                <div class="relative">
+                <!-- <div class="relative">
                     <button @click="toggleMenu" class="navbar-toggler">
                         Menu
                     </button>
@@ -40,11 +40,11 @@
                                         </NuxtLink>
                                     </li>
                                     <!-- Add more links here -->
-                                </ul>
+                                <!-- </ul>
                             </transition>
                         </div>
                     </transition>
-                </div>
+                </div> -->
             </nav>
         </header>
 
@@ -65,34 +65,34 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, nextTick } from 'vue'
-import { useRoute } from 'vue-router'
+// import { ref, computed, nextTick } from 'vue'
+// import { useRoute } from 'vue-router'
 
-const isOpen = ref(false)
-const route = useRoute()
+// const isOpen = ref(false)
+// const route = useRoute()
 
-const toggleMenu = () => {
-    nextTick(() => {
-        isOpen.value = !isOpen.value
-    })
-}
+// const toggleMenu = () => {
+//     nextTick(() => {
+//         isOpen.value = !isOpen.value
+//     })
+// }
 
-const currentPage = computed(() => {
-    switch (route.path) {
-        case '/':
-            return 'Home'
-        case '/about':
-            return 'About'
-        // Add more paths here
-        default:
-            return ''
-    }
-})
+// const currentPage = computed(() => {
+//     switch (route.path) {
+//         case '/':
+//             return 'Home'
+//         case '/about':
+//             return 'About'
+//         // Add more paths here
+//         default:
+//             return ''
+//     }
+// })
 </script>
 
 <style>
 
-.nav-item {
+/* .nav-item {
     margin: 1rem 0;
 }
 
@@ -121,5 +121,5 @@ const currentPage = computed(() => {
 .page-leave-to {
   opacity: 0;
   filter: blur(1rem);
-}
+} */
 </style>
