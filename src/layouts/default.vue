@@ -17,10 +17,7 @@
 
         <footer class="shadow-sm bg-white p-4">
             <ul class="flex justify-center space-x-4">
-                <li><a href="https://github.com" target="_blank" class="text-black no-underline">GITHUB</a></li>
-                <li><a href="/terms" class="text-black no-underline">TERMS & CONDITIONS</a></li>
-                <li><a href="/privacy" class="text-black no-underline">PRIVACY POLICY</a></li>
-                <li><a href="/contact" class="text-black no-underline">CONTACT</a></li>
+                footer
             </ul>
         </footer>
     </div>
