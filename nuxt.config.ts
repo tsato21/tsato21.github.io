@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   srcDir: "src/",
   app: {
     baseURL: '/scripts-showcase/',
-    pageTransition: { name: 'page', mode: 'out-in' },
+    // pageTransition: { name: 'page', mode: 'out-in' },
   },
   modules: [
     '@nuxtjs/tailwindcss',
