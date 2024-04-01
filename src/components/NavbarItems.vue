@@ -1,15 +1,14 @@
 <template>
     <li class="nav-item">
-        <NuxtLink to="/" class="nav-link mr-3" @click.native="$emit('close')">
-            Home
-        </NuxtLink>
-    </li>
-    <li class="nav-item">
-        <NuxtLink to="/about" class="nav-link mr-4" @click.native="$emit('close')">
+        <NuxtLink to="/about/about" class="nav-link mr-3 nav-item-text" @click.native="$emit('close')">
             About
         </NuxtLink>
     </li>
-    <!-- Add more links here -->
+    <li class="nav-item">
+        <NuxtLink to="/google-add-ons/google-add-ons" class="nav-link mr-3 nav-item-text" @click.native="$emit('close')">
+            Google's Add-ons
+        </NuxtLink>
+    </li>
 </template>
 
 <script>

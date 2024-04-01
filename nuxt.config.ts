@@ -9,5 +9,8 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'nuxt-icon',
   ],
+  css: [
+    '~/assets/css/style.css',
+  ],
   
 })
