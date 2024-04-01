@@ -1,20 +1,21 @@
 <template>
-    <div class="flex flex-col min-h-screen relative">
-        <header class="shadow-sm bg-white p-4 relative">
+    <div class="flex flex-col min-h-screen relative px-5">
+        <header class="shadow-sm bg-white relative">
             <nav class="flex justify-between items-center">
                 <h4>
                     <NuxtLink to="/" class="text-xl font-bold text-primary text-black no-underline">
                         Tiger's Scripts Showcase
                     </NuxtLink>
                 </h4>
-                <ul class="nav bg-white rounded-lg p-5 mt-5 right-2" @click.stop>
+                <ul class="nav bg-white rounded-lg p-5 mt-5 right-2 flex" @click.stop>
                     <li class="nav-item">
-                        <NuxtLink to="/" class="nav-link" @click.native="isOpen = false">
+                        <NuxtLink to="/" class="nav-link mr-3" @click.native="isOpen = false"
+                        >
                             Home
                         </NuxtLink>
                     </li>
                     <li class="nav-item">
-                        <NuxtLink to="/about" class="nav-link" @click.native="isOpen = false">
+                        <NuxtLink to="/about" class="nav-link mr-4" @click.native="isOpen = false">
                             About
                         </NuxtLink>
                     </li>
@@ -24,11 +25,9 @@
                     <button @click="toggleMenu" class="navbar-toggler">
                         Menu
                     </button>
- 
- 
-                    <transition name="fade">
+                    <Transition name="menu-bar-out">
                         <div v-if="isOpen" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50" @click="isOpen = false">
-                            <transition name="slide">
+                            <Transition name="menu-bar-in">
                                 <ul v-if="isOpen" class="nav absolute bg-white rounded-lg p-5 mt-5 right-2" @click.stop>
                                     <li class="nav-item">
                                         <NuxtLink to="/" class="nav-link" @click.native="isOpen = false">
@@ -42,20 +41,20 @@
                                     </li>
                                     <!-- Add more links here -->
                                 </ul>
-                            </transition>
+                            </Transition>
                         </div>
-                    </transition>
+                    </Transition>
                 </div>
             </nav>
         </header>
- 
- 
+
+
         <!-- output the page content -->
         <div class="container-lg flex-grow">
             <slot />
         </div>
- 
- 
+
+
         <footer class="shadow-sm bg-white p-4">
             <ul class="flex justify-center space-x-4">
                 <li><a href="" target="_blank" class="text-black no-underline">GITHUB</a></li>
@@ -82,8 +81,6 @@
          isOpen.value = !isOpen.value
      })
  }
- 
- 
  const currentPage = computed(() => {
      switch (route.path) {
          case '/':
@@ -99,42 +96,34 @@
  
  
  <style>
- 
- 
  .nav-item {
     margin: 1rem 0;
  }
- 
- 
- .fade-enter-active, .fade-leave-active {
-    transition: opacity .5s;
+.nav-link {
+    margin-right: 1rem;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+}
+.nav-link:hover {
+    transform: translateY(-0.25rem) scale(1.10);
+    color: #4B5563;
+    border-bottom: 2px solid #4B5563;
+}
+ .menu-bar-out-enter-active, .menu-bar-out-leave-active {
+    transition: opacity 0.5s;
  }
  
- 
- .fade-enter, .fade-leave-to {
+ .menu-bar-out-enter-from, .menu-bar-out-leave-to {
     opacity: 0;
  }
  
- 
- .slide-enter-active, .slide-leave-active {
-    transition: transform .5s;
+ .menu-bar-in-enter-active, .menu-bar-in-leave-active {
+    transition: transform 0.5s;
  }
  
- 
- .slide-enter, .slide-leave-to {
-    transform: translateY(-100%);
+ .menu-bar-in-enter-from, .menu-bar-in-leave-to {
+    transform: scale(0.5);
  }
  
- 
- 
- 
- .page-enter-active,
- .page-leave-active {
-  transition: all 0.4s;
- }
- .page-enter-from,
- .page-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
- }
  </style> 
