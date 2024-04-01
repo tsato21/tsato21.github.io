@@ -8,38 +8,17 @@
                     </NuxtLink>
                 </h4>
                 <ul class="nav bg-white rounded-lg p-5 mt-5 right-2 flex" @click.stop>
-                    <li class="nav-item">
-                        <NuxtLink to="/" class="nav-link mr-3" @click.native="isOpen = false"
-                        >
-                            Home
-                        </NuxtLink>
-                    </li>
-                    <li class="nav-item">
-                        <NuxtLink to="/about" class="nav-link mr-4" @click.native="isOpen = false">
-                            About
-                        </NuxtLink>
-                    </li>
-                    <!-- Add more links here -->
+                    <NavbarItems @close="isOpen = false" />
                 </ul>
                 <div class="relative">
                     <button @click="toggleMenu" class="navbar-toggler">
-                        Menu
+                        <Icon name="material-symbols-light:menu" class="custom-icon"></Icon>
                     </button>
                     <Transition name="menu-bar-out">
                         <div v-if="isOpen" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50" @click="isOpen = false">
                             <Transition name="menu-bar-in">
                                 <ul v-if="isOpen" class="nav absolute bg-white rounded-lg p-5 mt-5 right-2" @click.stop>
-                                    <li class="nav-item">
-                                        <NuxtLink to="/" class="nav-link" @click.native="isOpen = false">
-                                            Home
-                                        </NuxtLink>
-                                    </li>
-                                    <li class="nav-item">
-                                        <NuxtLink to="/about" class="nav-link" @click.native="isOpen = false">
-                                            About
-                                        </NuxtLink>
-                                    </li>
-                                    <!-- Add more links here -->
+                                    <NavbarItems @close="isOpen = false" />
                                 </ul>
                             </Transition>
                         </div>
@@ -70,6 +49,8 @@
  <script setup lang="ts">
  import { ref, computed, nextTick } from 'vue'
  import { useRoute } from 'vue-router'
+ import NavbarItems from '/components/NavbarItems.vue'
+
  
  
  const isOpen = ref(false)
@@ -125,5 +106,9 @@
  .menu-bar-in-enter-from, .menu-bar-in-leave-to {
     transform: scale(0.5);
  }
+
+ .custom-icon {
+  font-size: 50px;
+}
  
  </style> 

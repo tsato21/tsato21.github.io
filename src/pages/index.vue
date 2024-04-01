@@ -1,5 +1,5 @@
 <template>
     <div>
-        This is an index.
+        This is index.
     </div>
 </template>
