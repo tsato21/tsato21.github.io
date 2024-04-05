@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxtjs/tailwindcss',
-    // 'nuxt-icon',
+    'nuxt-icon',
   ],
   css: [
     '~/assets/css/style.css',
