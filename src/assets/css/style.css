@@ -1,4 +1,4 @@
- /* for the navbar */
+ for the navbar
  .nav-item {
     margin: 1rem 0;
  }
@@ -37,4 +37,30 @@
 /* for the navbar item text */
 .nav-item-text {
   font-size: 20px;
+}
+
+/* for breadcrumbs */
+.breadcrumb-list {
+   list-style: none;
+   padding: 0;
+}
+.breadcrumb-item {
+   display: inline;
+   margin-right: 8px;
+}
+.breadcrumb-item a {
+   text-decoration: none;
+   color: #4e91a5; /* Add this line */
+}
+.breadcrumb-item a:hover {
+   color: #235e70; /* Add this line to change color on hover */
+}
+.breadcrumb-item a.active {
+   font-weight: bold;
+}
+.separator {
+   margin: 0 8px;
+}
+.last-item {
+   font-weight: bold;
 }

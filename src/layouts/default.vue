@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col min-h-screen relative">
-        <header class="shadow-sm bg-white relative px-5">
+        <header class="shadow-sm bg-white relative p-5">
             <nav class="flex justify-between items-center">
                 
                     <NuxtLink to="/" class="text-xl font-bold text-primary text-black no-underline">
@@ -28,7 +28,7 @@
         </header>
 
         <!-- output the page content -->
-        <div class="container-lg flex-grow p-5">
+        <div class="container flex-grow p-5 w-5/6 mx-auto">
             <slot />
         </div>
 
@@ -58,14 +58,5 @@
  </script>
  
  <style scoped>
- .breadcrumb-item {
-   display: inline;
-   margin-right: 5px;
- }
- .font-bold {
-   font-weight: bold;
- }
- .text-black {
-   color: black;
- }
+
  </style>
