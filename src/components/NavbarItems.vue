@@ -5,14 +5,8 @@
         </NuxtLink>
     </li>
     <li class="nav-item">
-        <NuxtLink to="/google-add-ons/google-add-ons" class="nav-link mr-3 nav-item-text" @click.native="$emit('close')">
-            Google's Add-ons
+        <NuxtLink to="/gas-tools/gas-tools" class="nav-link mr-3 nav-item-text" @click.native="$emit('close')">
+            GAS Tools
         </NuxtLink>
     </li>
 </template>
-
-<script>
-export default {
-name: 'NavbarItems'
-}
-</script>

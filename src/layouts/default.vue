@@ -28,26 +28,20 @@
         </header>
 
         <!-- output the page content -->
-        <div class="container flex-grow pt-5 mx-auto">
+        <div class="container flex-grow py-5 mx-auto">
             <slot />
         </div>
 
-
-        <footer class="shadow-sm bg-white px-5 py-2">
-            <ul class="flex justify-center space-x-4">
-                <li><a href="https://github.com/tsato21" target="_blank" class="text-black no-underline">GITHUB</a></li>
-                <li><a href="" class="text-black no-underline">TERMS & CONDITIONS</a></li>
-                <li><a href="" class="text-black no-underline">PRIVACY POLICY</a></li>
-                <li><a href="" class="text-black no-underline">CONTACT</a></li>
-            </ul>
-        </footer>
+        <!-- footer -->
+        <Footer />
     </div>
  </template>
  
  
  <script setup lang="ts">
- import { ref, computed } from 'vue'
+ import { ref } from 'vue'
  import NavbarItems from '~/components/NavbarItems.vue'
+ import Footer from '~/components/Footer.vue';
  
  const isOpen = ref(false)
  const route = useRoute()

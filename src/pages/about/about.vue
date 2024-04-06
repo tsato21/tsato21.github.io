@@ -1,12 +1,9 @@
 <template>
     <div>
-        <UBreadcrumb :links="links"/>
-        <div class="text-3xl mt-2 font-bold">About</div>
-
+        <UBreadcrumbs :breadCrumbs="breadCrumbs"/>
             <div class="mb-5 pt-2 grid grid-cols-12 gap-3 md:gap-6">
-                <!-- First part -->
-                <div class="col-span-12 md:col-span-3 order-1 md:order-1">
-                    <!-- Your name -->
+                <!-- Section A (left in lg/ first in md/sm/xs) -->
+                <div class="col-span-12 order-1 lg:col-span-2 lg:order-1 md:col-span-12 md:order-1 sm:col-span-12 sm:order-1">
                     <div class="mb-5 pt-5">
                         <h1 class="text-2xl font-bold">Taiga Sato</h1>
 
@@ -15,15 +12,16 @@
 
                     <!-- GitHub URL with icon -->
                     <NuxtLink to="https://github.com/tsato21" target="_blank" class="flex items-center mt-2">
-                        <Icon name="uil:github" color="black" />
+                        <Icon name="grommet-icons:github" color="black" />
                         <span class="text-gray-500 hover:text-gray-700 ms-2">GitHub</span>
                     </NuxtLink>
                     </div>
                     
                 </div>
 
-                <!-- Second part -->
-                <div class="col-span-12 md:col-span-7 order-3 md:order-2">
+                <!-- Section B (middle in lg/ third in md/sm/xs) -->
+                <div class="col-span-12 order-3 lg:col-span-8 lg:order-2 md:col-span-12 md:order-3 sm:col-span-12 sm:order-3">
+                    <div class="text-3xl mt-2 font-bold lg:block hidden">About</div>
                     <div class="mb-5 p-5 bottom-shadow">
                         <div class="mb-3">
                             <div class="text-2xl font-bold" id="about-scripts-showcase">
@@ -70,17 +68,14 @@
                     <p> <Icon name="material-symbols:calendar-month-sharp"/>  Last updated: {{ date }}</p>
                 </div>
 
-                <!-- Third part -->
-                <div class="col-span-12 md:col-span-2 order-2 md:order-3">
-                    <div class="bg-white shadow-lg rounded-lg">
+                <!-- Section C (right in lg/ second in md/sm/xs) -->
+                <div class="col-span-12 order-2 lg:col-span-2 lg:order-3 md:col-span-12 md:order-2 sm:col-span-12 sm:order-2">
+                    <div class="text-3xl mt-2 font-bold lg:hidden block">About</div>
+                    <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed mb-5 pt-5">
                         <p class="text-l font-bold p-1 bg-gray-400 text-white">
                             <Icon name="map:book-store"></Icon> On this page
                         </p>
-                        <ul class="break-words">
-                            <li class="border-b border-gray-200 mx-2 py-1"><a href="#about-scripts-showcase" class="text-xs font-bold text-gray-400 hover:text-blue-700 about-menu-link">About Scripts Showcase</a></li>
-                            <li class="border-b border-gray-200 mx-2 py-1"><a href="#about-me" class="text-xs font-bold text-gray-400 hover:text-blue-700 about-menu-link">About Me</a></li>
-                            <li class= "mx-2 py-1"><a href="#acknowledgements" class="text-xs font-bold text-gray-400 hover:text-blue-700 about-menu-link">Acknowledgements</a></li>
-                        </ul>
+                        <PageItems :pageItems="pageItems" />
                     </div>
                 </div>
             </div>
@@ -89,27 +84,32 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
-import UBreadcrumb from '@/components/UBreadcrumbs';
+import { ref } from 'vue'
+import UBreadcrumbs from '~/components/UBreadcrumbs.vue';
+import PageItems from '~/components/PageItems.vue';
 
-const links = [
+const breadCrumbs = [
     { label: 'Home', to: '/' },
     { label: 'About'}
+];
+
+const pageItems = [
+  { label: 'About Scripts Showcase', href: '#about-scripts-showcase' },
+  { label: 'About Me', href: '#about-me' },
+  { label: 'Acknowledgements', href: '#acknowledgements' }
 ];
 
 useHead({
     title: "About",
 });
 
-const date = ref(null)
+let date = ref(
+    new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+    .format(new Date('2024-04-06'))
+);
 
-onMounted(() => {
-    date.value = new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'long', day: 'numeric' }).format(new Date())
-})
 </script>
 
 <style scoped>
-.bottom-shadow {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
+
 </style>
