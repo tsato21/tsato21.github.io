@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     head: {
       title: 'Scripts Showcase',
       link: [
-        { rel: 'icon', type: 'image/png', href: 'icon.png' }
+        { rel: 'icon', type: 'image/png', href: 'favicon.png' }
       ],
     }
   },

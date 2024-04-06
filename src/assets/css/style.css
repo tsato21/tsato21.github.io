@@ -1,4 +1,4 @@
- for the navbar
+ /* for the navbar */
  .nav-item {
     margin: 1rem 0;
  }
@@ -63,4 +63,17 @@
 }
 .last-item {
    font-weight: bold;
+}
+
+/* for about menu bar */
+.about-menu-link {
+   transition-property: all;
+   transition-duration: 250ms;
+   transition-timing-function: ease-in-out;
+}
+
+.about-menu-link:hover {
+   transform: translateY(-0.25rem) scale(1.10);
+   color: #4B5563;
+   border-bottom: 2px solid #4B5563;
 }

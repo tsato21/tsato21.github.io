@@ -26,7 +26,7 @@
                 <div class="col-span-12 md:col-span-7 order-3 md:order-2">
                     <div class="mb-5 p-5 bottom-shadow">
                         <div class="mb-3">
-                            <div class="text-2xl font-bold ">
+                            <div class="text-2xl font-bold" id="about-scripts-showcase">
                                 About Scripts Showcase
                             </div>
                             <div class="py-3">
@@ -38,7 +38,7 @@
                         </div>
 
                         <div class="mb-3">
-                            <div class="text-2xl font-bold ">
+                            <div class="text-2xl font-bold" id="about-me">
                                 About Me
                             </div>
                             <div class="py-3">
@@ -50,13 +50,38 @@
                                 </p>
                             </div>
                         </div>
+
+                        <div class="mb-3">
+                            <div class="text-2xl font-bold" id="acknowledgements">
+                                Acknowledgements
+                            </div>
+                            <div class="py-3">
+                                <ul class="list-disc list-inside">
+                                <li class="text-lg mb-2">
+                                    The outline of the Privacy Policy of this website ~~.
+                                </li>
+                                <li class="text-lg mb-2">
+                                    Favicon of this website is made by <a href="https://www.canva.com/" target="_blank" rel="noopener" class="text-lightblue underline hover:text-darkblue">Canva</a>.
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <p> <Icon name="material-symbols:calendar-month-sharp"/>  Last updated: {{ date }}</p>
                 </div>
 
                 <!-- Third part -->
                 <div class="col-span-12 md:col-span-2 order-2 md:order-3">
-                    
+                    <div class="bg-white shadow-lg rounded-lg">
+                        <p class="text-l font-bold p-1 bg-gray-400 text-white">
+                            <Icon name="map:book-store"></Icon> On this page
+                        </p>
+                        <ul class="break-words">
+                            <li class="border-b border-gray-200 mx-2 py-1"><a href="#about-scripts-showcase" class="text-xs font-bold text-gray-400 hover:text-blue-700 about-menu-link">About Scripts Showcase</a></li>
+                            <li class="border-b border-gray-200 mx-2 py-1"><a href="#about-me" class="text-xs font-bold text-gray-400 hover:text-blue-700 about-menu-link">About Me</a></li>
+                            <li class= "mx-2 py-1"><a href="#acknowledgements" class="text-xs font-bold text-gray-400 hover:text-blue-700 about-menu-link">Acknowledgements</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         

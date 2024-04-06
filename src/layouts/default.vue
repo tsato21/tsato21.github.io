@@ -28,14 +28,14 @@
         </header>
 
         <!-- output the page content -->
-        <div class="container flex-grow p-5 w-5/6 mx-auto">
+        <div class="container flex-grow pt-5 mx-auto">
             <slot />
         </div>
 
 
         <footer class="shadow-sm bg-white px-5 py-2">
             <ul class="flex justify-center space-x-4">
-                <li><a href="" target="_blank" class="text-black no-underline">GITHUB</a></li>
+                <li><a href="https://github.com/tsato21" target="_blank" class="text-black no-underline">GITHUB</a></li>
                 <li><a href="" class="text-black no-underline">TERMS & CONDITIONS</a></li>
                 <li><a href="" class="text-black no-underline">PRIVACY POLICY</a></li>
                 <li><a href="" class="text-black no-underline">CONTACT</a></li>
