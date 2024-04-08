@@ -1,4 +1,5 @@
 <template>
+  <Cursor />
   <div class="flex flex-col min-h-screen relative">
     <header class="shadow-sm bg-white relative p-5">
       <nav class="flex justify-between items-center">
