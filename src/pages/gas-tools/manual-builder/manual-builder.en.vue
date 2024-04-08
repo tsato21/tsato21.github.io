@@ -1,4 +1,4 @@
-import { Badges } from '../../../../.nuxt/components';
+import { Badges, GASWarningEng } from '../../../../.nuxt/components';
 <template>
   <div>
     <UBreadcrumbs :breadCrumbs="breadCrumbs" />
@@ -100,18 +100,7 @@ import { Badges } from '../../../../.nuxt/components';
                   Google Sheet to create your personalized version.
                 </li>
                 <li class="text-gray-700">
-                  <strong>Authorization</strong>: The first time you run the
-                  script, it will ask for your permission to access certain
-                  data. If you're using a free Gmail account, you might see a
-                  warning that says
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >Not Verified by Google</code
-                  >. Don't worry about this warning - you still need to give
-                  permission for the script to work. The script is yours alone,
-                  and it won't share any data outside of Google, unless you
-                  choose to share your Google Sheet. The only data it might send
-                  outside of Google is website status codes, for monitoring
-                  purposes.
+                  <GASWarningEn />
                 </li>
                 <li class="text-gray-700">
                   <strong>Return to Original Format</strong>: Use this option to
@@ -313,7 +302,7 @@ import { Badges } from '../../../../.nuxt/components';
               <Icon name="map:book-store"></Icon> On this page
             </p>
             <ul class="break-words">
-              <PageItems :pageItems="pageItems" />
+              <PageItems :pageItems="pageItems" :pageTitle="pageTitle" />
             </ul>
           </div>
         </div>
@@ -342,6 +331,8 @@ useHead({
   title: 'Manual Builder',
 });
 
+// The title of the page menu.
+const pageTitle = 'On this page';
 // An array of objects representing the page items or sections.
 const pageItems = [
   { label: 'About', id: 'about' },

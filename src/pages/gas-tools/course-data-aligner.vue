@@ -62,21 +62,69 @@
             </div>
           </div>
 
-          <div class="mb-3">
-            <div class="text-2xl font-bold" id="setup">References</div>
-            <div class="py-3">
-              <ul class="list-disc list-inside space-y-2">
-                <li class="text-gray-700">
-                  You can find the sample Google Sheets with scrips
-                  <a
-                    href="https://docs.google.com/spreadsheets/d/1hG3fAQrBgtwIdJQAG5O8JBaQNG7n__tpV4-DVsqZSd0/edit#gid=0"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-lightblue underline hover:text-darkblue"
-                    >HERE</a
-                  >.
-                </li>
-              </ul>
+          <div class="mb-5 p-5 bottom-shadow">
+            <div class="mb-3">
+              <div class="text-2xl font-bold" id="about">About</div>
+              <div class="py-3">
+                <p>
+                  Automates the creation of work manuals by extracting essential
+                  details from Google Slides and organizing them into Google
+                  Sheets, improving workflow efficiency.
+                </p>
+                <blockquote
+                  class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
+                >
+                  This tool serves as a pivotal asset for organizations aiming
+                  to centralize their manual documentation in Google Drive. By
+                  consolidating manuals onto a single platform, it facilitates
+                  easy access for all workers. Moreover, it ensures that the
+                  information within each work manual is conveyed in a concise
+                  manner, enhancing readability and comprehension.
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <div class="text-2xl font-bold" id="prerequisites">
+                Prerequisites
+              </div>
+              <div class="py-3">
+                <ul class="list-disc list-inside space-y-2">
+                  <li class="text-gray-700">
+                    A Google account with access to Google Sheets and Slides.
+                  </li>
+                  <li class="text-gray-700">
+                    A foundational understanding of Google Sheets, Google Slides
+                    and Google Apps Script.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <div class="text-2xl font-bold" id="setup">Setup</div>
+              <div class="py-3">
+                <ol class="list-decimal list-inside space-y-2">
+                  <li class="text-gray-700">
+                    <strong>Access Your Google Sheet</strong>: Begin by opening
+                    the
+                    <a
+                      href="https://docs.google.com/spreadsheets/d/1hG3fAQrBgtwIdJQAG5O8JBaQNG7n__tpV4-DVsqZSd0/edit#gid=0"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-lightblue underline hover:text-darkblue"
+                      >Sample Google Sheet</a
+                    >.
+                  </li>
+                  <li class="text-gray-700">
+                    <strong>Copy the Google Sheet</strong>: Make a copy of the
+                    Google Sheet to create your personalized version.
+                  </li>
+                  <li class="text-gray-700">
+                    <GASWarningEn />
+                  </li>
+                </ol>
+              </div>
             </div>
           </div>
 
@@ -85,7 +133,7 @@
             <div class="py-3">
               <!-- 1_organize-offering-data.gs -->
               <section class="my-5">
-                <p id="1-1_organize-offering-data" class="text-xl font-bold">
+                <p id="tool_1_organize-offering-data" class="text-xl font-bold">
                   Tool 1: Course Offering Data Alignment
                 </p>
                 <p>
@@ -170,7 +218,10 @@
 
               <!-- 2-1_organize-schedule-data.gs -->
               <section class="my-5">
-                <p id="2-1_organize-schedule-data" class="text-xl font-bold">
+                <p
+                  id="tool_2-1_organize-schedule-data"
+                  class="text-xl font-bold"
+                >
                   Tool 2-1: Schedule Data Structuring (Type A)
                 </p>
                 <p>
@@ -260,7 +311,10 @@
 
               <!-- 2-2_organize-schedule-data.gs -->
               <section class="my-5">
-                <p id="2-2_organize-schedule-data" class="text-xl font-bold">
+                <p
+                  id="tool_2-2_organize-schedule-data"
+                  class="text-xl font-bold"
+                >
                   Tool 2-2: Schedule Data Structuring (Type B)
                 </p>
                 <p>
@@ -344,8 +398,12 @@
               </section>
               <hr />
 
+              <!-- 2-3_organize-schedule-data.gs -->
               <section class="my-5">
-                <p id="2-3_organize-schedule-data" class="text-xl font-bold">
+                <p
+                  id="tool_2-3_organize-schedule-data"
+                  class="text-xl font-bold"
+                >
                   Tool 2-3: Schedule Data Structuring (Type C)
                 </p>
                 <p>
@@ -428,12 +486,11 @@
                 </div>
               </section>
               <hr />
-              <!-- end -->
             </div>
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="terms-conditions">Others</div>
+            <div class="text-2xl font-bold" id="others">Others</div>
             <div class="py-3">
               <p class="text-lg mt-4">
                 If you are interested in the logics on how the details from
@@ -491,7 +548,7 @@
               <Icon name="map:book-store"></Icon> On this page
             </p>
             <ul class="break-words">
-              <PageItems :pageItems="pageItems" />
+              <PageItems :pageItems="pageItems" :pageTitle="pageTitle" />
             </ul>
           </div>
         </div>
@@ -520,15 +577,32 @@ useHead({
   title: 'Manual Builder',
 });
 
+// The title of the page menu.
+const pageTitle = 'On this page';
 // An array of objects representing the page items or sections.
 const pageItems = [
-  { label: 'About', href: 'about' },
-  { label: 'Prerequisites', href: 'prerequisites' },
-  { label: 'Setup', href: 'setup' },
-  { label: 'References', href: 'references' },
-  { label: 'Usage', href: 'usage' },
-  { label: 'Others', href: 'others' },
-  { label: 'Terms and Conditions', href: 'terms-conditions' },
+  { label: 'About', id: 'about' },
+  { label: 'Prerequisites', id: 'prerequisites' },
+  { label: 'Setup', id: 'setup' },
+  { label: 'Usage', id: 'usage' },
+  {
+    label: 'Tool 1: Course Offering Data Alignment',
+    id: 'tool_1_organize-offering-data',
+  },
+  {
+    label: 'Tool 2-1: Schedule Data Structuring (Type A)',
+    id: 'tool_2-1_organize-schedule-data',
+  },
+  {
+    label: 'Tool 2-2: Schedule Data Structuring (Type B)',
+    id: 'tool_2-2_organize-schedule-data',
+  },
+  {
+    label: 'Tool 2-3: Schedule Data Structuring (Type C)',
+    id: 'tool_2-3_organize-schedule-data',
+  },
+  { label: 'Others', id: 'others' },
+  { label: 'Terms and Conditions', id: 'terms-conditions' },
 ];
 
 // An array of objects representing the badges to be displayed.

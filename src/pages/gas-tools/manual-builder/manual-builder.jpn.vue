@@ -87,11 +87,7 @@
                   Googleシートのコピーを作成して、自分専用のバージョンを作成します。
                 </li>
                 <li class="text-gray-700">
-                  <strong>認証</strong>:
-                  スクリプトを初めて実行するとき、特定のデータへのアクセス許可を求められます。無料のGmailアカウントを使用している場合、<code
-                    class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >Googleで確認されていません</code
-                  >という警告が表示されることがあります。スクリプト実行には、許可が必要ですので、この警告はスキップして許可の手続きを進めてください。スクリプトはあなた専用のもので、Google以外にデータを共有することはありません。(使用者が使用するデータを自ら共有する場合を除く)。Google以外に送信される可能性のあるデータは、監視目的でのウェブサイトのステータスコードだけです。
+                  <GASWarningJp />
                 </li>
                 <li class="text-gray-700">
                   <strong>元のフォーマットに戻す</strong>:
@@ -274,7 +270,7 @@
               <Icon name="map:book-store"></Icon> このページの内容
             </p>
             <ul class="break-words">
-              <PageItems :pageItems="pageItems" />
+              <PageItems :pageItems="pageItems" :pageTitle="pageTitle" />
             </ul>
           </div>
         </div>
@@ -303,6 +299,8 @@ useHead({
   title: 'Manual Builder',
 });
 
+// The title of the page menu.
+const pageTitle = 'このページの内容';
 // An array of objects representing the page items or sections.
 const pageItems = [
   { label: '概要', id: 'about' },
