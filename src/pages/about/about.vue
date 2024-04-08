@@ -7,7 +7,12 @@
         class="col-span-12 order-1 lg:col-span-2 lg:order-1 md:col-span-12 md:order-1 sm:col-span-12 sm:order-1"
       >
         <div class="mb-5 pt-5">
-          <h1 class="text-2xl font-bold">Taiga Sato</h1>
+          <img
+            src="assets/images/profile/profile.jpeg"
+            alt="Fit to Data Feature"
+            class="w-24 h-24 rounded-full"
+          />
+          <div class="text-2xl font-bold">Taiga Sato</div>
 
           <!-- Short introduction -->
           <p class="mt-2 text-gray-600">

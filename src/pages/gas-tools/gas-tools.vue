@@ -68,7 +68,6 @@ const tools = ref([
       'Automates the creation of work manuals by extracting essential details from Google Slides and organizing them into Google Sheets, improving workflow efficiency.',
     filePath: '/gas-tools/each-tool/manual-builder.en',
   },
-  // tool 2
   {
     title: 'Course Data Aligner',
     description:
@@ -80,6 +79,12 @@ const tools = ref([
     description:
       'Automates the adjustment of row heights in Google Sheets, enhancing readability and visual appeal by providing adequate padding for cell contents.',
     filePath: '/gas-tools/each-tool/row-height-optimizer',
+  },
+  {
+    title: 'SheetMail Sync',
+    description:
+      'Automates email extraction and categorization in Gmail, and updates Google Sheets with the information.',
+    filePath: '/gas-tools/each-tool/sheet-mail-sync',
   },
 ]);
 

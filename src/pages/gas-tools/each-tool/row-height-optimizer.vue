@@ -29,7 +29,9 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
             <div class="text-2xl font-bold" id="about">About</div>
             <div class="py-3">
               <p>
-                Automates the adjustment of row heights in Google Sheets, enhancing readability and visual appeal by providing adequate padding for cell contents.
+                Automates the adjustment of row heights in Google Sheets,
+                enhancing readability and visual appeal by providing adequate
+                padding for cell contents.
               </p>
               <blockquote
                 class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
@@ -88,8 +90,8 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
             <div class="py-3">
               <ol class="list-decimal list-inside space-y-2">
                 <li class="text-gray-700">
-                  <strong>Access a Sample Google Sheet</strong>: Begin by opening
-                  the
+                  <strong>Access a Sample Google Sheet</strong>: Begin by
+                  opening the
                   <a
                     href="https://docs.google.com/spreadsheets/d/1154I0kMvhbp9WZ4r6COu_oA4lPJZvh9MnFxa2G7HZck/edit#gid=0"
                     target="_blank"
@@ -139,10 +141,10 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
                       Pre-set value is "20".
                     </li>
                     <img
-                src="assets/images/gas-tools/row-height-optimizer/customize-constant-variables.png"
-                alt="Fit to Data Feature"
-                class="w-50 h-20"
-              />
+                      src="assets/images/gas-tools/row-height-optimizer/customize-constant-variables.png"
+                      alt="Fit to Data Feature"
+                      class="w-50 h-20"
+                    />
                   </ul>
                 </li>
                 <li class="text-gray-700">

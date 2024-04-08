@@ -106,8 +106,8 @@
               <div class="py-3">
                 <ol class="list-decimal list-inside space-y-2">
                   <li class="text-gray-700">
-                    <strong>Access a Sample Google Sheet</strong>: Begin by opening
-                    the
+                    <strong>Access a Sample Google Sheet</strong>: Begin by
+                    opening the
                     <a
                       href="https://docs.google.com/spreadsheets/d/1hG3fAQrBgtwIdJQAG5O8JBaQNG7n__tpV4-DVsqZSd0/edit#gid=0"
                       target="_blank"
