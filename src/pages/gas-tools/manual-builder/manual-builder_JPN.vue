@@ -78,9 +78,56 @@
                             </ol>
                         </div>
                     </div>
-                    
+<!-- Start Usage -->
+<div id="usage" class="mb-3">
+    <div class="text-2xl font-bold">
+        使用方法
+    </div>
+    <div class="py-3">
+        <ol class="list-decimal list-inside mt-4">
+            <li class="my-5"> <span class="font-bold">指定されたパターンでスライドを作成</span>
+                <p>ユーザーは、設定画面で指定したGoogleスライド上で、特定のパターンに従ってスライドを作成する必要があります。各セクションの最初のスライドは、次の構造で作成してください。</p>
+                <blockquote class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400">
+                                Category:【Category Name】Subcategory Name<br>
+                                Task: Task Name<br>
+                                Summary: Summary Descriptions
+                            </blockquote>
+                <div class="resize-image my-3 container-img">
+                    <img src="assets/images/gas-tools/manual-builder/slide-pattern.png" alt="Customize Constants" class="w-80 h-35">
+                    <figcaption class="p-2 text-gray-400">図: スライドの構造</figcaption>
+                </div>
+                <p>スクリプトは、URLやカテゴリー名などを最初のスライドから取得・保存し、後ほどGoogleシートに出力します。</p>
+            </li>
+            <li class="my-5"> <span class="font-bold">インデックスとタスクシートの更新</span>
+                <p><code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Custom Menu</code>に移動し、<code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Update Index & Task Sheets</code>をクリックします。この操作により、最新のスライドデータに基づいてインデックスとタスクシートが自動的に更新されます。</p>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <figure class="resize-image my-3">
+                            <img src="assets/images/gas-tools/manual-builder/update-button.png" alt="Customize Constants" class="w-80 h-35">
+                            <figcaption class="p-2 text-gray-400">図: 更新ボタン</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">  
+                        <figure class="resize-image my-3">
+                            <img src="assets/images/gas-tools/manual-builder/index-sheet.png" alt="Customize Constants" class="w-80 h-35">
+                            <figcaption class="p-2 text-gray-400">図: インデックスシートの更新</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure class="resize-image my-3">
+                            <img src="assets/images/gas-tools/manual-builder/task-sheet.png" alt="Customize Constants" class="w-100 h-50">
+                            <figcaption class="p-2 text-gray-400">図: タスクシートの更新</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </div>
+</div>
+<!-- End Usage -->
                     <div class="mb-3">
-                            <div class="text-2xl font-bold" id="terms-conditions">
+                            <div class="text-2xl font-bold" id="others">
                                 その他
                             </div>
                             <div class="py-3">
@@ -127,12 +174,6 @@
 </template>
 
 <script setup lang="ts">
-import {ref } from 'vue'
-import UBreadcrumbs from '~/components/UBreadcrumbs.vue';
-import Badges from '~/components/Badges.vue';
-import PageItems from '~/components/PageItems.vue';
-
-
 const breadCrumbs = [
     { label: 'Home', to: '/' },
     { label: 'Gas Tools', to: '/gas-tools/gas-tools' },
@@ -144,10 +185,12 @@ useHead({
 });
 
 const pageItems = [
-  { label: '概要', href: '#about' },
-  { label: '前提条件', href: '#prerequisites' },
-  { label: 'セットアップ', href: '#setup' },
-  { label: '利用規約', href: '#terms-conditions' }
+  { label: '概要', id: 'about' },
+  { label: '前提条件', id: 'prerequisites' },
+  { label: 'セットアップ', id: 'setup' },
+    { label: '使用方法', id: 'usage' },
+    { label: 'その他', id: 'others' },
+  { label: '利用規約', id: 'terms-conditions' }
 ];
 
 const badges = [
@@ -185,13 +228,4 @@ let date = ref(
     .format(new Date('2024-04-06'))
 );
 
-let isOpen = ref(false)
-
-const toggleDropdown = () => {
-  isOpen.value = !isOpen.value
-}
 </script>
-
-<style scoped>
-
-</style>

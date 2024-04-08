@@ -9,7 +9,8 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/png', href: 'favicon.png' }
       ],
-    }
+    },
+    pageTransition: { name: 'page', mode: 'out-in' },
   },
   modules: [
     '@nuxtjs/tailwindcss',
@@ -18,4 +19,5 @@ export default defineNuxtConfig({
   css: [
     '~/assets/css/style.css',
   ],
+  
 })

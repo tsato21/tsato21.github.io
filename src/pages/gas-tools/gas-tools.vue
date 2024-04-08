@@ -55,9 +55,9 @@ const tools = ref([
   },
     // tool 2
   {
-    title: 'tool 2',
-    description: 'This is a brief description of tool 2.',
-    filePath: '/'
+    title: 'Course Data Aligner',
+    description: 'Harmonizes course data between two Google Sheets with differing structures, effectively resolving data structure inconsistencies across multiple stakeholders.',
+    filePath: '/gas-tools/course-data-aligner_ENG'
   },
 ]);
 
@@ -69,6 +69,7 @@ let date = ref(
 useHead({
     title: "GAS Projects",
 });
+
 </script>
 
 <style scoped>

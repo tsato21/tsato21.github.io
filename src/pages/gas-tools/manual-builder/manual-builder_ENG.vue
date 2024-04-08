@@ -78,9 +78,59 @@
                             </ol>
                         </div>
                     </div>
-                    
+
+                    <!-- Start Usage -->
+                    <div id="usage" class="mb-3">
+                        <div class="text-2xl font-bold">
+                            Usage
+                        </div>
+                        <div class="py-3">
+                            <ol class="list-decimal list-inside mt-4">
+                        <li class="my-5"> <span class="font-bold">Make Slides with Designated Patterns</span>
+                            <p>Users need to create slides in the designated Google Slide following a certain pattern. The first slide of each section should follow this structure:</p>
+                            <blockquote class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400">
+                                Category:【Category Name】Subcategory Name<br>
+                                Task: Task Name<br>
+                                Summary: Summary Descriptions
+                            </blockquote>
+                            <div class="resize-image my-3 container-img">
+                                <img src="assets/images/gas-tools/manual-builder/slide-pattern.png" alt="Customize Constants" class="w-80 h-35">
+                                <figcaption class="p-2 text-gray-400">Figure: Slide Structure</figcaption>
+                            </div>
+                            <p>The script gets and stores the details including the slide URL and category name from the first slide, which are later output in the Google Sheet.</p>
+                        </li>
+                        <li class="my-5"> <span class="font-bold">Update Index & Task Sheets</span>
+                            <p>Navigate to <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Custom Menu</code> and Click <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"> Update Index & Task Sheets</code>. This action automatically updates the index and task sheets based on the latest slide data.</p>
+                            
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <figure class="resize-image my-3">
+                                        <img src="assets/images/gas-tools/manual-builder/update-button.png" alt="Customize Constants" class="w-80 h-35">
+                                        <figcaption class="p-2 text-gray-400">Figure: Update Button</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-4">  
+                                    <figure class="resize-image my-3">
+                                        <img src="assets/images/gas-tools/manual-builder/index-sheet.png" alt="Customize Constants" class="w-80 h-35">
+                                        <figcaption class="p-2 text-gray-400">Figure: Updates in Index Sheet</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-md-4">
+                                    <figure class="resize-image my-3">
+                                        <img src="assets/images/gas-tools/manual-builder/task-sheet.png" alt="Customize Constants" class="w-100 h-50">
+                                        <figcaption class="p-2 text-gray-400">Figure: Updates in Task Sheet</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                        </div>
+                    </div>
+
+                    <!-- End Usage -->
+
                     <div class="mb-3">
-                            <div class="text-2xl font-bold" id="terms-conditions">
+                            <div class="text-2xl font-bold" id="others">
                                 Others
                             </div>
                             <div class="py-3">
@@ -125,15 +175,11 @@
                 </div>
             </div>
         </div>
+        <button @click="scrollTop" class="fixed bottom-5 right-5 bg-blue-500 text-white p-2 rounded-full">Top</button>
     </div>
 </template>
 
 <script setup lang="ts">
-import {ref } from 'vue'
-import UBreadcrumbs from '~/components/UBreadcrumbs.vue';
-import Badges from '~/components/Badges.vue';
-import PageItems from '~/components/PageItems.vue';
-
 
 const breadCrumbs = [
     { label: 'Home', to: '/' },
@@ -146,10 +192,12 @@ useHead({
 });
 
 const pageItems = [
-  { label: 'About', href: '#about' },
-  { label: 'Prerequisites', href: '#prerequisites' },
-  { label: 'Setup', href: '#setup' },
-  { label: 'Terms and Conditions', href: '#terms-conditions' }
+  { label: 'About', id: 'about' },
+  { label: 'Prerequisites', id: 'prerequisites' },
+  { label: 'Setup', id: 'setup' },
+    { label: 'Usage', id: 'usage' },
+    { label: 'Others', id: 'others' },
+  { label: 'Terms and Conditions', id: 'terms-conditions' }
 ];
 
 const badges = [
@@ -186,14 +234,7 @@ let date = ref(
     new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
     .format(new Date('2024-04-06'))
 );
-
-let isOpen = ref(false)
-
-const toggleDropdown = () => {
-  isOpen.value = !isOpen.value
+const scrollTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 </script>
-
-<style scoped>
-
-</style>

@@ -3,23 +3,33 @@
     <div class="text-3xl mt-2 font-bold lg:hidden block">{{ pageTitle }}</div>
     <ul class="break-words">
       <li v-for="(pageItem, index) in pageItems" :key="index" class="border-b border-gray-200 mx-2 py-1">
-        <a href="#about-scripts-showcase" class="text-xs font-bold text-gray-400 hover:text-blue-700 about-menu-link">{{ pageItem.label }}</a>
+        <a @click="goTo(pageItem.id)" class="text-xs font-bold text-gray-400 hover:text-blue-700 cursor-pointer about-menu-link">{{ pageItem.label }}</a>
       </li>
     </ul>
   </div>
 </template>
 
-<script setup="ts">
+<script setup lang="ts">
 import { defineProps } from 'vue'
+import VueScrollTo from 'vue-scrollto'
 
-defineProps({
+interface PageItem {
+  label: string;
+  id: string;
+}
+
+const props = defineProps({
   pageTitle: {
     type: String,
     required: true
   },
   pageItems: {
-    type: Array,
+    type: Array as () => PageItem[],
     required: true
   }
 })
+
+const goTo = (id: string) => {
+  VueScrollTo.scrollTo('#' + id, 500)
+}
 </script>
