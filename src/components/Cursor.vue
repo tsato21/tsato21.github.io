@@ -1,5 +1,5 @@
 <template>
-  <div ref="cursor" id="cursor"></div>
+  <div ref="cursor" id="cursor" class="sm:block hidden"></div>
 </template>
 
 <script setup lang="ts">

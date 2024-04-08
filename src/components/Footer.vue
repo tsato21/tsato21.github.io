@@ -1,7 +1,7 @@
 <template>
   <footer class="shadow-sm bg-gray-400 px-5 py-8 text-white">
-    <ul class="flex justify-center space-x-4">
-      <li>
+    <ul class="flex flex-col sm:flex-row justify-center space-x-4 space-y-2 sm:space-y-0">
+      <li class="px-4">
         <a
           href="https://github.com/tsato21"
           target="_blank"

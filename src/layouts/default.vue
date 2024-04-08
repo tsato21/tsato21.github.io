@@ -14,10 +14,9 @@
           />
           Tiger's Scripts Showcase
         </NuxtLink>
-
-        <ul class="nav bg-white rounded-lg p-3 right-2 flex" @click.stop>
-          <NavbarItems @close="isOpen = false" />
-        </ul>
+<ul class="nav bg-white rounded-lg p-3 right-2 flex md:flex hidden" @click.stop>
+  <NavbarItems @close="isOpen = false" />
+</ul>
         <div class="relative">
           <button @click="toggleMenu" class="navbar-toggler">
             <Icon name="material-symbols-light:menu" class="custom-icon"></Icon>

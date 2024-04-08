@@ -50,7 +50,7 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
               <img
                 src="assets/images/gas-tools/row-height-optimizer/fit-to-data-feature.png"
                 alt="Fit to Data Feature"
-                class="w-100 h-60"
+                class="w-70 h-60"
               />
               <figcaption class="p-2 text-gray-400">
                 Figure: Fit to Data Feature in Google Sheets
@@ -58,7 +58,7 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
               <img
                 src="assets/images/gas-tools/row-height-optimizer/fit-to-data-result.png"
                 alt="Fit to Data Result"
-                class="w-100 h-60"
+                class="w-70 h-25"
               />
               <figcaption class="p-2 text-gray-400">
                 Figure: Fit to Data Result in Google Sheets
