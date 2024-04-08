@@ -536,20 +536,18 @@
       >
         <div class="text-3xl mt-2 font-bold lg:hidden block">
           <div class="my-2 flex items-center">
-            <span class="text-3xl font-bold">Manual Builder</span>
+            <span class="text-3xl font-bold">Course Data Aligner</span>
           </div>
           <!-- Badges Component -->
           <Badges :badges="badges" />
         </div>
         <!-- Page Menu Bar: fixed on large screen and relative on other sized screen -->
-        <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed">
+        <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed lg:mr-2">
           <div class="mb-5 pt-5">
             <p class="text-l font-bold p-1 bg-gray-400 text-white">
               <Icon name="map:book-store"></Icon> On this page
             </p>
-            <ul class="break-words">
-              <PageItems :pageItems="pageItems" :pageTitle="pageTitle" />
-            </ul>
+            <PageItems :pageItems="pageItems" />
           </div>
         </div>
       </div>
@@ -577,8 +575,6 @@ useHead({
   title: 'Manual Builder',
 });
 
-// The title of the page menu.
-const pageTitle = 'On this page';
 // An array of objects representing the page items or sections.
 const pageItems = [
   { label: 'About', id: 'about' },

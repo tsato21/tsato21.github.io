@@ -264,14 +264,12 @@
           <!-- Badges Component -->
           <Badges :badges="badges" />
         </div>
-        <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed">
+        <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed lg:mr-2">
           <div class="mb-5 pt-5">
             <p class="text-l font-bold p-1 bg-gray-400 text-white">
               <Icon name="map:book-store"></Icon> このページの内容
             </p>
-            <ul class="break-words">
-              <PageItems :pageItems="pageItems" :pageTitle="pageTitle" />
-            </ul>
+            <PageItems :pageItems="pageItems" />
           </div>
         </div>
       </div>
@@ -299,8 +297,6 @@ useHead({
   title: 'Manual Builder',
 });
 
-// The title of the page menu.
-const pageTitle = 'このページの内容';
 // An array of objects representing the page items or sections.
 const pageItems = [
   { label: '概要', id: 'about' },

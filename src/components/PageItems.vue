@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div class="text-3xl mt-2 font-bold lg:hidden block">{{ pageTitle }}</div>
     <ul class="break-words">
       <li
         v-for="(pageItem, index) in pageItems"
@@ -27,10 +26,6 @@ interface PageItem {
 }
 
 const props = defineProps({
-  pageTitle: {
-    type: String,
-    required: true,
-  },
   pageItems: {
     type: Array as () => PageItem[],
     required: true,
