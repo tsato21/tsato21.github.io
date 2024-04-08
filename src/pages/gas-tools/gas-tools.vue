@@ -51,7 +51,7 @@ const tools = ref([
   {
     title: 'Manual Builder',
     description: 'Automates the creation of work manuals by extracting essential details from Google Slides and organizing them into Google Sheets, improving workflow efficiency.',
-    filePath: '/gas-tools/each-tool/manual-builder/manual-builder_ENG' 
+    filePath: '/gas-tools/manual-builder/manual-builder_ENG' 
   },
     // tool 2
   {

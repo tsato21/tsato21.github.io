@@ -1,5 +1,5 @@
 <template>
-    <nav aria-label="breadcrumbs">
+    <nav aria-label="breadcrumbs" class="ms-3">
         <ul class="breadcrumb-list">
             <li v-for="(breadCrumb, index) in breadCrumbs" :key="index" class="breadcrumb-item">
                 <NuxtLink v-if="breadCrumb.to && index !== breadCrumbs.length - 1" :to="breadCrumb.to">

@@ -1,7 +1,7 @@
 <template>
     <div>
         <UBreadcrumbs :breadCrumbs="breadCrumbs"/>
-            <div class="mb-5 pt-2 grid grid-cols-12 gap-3 md:gap-6">
+            <div class="mb-5 p-4 grid grid-cols-12 gap-3 md:gap-6">
                 <!-- Section A (left in lg/ first in md/sm/xs) -->
                 <div class="col-span-12 order-1 lg:col-span-2 lg:order-1 md:col-span-12 md:order-1 sm:col-span-12 sm:order-1">
                     <div class="mb-5 pt-5">
