@@ -2,16 +2,24 @@
   <div>
     <div class="text-3xl mt-2 font-bold lg:hidden block">{{ pageTitle }}</div>
     <ul class="break-words">
-      <li v-for="(pageItem, index) in pageItems" :key="index" class="border-b border-gray-200 mx-2 py-1">
-        <a @click="goTo(pageItem.id)" class="text-xs font-bold text-gray-400 hover:text-blue-700 cursor-pointer about-menu-link">{{ pageItem.label }}</a>
+      <li
+        v-for="(pageItem, index) in pageItems"
+        :key="index"
+        class="border-b border-gray-200 mx-2 py-1"
+      >
+        <a
+          @click="goTo(pageItem.id)"
+          class="text-xs font-bold text-gray-400 hover:text-blue-700 cursor-pointer about-menu-link"
+          >{{ pageItem.label }}</a
+        >
       </li>
     </ul>
   </div>
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue'
-import VueScrollTo from 'vue-scrollto'
+import { defineProps } from 'vue';
+import VueScrollTo from 'vue-scrollto';
 
 interface PageItem {
   label: string;
@@ -21,15 +29,15 @@ interface PageItem {
 const props = defineProps({
   pageTitle: {
     type: String,
-    required: true
+    required: true,
   },
   pageItems: {
     type: Array as () => PageItem[],
-    required: true
-  }
-})
+    required: true,
+  },
+});
 
 const goTo = (id: string) => {
-  VueScrollTo.scrollTo('#' + id, 500)
-}
+  VueScrollTo.scrollTo('#' + id, 500);
+};
 </script>

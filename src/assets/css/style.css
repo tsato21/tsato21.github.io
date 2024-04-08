@@ -9,39 +9,43 @@
   filter: blur(1rem);
 }
 
- /* for the navbar */
- .nav-item {
-    margin: 1rem 0;
- }
+/* for the navbar */
+.nav-item {
+  margin: 1rem 0;
+}
 .nav-link {
-    margin-right: 1rem;
-    transition-property: all;
-    transition-duration: 250ms;
-    transition-timing-function: ease-in-out;
+  margin-right: 1rem;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
 }
 .nav-link:hover {
-    transform: translateY(-0.25rem) scale(1.10);
-    color: #4B5563;
-    border-bottom: 2px solid #4B5563;
+  transform: translateY(-0.25rem) scale(1.1);
+  color: #4b5563;
+  border-bottom: 2px solid #4b5563;
 }
- .menu-bar-out-enter-active, .menu-bar-out-leave-active {
-    transition: opacity 0.5s;
- }
- 
- .menu-bar-out-enter-from, .menu-bar-out-leave-to {
-    opacity: 0;
- }
- 
- .menu-bar-in-enter-active, .menu-bar-in-leave-active {
-    transition: transform 0.5s;
- }
- 
- .menu-bar-in-enter-from, .menu-bar-in-leave-to {
-    transform: scale(0.5);
- }
+.menu-bar-out-enter-active,
+.menu-bar-out-leave-active {
+  transition: opacity 0.5s;
+}
 
- /* for the navbar icon */
- .custom-icon {
+.menu-bar-out-enter-from,
+.menu-bar-out-leave-to {
+  opacity: 0;
+}
+
+.menu-bar-in-enter-active,
+.menu-bar-in-leave-active {
+  transition: transform 0.5s;
+}
+
+.menu-bar-in-enter-from,
+.menu-bar-in-leave-to {
+  transform: scale(0.5);
+}
+
+/* for the navbar icon */
+.custom-icon {
   font-size: 40px;
 }
 
@@ -52,39 +56,39 @@
 
 /* for breadcrumbs */
 .breadcrumb-list {
-   list-style: none;
-   padding: 0;
+  list-style: none;
+  padding: 0;
 }
 .breadcrumb-item {
-   display: inline;
-   margin-right: 8px;
+  display: inline;
+  margin-right: 8px;
 }
 .breadcrumb-item a {
-   text-decoration: none;
-   color: #4e91a5; /* Add this line */
+  text-decoration: none;
+  color: #4e91a5; /* Add this line */
 }
 .breadcrumb-item a:hover {
-   color: #235e70; /* Add this line to change color on hover */
+  color: #235e70; /* Add this line to change color on hover */
 }
 .breadcrumb-item a.active {
-   font-weight: bold;
+  font-weight: bold;
 }
 .separator {
-   margin: 0 8px;
+  margin: 0 8px;
 }
 .last-item {
-   font-weight: bold;
+  font-weight: bold;
 }
 
 /* for about menu bar */
 .about-menu-link {
-   transition-property: all;
-   transition-duration: 250ms;
-   transition-timing-function: ease-in-out;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
 }
 
 .about-menu-link:hover {
-   transform: translateY(-0.25rem) scale(1.10);
-   color: #4B5563;
-   border-bottom: 2px solid #4B5563;
+  transform: translateY(-0.25rem) scale(1.1);
+  color: #4b5563;
+  border-bottom: 2px solid #4b5563;
 }
