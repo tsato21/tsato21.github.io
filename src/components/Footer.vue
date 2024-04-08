@@ -5,7 +5,7 @@
         <a
           href="https://github.com/tsato21"
           target="_blank"
-          class="text-white no-underline flex items-center"
+          class="text-white no-underline flex items-center footer-link"
         >
           <Icon name="grommet-icons:github" class="mr-2" /> GITHUB
         </a>
@@ -13,7 +13,7 @@
       <li>
         <NuxtLink
           to="/others/terms-conditions"
-          class="text-white no-underline flex items-center"
+          class="text-white no-underline flex items-center footer-link"
         >
           <Icon name="grommet-icons:tag" class="mr-2" /> TERMS & CONDITIONS
         </NuxtLink>
@@ -21,7 +21,7 @@
       <li>
         <NuxtLink
           to="/others/privacy-policy"
-          class="text-white no-underline flex items-center"
+          class="text-white no-underline flex items-center footer-link"
         >
           <Icon name="grommet-icons:tag" class="mr-2" /> PRIVACY POLICY
         </NuxtLink>
@@ -29,7 +29,7 @@
       <li>
         <NuxtLink
           to="/about/contact/contact"
-          class="text-white no-underline flex items-center"
+          class="text-white no-underline flex items-center footer-link"
         >
           <Icon name="grommet-icons:mail" class="mr-2" /> CONTACT
         </NuxtLink>

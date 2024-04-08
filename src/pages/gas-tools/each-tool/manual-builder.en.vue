@@ -74,7 +74,7 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
             <div class="py-3">
               <ol class="list-decimal list-inside space-y-2">
                 <li class="text-gray-700">
-                  <strong>Access Your Google Sheet</strong>: Begin by opening
+                  <strong>Access a Sample Google Sheet</strong>: Begin by opening
                   the
                   <a
                     href="https://docs.google.com/spreadsheets/d/1PMzgfemPZhTKBubqUDWp5gbM-veuWCbT0IKKOw3fsL8/edit#gid=0"
@@ -365,7 +365,7 @@ const badges = [
 const languages = [
   {
     name: '日本語',
-    filePath: '/gas-tools/manual-builder/manual-builder.jpn',
+    filePath: '/gas-tools/each-tool/manual-builder.jpn',
   },
 ];
 

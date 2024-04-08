@@ -333,7 +333,7 @@ const badges = [
 const languages = [
   {
     name: 'English',
-    filePath: '/gas-tools/manual-builder/manual-builder.en',
+    filePath: '/gas-tools/each-tool/manual-builder.en',
   },
 ];
 

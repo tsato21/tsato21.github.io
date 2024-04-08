@@ -66,14 +66,20 @@ const tools = ref([
     title: 'Manual Builder',
     description:
       'Automates the creation of work manuals by extracting essential details from Google Slides and organizing them into Google Sheets, improving workflow efficiency.',
-    filePath: '/gas-tools/manual-builder/manual-builder.en',
+    filePath: '/gas-tools/each-tool/manual-builder.en',
   },
   // tool 2
   {
     title: 'Course Data Aligner',
     description:
       'Harmonizes course data between two Google Sheets with differing structures, effectively resolving data structure inconsistencies across multiple stakeholders.',
-    filePath: '/gas-tools/course-data-aligner',
+    filePath: '/gas-tools/each-tool/course-data-aligner',
+  },
+  {
+    title: 'Row Height Optimizer',
+    description:
+      'Automates the adjustment of row heights in Google Sheets, enhancing readability and visual appeal by providing adequate padding for cell contents.',
+    filePath: '/gas-tools/each-tool/row-height-optimizer',
   },
 ]);
 

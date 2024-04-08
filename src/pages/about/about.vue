@@ -119,7 +119,7 @@
           <p class="text-l font-bold p-1 bg-gray-400 text-white">
             <Icon name="map:book-store"></Icon> On this page
           </p>
-          <PageItems :pageItems="pageItems" />
+          <PageItems :pageItems="pageItems" :pageTitle="pageTitle" />
         </div>
       </div>
     </div>
@@ -133,10 +133,11 @@ import PageItems from '~/components/PageItems.vue';
 
 const breadCrumbs = [{ label: 'Home', to: '/' }, { label: 'About' }];
 
+const pageTitle = 'On this page';
 const pageItems = [
-  { label: 'About Scripts Showcase', href: '#about-scripts-showcase' },
-  { label: 'About Me', href: '#about-me' },
-  { label: 'Acknowledgements', href: '#acknowledgements' },
+  { label: 'About Scripts Showcase', id: 'about-scripts-showcase' },
+  { label: 'About Me', id: 'about-me' },
+  { label: 'Acknowledgements', id: 'acknowledgements' },
 ];
 
 useHead({
