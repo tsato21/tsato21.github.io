@@ -48,6 +48,13 @@
     <!-- output the page content -->
     <div class="container flex-grow py-5 mx-auto">
       <slot />
+          <!-- Button to scroll to top of the page: fixed at bottom right corner -->
+    <button
+      @click="scrollTop"
+      class="fixed bottom-5 right-5 bg-blue-500 text-white p-2 rounded-full"
+    >
+      Top
+    </button>
     </div>
 
     <!-- footer -->
@@ -65,6 +72,11 @@ const route = useRoute();
 
 const toggleMenu = () => {
   isOpen.value = !isOpen.value;
+};
+
+// A function that scrolls the page to the top smoothly.
+const scrollTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 </script>
 

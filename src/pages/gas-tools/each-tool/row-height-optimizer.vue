@@ -210,20 +210,26 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="terms-conditions">
-              Terms and Conditions
-            </div>
+            <div class="text-2xl font-bold" id="source-code">Source Code</div>
             <div class="py-3">
               <p class="text-lg mt-4">
-                Please note that your use of this website is subject to the
-                <NuxtLink
-                  to="/others/terms-conditions"
+                You can find the source code for this tool on Github. Click
+                <a
+                  href="https://github.com/tsato21/row-height-optimizer"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
-                  >Terms and Conditions.</NuxtLink
+                  >HERE</a
                 >
+                .
               </p>
             </div>
           </div>
+
+          <div class="mb-3">
+            <TermsAndConditionsEn />
+          </div>
+
         </div>
         <p>
           <Icon name="material-symbols:calendar-month-sharp" /> Last updated:
@@ -253,13 +259,6 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
         </div>
       </div>
     </div>
-    <!-- Button to scroll to top of the page: fixed at bottom right corner -->
-    <button
-      @click="scrollTop"
-      class="fixed bottom-5 right-5 bg-blue-500 text-white p-2 rounded-full"
-    >
-      Top
-    </button>
   </div>
 </template>
 
@@ -273,7 +272,7 @@ const breadCrumbs = [
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'Manual Builder',
+  title: 'Row Height Optimizer',
 });
 
 // An array of objects representing the page items or sections.
@@ -283,6 +282,7 @@ const pageItems = [
   { label: 'Setup', id: 'setup' },
   { label: 'Usage', id: 'usage' },
   { label: 'Terms and Conditions', id: 'terms-conditions' },
+  { label: 'Source Code', id: 'source-code' },
 ];
 
 // An array of objects representing the badges to be displayed.
@@ -303,17 +303,6 @@ const badges = [
   },
 ];
 
-// An array of objects representing the available languages for the page.
-const languages = [
-  {
-    name: '日本語',
-    filePath: '/gas-tools/manual-builder/manual-builder.jpn',
-  },
-];
-
-// The current language of the page.
-const currentLanguage = 'English';
-
 // The date, formatted according to the US locale.
 let date = ref(
   new Intl.DateTimeFormat('en-US', {
@@ -322,9 +311,4 @@ let date = ref(
     day: 'numeric',
   }).format(new Date('2024-04-06'))
 );
-
-// A function that scrolls the page to the top smoothly.
-const scrollTop = () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-};
 </script>

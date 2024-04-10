@@ -31,7 +31,7 @@
       <div
         class="col-span-12 order-2 lg:col-span-2 lg:order-3 md:col-span-12 md:order-2 sm:col-span-12 sm:order-2"
       >
-        <div class="text-3xl mt-2 font-bold lg:hidden block">
+        <div class="text-3xl mt-2 font-bold sm:ml-3 lg:hidden block">
           PRIVACY POLICY
         </div>
         <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed">
@@ -52,17 +52,17 @@ import { ref } from 'vue';
 import UBreadcrumbs from '~/components/UBreadcrumbs.vue';
 import PageItems from '~/components/PageItems.vue';
 
-const breadCrumbs = [{ label: 'Home', to: '/' }, { label: 'Privacy Policy' }];
-
-const pageItems = [
-  { label: 'XXX', href: '#XX' },
-  { label: 'XXX', href: '#XX' },
-  { label: 'XXX', href: '#XX' },
-];
-
 useHead({
   title: 'Privacy Policy',
 });
+
+const breadCrumbs = [{ label: 'Home', to: '/' }, { label: 'Privacy Policy' }];
+
+const pageItems = [
+  { label: 'XXX', id: '#XX' },
+  { label: 'XXX', id: '#XX' },
+  { label: 'XXX', id: '#XX' },
+];
 
 let date = ref(
   new Intl.DateTimeFormat('en-US', {

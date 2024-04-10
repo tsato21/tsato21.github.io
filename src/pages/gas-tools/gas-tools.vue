@@ -45,7 +45,7 @@
       <div
         class="col-span-12 order-2 lg:col-span-2 lg:order-3 md:col-span-12 md:order-2 sm:col-span-12 sm:order-2"
       >
-        <div class="text-3xl mt-2 font-bold lg:hidden block">GAS Tools</div>
+        <div class="text-3xl mt-2 font-bold sm:ml-3 lg:hidden block">GAS Tools</div>
         <div class="mb-5 pt-5">
           <!-- contents -->
         </div>
@@ -85,6 +85,12 @@ const tools = ref([
     description:
       'Automates email extraction and categorization in Gmail, and updates Google Sheets with the information.',
     filePath: '/gas-tools/each-tool/sheet-mail-sync',
+  },
+  {
+    title: 'SheetMail WorkAutomator',
+    description:
+      'Automates tasks in Google Sheets, Drive, and Gmail. It streamlines file management, email creation, and sharing for efficient document organization and communication.',
+    filePath: '/gas-tools/each-tool/sheet-mail-work-automator',
   },
 ]);
 

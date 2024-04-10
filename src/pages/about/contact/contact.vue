@@ -3,7 +3,7 @@
     <UBreadcrumbs :breadCrumbs="breadCrumbs" />
     <div class="flex justify-center">
       <div class="flex flex-col items-start">
-        <div class="text-3xl mt-2 font-bold">Contact</div>
+        <div class="text-3xl mt-2 font-bold sm: ml-5">Contact</div>
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSd_lsjQP6Ay5xL_EqbBc5_ppoK42R_Auehu23aCuhJ6zrtC_Q/viewform?embedded=true"
           width="640"

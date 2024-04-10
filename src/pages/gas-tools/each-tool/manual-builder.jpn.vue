@@ -226,21 +226,32 @@
                 >をクリックして、詳細な説明をご覧ください。
               </p>
             </div>
+
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="terms-conditions">利用規約</div>
+            <div class="text-2xl font-bold" id="source-code">ソースコード</div>
             <div class="py-3">
               <p class="text-lg mt-4">
-                このウェブサイトの利用は、<NuxtLink
-                  to="/others/terms-conditions"
+                Github上でソースコードを参照できます。
+                <a
+                  href="https://github.com/tsato21/manual-builder"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
-                  >利用規約</NuxtLink
-                >に基づいて行われることにご注意ください。(*注: 英語で記載)
+                  >こちら</a
+                >
+                をクリックしてください.
               </p>
             </div>
           </div>
+
+          <div class="mb-3">
+            <TermsAndConditionsJp />
+          </div>
+
         </div>
+      </div>
         <p>
           <Icon name="material-symbols:calendar-month-sharp" /> 最終更新日:
           {{ date }}
@@ -273,14 +284,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- Button to scroll to top of the page: fixed at bottom right corner -->
-    <button
-      @click="scrollTop"
-      class="fixed bottom-5 right-5 bg-blue-500 text-white p-2 rounded-full"
-    >
-      トップ
-    </button>
   </div>
 </template>
 
@@ -305,6 +308,7 @@ const pageItems = [
   { label: '使用方法', id: 'usage' },
   { label: 'その他', id: 'others' },
   { label: '利用規約', id: 'terms-conditions' },
+  { label: 'ソースコード', id: 'source-code' },
 ];
 
 // An array of objects representing the badges to be displayed.
@@ -344,9 +348,4 @@ let date = ref(
     day: 'numeric',
   }).format(new Date('2024-04-06'))
 );
-
-// A function that scrolls the page to the top smoothly.
-const scrollTop = () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-};
 </script>

@@ -490,39 +490,26 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="others">Others</div>
+            <div class="text-2xl font-bold" id="source-code">Source Code</div>
             <div class="py-3">
               <p class="text-lg mt-4">
-                If you are interested in the logics on how the details from
-                Google Slides are extracted and outputting them into Google
-                Sheet, click
+                You can find the source code for this tool on Github. Click
                 <a
-                  href="https://docs.google.com/presentation/d/1xSyIpb7w24os4EEhpNBP5CCTxS70q5PeTGKm2Vndumw/edit#slide=id.g6f52a3fb7eed7995_31"
+                  href="https://github.com/tsato21/course-data-aligner"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
                   >HERE</a
                 >
-                for the detailed explanation.
+                .
               </p>
             </div>
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="terms-conditions">
-              Terms and Conditions
-            </div>
-            <div class="py-3">
-              <p class="text-lg mt-4">
-                Please note that your use of this website is subject to the
-                <NuxtLink
-                  to="/others/terms-conditions"
-                  class="text-lightblue underline hover:text-darkblue"
-                  >Terms and Conditions.</NuxtLink
-                >
-              </p>
-            </div>
+            <TermsAndConditionsEn />
           </div>
+
         </div>
         <p>
           <Icon name="material-symbols:calendar-month-sharp" /> Last updated:
@@ -552,13 +539,7 @@
         </div>
       </div>
     </div>
-    <!-- Button to scroll to top of the page: fixed at bottom right corner -->
-    <button
-      @click="scrollTop"
-      class="fixed bottom-5 right-5 bg-blue-500 text-white p-2 rounded-full"
-    >
-      Top
-    </button>
+
   </div>
 </template>
 
@@ -572,7 +553,7 @@ const breadCrumbs = [
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'Manual Builder',
+  title: 'Course Data Aligner',
 });
 
 // An array of objects representing the page items or sections.
@@ -597,8 +578,8 @@ const pageItems = [
     label: 'Tool 2-3: Schedule Data Structuring (Type C)',
     id: 'tool_2-3_organize-schedule-data',
   },
-  { label: 'Others', id: 'others' },
   { label: 'Terms and Conditions', id: 'terms-conditions' },
+  { label: 'Source Code', id: 'source-code' },
 ];
 
 // An array of objects representing the badges to be displayed.
@@ -627,9 +608,4 @@ let date = ref(
     day: 'numeric',
   }).format(new Date('2024-04-06'))
 );
-
-// A function that scrolls the page to the top smoothly.
-const scrollTop = () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-};
 </script>

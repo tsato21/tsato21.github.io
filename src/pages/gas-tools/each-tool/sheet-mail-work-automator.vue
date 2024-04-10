@@ -29,20 +29,13 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
             <div class="text-2xl font-bold" id="about">About</div>
             <div class="py-3">
               <p>
-                Automates email extraction and categorization in Gmail, and
-                updates Google Sheets with the information.
+                Automates tasks in Google Sheets, Drive, and Gmail. It streamlines file management, email creation, and sharing for efficient document organization and communication.
               </p>
               <blockquote
-                class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
-              >
-                This tool leverages Google Apps Script to automate and
-                streamline your email management tasks. It efficiently processes
-                and categorizes large volumes of emails in Gmail according to
-                predefined criteria, and updates corresponding Google Sheets
-                with the extracted information. This is particularly useful if
-                you need to verify the successful delivery of large volumes of
-                specific emails.
-              </blockquote>
+    class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
+>
+    This tool utilizes Google Apps Script to automate tasks related to file management and email creation. It efficiently handles Google Sheets, Drive, and Gmail to automate various tasks. This is particularly useful in educational or collaborative settings where organizing and sharing documents efficiently is crucial.
+</blockquote>
             </div>
           </div>
 
@@ -57,7 +50,7 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
                 </li>
                 <li class="text-gray-700">
                   A foundational understanding of Google Sheets, Gmail, and
-                  Google Apps Script.
+                  Google Apps Script and Drive Api.
                 </li>
               </ul>
             </div>
@@ -71,7 +64,7 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
                   <strong>Access a Sample Google Sheet</strong>: Begin by
                   opening the
                   <a
-                    href="https://docs.google.com/spreadsheets/d/1RiKE3KzWwea29mkPuIy1mrZZ2Rnk_L-e-yydLZ-5aHk/edit#gid=771932269"
+                    href="https://docs.google.com/spreadsheets/d/1yGVn-w6uhpvNWz4rK0l37hPGIsqSeeXpweF6Vq_ko04/edit#gid=0"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="text-lightblue underline hover:text-darkblue"
@@ -254,7 +247,7 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
               <p class="text-lg mt-4">
                 You can find the source code for this tool on Github. Click
                 <a
-                  href="https://github.com/tsato21/sheet-mail-sync"
+                  href="https://github.com/tsato21/sheet-mail-workflow-automator"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
@@ -306,12 +299,12 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
 const breadCrumbs = [
   { label: 'Home', to: '/' },
   { label: 'GAS Tools', to: '/gas-tools/gas-tools' },
-  { label: 'SheetMail Sync' },
+  { label: 'SheetMail WorkAutomator' },
 ];
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'SheetMail Sync',
+  title: 'SheetMail WorkAutomator',
 });
 
 // An array of objects representing the page items or sections.
@@ -327,7 +320,7 @@ const pageItems = [
 // An array of objects representing the badges to be displayed.
 const badges = [
   {
-    src: 'https://img.shields.io/badge/Google%20Apps-%20sheet%26%20mail-brightgreen?style=flat-square&color=brightgreen',
+    src: 'https://img.shields.io/badge/Google%20Apps-%20sheet%20mail%20drive-brightgreen?style=flat-square&color=brightgreen',
     alt: 'Use of Google Apps',
   },
   {
@@ -341,6 +334,17 @@ const badges = [
     alt: 'Code style: Prettier',
   },
 ];
+
+// An array of objects representing the available languages for the page.
+const languages = [
+  {
+    name: '日本語',
+    filePath: '/gas-tools/manual-builder/manual-builder.jpn',
+  },
+];
+
+// The current language of the page.
+const currentLanguage = 'English';
 
 // The date, formatted according to the US locale.
 let date = ref(
