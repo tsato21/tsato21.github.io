@@ -249,6 +249,10 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
           </div>
 
           <div class="mb-3">
+            <TermsAndConditionsEn />
+          </div>
+
+          <div class="mb-3">
             <div class="text-2xl font-bold" id="source-code">Source Code</div>
             <div class="py-3">
               <p class="text-lg mt-4">
@@ -263,10 +267,6 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
                 .
               </p>
             </div>
-          </div>
-
-          <div class="mb-3">
-            <TermsAndConditionsEn />
           </div>
         </div>
         <p>
@@ -326,7 +326,7 @@ const pageItems = [
 // An array of objects representing the badges to be displayed.
 const badges = [
   {
-    src: 'https://img.shields.io/badge/Google%20Apps-%20sheet%26%20mail-brightgreen?style=flat-square&color=brightgreen',
+    src: 'https://img.shields.io/badge/Google%20Apps-%20sheet%20%26%20mail-brightgreen?style=flat-square&color=brightgreen',
     alt: 'Use of Google Apps',
   },
   {

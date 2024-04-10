@@ -490,6 +490,10 @@
           </div>
 
           <div class="mb-3">
+            <TermsAndConditionsEn />
+          </div>
+
+          <div class="mb-3">
             <div class="text-2xl font-bold" id="source-code">Source Code</div>
             <div class="py-3">
               <p class="text-lg mt-4">
@@ -504,10 +508,6 @@
                 .
               </p>
             </div>
-          </div>
-
-          <div class="mb-3">
-            <TermsAndConditionsEn />
           </div>
         </div>
         <p>

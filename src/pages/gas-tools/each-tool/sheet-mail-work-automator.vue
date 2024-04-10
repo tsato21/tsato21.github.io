@@ -94,13 +94,6 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
                   >
                   The pre-set information is just a sample. Adjust these values
                   to fit your specific requirements.
-                  <img
-                    src="assets/images/gas-tools/sheet-mail-sync/sheet-name_pre-criteria.png"
-                    class="w-100 h-50"
-                  />
-                  <figcaption class="p-2 text-gray-400">
-                    Figure: Sheet Name and Pre-Criteria
-                  </figcaption>
                 </li>
 
                 <li class="text-gray-700">
@@ -127,7 +120,7 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
                     <img
                       src="assets/images/gas-tools/sheet-mail-work-automator/access-apps-script.png"
                       alt="Image of Initial Setting"
-                      class="w-100 h-50"
+                      class="w-96 h-40"
                     />
                     <figcaption class="p-2 text-gray-400">
                       Figure: Access Apps Script
@@ -137,7 +130,7 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
                     <img
                       src="assets/images/gas-tools/sheet-mail-work-automator/set-drive-api.png"
                       alt="set-drive-api"
-                      class="w-100 h-50"
+                      class="w-96 h-96"
                     />
                     <figcaption class="p-2 text-gray-400">
                       Figure: Set Drive API
@@ -181,86 +174,199 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
             <div class="text-2xl font-bold">Usage</div>
 
             <ol class="list-disk list-inside">
-    <li class="my-2">
-      <strong>Custom Menu in Google Sheets:</strong> The script
-      automatically adds Custom Menu to your Google Sheet. Use this
-      menu to execute script functions like
-      <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
-        Display URL Share Mail Info
-      </code>
-      and
-      <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
-        Display Result and Pass Mail Info </code
-      >.
-      <img
-        src="assets/images/gas-tools/sheet-mail-work-automator/custom-menu.png"
-        alt="Custom Menu Button"
-        class="w-80 h-40"
-      />
-      <figcaption class="p-2 text-gray-400">
-        Figure: Custom Menu Button
-      </figcaption>
-    </li>
-  </ol>
+              <li class="my-2">
+                <strong>Custom Menu in Google Sheets:</strong> The script
+                automatically adds Custom Menu to your Google Sheet. Use this
+                menu to execute script functions like
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
+                  Display URL Share Mail Info
+                </code>
+                and
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
+                  Display Result and Pass Mail Info </code
+                >.
+                <img
+                  src="assets/images/gas-tools/sheet-mail-work-automator/custom-menu.png"
+                  alt="Custom Menu Button"
+                  class="w-96 h-48"
+                />
+                <figcaption class="p-2 text-gray-400">
+                  Figure: Custom Menu Button
+                </figcaption>
+              </li>
+            </ol>
 
             <ol class="list-decimal list-inside">
-  <li class="my-2">
-    <strong>Set information for student and faculty</strong>: 
-    <ol class="list-decimal list-inside pl-5">
-      <li>Set information in the orange range in <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">system-data</code> sheet, which is the reference data for other sheets.</li>
-      <div>
-        <img src="assets/images/put-base-info.png" alt="Image of Put Base Info" class="w-80 h-40">
-      </div>
-    </ol>
-  </li>
-  <li class="my-2">
-    <strong>Copy and Name Files</strong>: 
-    <ol class="list-decimal list-inside pl-5">
-      <li>Set the file name information in the orange range in <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">create-file</code> sheet.</li>
-      <div>
-        <img src="assets/images/put-file-name.png" alt="Image of Put File Name" class="w-80 h-40">
-      </div>
-      <li>Click the <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Copy and Name Files</code> to create copies of a specified file for each entry in the list from the Google Sheet.</li>
-        <div>*You will be asked to put the URL of the target folder to store newly created files and the URL of the template file.</div>
-    </ol>
-  </li>
-  <li class="my-2">
-    <strong>Retrieve and Display File Information</strong>: 
-    <ol class="list-decimal list-inside pl-5">
-      <li>Click <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Output File Info</code> to display detailed information about files in a designated folder in <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">share-file</code> (Column A - E).
-        <div>*You will be asked to put the URL of the target folder where files are stored.</div>
-        <div>
-          <img src="assets/images/input-stored-file-url.png" alt="Image of input-stored-file-url" class="w-80 h-40">
-        </div>
-        <div>
-          <img src="assets/images/output-file-info.png" alt="Image of output-file-info" class="w-80 h-40">
-        </div>
-        <div>*Since the file has not been shared with anyone at this moment (unless you share the stored folder with someone), "Editors' emails" returns empty.</div>
-      </li>
-    </ol>
-  </li>
-  <li class="my-2">
-    <strong>Manage File Sharing</strong>: 
-    <div>Click either <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"></code>Share Files Without Notification` or <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Reset All Sharing Status</code> to manage file sharing settings.</div>
-    <ol class="list-decimal list-inside pl-5">
-      <li>
-        <strong>Share Files Without Notification:</strong> This function allows you to share files with specified users without sending them a notification. Necessary information such as email addresses of the users and the file information is automatically displayed by Google Sheet built-in formula.
-        <div>*You will be asked to put the URL of the target folder where files are stored.</div>
-        <div>*Once you execute <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Output File Info</code> again after this process, the column, "Editors' emails" is supposed to show editors' emails.</div>
-      </li>
-      <li>
-        <strong>Reset All Sharing Status:</strong> This function resets the sharing settings of all files in a specific folder. It removes all users from the shared list and makes the files private.
-      </li>
-    </ol>
-  </li>
-  <li class="my-2">
-    <strong>Create Email Drafts</strong>: 
-    <div>Click <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Create Drafts</code> to generate personalized draft emails in Gmail.</div>
-    <div>
-      <img src="assets/images/gmail-draft.png" alt="Image of gmail-draft" class="w-80 h-40">
-    </div>
-  </li>
-</ol>
+              <li class="my-2">
+                <strong>Set information for student and faculty</strong>:
+                <ol class="list-decimal list-inside pl-5">
+                  <li>
+                    Set information in the orange range in
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >system-data</code
+                    >
+                    sheet, which is the reference data for other sheets.
+                  </li>
+                  <div>
+                    <img
+                      src="assets/images/gas-tools/sheet-mail-work-automator/put-base-info.png"
+                      alt="Image of Put Base Info"
+                      class="w-96 h-48"
+                    />
+                  </div>
+                  <figcaption class="p-2 text-gray-400">
+                    Figure: Put Reference Data
+                  </figcaption>
+                </ol>
+              </li>
+              <li class="my-2">
+                <strong>Copy and Name Files</strong>:
+                <ol class="list-decimal list-inside pl-5">
+                  <li>
+                    Set the file name information in the orange range in
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >create-file</code
+                    >
+                    sheet.
+                  </li>
+                  <div>
+                    <img
+                      src="assets/images/gas-tools/sheet-mail-work-automator/put-file-name.png"
+                      alt="Image of Put File Name"
+                      class="w-72 h-48"
+                    />
+                  </div>
+                  <figcaption class="p-2 text-gray-400">
+                    Figure: Putting File Name
+                  </figcaption>
+                  <li>
+                    Click the
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >Copy and Name Files</code
+                    >
+                    to create copies of a specified file for each entry in the
+                    list from the Google Sheet.
+                  </li>
+                  <div>
+                    *You will be asked to put the URL of the target folder to
+                    store newly created files and the URL of the template file.
+                  </div>
+                </ol>
+              </li>
+              <li class="my-2">
+                <strong>Retrieve and Display File Information</strong>:
+                <ol class="list-decimal list-inside pl-5">
+                  <li>
+                    Click
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >Output File Info</code
+                    >
+                    to display detailed information about files in a designated
+                    folder in
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >share-file</code
+                    >
+                    (Column A - E).
+                    <div>
+                      *You will be asked to put the URL of the target folder
+                      where files are stored.
+                    </div>
+                    <div>
+                      <img
+                        src="assets/images/gas-tools/sheet-mail-work-automator/input-stored-file-url.png"
+                        alt="Image of input-stored-file-url"
+                        class="w-96 h-48"
+                      />
+                      <figcaption class="p-2 text-gray-400">
+                        Figure: Inputting URL of Designated Folder
+                      </figcaption>
+                    </div>
+                    <div>
+                      <img
+                        src="assets/images/gas-tools/sheet-mail-work-automator/output-file-info.png"
+                        alt="Image of output-file-info"
+                        class="w-96 h-48"
+                      />
+                    </div>
+                    <figcaption class="p-2 text-gray-400">
+                      Figure: Outputting File Info
+                    </figcaption>
+                    <div>
+                      *Since the file has not been shared with anyone at this
+                      moment (unless you share the stored folder with someone),
+                      "Editors' emails" returns empty.
+                    </div>
+                  </li>
+                </ol>
+              </li>
+              <li class="my-2">
+                <strong>Manage File Sharing</strong>:
+                <div>
+                  Click either
+                  <code
+                    class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  ></code
+                  >Share Files Without Notification` or
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Reset All Sharing Status</code
+                  >
+                  to manage file sharing settings.
+                </div>
+                <ol class="list-decimal list-inside pl-5">
+                  <li>
+                    <strong>Share Files Without Notification:</strong> This
+                    function allows you to share files with specified users
+                    without sending them a notification. Necessary information
+                    such as email addresses of the users and the file
+                    information is automatically displayed by Google Sheet
+                    built-in formula.
+                    <div>
+                      *You will be asked to put the URL of the target folder
+                      where files are stored.
+                    </div>
+                    <div>
+                      *Once you execute
+                      <code
+                        class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                        >Output File Info</code
+                      >
+                      again after this process, the column, "Editors' emails" is
+                      supposed to show editors' emails.
+                    </div>
+                  </li>
+                  <li>
+                    <strong>Reset All Sharing Status:</strong> This function
+                    resets the sharing settings of all files in a specific
+                    folder. It removes all users from the shared list and makes
+                    the files private.
+                  </li>
+                </ol>
+              </li>
+              <li class="my-2">
+                <strong>Create Email Drafts</strong>:
+                <div>
+                  Click
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Create Drafts</code
+                  >
+                  to generate personalized draft emails in Gmail.
+                </div>
+                <div>
+                  <img
+                    src="assets/images/gas-tools/sheet-mail-work-automator/gmail-draft.png"
+                    alt="Image of gmail-draft"
+                    class="w-96 h-48"
+                  />
+                </div>
+                <figcaption class="p-2 text-gray-400">
+                  Figure: Gmail Draft
+                </figcaption>
+              </li>
+            </ol>
+          </div>
+
+          <div class="mb-3">
+            <TermsAndConditionsEn />
           </div>
 
           <div class="mb-3">
@@ -278,10 +384,6 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
                 .
               </p>
             </div>
-          </div>
-
-          <div class="mb-3">
-            <TermsAndConditionsEn />
           </div>
         </div>
         <p>
@@ -333,6 +435,7 @@ const pageItems = [
   { label: 'About', id: 'about' },
   { label: 'Prerequisites', id: 'prerequisites' },
   { label: 'Setup', id: 'setup' },
+  { label: 'Features', id: 'features' },
   { label: 'Usage', id: 'usage' },
   { label: 'Terms and Conditions', id: 'terms-conditions' },
   { label: 'Source Code', id: 'source-code' },
@@ -341,8 +444,12 @@ const pageItems = [
 // An array of objects representing the badges to be displayed.
 const badges = [
   {
-    src: 'https://img.shields.io/badge/Google%20Apps-%20sheet%20mail%20drive-brightgreen?style=flat-square&color=brightgreen',
+    src: 'https://img.shields.io/badge/Google%20Apps-%20sheet%20%26%20mail%20%26%20drive-brightgreen?style=flat-square&color=brightgreen',
     alt: 'Use of Google Apps',
+  },
+  {
+    src: 'https://img.shields.io/badge/api-%20sheet%20%26%20mail%20%26%20drive%20api-blue?style=flat-square&color=blue',
+    alt: 'Use of Google Drive API',
   },
   {
     url: 'https://github.com/google/clasp',
