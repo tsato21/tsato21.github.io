@@ -258,7 +258,6 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
 
           <div class="mb-3">
             <TermsAndConditionsEn />
-
           </div>
 
           <div class="mb-3">
@@ -277,7 +276,6 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
               </p>
             </div>
           </div>
-
         </div>
         <p>
           <Icon name="material-symbols:calendar-month-sharp" /> Last updated:
@@ -313,7 +311,6 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
         </div>
       </div>
     </div>
-
   </div>
 </template>
 

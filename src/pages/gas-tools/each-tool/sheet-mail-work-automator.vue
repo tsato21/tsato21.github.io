@@ -29,13 +29,22 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
             <div class="text-2xl font-bold" id="about">About</div>
             <div class="py-3">
               <p>
-                Automates tasks in Google Sheets, Drive, and Gmail. It streamlines file management, email creation, and sharing for efficient document organization and communication.
+                Automates tasks in Google Sheets, Drive, and Gmail. It
+                streamlines file management, email creation, and sharing for
+                efficient document organization and communication.
               </p>
               <blockquote
-    class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
->
-    This tool utilizes Google Apps Script to automate tasks related to file management and email creation. It efficiently handles Google Sheets, Drive, and Gmail to automate various tasks. This is particularly useful in educational or collaborative settings where organizing and sharing documents efficiently is crucial.
-</blockquote>
+                class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
+              >
+                This tool leverages Google Apps Script to automate specific
+                tasks such as creating and organizing files in Google Drive,
+                managing data in Google Sheets, and drafting emails in Gmail.
+                For instance, it can automatically create files in Drive based
+                on data from Sheets, share the sheet with a specific account and
+                draft personalized emails in Gmail. This is particularly
+                beneficial in educational or collaborative environments where
+                efficient document management and communication are key.
+              </blockquote>
             </div>
           </div>
 
@@ -71,9 +80,11 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
                     >Sample Google Sheet</a
                   >
                   <p class="mt-2">
-                    *Note: The samples provided are merely illustrative,
-                    showcasing course evaluation survey for an educational
-                    institution.
+                    *Note: The examples given are for illustrative purposes
+                    only. They demonstrate the bulk creation of individual
+                    application sheets, sharing these sheets with each
+                    individual, and generating customized emails for each person
+                    within an educational institution.
                   </p>
                 </li>
                 <li class="text-gray-700">
@@ -93,24 +104,48 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
                 </li>
 
                 <li class="text-gray-700">
-                  <strong
-                    >Customize Constant Variables for Built-in
-                    Functions:</strong
-                  >
-                  Go to the Apps Script editor and modify the constant variables
-                  in
+                  <strong>Set Drive API:</strong>
+                  Go to
                   <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
-                    variables.gs
+                    Extension</code
+                  >
+                  >
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Apps</code
+                  >
+                  Script >
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Service</code
+                  >
+                  and choose
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
+                    Drive API
                   </code>
-                  to suit your needs.
-                  <img
-                    src="assets/images/gas-tools/sheet-mail-sync/custom-variables.png"
-                    alt="Initial Setting Variables"
-                    class="w-100 h-50"
-                  />
-                  <figcaption class="p-2 text-gray-400">
-                    Figure: Initial Setting Variables
-                  </figcaption>
+                  and ADD, which enables you to use Drive API (necessary to
+                  share files without notification).
+                  <div>
+                    <img
+                      src="assets/images/gas-tools/sheet-mail-work-automator/access-apps-script.png"
+                      alt="Image of Initial Setting"
+                      class="w-100 h-50"
+                    />
+                    <figcaption class="p-2 text-gray-400">
+                      Figure: Access Apps Script
+                    </figcaption>
+                  </div>
+                  <div>
+                    <img
+                      src="assets/images/gas-tools/sheet-mail-work-automator/set-drive-api.png"
+                      alt="set-drive-api"
+                      class="w-100 h-50"
+                    />
+                    <figcaption class="p-2 text-gray-400">
+                      Figure: Set Drive API
+                    </figcaption>
+                  </div>
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
+                    Drive API
+                  </code>
                 </li>
                 <li class="text-gray-700">
                   <GASWarningEn />
@@ -119,126 +154,113 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
             </div>
           </div>
 
+          <div id="features" class="mb-3">
+            <div class="text-2xl font-bold">Features</div>
+
+            <ul class="list-disc list-inside">
+              <li class="my-2">
+                <strong>File Copying and Naming:</strong> Copies and names files
+                from a Google Sheet template.
+              </li>
+              <li class="my-2">
+                <strong>File Information Retrieval:</strong> Displays file
+                details like name, URL, and sharing status.
+              </li>
+              <li class="my-2">
+                <strong>Email Draft Creation:</strong> Generates personalized
+                Gmail drafts for each dataset record.
+              </li>
+              <li class="my-2">
+                <strong>Sharing Management:</strong> Manages file sharing
+                permissions without notification emails.
+              </li>
+            </ul>
+          </div>
+
           <div id="usage" class="mb-3">
             <div class="text-2xl font-bold">Usage</div>
 
+            <ol class="list-disk list-inside">
+    <li class="my-2">
+      <strong>Custom Menu in Google Sheets:</strong> The script
+      automatically adds Custom Menu to your Google Sheet. Use this
+      menu to execute script functions like
+      <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
+        Display URL Share Mail Info
+      </code>
+      and
+      <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
+        Display Result and Pass Mail Info </code
+      >.
+      <img
+        src="assets/images/gas-tools/sheet-mail-work-automator/custom-menu.png"
+        alt="Custom Menu Button"
+        class="w-80 h-40"
+      />
+      <figcaption class="p-2 text-gray-400">
+        Figure: Custom Menu Button
+      </figcaption>
+    </li>
+  </ol>
+
             <ol class="list-decimal list-inside">
-              <li class="my-2">
-                <strong>Custom Menu in Google Sheets:</strong> The script
-                automatically adds Custom Menu to your Google Sheet. Use this
-                menu to execute script functions like
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
-                  Display URL Share Mail Info
-                </code>
-                and
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
-                  Display Result and Pass Mail Info </code
-                >.
-                <img
-                  src="assets/images/gas-tools/sheet-mail-sync/custom-menu.png"
-                  alt="Custom Menu Button"
-                  class="w-80 h-40"
-                />
-                <figcaption class="p-2 text-gray-400">
-                  Figure: Custom Menu Button
-                </figcaption>
-              </li>
-
-              <li class="my-2">
-                <strong>Processing Emails and Updating Sheets:</strong> The
-                script reads emails based on the specified subjects and body
-                phrases, categorizes them, and extracts the designated items.
-                After processing the emails, the script updates designated
-                Google Sheets with the extracted information. The type of
-                information extracted and updated on the sheets depends on the
-                function that is processing the emails:
-                <ul class="list-disc pl-5">
-                  <li>
-                    <strong>Display URL Share Mail Info:</strong> This extracts
-                    URL share mail information from the emails and updates it on
-                    the sheet.
-                    <img
-                      src="assets/images/gas-tools/sheet-mail-sync/keys-url-share-email.png"
-                      alt="URL Share Email Keys"
-                      class="w-80 h-40"
-                    />
-                    <figcaption class="p-2 text-gray-400">
-                      Figure: URL Share Email Keys
-                    </figcaption>
-                    <img
-                      src="assets/images/gas-tools/sheet-mail-sync/display-url-share-email.png"
-                      alt="URL Share Email Sheet"
-                      class="w-80 h-40"
-                    />
-                    <figcaption class="p-2 text-gray-400">
-                      Figure: URL Share Email Sheet
-                    </figcaption>
-                  </li>
-                  <li>
-                    <strong>Display Result and Pass Mail Info:</strong> This
-                    function handles two types of emails simultaneously: result
-                    share email and pass mail.
-                    <img
-                      src="assets/images/gas-tools/sheet-mail-sync/keys-result-share-email.png"
-                      alt="Result Share Email Keys"
-                      class="w-80 h-40"
-                    />
-                    <figcaption class="p-2 text-gray-400">
-                      Figure: Result Share Email Keys
-                    </figcaption>
-                    <img
-                      src="assets/images/gas-tools/sheet-mail-sync/display-result-share-full-email.png"
-                      alt="Result Share Email Sheet Faculty Type A"
-                      class="w-80 h-40"
-                    />
-                    <figcaption class="p-2 text-gray-400">
-                      Figure: Result Share Email Sheet Faculty Type A
-                    </figcaption>
-                    <img
-                      src="assets/images/gas-tools/sheet-mail-sync/display-result-share-adj-email.png"
-                      alt="Result Share Email Sheet Faculty Type B"
-                      class="w-80 h-40"
-                    />
-                    <figcaption class="p-2 text-gray-400">
-                      Figure: Result Share Email Sheet Faculty Type B
-                    </figcaption>
-                    <img
-                      src="assets/images/gas-tools/sheet-mail-sync/keys-pass-share-email.png"
-                      alt="Pass Share Email Keys"
-                      class="w-80 h-40"
-                    />
-                    <figcaption class="p-2 text-gray-400">
-                      Figure: Pass Share Email Keys
-                    </figcaption>
-                    <img
-                      src="assets/images/gas-tools/sheet-mail-sync/display-pass-share-email.png"
-                      alt="Pass Share Email Sheet"
-                      class="w-80 h-40"
-                    />
-                    <figcaption class="p-2 text-gray-400">
-                      Figure: Pass Share Email Sheet
-                    </figcaption>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="my-2">
-                <strong
-                  >Comparing Email Information and Original Information for
-                  Final Check:</strong
-                >
-                This process involves comparing the information extracted from
-                emails with the original data you have.
-                <img
-                  src="assets/images/gas-tools/sheet-mail-sync/check-url-share-email.png"
-                  alt="Pass Share Email Sheet"
-                  class="w-80 h-40"
-                />
-                <figcaption class="p-2 text-gray-400">
-                  Figure: Check URL Share Email
-                </figcaption>
-              </li>
-            </ol>
+  <li class="my-2">
+    <strong>Set information for student and faculty</strong>: 
+    <ol class="list-decimal list-inside pl-5">
+      <li>Set information in the orange range in <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">system-data</code> sheet, which is the reference data for other sheets.</li>
+      <div>
+        <img src="assets/images/put-base-info.png" alt="Image of Put Base Info" class="w-80 h-40">
+      </div>
+    </ol>
+  </li>
+  <li class="my-2">
+    <strong>Copy and Name Files</strong>: 
+    <ol class="list-decimal list-inside pl-5">
+      <li>Set the file name information in the orange range in <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">create-file</code> sheet.</li>
+      <div>
+        <img src="assets/images/put-file-name.png" alt="Image of Put File Name" class="w-80 h-40">
+      </div>
+      <li>Click the <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Copy and Name Files</code> to create copies of a specified file for each entry in the list from the Google Sheet.</li>
+        <div>*You will be asked to put the URL of the target folder to store newly created files and the URL of the template file.</div>
+    </ol>
+  </li>
+  <li class="my-2">
+    <strong>Retrieve and Display File Information</strong>: 
+    <ol class="list-decimal list-inside pl-5">
+      <li>Click <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Output File Info</code> to display detailed information about files in a designated folder in <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">share-file</code> (Column A - E).
+        <div>*You will be asked to put the URL of the target folder where files are stored.</div>
+        <div>
+          <img src="assets/images/input-stored-file-url.png" alt="Image of input-stored-file-url" class="w-80 h-40">
+        </div>
+        <div>
+          <img src="assets/images/output-file-info.png" alt="Image of output-file-info" class="w-80 h-40">
+        </div>
+        <div>*Since the file has not been shared with anyone at this moment (unless you share the stored folder with someone), "Editors' emails" returns empty.</div>
+      </li>
+    </ol>
+  </li>
+  <li class="my-2">
+    <strong>Manage File Sharing</strong>: 
+    <div>Click either <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"></code>Share Files Without Notification` or <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Reset All Sharing Status</code> to manage file sharing settings.</div>
+    <ol class="list-decimal list-inside pl-5">
+      <li>
+        <strong>Share Files Without Notification:</strong> This function allows you to share files with specified users without sending them a notification. Necessary information such as email addresses of the users and the file information is automatically displayed by Google Sheet built-in formula.
+        <div>*You will be asked to put the URL of the target folder where files are stored.</div>
+        <div>*Once you execute <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Output File Info</code> again after this process, the column, "Editors' emails" is supposed to show editors' emails.</div>
+      </li>
+      <li>
+        <strong>Reset All Sharing Status:</strong> This function resets the sharing settings of all files in a specific folder. It removes all users from the shared list and makes the files private.
+      </li>
+    </ol>
+  </li>
+  <li class="my-2">
+    <strong>Create Email Drafts</strong>: 
+    <div>Click <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Create Drafts</code> to generate personalized draft emails in Gmail.</div>
+    <div>
+      <img src="assets/images/gmail-draft.png" alt="Image of gmail-draft" class="w-80 h-40">
+    </div>
+  </li>
+</ol>
           </div>
 
           <div class="mb-3">
@@ -247,7 +269,7 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
               <p class="text-lg mt-4">
                 You can find the source code for this tool on Github. Click
                 <a
-                  href="https://github.com/tsato21/sheet-mail-workflow-automator"
+                  href="https://github.com/tsato21/sheet-mail-work-automator"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
@@ -261,7 +283,6 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
           <div class="mb-3">
             <TermsAndConditionsEn />
           </div>
-
         </div>
         <p>
           <Icon name="material-symbols:calendar-month-sharp" /> Last updated:
@@ -275,7 +296,7 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
       >
         <div class="text-3xl mt-2 font-bold lg:hidden block">
           <div class="my-2 flex items-center">
-            <span class="text-3xl font-bold">Manual Builder</span>
+            <span class="text-3xl font-bold">SheetMail WorkAutomator</span>
           </div>
           <!-- Badges Component -->
           <Badges :badges="badges" />
@@ -335,24 +356,12 @@ const badges = [
   },
 ];
 
-// An array of objects representing the available languages for the page.
-const languages = [
-  {
-    name: '日本語',
-    filePath: '/gas-tools/manual-builder/manual-builder.jpn',
-  },
-];
-
-// The current language of the page.
-const currentLanguage = 'English';
-
 // The date, formatted according to the US locale.
 let date = ref(
   new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-  }).format(new Date('2024-04-06'))
+  }).format(new Date('2024-04-10'))
 );
-
 </script>

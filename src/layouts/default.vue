@@ -48,13 +48,13 @@
     <!-- output the page content -->
     <div class="container flex-grow py-5 mx-auto">
       <slot />
-          <!-- Button to scroll to top of the page: fixed at bottom right corner -->
-    <button
-      @click="scrollTop"
-      class="fixed bottom-5 right-5 bg-blue-500 text-white p-2 rounded-full"
-    >
-      Top
-    </button>
+      <!-- Button to scroll to top of the page: fixed at bottom right corner -->
+      <button
+        @click="scrollTop"
+        class="fixed bottom-5 right-5 bg-blue-500 text-white p-2 rounded-full"
+      >
+        Top
+      </button>
     </div>
 
     <!-- footer -->

@@ -268,7 +268,6 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
           <div class="mb-3">
             <TermsAndConditionsEn />
           </div>
-
         </div>
         <p>
           <Icon name="material-symbols:calendar-month-sharp" /> Last updated:
@@ -350,5 +349,4 @@ let date = ref(
     day: 'numeric',
   }).format(new Date('2024-04-06'))
 );
-
 </script>

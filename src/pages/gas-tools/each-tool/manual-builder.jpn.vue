@@ -226,7 +226,6 @@
                 >をクリックして、詳細な説明をご覧ください。
               </p>
             </div>
-
           </div>
 
           <div class="mb-3">
@@ -249,41 +248,40 @@
           <div class="mb-3">
             <TermsAndConditionsJp />
           </div>
+        </div>
+      </div>
+      <p>
+        <Icon name="material-symbols:calendar-month-sharp" /> 最終更新日:
+        {{ date }}
+      </p>
+    </div>
 
+    <!-- Part C: Displayed at right on large screen and at second on other sized screen) -->
+    <div
+      class="col-span-12 order-2 lg:col-span-2 lg:order-3 md:col-span-12 md:order-2 sm:col-span-12 sm:order-2"
+    >
+      <div class="text-3xl mt-2 font-bold lg:hidden block">
+        <div class="my-2 flex items-center">
+          <span class="text-3xl font-bold">マニュアルビルダー</span>
+          <!-- Language Section Option -->
+          <LanguageSelections
+            :languages="languages"
+            :currentLanguage="currentLanguage"
+            class="ml-4"
+          />
+        </div>
+        <!-- Badges Component -->
+        <Badges :badges="badges" />
+      </div>
+      <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed lg:mr-2">
+        <div class="mb-5 pt-5">
+          <p class="text-l font-bold p-1 bg-gray-400 text-white">
+            <Icon name="map:book-store"></Icon> このページの内容
+          </p>
+          <PageItems :pageItems="pageItems" />
         </div>
       </div>
-        <p>
-          <Icon name="material-symbols:calendar-month-sharp" /> 最終更新日:
-          {{ date }}
-        </p>
-      </div>
-
-      <!-- Part C: Displayed at right on large screen and at second on other sized screen) -->
-      <div
-        class="col-span-12 order-2 lg:col-span-2 lg:order-3 md:col-span-12 md:order-2 sm:col-span-12 sm:order-2"
-      >
-        <div class="text-3xl mt-2 font-bold lg:hidden block">
-          <div class="my-2 flex items-center">
-            <span class="text-3xl font-bold">マニュアルビルダー</span>
-            <!-- Language Section Option -->
-            <LanguageSelections
-              :languages="languages"
-              :currentLanguage="currentLanguage"
-              class="ml-4"
-            />
-          </div>
-          <!-- Badges Component -->
-          <Badges :badges="badges" />
-        </div>
-        <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed lg:mr-2">
-          <div class="mb-5 pt-5">
-            <p class="text-l font-bold p-1 bg-gray-400 text-white">
-              <Icon name="map:book-store"></Icon> このページの内容
-            </p>
-            <PageItems :pageItems="pageItems" />
-          </div>
-        </div>
-      </div>
+    </div>
   </div>
 </template>
 

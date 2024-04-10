@@ -509,7 +509,6 @@
           <div class="mb-3">
             <TermsAndConditionsEn />
           </div>
-
         </div>
         <p>
           <Icon name="material-symbols:calendar-month-sharp" /> Last updated:
@@ -539,7 +538,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </template>
 

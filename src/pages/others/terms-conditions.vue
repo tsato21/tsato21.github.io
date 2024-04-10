@@ -55,7 +55,10 @@ import PageItems from '~/components/PageItems.vue';
 useHead({
   title: 'Terms & Conditions',
 });
-const breadCrumbs = [{ label: 'Home', to: '/' }, { label: 'Terms & Conditions' }];
+const breadCrumbs = [
+  { label: 'Home', to: '/' },
+  { label: 'Terms & Conditions' },
+];
 
 const pageItems = [
   { label: 'XXX', id: '#XX' },
