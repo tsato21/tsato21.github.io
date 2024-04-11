@@ -1,4 +1,3 @@
-import { Badges, GASWarningEng } from '../../../../.nuxt/components';
 <template>
   <div>
     <UBreadcrumbs :breadCrumbs="breadCrumbs" />

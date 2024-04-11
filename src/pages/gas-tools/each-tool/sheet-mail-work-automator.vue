@@ -1,4 +1,3 @@
-import { Badges, GASWarningEng } from '../../../../.nuxt/components';
 <template>
   <div>
     <UBreadcrumbs :breadCrumbs="breadCrumbs" />
@@ -18,7 +17,7 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
       >
         <div class="lg:block hidden">
           <div class="my-2 flex items-center">
-            <span class="text-3xl font-bold">SheetMail Sync</span>
+            <span class="text-3xl font-bold">SheetMail WorkAutomator</span>
           </div>
           <!-- Badges Component -->
           <Badges :badges="badges" />
@@ -86,14 +85,6 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
                     individual, and generating customized emails for each person
                     within an educational institution.
                   </p>
-                </li>
-                <li class="text-gray-700">
-                  <strong
-                    >Customize the values in the orange range of each
-                    sheet:</strong
-                  >
-                  The pre-set information is just a sample. Adjust these values
-                  to fit your specific requirements.
                 </li>
 
                 <li class="text-gray-700">
@@ -237,7 +228,7 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
                     />
                   </div>
                   <figcaption class="p-2 text-gray-400">
-                    Figure: Putting File Name
+                    Figure: Put File Name
                   </figcaption>
                   <li>
                     Click the
@@ -278,7 +269,7 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
                         class="w-96 h-48"
                       />
                       <figcaption class="p-2 text-gray-400">
-                        Figure: Inputting URL of Designated Folder
+                        Figure: Input URL of Designated Folder
                       </figcaption>
                     </div>
                     <div>
@@ -289,7 +280,7 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
                       />
                     </div>
                     <figcaption class="p-2 text-gray-400">
-                      Figure: Outputting File Info
+                      Figure: Output File Info
                     </figcaption>
                     <div>
                       *Since the file has not been shared with anyone at this
@@ -305,8 +296,8 @@ import { Badges, GASWarningEng } from '../../../../.nuxt/components';
                   Click either
                   <code
                     class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                  ></code
-                  >Share Files Without Notification` or
+                  >Share Files Without Notification</code
+                  > or
                   <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                     >Reset All Sharing Status</code
                   >
