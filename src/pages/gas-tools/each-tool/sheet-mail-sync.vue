@@ -34,13 +34,10 @@
               <blockquote
                 class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
               >
-                This tool leverages Google Apps Script to automate and
-                streamline your email management tasks. It efficiently processes
-                and categorizes large volumes of emails in Gmail according to
-                predefined criteria, and updates corresponding Google Sheets
-                with the extracted information. This is particularly useful if
-                you need to verify the successful delivery of large volumes of
-                specific emails.
+                This automation tool helps to verify the successful delivery of
+                large volumes of customized emails. Even though the content of
+                these emails is the same, they are personalized with different
+                names and email addresses.
               </blockquote>
             </div>
           </div>

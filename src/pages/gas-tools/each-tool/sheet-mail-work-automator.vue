@@ -29,20 +29,23 @@
             <div class="py-3">
               <p>
                 Automates tasks in Google Sheets, Drive, and Gmail. It
-                streamlines file management, email creation, and sharing for
-                efficient document organization and communication.
+                streamlines file and email creation as well as sharing files
+                with target individuals for efficient document organization and
+                communication.
               </p>
               <blockquote
                 class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
               >
-                This tool leverages Google Apps Script to automate specific
-                tasks such as creating and organizing files in Google Drive,
-                managing data in Google Sheets, and drafting emails in Gmail.
-                For instance, it can automatically create files in Drive based
-                on data from Sheets, share the sheet with a specific account and
-                draft personalized emails in Gmail. This is particularly
-                beneficial in educational or collaborative environments where
-                efficient document management and communication are key.
+                <blockquote
+                  class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
+                >
+                  This tool is a powerful ally for organizations handling large
+                  volumes of files. It uses Google Apps Script to automate the
+                  creation and organization of customized files in Google Drive,
+                  and the drafting of notification emails in Gmail. It's
+                  designed to enhance efficiency in environments where efficient
+                  file sharing and prompt communication are crucial.
+                </blockquote>
               </blockquote>
             </div>
           </div>
@@ -294,10 +297,10 @@
                 <strong>Manage File Sharing</strong>:
                 <div>
                   Click either
-                  <code
-                    class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                  >Share Files Without Notification</code
-                  > or
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Share Files Without Notification</code
+                  >
+                  or
                   <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                     >Reset All Sharing Status</code
                   >

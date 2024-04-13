@@ -104,7 +104,10 @@
                   >.
                 </li>
                 <li class="text-lg mb-2">
-                  The profile photo is of my cherished Golden Retriever, Haru. Haru is not just a pet, but a valued member of our family. She has an immense love for people, always wagging her tail and rushing to be petted whenever she sees anyone.
+                  The profile photo is of my cherished Golden Retriever, Haru.
+                  Haru is not just a pet, but a valued member of our family. She
+                  has an immense love for people, always wagging her tail and
+                  rushing to be petted whenever she sees anyone.
                 </li>
               </ul>
             </div>

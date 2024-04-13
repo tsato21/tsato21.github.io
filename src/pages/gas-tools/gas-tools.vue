@@ -77,6 +77,12 @@ const tools = ref([
     filePath: '/gas-tools/each-tool/course-data-aligner',
   },
   {
+    title: 'Book Data Organizer',
+    description:
+      'Automates e-book data organization in Google Sheets and uses Group Merge Add-on for personalized email sending. Handles confirmation and link share emails.',
+    filePath: '/gas-tools/each-tool/book-data-organizer',
+  },
+  {
     title: 'Row Height Optimizer',
     description:
       'Automates the adjustment of row heights in Google Sheets, enhancing readability and visual appeal by providing adequate padding for cell contents.',
@@ -101,7 +107,7 @@ let date = ref(
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-  }).format(new Date('2024-04-06'))
+  }).format(new Date('2024-04-12'))
 );
 
 useHead({

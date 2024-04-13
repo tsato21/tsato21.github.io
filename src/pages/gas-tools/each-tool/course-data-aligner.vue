@@ -30,18 +30,8 @@
               <p>
                 Harmonizes course data between two Google Sheets with differing
                 structures, effectively resolving data structure inconsistencies
-                across multiple stakeholders.
+                across multiple stakeholders in the process of checking.
               </p>
-              <blockquote
-                class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
-              >
-                This tool streamlines data management by addressing
-                inconsistencies in course data, aligning it with system
-                databases. It includes scripts for categorizing course
-                offerings, synchronizing schedules, and coordinating faculty
-                assignments, enhancing administrative efficiency and data
-                retrieval.
-              </blockquote>
             </div>
           </div>
 
@@ -62,69 +52,33 @@
             </div>
           </div>
 
-          <div class="mb-5 p-5 bottom-shadow">
-            <div class="mb-3">
-              <div class="text-2xl font-bold" id="about">About</div>
-              <div class="py-3">
-                <p>
-                  Automates the creation of work manuals by extracting essential
-                  details from Google Slides and organizing them into Google
-                  Sheets, improving workflow efficiency.
-                </p>
-                <blockquote
-                  class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
-                >
-                  This tool serves as a pivotal asset for organizations aiming
-                  to centralize their manual documentation in Google Drive. By
-                  consolidating manuals onto a single platform, it facilitates
-                  easy access for all workers. Moreover, it ensures that the
-                  information within each work manual is conveyed in a concise
-                  manner, enhancing readability and comprehension.
-                </blockquote>
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <div class="text-2xl font-bold" id="prerequisites">
-                Prerequisites
-              </div>
-              <div class="py-3">
-                <ul class="list-disc list-inside space-y-2">
-                  <li class="text-gray-700">
-                    A Google account with access to Google Sheets and Slides.
-                  </li>
-                  <li class="text-gray-700">
-                    A foundational understanding of Google Sheets, Google Slides
-                    and Google Apps Script.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <div class="text-2xl font-bold" id="setup">Setup</div>
-              <div class="py-3">
-                <ol class="list-decimal list-inside space-y-2">
-                  <li class="text-gray-700">
-                    <strong>Access a Sample Google Sheet</strong>: Begin by
-                    opening the
-                    <a
-                      href="https://docs.google.com/spreadsheets/d/1hG3fAQrBgtwIdJQAG5O8JBaQNG7n__tpV4-DVsqZSd0/edit#gid=0"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="text-lightblue underline hover:text-darkblue"
-                      >Sample Google Sheet</a
-                    >.
-                  </li>
-                  <li class="text-gray-700">
-                    <strong>Copy the Google Sheet</strong>: Make a copy of the
-                    Google Sheet to create your personalized version.
-                  </li>
-                  <li class="text-gray-700">
-                    <GASWarningEn />
-                  </li>
-                </ol>
-              </div>
+          <div class="mb-3">
+            <div class="text-2xl font-bold" id="setup">Setup</div>
+            <div class="py-3">
+              <ol class="list-decimal list-inside space-y-2">
+                <li class="text-gray-700">
+                  <strong>Access a Sample Google Sheet</strong>: Begin by
+                  opening the
+                  <a
+                    href="https://docs.google.com/spreadsheets/d/1hG3fAQrBgtwIdJQAG5O8JBaQNG7n__tpV4-DVsqZSd0/edit#gid=0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-lightblue underline hover:text-darkblue"
+                    >Sample Google Sheet</a
+                  >.
+                  <p class="mt-2">
+                    *Note: The samples provided are merely illustrative,
+                    showcasing course data at an educational institution.
+                  </p>
+                </li>
+                <li class="text-gray-700">
+                  <strong>Copy the Google Sheet</strong>: Make a copy of the
+                  Google Sheet to create your personalized version.
+                </li>
+                <li class="text-gray-700">
+                  <GASWarningEn />
+                </li>
+              </ol>
             </div>
           </div>
 
@@ -527,7 +481,6 @@
           <!-- Badges Component -->
           <Badges :badges="badges" />
         </div>
-        <!-- Page Menu Bar: fixed on large screen and relative on other sized screen -->
         <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed lg:mr-2">
           <div class="mb-5 pt-5">
             <p class="text-l font-bold p-1 bg-gray-400 text-white">
