@@ -366,7 +366,7 @@
               <p class="text-lg mt-4">
                 You can find the source code for this tool on Github. Click
                 <a
-                  href="https://github.com/tsato21/course-data-aligner"
+                  href="https://github.com/tsato21/book-data-organizer"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"

@@ -100,6 +100,12 @@ const tools = ref([
       'Automates tasks in Google Sheets, Drive, and Gmail. It streamlines file management, email creation, and sharing for efficient document organization and communication.',
     filePath: '/gas-tools/each-tool/sheet-mail-work-automator',
   },
+  {
+    title: 'PDF Info Inserter',
+    description:
+      'Automates the process of extracting and inserting PDF metadata into Google Sheets.',
+    filePath: '/gas-tools/each-tool/pdf-info-inserter',
+  },
 ]);
 
 let date = ref(
