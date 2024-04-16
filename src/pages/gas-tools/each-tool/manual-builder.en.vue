@@ -187,7 +187,7 @@
                   <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                     >Custom Menu</code
                   >
-                  and Click
+                  and click
                   <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
                     Update Index & Task Sheets</code
                   >. This action automatically updates the index and task sheets

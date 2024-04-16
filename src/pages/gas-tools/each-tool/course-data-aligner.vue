@@ -176,7 +176,7 @@
                   id="tool_2-1_organize-schedule-data"
                   class="text-xl font-bold"
                 >
-                  Tool 2-1: Schedule Data Structuring (Type A)
+                  Tool 2-1: Schedule Data Alignment (Type A)
                 </p>
                 <p>
                   This script structures class schedule data from a given
@@ -269,7 +269,7 @@
                   id="tool_2-2_organize-schedule-data"
                   class="text-xl font-bold"
                 >
-                  Tool 2-2: Schedule Data Structuring (Type B)
+                  Tool 2-2: Schedule Data Alignment (Type B)
                 </p>
                 <p>
                   This script structures class schedule data from a given
@@ -286,8 +286,7 @@
                     sheet.
                   </li>
                   <li>
-                    Checks each cell against a specific pattern. Matches are
-                    stored, non-matches are stored as exceptions.
+                    Checks each cell against a specific pattern and stores the course schedule data.
                   </li>
                   <li>
                     Groups data based on course code, day, and faculty, then
@@ -358,7 +357,7 @@
                   id="tool_2-3_organize-schedule-data"
                   class="text-xl font-bold"
                 >
-                  Tool 2-3: Schedule Data Structuring (Type C)
+                  Tool 2-3: Schedule Data Alignment (Type C)
                 </p>
                 <p>
                   This script structures class schedule data from a given
@@ -375,19 +374,19 @@
                     sheet.
                   </li>
                   <li>
-                    Checks each cell against a specific pattern. Matches are
-                    stored, non-matches are stored as exceptions.
+                    Checks each cell against a specific pattern and stores the schedule data.
                   </li>
                   <li>
-                    Groups data based on course code, day, and faculty, then
-                    merges and sorts them.
+                    This script checks the location of the target cell to determine the day of the week and the number of required records, then pushes the schedule record accordingly.
+                    For example, if the cell is C4, the script pushes two records, one for Monday and another for Wednesday.
+                    The script also verifies if the class code is in a list where a second record is not necessary, as the class is held only once per week.
                   </li>
                   <li>
                     Displays structured data on the
                     <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                       >'2-3_Organized Schedule Data'</code
                     >
-                    sheet.
+                    sheet. This script evaluates the data after displaying it on the sheet. If a value is found to be invalid, it is highlighted in red for easy identification.
                   </li>
                 </ol>
 

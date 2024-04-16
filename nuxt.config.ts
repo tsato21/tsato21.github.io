@@ -3,7 +3,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: "src/",
   app: {
-    
     head: {
       title: 'Scripts Showcase',
       link: [

@@ -249,11 +249,11 @@
             </div>
           </div>
         </div>
-      </div>
-      <p>
+        <p>
         <Icon name="material-symbols:calendar-month-sharp" /> 最終更新日:
         {{ date }}
       </p>
+      </div>
     </div>
 
     <!-- Part C: Displayed at right on large screen and at second on other sized screen) -->

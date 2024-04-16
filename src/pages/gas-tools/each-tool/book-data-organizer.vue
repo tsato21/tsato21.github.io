@@ -119,8 +119,9 @@
                       reference sheet,
                       <code
                         class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                        >'Confirm Mail-Ref Data'</code
-                      >.
+                        >Confirm Mail-Ref Data</code
+                      >
+                      .
                       <div class="ml-5">
                         <img
                           src="assets/images/gas-tools/book-data-organizer/input-ref-data.png"
@@ -136,8 +137,13 @@
                       <strong>Process data</strong>: Select
                       <code
                         class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                        >'Output Mail Merge Data for Confirm Email'</code
+                        >Output Mail Merge Data for Confirm Email</code
                       >
+                      from 
+                      <code
+                        class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                        >Custom Menu</code
+                      > 
                       to process data for confirmation emails.
                       <div class="ml-5">
                         <br />This function processes data to generate mail
@@ -187,7 +193,7 @@
                           <img
                             src="assets/images/gas-tools/book-data-organizer/output-data-confirm.png"
                             alt="Output Data for Confirm"
-                            class="w-full h-72"
+                            class="w-96 h-96"
                           />
                           <figcaption class="p-2 text-gray-400">
                             Figure: Output Data for Confirm
@@ -200,7 +206,7 @@
                       data are output in output sheet,
                       <code
                         class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                        >'Confirm Mail-Mail Merge Data'</code
+                        >Confirm Mail-Mail Merge Data</code
                       >. Use the data for Mail Merge. As for the usage of Mail
                       Merge, click
                       <a
@@ -242,14 +248,19 @@
                       reference sheet,
                       <code
                         class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                        >'Link Share Mail-Ref Data'</code
+                        >Link Share Mail-Ref Data</code
                       >.
                     </li>
                     <li>
                       <strong>Process data</strong>: Select
                       <code
                         class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                        >'Output Mail Merge Data for Link Share Email'</code
+                        >Output Mail Merge Data for Link Share Email</code
+                      >
+                      from 
+                      <code
+                        class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                        >Custom Menu</code
                       >
                       to process data for link share emails.
                       <ul>
@@ -339,7 +350,7 @@
                       data are output in output sheet,
                       <code
                         class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                        >'Link Share Mail-Mail Merge Data'</code
+                        >Link Share Mail-Mail Merge Data</code
                       >. Use the data for Mail Merge. As for the usage of Mail
                       Merge, click
                       <a
