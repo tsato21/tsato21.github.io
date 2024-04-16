@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: "src/",
   app: {
-    baseURL: '/scripts-showcase/',
+    baseURL: '/tsato21.github.io/',
     head: {
       title: 'Scripts Showcase',
       link: [

@@ -17,7 +17,7 @@
           <!-- Short introduction -->
           <p class="mt-2 text-gray-600">
             Programmer, driving work efficiency and continual improvement
-            through IT tech.
+            via IT tech.
           </p>
 
           <!-- GitHub URL with icon -->
