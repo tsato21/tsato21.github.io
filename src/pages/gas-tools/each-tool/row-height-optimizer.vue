@@ -32,22 +32,13 @@
                 enhancing readability and visual appeal by providing adequate
                 padding for cell contents.
               </p>
-              <blockquote
-                class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
-              >
-                This tool automates row height adjustment in Google Sheets,
-                overcoming the limitations of the built-in
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                  >Resize row</code
-                >
-                >
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
-                  Fit to data</code
-                >
-                function. It ensures optimal row height for readability and
-                aesthetics, saving time and enhancing comprehension in
-                consolidated documentation.
-              </blockquote>
+              <blockquote class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400">
+  This tool optimizes row height in Google Sheets, addressing the shortcomings of the built-in
+  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Resize row</code>
+  and
+  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Fit to data</code>
+  features. The built-in functionality often results in rows that are too short when they contain a single line of text, and lacks sufficient padding for rows with multiple lines, making them hard to read. This tool adjusts row height for optimal readability and aesthetics based on pre-defined conditions, saving time and improving understanding in consolidated documents.
+</blockquote>
               <img
                 src="assets/images/gas-tools/row-height-optimizer/fit-to-data-feature.png"
                 alt="Fit to Data Feature"
@@ -112,15 +103,10 @@
                   following variables in Google Apps Script to suit your needs:
                   <ul class="list-disc pl-5">
                     <li>
-                      <strong
-                        ><code
-                          class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                          >AVERAGE_CHART_WIDTH</code
-                        ></strong
-                      >: The average width of the charts in your sheet. Used to
-                      calculate the width of the text in each cell. Pre-set
-                      value is "4.5".
-                    </li>
+  <strong>
+    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">AVERAGE_CHART_WIDTH</code>
+</strong>: This represents the average width of a character in your sheet. The pre-set value is "4.5". When the script runs, it first counts the length of the cell content (`cellText.length`). Then, `AVERAGE_CHART_WIDTH` is multiplied by this length to estimate the width of the cell's text if it were laid out in a single line (`estimatedLineWidth`). This estimated width is then divided by the column width of the cell to calculate a tentative number of lines the text would occupy (`lineCount`). The script also checks for manual line breaks in the text by counting the number of '\n' characters (`explicitLineBreakCount`). Finally, it determines the maximum value between `lineCount` and `explicitLineBreakCount` to account for both the physical width of the text and any manual line breaks.
+</li>
                     <li>
                       <strong
                         ><code
