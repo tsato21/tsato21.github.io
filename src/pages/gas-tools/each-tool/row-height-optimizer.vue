@@ -105,7 +105,7 @@
                     <li>
   <strong>
     <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">AVERAGE_CHART_WIDTH</code>
-</strong>: This represents the average width of a character in your sheet. The pre-set value is "4.5". When the script runs, it first counts the length of the cell content (`cellText.length`). Then, `AVERAGE_CHART_WIDTH` is multiplied by this length to estimate the width of the cell's text if it were laid out in a single line (`estimatedLineWidth`). This estimated width is then divided by the column width of the cell to calculate a tentative number of lines the text would occupy (`lineCount`). The script also checks for manual line breaks in the text by counting the number of '\n' characters (`explicitLineBreakCount`). Finally, it determines the maximum value between `lineCount` and `explicitLineBreakCount` to account for both the physical width of the text and any manual line breaks.
+</strong>: This represents the average width of a character in your sheet. The pre-set value is "4.5". This might change based on which font to be used.
 </li>
                     <li>
                       <strong
@@ -114,7 +114,7 @@
                           >BASE_ROW_HEIGHT</code
                         ></strong
                       >: The base height of a row with a single line of text.
-                      Pre-set value is "20".
+                      Pre-set value is "25".
                     </li>
                     <li>
                       <strong
@@ -130,6 +130,9 @@
                       alt="Fit to Data Feature"
                       class="w-50 h-20"
                     />
+                    <figcaption class="p-2 text-gray-400">
+                Figure: Customize Constant Variables
+              </figcaption>
                   </ul>
                 </li>
                 <li class="text-gray-700">
@@ -156,8 +159,7 @@
                 >
                 <p>
                   This initiates a process that adjusts the height of each row
-                  in a specified sheet, starting from a user-defined row number,
-                  based on the content of the cells in each row.
+                  in a specified sheet, starting from a user-defined row number.
                 </p>
                 <p class="mt-2">Here's the step-by-step logic:</p>
                 <ul class="list-disc pl-5">
@@ -293,6 +295,6 @@ let date = ref(
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-  }).format(new Date('2024-04-06'))
+  }).format(new Date('2024-04-17'))
 );
 </script>
