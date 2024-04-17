@@ -106,6 +106,12 @@ const tools = ref([
       'Automates the process of extracting and inserting PDF metadata into Google Sheets.',
     filePath: '/gas-tools/each-tool/pdf-info-inserter',
   },
+  {
+    title: 'Form Manage Simplifier',
+    description:
+      'Streamlines the task of managing and processing Google Forms responses.',
+    filePath: '/gas-tools/each-tool/form-manage-simplifier',
+  },
 ]);
 
 let date = ref(

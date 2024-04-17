@@ -424,12 +424,12 @@
 const breadCrumbs = [
   { label: 'Home', to: '/' },
   { label: 'Gas Tools', to: '/gas-tools/gas-tools' },
-  { label: 'Course Data Aligner' },
+  { label: 'Book Data Organizer' },
 ];
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'Course Data Aligner',
+  title: 'Book Data Organizer',
 });
 
 // An array of objects representing the page items or sections.

@@ -94,27 +94,6 @@
                     Figure: Sheet Name and Pre-Criteria
                   </figcaption>
                 </li>
-
-                <li class="text-gray-700">
-                  <strong
-                    >Customize Constant Variables for Built-in
-                    Functions:</strong
-                  >
-                  Go to the Apps Script editor and modify the constant variables
-                  in
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
-                    variables.gs
-                  </code>
-                  to suit your needs.
-                  <img
-                    src="assets/images/gas-tools/sheet-mail-sync/custom-variables.png"
-                    alt="Initial Setting Variables"
-                    class="w-100 h-50"
-                  />
-                  <figcaption class="p-2 text-gray-400">
-                    Figure: Initial Setting Variables
-                  </figcaption>
-                </li>
                 <li class="text-gray-700">
                   <GASWarningEn />
                 </li>
@@ -158,8 +137,7 @@
                 <ul class="list-disc pl-5">
                   <li>
                     <strong>Display URL Share Mail Info:</strong> This extracts
-                    URL share mail information from the emails and updates it on
-                    the sheet.
+                    necessary information from sent emails to share URL via attached files and update the sheet.
                     <img
                       src="assets/images/gas-tools/sheet-mail-sync/keys-url-share-email.png"
                       alt="URL Share Email Keys"
@@ -179,8 +157,7 @@
                   </li>
                   <li>
                     <strong>Display Result and Pass Mail Info:</strong> This
-                    function handles two types of emails simultaneously: result
-                    share email and pass mail.
+                    function handles two types of emails simultaneously: sent emails to share result (for type A faculty and type B faculty) and password.
                     <img
                       src="assets/images/gas-tools/sheet-mail-sync/keys-result-share-email.png"
                       alt="Result Share Email Keys"
@@ -231,7 +208,7 @@
                   Final Check:</strong
                 >
                 This process involves comparing the information extracted from
-                emails with the original data you have.
+                emails with the original data you have with Google Sheet formula.
                 <img
                   src="assets/images/gas-tools/sheet-mail-sync/check-url-share-email.png"
                   alt="Pass Share Email Sheet"
@@ -343,6 +320,6 @@ let date = ref(
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-  }).format(new Date('2024-04-06'))
+  }).format(new Date('2024-04-18'))
 );
 </script>

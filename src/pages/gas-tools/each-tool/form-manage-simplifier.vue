@@ -17,7 +17,7 @@
       >
         <div class="lg:block hidden">
           <div class="my-2 flex items-center">
-            <span class="text-3xl font-bold">PDF Info Inserter</span>
+            <span class="text-3xl font-bold">Form Manage Simplifier</span>
           </div>
           <!-- Badges Component -->
           <Badges :badges="badges" />
@@ -28,13 +28,12 @@
             <div class="text-2xl font-bold" id="about">About</div>
             <div class="py-3">
               <p>
-                Automates the process of extracting and inserting PDF metadata into Google Sheets.
+                Streamlines the task of managing and processing Google Forms responses by efficiently updating form items based on reference lists in Google Sheets, validating submitted forms, and sending email notifications for invalid submissions.
               </p>
-              <blockquote
-                class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
-              >
-                This tool streamlines file management by scanning a specified Google Drive folder for PDF files and populating the sheet with their names and URLs, enhancing document organization and communication.
-              </blockquote>
+              <blockquote class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400">
+  While Google Forms allows validation of individual items, it lacks the ability to validate across multiple items. For instance, it's currently impossible to hide certain dropdown options based on a user's previous responses. This tool addresses this limitation by checking responses immediately after submission. If a user selects an invalid combination of options across multiple items, a notification email is automatically sent to them, requesting resubmission.
+</blockquote>
+              
             </div>
           </div>
 
@@ -45,10 +44,10 @@
             <div class="py-3">
               <ul class="list-disc list-inside space-y-2">
                 <li class="text-gray-700">
-                  A Google account with access to Google Sheets and Google Drive.
+                  A Google account with access to Google Sheets.
                 </li>
                 <li class="text-gray-700">
-                  A foundational understanding of Google Apps and Google Apps
+                  A foundational understanding of Google Sheets, Google Form and Google Apps
                   Script.
                 </li>
               </ul>
@@ -63,17 +62,22 @@
                   <strong>Access a Sample Google Sheet</strong>: Begin by
                   opening the
                   <a
-                    href="https://docs.google.com/spreadsheets/d/1z1i7ZYgkRRC0WS3xqS3CGh1GJ8iUQWKkcMwbVa3YU6Q/edit#gid=1971008536"
+                    href="https://docs.google.com/spreadsheets/d/1154I0kMvhbp9WZ4r6COu_oA4lPJZvh9MnFxa2G7HZck/edit#gid=0"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="text-lightblue underline hover:text-darkblue"
                     >Sample Google Sheet</a
                   >
+                  <p class="mt-2">
+                    *Note: The samples provided are merely illustrative,
+                    showcasing course schedule for an educational institution.
+                  </p>
                 </li>
                 <li class="text-gray-700">
                   <strong>Copy the Google Sheet</strong>: Make a copy of the
                   Google Sheet to create your personalized version.
                 </li>
+                
                 <li class="text-gray-700">
                   <GASWarningEn />
                 </li>
@@ -84,44 +88,55 @@
           <div id="usage" class="mb-3">
             <div class="text-2xl font-bold">Usage</div>
 
-<ol class="list-decimal list-inside">
-  <li class="my-2">
-    <span class="font-bold">Copy the Google Drive Folder URL: </span>
-    <p>
-      Copy the URL of the Google Drive folder that contains target PDF files.
-    </p>
-    <div class="ml-5">
-      <img src="assets/images/gas-tools/pdf-info-inserter/copy-folder-url.png" alt="Image of Copy Folder URL" class="w-96 h-48">
-      <figcaption class="p-2 text-gray-400">Figure: Copy Folder URL</figcaption>
-    </div>
-  </li>
-  <li class="my-2">
-    <span class="font-bold">Open the Google Sheet: </span>
-    <p>
-      Open the Google Sheet where you want to insert the PDF information.
-    </p>
-  </li>
-  <li class="my-2">
-    <span class="font-bold">Access the Custom Menu: </span>
-    <p>
-      Click on the <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Custom Menu</code> that appears in the menu bar of the Google Sheet and select <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Insert PDF info into Sheet</code>.
-    </p>
-    <div class="ml-5">
-      <img src="assets/images/gas-tools/pdf-info-inserter/access-custom-menu.png" alt="Image of Access Custom Menu" class="w-full h-32 mt-2">
-      <figcaption class="p-2 text-gray-400">Figure: Access Custom Menu</figcaption>
-    </div>
-  </li>
-  <li class="my-2">
-    <span class="font-bold">Display the PDF Information: </span>
-    <p>
-      The PDF information is displayed in the Google Sheet. By clicking the the name, you can access the target PDF.
-    </p>
-    <div class="ml-5 mt-4">
-      <img src="assets/images/gas-tools/pdf-info-inserter/display-pdf-info.png" alt="Image of Display PDF Info" class="w-96 h-48">
-      <figcaption class="p-2 text-gray-400">Figure: Display PDF Info</figcaption>
-    </div>
-  </li>
-</ol>
+            <ol class="list-decimal list-inside">
+              <li class="my-2">
+                <span class="font-bold"
+                  >Select
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Custom Menu</code
+                  >
+                  >
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Adjust Row Heights</code
+                  ></span
+                >
+                <p>
+                  This initiates a process that adjusts the height of each row
+                  in a specified sheet, starting from a user-defined row number.
+                </p>
+                <p class="mt-2">Here's the step-by-step logic:</p>
+                <ul class="list-disc pl-5">
+                  <li>
+                    <strong>Input Sheet Name and Starting Row</strong>: A dialog
+                    prompts you to input the name of the sheet and the starting
+                    row number.
+                  </li>
+                  <li>
+                    <strong>Data Retrieval</strong>: The script retrieves the
+                    data from the specified sheet and starting row, and gets the
+                    widths of all columns in the sheet.
+                  </li>
+                  <li>
+                    <strong>Row Height Calculation</strong>: For each row, the
+                    script calculates the line count for each cell, taking into
+                    account the physical width of the text and any manual line
+                    breaks. It then determines the largest line count among all
+                    cells in the row.
+                  </li>
+                  <li>
+                    <strong>Height Adjustment</strong>: The row height is
+                    adjusted based on the largest line count. The height is
+                    calculated using a base height for a single line and an
+                    additional height for each additional line.
+                  </li>
+                </ul>
+                <p class="mt-2">
+                  This function ensures that the row height accommodates the
+                  cell with the most content, providing a cleaner and more
+                  organized view of your data.
+                </p>
+              </li>
+            </ol>
           </div>
 
           <div class="mb-3">
@@ -134,7 +149,7 @@
               <p class="text-lg mt-4">
                 You can find the source code for this tool on Github. Click
                 <a
-                  href="https://github.com/tsato21/pdf-info-inserter"
+                  href="https://github.com/tsato21/row-height-optimizer"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
@@ -181,12 +196,12 @@
 const breadCrumbs = [
   { label: 'Home', to: '/' },
   { label: 'GAS Tools', to: '/gas-tools/gas-tools' },
-  { label: 'PDF Info Inserter' },
+  { label: 'Form Manage Simplifier' },
 ];
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'PDF Info Inserter',
+  title: 'Form Manage Simplifier',
 });
 
 // An array of objects representing the page items or sections.
@@ -202,7 +217,7 @@ const pageItems = [
 // An array of objects representing the badges to be displayed.
 const badges = [
   {
-    src: 'https://img.shields.io/badge/Google%20Apps-%20sheet-brightgreen?style=flat-square&color=brightgreen',
+    src: 'https://img.shields.io/badge/Google%20Apps-%20form%26%20sheet-brightgreen?style=flat-square&color=brightgreen',
     alt: 'Use of Google Apps',
   },
   {
@@ -223,6 +238,6 @@ let date = ref(
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-  }).format(new Date('2024-04-06'))
+  }).format(new Date('2024-04-18'))
 );
 </script>

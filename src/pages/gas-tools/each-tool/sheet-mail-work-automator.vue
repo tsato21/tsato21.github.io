@@ -33,9 +33,6 @@
                 with target individuals for efficient document organization and
                 communication.
               </p>
-              <blockquote
-                class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
-              >
                 <blockquote
                   class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
                 >
@@ -46,7 +43,6 @@
                   designed to enhance efficiency in environments where efficient
                   file sharing and prompt communication are crucial.
                 </blockquote>
-              </blockquote>
             </div>
           </div>
 
@@ -146,20 +142,19 @@
 
             <ul class="list-disc list-inside">
               <li class="my-2">
-                <strong>File Copying and Naming:</strong> Copies and names files
-                from a Google Sheet template.
+                <strong>File Copying and Naming:</strong> Copies from a Google Sheet template and name files based on the list.
               </li>
               <li class="my-2">
                 <strong>File Information Retrieval:</strong> Displays file
                 details like name, URL, and sharing status.
               </li>
               <li class="my-2">
-                <strong>Email Draft Creation:</strong> Generates personalized
-                Gmail drafts for each dataset record.
-              </li>
-              <li class="my-2">
                 <strong>Sharing Management:</strong> Manages file sharing
                 permissions without notification emails.
+              </li>
+              <li class="my-2">
+                <strong>Email Draft Creation:</strong> Generates personalized
+                Gmail drafts for each dataset record.
               </li>
             </ul>
           </div>
@@ -171,14 +166,7 @@
               <li class="my-2">
                 <strong>Custom Menu in Google Sheets:</strong> The script
                 automatically adds Custom Menu to your Google Sheet. Use this
-                menu to execute script functions like
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
-                  Display URL Share Mail Info
-                </code>
-                and
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
-                  Display Result and Pass Mail Info </code
-                >.
+                menu to execute script functions.
                 <img
                   src="assets/images/gas-tools/sheet-mail-work-automator/custom-menu.png"
                   alt="Custom Menu Button"
@@ -193,7 +181,7 @@
             <ol class="list-decimal list-inside">
               <li class="my-2">
                 <strong>Set information for student and faculty</strong>:
-                <ol class="list-decimal list-inside pl-5">
+                <ol class="list-decimal list-inside pl-5" style="list-style-type: lower-alpha;">
                   <li>
                     Set information in the orange range in
                     <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
@@ -215,7 +203,7 @@
               </li>
               <li class="my-2">
                 <strong>Copy and Name Files</strong>:
-                <ol class="list-decimal list-inside pl-5">
+                <ol class="list-decimal list-inside pl-5" style="list-style-type: lower-alpha;">
                   <li>
                     Set the file name information in the orange range in
                     <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
@@ -243,13 +231,13 @@
                   </li>
                   <div>
                     *You will be asked to put the URL of the target folder to
-                    store newly created files and the URL of the template file.
+                    store newly created files and the URL of the template Google Sheet.
                   </div>
                 </ol>
               </li>
               <li class="my-2">
                 <strong>Retrieve and Display File Information</strong>:
-                <ol class="list-decimal list-inside pl-5">
+                <ol class="list-decimal list-inside pl-5" style="list-style-type: lower-alpha;">
                   <li>
                     Click
                     <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
@@ -286,16 +274,14 @@
                       Figure: Output File Info
                     </figcaption>
                     <div>
-                      *Since the file has not been shared with anyone at this
-                      moment (unless you share the stored folder with someone),
-                      "Editors' emails" returns empty.
+                      *Since the file (Google Sheet) has not been shared with anyone at this moment (unless you share the stored folder with someone), "Editors' emails" returns empty.
                     </div>
                   </li>
                 </ol>
               </li>
               <li class="my-2">
                 <strong>Manage File Sharing</strong>:
-                <div>
+                <div class="ms-4">
                   Click either
                   <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                     >Share Files Without Notification</code
@@ -306,26 +292,14 @@
                   >
                   to manage file sharing settings.
                 </div>
-                <ol class="list-decimal list-inside pl-5">
+                <ul class="list-disc list-inside pl-5">
                   <li>
                     <strong>Share Files Without Notification:</strong> This
                     function allows you to share files with specified users
-                    without sending them a notification. Necessary information
-                    such as email addresses of the users and the file
-                    information is automatically displayed by Google Sheet
-                    built-in formula.
+                    without sending them a notification. Once the file is shared with target users, their email addresses are displayed in the column D.
                     <div>
                       *You will be asked to put the URL of the target folder
                       where files are stored.
-                    </div>
-                    <div>
-                      *Once you execute
-                      <code
-                        class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                        >Output File Info</code
-                      >
-                      again after this process, the column, "Editors' emails" is
-                      supposed to show editors' emails.
                     </div>
                   </li>
                   <li>
@@ -334,27 +308,28 @@
                     folder. It removes all users from the shared list and makes
                     the files private.
                   </li>
-                </ol>
+                </ul>
               </li>
               <li class="my-2">
                 <strong>Create Email Drafts</strong>:
-                <div>
+                <div class="ms-4">
                   Click
                   <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                     >Create Drafts</code
                   >
                   to generate personalized draft emails in Gmail.
-                </div>
-                <div>
+                  <div class="mt-2">
                   <img
                     src="assets/images/gas-tools/sheet-mail-work-automator/gmail-draft.png"
                     alt="Image of gmail-draft"
-                    class="w-96 h-48"
+                    class="w-96 h-62"
                   />
                 </div>
                 <figcaption class="p-2 text-gray-400">
                   Figure: Gmail Draft
                 </figcaption>
+                </div>
+                
               </li>
             </ol>
           </div>
@@ -442,7 +417,7 @@ const badges = [
     alt: 'Use of Google Apps',
   },
   {
-    src: 'https://img.shields.io/badge/api-%20sheet%20%26%20mail%20%26%20drive%20api-blue?style=flat-square&color=blue',
+    src: 'https://img.shields.io/badge/api-%20drive%20api-blue?style=flat-square&color=blue',
     alt: 'Use of Google Drive API',
   },
   {
@@ -463,6 +438,6 @@ let date = ref(
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-  }).format(new Date('2024-04-10'))
+  }).format(new Date('2024-04-18'))
 );
 </script>

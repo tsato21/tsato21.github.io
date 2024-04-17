@@ -51,7 +51,7 @@
       <!-- Button to scroll to top of the page: fixed at bottom right corner -->
       <button
         @click="scrollTop"
-        class="fixed bottom-5 right-5 bg-blue-500 text-white p-2 rounded-full"
+        class="fixed bottom-5 right-5 bg-blue-500 text-white p-2 rounded-full top-btn"
       >
         Top
       </button>
