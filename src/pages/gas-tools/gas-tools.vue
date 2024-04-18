@@ -112,6 +112,12 @@ const tools = ref([
       'Streamlines the task of managing and processing Google Forms responses including efficiently updating form items based on reference lists in Google Sheets, validating submitted forms, and sending email notifications for invalid submissions.',
     filePath: '/gas-tools/each-tool/form-manage-simplifier',
   },
+  {
+    title: 'File Upload Notifier',
+    description:
+      'Tracks new file uploads in a specific Google Drive folder. If the time since the last upload is within a set interval, it sends a notification email, ensuring efficient file management.',
+    filePath: '/gas-tools/each-tool/file-upload-notifier',
+  },
 ]);
 
 let date = ref(
