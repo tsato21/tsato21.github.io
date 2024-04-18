@@ -32,13 +32,26 @@
                 enhancing readability and visual appeal by providing adequate
                 padding for cell contents.
               </p>
-              <blockquote class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400">
-  This tool optimizes row height in Google Sheets, addressing the shortcomings of the built-in
-  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Resize row</code>
-  and
-  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Fit to data</code>
-  features. The built-in functionality often results in rows that are too short when they contain a single line of text, and lacks sufficient padding for rows with multiple lines, making them hard to read. This tool adjusts row height for optimal readability and aesthetics based on pre-defined conditions, saving time and improving understanding in consolidated documents.
-</blockquote>
+              <blockquote
+                class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
+              >
+                This tool optimizes row height in Google Sheets, addressing the
+                shortcomings of the built-in
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >Resize row</code
+                >
+                and
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >Fit to data</code
+                >
+                features. The built-in functionality often results in rows that
+                are too short when they contain a single line of text, and lacks
+                sufficient padding for rows with multiple lines, making them
+                hard to read. This tool adjusts row height for optimal
+                readability and aesthetics based on pre-defined conditions,
+                saving time and improving understanding in consolidated
+                documents.
+              </blockquote>
               <img
                 src="assets/images/gas-tools/row-height-optimizer/fit-to-data-feature.png"
                 alt="Fit to Data Feature"
@@ -103,10 +116,15 @@
                   following variables in Google Apps Script to suit your needs:
                   <ul class="list-disc pl-5">
                     <li>
-  <strong>
-    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">AVERAGE_CHART_WIDTH</code>
-</strong>: This represents the average width of a character in your sheet. The pre-set value is "4.5". This might change based on which font to be used.
-</li>
+                      <strong>
+                        <code
+                          class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                          >AVERAGE_CHART_WIDTH</code
+                        > </strong
+                      >: This represents the average width of a character in
+                      your sheet. The pre-set value is "4.5". This might change
+                      based on which font to be used.
+                    </li>
                     <li>
                       <strong
                         ><code
@@ -131,8 +149,8 @@
                       class="w-50 h-20"
                     />
                     <figcaption class="p-2 text-gray-400">
-                Figure: Customize Constant Variables
-              </figcaption>
+                      Figure: Customize Constant Variables
+                    </figcaption>
                   </ul>
                 </li>
                 <li class="text-gray-700">

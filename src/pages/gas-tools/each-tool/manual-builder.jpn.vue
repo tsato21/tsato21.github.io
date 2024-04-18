@@ -250,9 +250,9 @@
           </div>
         </div>
         <p>
-        <Icon name="material-symbols:calendar-month-sharp" /> 最終更新日:
-        {{ date }}
-      </p>
+          <Icon name="material-symbols:calendar-month-sharp" /> 最終更新日:
+          {{ date }}
+        </p>
       </div>
     </div>
 

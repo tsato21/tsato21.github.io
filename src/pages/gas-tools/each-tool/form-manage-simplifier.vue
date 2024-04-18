@@ -28,12 +28,23 @@
             <div class="text-2xl font-bold" id="about">About</div>
             <div class="py-3">
               <p>
-                Streamlines the task of managing and processing Google Forms responses by efficiently updating form items based on reference lists in Google Sheets, validating submitted forms, and sending email notifications for invalid submissions.
+                Streamlines the task of managing and processing Google Forms
+                responses by efficiently updating form items based on reference
+                lists in Google Sheets, validating submitted forms, and sending
+                email notifications for invalid submissions.
               </p>
-              <blockquote class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400">
-  While Google Forms allows validation of individual items, it lacks the ability to validate across multiple items. For instance, it's currently impossible to hide certain dropdown options based on a user's previous responses. This tool addresses this limitation by checking responses immediately after submission. If a user selects an invalid combination of options across multiple items, a notification email is automatically sent to them, requesting resubmission.
-</blockquote>
-              
+              <blockquote
+                class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
+              >
+                While Google Forms allows validation of individual items, it
+                lacks the ability to validate across multiple items. For
+                instance, it's currently impossible to hide certain dropdown
+                options based on a user's previous responses. This tool
+                addresses this limitation by checking responses immediately
+                after submission. If a user selects an invalid combination of
+                options across multiple items, a notification email is
+                automatically sent to them, requesting resubmission.
+              </blockquote>
             </div>
           </div>
 
@@ -47,102 +58,195 @@
                   A Google account with access to Google Sheets.
                 </li>
                 <li class="text-gray-700">
-                  A foundational understanding of Google Sheets, Google Form and Google Apps
-                  Script.
+                  A foundational understanding of Google Sheets, Google Form and
+                  Google Apps Script.
                 </li>
               </ul>
             </div>
           </div>
 
           <div class="mb-3">
-  <div class="mb-3">
-  <div class="text-2xl font-bold" id="sample-data">Sample Data</div>
-  <div class="py-3">
-    <p class="text-gray-700">
-      You can find the sample Google Form and Google Sheet with the scripts inserted below:
-    </p>
-    <ul class="list-disc list-inside space-y-2">
-      <li class="text-gray-700">
-        <strong>Sample Google Form</strong>: 
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSe7uXYiOBeJakwl59kGF2L1ktrRO5P_SLdu3ND2_efMy6Zb6A/viewform"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-lightblue underline hover:text-darkblue"
-        >Access here</a>
-      </li>
-      <li class="text-gray-700">
-        <strong>Sample Google Sheet</strong>: 
-        <a
-          href="https://docs.google.com/spreadsheets/d/1u5fB6-ucFqQtq6Pn_iVtCRxqo-p5_snTx6N0o4csgqg/edit?usp=drive_link"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-lightblue underline hover:text-darkblue"
-        >Access here</a>
-      </li>
-    </ul>
-  </div>
-</div>
-  
-</div>
+            <div class="mb-3">
+              <div class="text-2xl font-bold" id="sample-data">Sample Data</div>
+              <div class="py-3">
+                <p class="text-gray-700">
+                  You can access the sample Google Form and Google Sheet,
+                  complete with response submissions and embedded scripts, via
+                  the links provided below:
+                </p>
+                <ul class="list-disc list-inside space-y-2">
+                  <li class="text-gray-700">
+                    <strong>Sample Google Form</strong>:
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSe7uXYiOBeJakwl59kGF2L1ktrRO5P_SLdu3ND2_efMy6Zb6A/viewform"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-lightblue underline hover:text-darkblue"
+                      >Access here</a
+                    >
+                  </li>
+                  <li class="text-gray-700">
+                    <strong>Sample Google Sheet</strong>:
+                    <a
+                      href="https://docs.google.com/spreadsheets/d/1u5fB6-ucFqQtq6Pn_iVtCRxqo-p5_snTx6N0o4csgqg/edit?usp=drive_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-lightblue underline hover:text-darkblue"
+                      >Access here</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
           <div id="usage" class="mb-3">
             <div class="text-2xl font-bold">Usage</div>
-            <div class="text-lg leading-6 text-gray-900 font-bold my-4">Tool 1: Updating Google Form Items based on Data on Google Sheet:</div>
+            <div class="text-lg leading-6 text-gray-900 font-bold my-4">
+              Tool 1: Updating Google Form Items based on Data on Google Sheet:
+            </div>
             <ol class="list-decimal list-inside">
-  <li class="my-2">
-    
-    <strong>Pre-define Information in Sheets:</strong> Input necessary information in advance in the following sheets:
-    <ul class="list-disc pl-5">
-      <li class="my-1"><code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'course-lineup'</code> sheet: Enter course lineup for each program.</li>
-      <li><code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'instructor-lineup'</code> sheet: Enter instructor lineup for each program.</li>
-    </ul>
-    <div>
-      <img src="assets/images/gas-tools/form-manage-simplifier/enter-item-options.png" alt="Updated Google Form Items" width="450" height="250">
-      <figcaption class="p-2 text-gray-400">Figure: Input Course Line-up to Be Reflected on Google Form</figcaption>
-    </div>
-  </li>
-  <li class="my-2">
-    <strong>Execute Functions and Update Google Form:</strong> Use the <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'Update Course Lineup'</code> and <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'Update Instructor Lineup'</code> from the Custom Menu to update item options in Google Form. Verify if the target items in the Google Form are updated successfully.
-    <ul class="list-disc pl-5">
-      <li>Update Course Lineup: Synchronize each program's course lineup from the Spreadsheet to the Google Form.</li>
-      <li>Update Instructor Lineup: Synchronize each program's instructor lineup from the Spreadsheet to the Google Form.</li>
-    </ul>
-    <div>
-      <img src="assets/images/gas-tools/form-manage-simplifier/show-custom-menu.png" alt="show-custom-menu" width="450" height="250" class="my-2">
-      <figcaption class="p-2 text-gray-400">Figure: Custom Menu</figcaption>
-    </div>
-    <div>
-      <img src="assets/images/gas-tools/form-manage-simplifier/form-items-update.png" alt="Updated Google Form Items" width="450" height="250" class="my-2">
-      <figcaption class="p-2 text-gray-400">Figure: Updated Google Form Items</figcaption>
-    </div>
-  </li>
-</ol>
-<div class="text-lg leading-6 text-gray-900 font-bold my-4">Tool 2: Automatic Notification Email along with Invalid Choices in Form Submission:</div>
-<ol class="list-decimal list-inside">
-  <li class="my-2">
-    <strong>Set Trigger for onFormSubmit:</strong> Navigate to 'Triggers' in Apps Script and set a trigger for the <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'onFormSubmit'</code> function.
-    <div>
-      <img src="assets/images/gas-tools/form-manage-simplifier/show-trigger.png" alt="Trigger Setup" width="450" height="250">
-      <figcaption class="p-2 text-gray-400">Figure: Trigger Setup</figcaption>
-    </div>
-    <div>
-      <img src="assets/images/gas-tools/form-manage-simplifier/setup-trigger.png" alt="Trigger Setup" width="450" height="250">
-      <figcaption class="p-2 text-gray-400">Figure: Trigger Setup</figcaption>
-    </div>
-  </li>
-  <li class="my-2">
-    <strong>Test Form Submission:</strong> Ensure that the notification email is sent to respondents when a respondent chooses the same instructor twice.
-    <div>
-      <img src="assets/images/gas-tools/form-manage-simplifier/choose-instructors.png" alt="Email Notification Example" width="450" height="250">
-      <figcaption class="p-2 text-gray-400">Figure: Email Notification Example</figcaption>
-    </div>
-    <div>
-      <img src="assets/images/gas-tools/form-manage-simplifier/email-notification.png" alt="Email Notification Example" width="600" height="200">
-      <figcaption class="p-2 text-gray-400">Figure: Email Notification Example</figcaption>
-    </div>
-  </li>
-</ol>
+              <li class="my-2">
+                <strong>Pre-define Information in Sheets:</strong> Input
+                necessary information in advance in the following sheets:
+                <ul class="list-disc pl-5">
+                  <li class="my-1">
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >'course-lineup'</code
+                    >
+                    sheet: Enter course lineup for each program.
+                  </li>
+                  <li>
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >'instructor-lineup'</code
+                    >
+                    sheet: Enter instructor lineup for each program.
+                  </li>
+                </ul>
+                <div>
+                  <img
+                    src="assets/images/gas-tools/form-manage-simplifier/enter-item-options.png"
+                    alt="Updated Google Form Items"
+                    width="450"
+                    height="250"
+                  />
+                  <figcaption class="p-2 text-gray-400">
+                    Figure: Input Course Line-up to Be Reflected on Google Form
+                  </figcaption>
+                </div>
+              </li>
+              <li class="my-2">
+                <strong>Execute Functions and Update Google Form:</strong> Use
+                the
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >'Update Course Lineup'</code
+                >
+                and
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >'Update Instructor Lineup'</code
+                >
+                from the Custom Menu to update item options in Google Form.
+                Verify if the target items in the Google Form are updated
+                successfully.
+                <ul class="list-disc pl-5">
+                  <li>
+                    Update Course Lineup: Synchronize each program's course
+                    lineup from the Spreadsheet to the Google Form.
+                  </li>
+                  <li>
+                    Update Instructor Lineup: Synchronize each program's
+                    instructor lineup from the Spreadsheet to the Google Form.
+                  </li>
+                </ul>
+                <div>
+                  <img
+                    src="assets/images/gas-tools/form-manage-simplifier/show-custom-menu.png"
+                    alt="show-custom-menu"
+                    width="450"
+                    height="250"
+                    class="my-2"
+                  />
+                  <figcaption class="p-2 text-gray-400">
+                    Figure: Custom Menu
+                  </figcaption>
+                </div>
+                <div>
+                  <img
+                    src="assets/images/gas-tools/form-manage-simplifier/form-items-update.png"
+                    alt="Updated Google Form Items"
+                    width="450"
+                    height="250"
+                    class="my-2"
+                  />
+                  <figcaption class="p-2 text-gray-400">
+                    Figure: Updated Google Form Items
+                  </figcaption>
+                </div>
+              </li>
+            </ol>
+            <div class="text-lg leading-6 text-gray-900 font-bold my-4">
+              Tool 2: Automatic Notification Email along with Invalid Choices in
+              Form Submission:
+            </div>
+            <ol class="list-decimal list-inside">
+              <li class="my-2">
+                <strong>Set Trigger for onFormSubmit:</strong> Navigate to
+                'Triggers' in Apps Script and set a trigger for the
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >'onFormSubmit'</code
+                >
+                function.
+                <div>
+                  <img
+                    src="assets/images/gas-tools/form-manage-simplifier/show-trigger.png"
+                    alt="Trigger Setup"
+                    width="450"
+                    height="250"
+                  />
+                  <figcaption class="p-2 text-gray-400">
+                    Figure: Trigger Setup
+                  </figcaption>
+                </div>
+                <div>
+                  <img
+                    src="assets/images/gas-tools/form-manage-simplifier/setup-trigger.png"
+                    alt="Trigger Setup"
+                    width="450"
+                    height="250"
+                  />
+                  <figcaption class="p-2 text-gray-400">
+                    Figure: Trigger Setup
+                  </figcaption>
+                </div>
+              </li>
+              <li class="my-2">
+                <strong>Test Form Submission:</strong> Ensure that the
+                notification email is sent to respondents when a respondent
+                chooses the same instructor twice.
+                <div>
+                  <img
+                    src="assets/images/gas-tools/form-manage-simplifier/choose-instructors.png"
+                    alt="Email Notification Example"
+                    width="450"
+                    height="250"
+                  />
+                  <figcaption class="p-2 text-gray-400">
+                    Figure: Email Notification Example
+                  </figcaption>
+                </div>
+                <div>
+                  <img
+                    src="assets/images/gas-tools/form-manage-simplifier/email-notification.png"
+                    alt="Email Notification Example"
+                    width="600"
+                    height="200"
+                  />
+                  <figcaption class="p-2 text-gray-400">
+                    Figure: Email Notification Example
+                  </figcaption>
+                </div>
+              </li>
+            </ol>
           </div>
 
           <div class="mb-3">

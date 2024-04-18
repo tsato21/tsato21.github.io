@@ -28,12 +28,16 @@
             <div class="text-2xl font-bold" id="about">About</div>
             <div class="py-3">
               <p>
-                Automates the process of extracting and inserting PDF metadata into Google Sheets.
+                Automates the process of extracting and inserting PDF metadata
+                into Google Sheets.
               </p>
               <blockquote
                 class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
               >
-                This tool streamlines file management by scanning a specified Google Drive folder for PDF files and populating the sheet with their names and URLs, enhancing document organization and communication.
+                This tool streamlines file management by scanning a specified
+                Google Drive folder for PDF files and populating the sheet with
+                their names and URLs, enhancing document organization and
+                communication.
               </blockquote>
             </div>
           </div>
@@ -45,7 +49,8 @@
             <div class="py-3">
               <ul class="list-disc list-inside space-y-2">
                 <li class="text-gray-700">
-                  A Google account with access to Google Sheets and Google Drive.
+                  A Google account with access to Google Sheets and Google
+                  Drive.
                 </li>
                 <li class="text-gray-700">
                   A foundational understanding of Google Apps and Google Apps
@@ -84,44 +89,74 @@
           <div id="usage" class="mb-3">
             <div class="text-2xl font-bold">Usage</div>
 
-<ol class="list-decimal list-inside">
-  <li class="my-2">
-    <span class="font-bold">Copy the Google Drive Folder URL: </span>
-    <p>
-      Copy the URL of the Google Drive folder that contains target PDF files.
-    </p>
-    <div class="ml-5">
-      <img src="assets/images/gas-tools/pdf-info-inserter/copy-folder-url.png" alt="Image of Copy Folder URL" class="w-96 h-48">
-      <figcaption class="p-2 text-gray-400">Figure: Copy Folder URL</figcaption>
-    </div>
-  </li>
-  <li class="my-2">
-    <span class="font-bold">Open the Google Sheet: </span>
-    <p>
-      Open the Google Sheet where you want to insert the PDF information.
-    </p>
-  </li>
-  <li class="my-2">
-    <span class="font-bold">Access the Custom Menu: </span>
-    <p>
-      Click on the <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Custom Menu</code> that appears in the menu bar of the Google Sheet and select <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Insert PDF info into Sheet</code>.
-    </p>
-    <div class="ml-5">
-      <img src="assets/images/gas-tools/pdf-info-inserter/access-custom-menu.png" alt="Image of Access Custom Menu" class="w-full h-32 mt-2">
-      <figcaption class="p-2 text-gray-400">Figure: Access Custom Menu</figcaption>
-    </div>
-  </li>
-  <li class="my-2">
-    <span class="font-bold">Display the PDF Information: </span>
-    <p>
-      The PDF information is displayed in the Google Sheet. By clicking the the name, you can access the target PDF.
-    </p>
-    <div class="ml-5 mt-4">
-      <img src="assets/images/gas-tools/pdf-info-inserter/display-pdf-info.png" alt="Image of Display PDF Info" class="w-96 h-48">
-      <figcaption class="p-2 text-gray-400">Figure: Display PDF Info</figcaption>
-    </div>
-  </li>
-</ol>
+            <ol class="list-decimal list-inside">
+              <li class="my-2">
+                <span class="font-bold"
+                  >Copy the Google Drive Folder URL:
+                </span>
+                <p>
+                  Copy the URL of the Google Drive folder that contains target
+                  PDF files.
+                </p>
+                <div class="ml-5">
+                  <img
+                    src="assets/images/gas-tools/pdf-info-inserter/copy-folder-url.png"
+                    alt="Image of Copy Folder URL"
+                    class="w-96 h-48"
+                  />
+                  <figcaption class="p-2 text-gray-400">
+                    Figure: Copy Folder URL
+                  </figcaption>
+                </div>
+              </li>
+              <li class="my-2">
+                <span class="font-bold">Open the Google Sheet: </span>
+                <p>
+                  Open the Google Sheet where you want to insert the PDF
+                  information.
+                </p>
+              </li>
+              <li class="my-2">
+                <span class="font-bold">Access the Custom Menu: </span>
+                <p>
+                  Click on the
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Custom Menu</code
+                  >
+                  that appears in the menu bar of the Google Sheet and select
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Insert PDF info into Sheet</code
+                  >.
+                </p>
+                <div class="ml-5">
+                  <img
+                    src="assets/images/gas-tools/pdf-info-inserter/access-custom-menu.png"
+                    alt="Image of Access Custom Menu"
+                    class="w-full h-32 mt-2"
+                  />
+                  <figcaption class="p-2 text-gray-400">
+                    Figure: Access Custom Menu
+                  </figcaption>
+                </div>
+              </li>
+              <li class="my-2">
+                <span class="font-bold">Display the PDF Information: </span>
+                <p>
+                  The PDF information is displayed in the Google Sheet. By
+                  clicking the the name, you can access the target PDF.
+                </p>
+                <div class="ml-5 mt-4">
+                  <img
+                    src="assets/images/gas-tools/pdf-info-inserter/display-pdf-info.png"
+                    alt="Image of Display PDF Info"
+                    class="w-96 h-48"
+                  />
+                  <figcaption class="p-2 text-gray-400">
+                    Figure: Display PDF Info
+                  </figcaption>
+                </div>
+              </li>
+            </ol>
           </div>
 
           <div class="mb-3">

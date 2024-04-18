@@ -33,16 +33,16 @@
                 with target individuals for efficient document organization and
                 communication.
               </p>
-                <blockquote
-                  class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
-                >
-                  This tool is a powerful ally for organizations handling large
-                  volumes of files. It uses Google Apps Script to automate the
-                  creation and organization of customized files in Google Drive,
-                  and the drafting of notification emails in Gmail. It's
-                  designed to enhance efficiency in environments where efficient
-                  file sharing and prompt communication are crucial.
-                </blockquote>
+              <blockquote
+                class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
+              >
+                This tool is a powerful ally for organizations handling large
+                volumes of files. It uses Google Apps Script to automate the
+                creation and organization of customized files in Google Drive,
+                and the drafting of notification emails in Gmail. It's designed
+                to enhance efficiency in environments where efficient file
+                sharing and prompt communication are crucial.
+              </blockquote>
             </div>
           </div>
 
@@ -142,7 +142,8 @@
 
             <ul class="list-disc list-inside">
               <li class="my-2">
-                <strong>File Copying and Naming:</strong> Copies from a Google Sheet template and name files based on the list.
+                <strong>File Copying and Naming:</strong> Copies from a Google
+                Sheet template and name files based on the list.
               </li>
               <li class="my-2">
                 <strong>File Information Retrieval:</strong> Displays file
@@ -181,7 +182,10 @@
             <ol class="list-decimal list-inside">
               <li class="my-2">
                 <strong>Set information for student and faculty</strong>:
-                <ol class="list-decimal list-inside pl-5" style="list-style-type: lower-alpha;">
+                <ol
+                  class="list-decimal list-inside pl-5"
+                  style="list-style-type: lower-alpha"
+                >
                   <li>
                     Set information in the orange range in
                     <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
@@ -203,7 +207,10 @@
               </li>
               <li class="my-2">
                 <strong>Copy and Name Files</strong>:
-                <ol class="list-decimal list-inside pl-5" style="list-style-type: lower-alpha;">
+                <ol
+                  class="list-decimal list-inside pl-5"
+                  style="list-style-type: lower-alpha"
+                >
                   <li>
                     Set the file name information in the orange range in
                     <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
@@ -231,13 +238,17 @@
                   </li>
                   <div>
                     *You will be asked to put the URL of the target folder to
-                    store newly created files and the URL of the template Google Sheet.
+                    store newly created files and the URL of the template Google
+                    Sheet.
                   </div>
                 </ol>
               </li>
               <li class="my-2">
                 <strong>Retrieve and Display File Information</strong>:
-                <ol class="list-decimal list-inside pl-5" style="list-style-type: lower-alpha;">
+                <ol
+                  class="list-decimal list-inside pl-5"
+                  style="list-style-type: lower-alpha"
+                >
                   <li>
                     Click
                     <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
@@ -274,7 +285,9 @@
                       Figure: Output File Info
                     </figcaption>
                     <div>
-                      *Since the file (Google Sheet) has not been shared with anyone at this moment (unless you share the stored folder with someone), "Editors' emails" returns empty.
+                      *Since the file (Google Sheet) has not been shared with
+                      anyone at this moment (unless you share the stored folder
+                      with someone), "Editors' emails" returns empty.
                     </div>
                   </li>
                 </ol>
@@ -296,7 +309,9 @@
                   <li>
                     <strong>Share Files Without Notification:</strong> This
                     function allows you to share files with specified users
-                    without sending them a notification. Once the file is shared with target users, their email addresses are displayed in the column D.
+                    without sending them a notification. Once the file is shared
+                    with target users, their email addresses are displayed in
+                    the column D.
                     <div>
                       *You will be asked to put the URL of the target folder
                       where files are stored.
@@ -319,17 +334,16 @@
                   >
                   to generate personalized draft emails in Gmail.
                   <div class="mt-2">
-                  <img
-                    src="assets/images/gas-tools/sheet-mail-work-automator/gmail-draft.png"
-                    alt="Image of gmail-draft"
-                    class="w-96 h-62"
-                  />
+                    <img
+                      src="assets/images/gas-tools/sheet-mail-work-automator/gmail-draft.png"
+                      alt="Image of gmail-draft"
+                      class="w-96 h-62"
+                    />
+                  </div>
+                  <figcaption class="p-2 text-gray-400">
+                    Figure: Gmail Draft
+                  </figcaption>
                 </div>
-                <figcaption class="p-2 text-gray-400">
-                  Figure: Gmail Draft
-                </figcaption>
-                </div>
-                
               </li>
             </ol>
           </div>

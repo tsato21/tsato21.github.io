@@ -139,11 +139,11 @@
                         class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                         >Output Mail Merge Data for Confirm Email</code
                       >
-                      from 
+                      from
                       <code
                         class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                         >Custom Menu</code
-                      > 
+                      >
                       to process data for confirmation emails.
                       <div class="ml-5">
                         <br />This function processes data to generate mail
@@ -257,7 +257,7 @@
                         class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                         >Output Mail Merge Data for Link Share Email</code
                       >
-                      from 
+                      from
                       <code
                         class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                         >Custom Menu</code
