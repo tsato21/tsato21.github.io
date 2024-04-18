@@ -109,7 +109,7 @@ const tools = ref([
   {
     title: 'Form Manage Simplifier',
     description:
-      'Streamlines the task of managing and processing Google Forms responses.',
+      'Streamlines the task of managing and processing Google Forms responses including efficiently updating form items based on reference lists in Google Sheets, validating submitted forms, and sending email notifications for invalid submissions.',
     filePath: '/gas-tools/each-tool/form-manage-simplifier',
   },
 ]);

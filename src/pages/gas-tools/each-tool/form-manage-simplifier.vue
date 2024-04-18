@@ -55,88 +55,94 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="setup">Setup</div>
-            <div class="py-3">
-              <ol class="list-decimal list-inside space-y-2">
-                <li class="text-gray-700">
-                  <strong>Access a Sample Google Sheet</strong>: Begin by
-                  opening the
-                  <a
-                    href="https://docs.google.com/spreadsheets/d/1154I0kMvhbp9WZ4r6COu_oA4lPJZvh9MnFxa2G7HZck/edit#gid=0"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-lightblue underline hover:text-darkblue"
-                    >Sample Google Sheet</a
-                  >
-                  <p class="mt-2">
-                    *Note: The samples provided are merely illustrative,
-                    showcasing course schedule for an educational institution.
-                  </p>
-                </li>
-                <li class="text-gray-700">
-                  <strong>Copy the Google Sheet</strong>: Make a copy of the
-                  Google Sheet to create your personalized version.
-                </li>
-                
-                <li class="text-gray-700">
-                  <GASWarningEn />
-                </li>
-              </ol>
-            </div>
-          </div>
+  <div class="mb-3">
+  <div class="text-2xl font-bold" id="sample-data">Sample Data</div>
+  <div class="py-3">
+    <p class="text-gray-700">
+      You can find the sample Google Form and Google Sheet with the scripts inserted below:
+    </p>
+    <ul class="list-disc list-inside space-y-2">
+      <li class="text-gray-700">
+        <strong>Sample Google Form</strong>: 
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSe7uXYiOBeJakwl59kGF2L1ktrRO5P_SLdu3ND2_efMy6Zb6A/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-lightblue underline hover:text-darkblue"
+        >Access here</a>
+      </li>
+      <li class="text-gray-700">
+        <strong>Sample Google Sheet</strong>: 
+        <a
+          href="https://docs.google.com/spreadsheets/d/1u5fB6-ucFqQtq6Pn_iVtCRxqo-p5_snTx6N0o4csgqg/edit?usp=drive_link"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-lightblue underline hover:text-darkblue"
+        >Access here</a>
+      </li>
+    </ul>
+  </div>
+</div>
+  
+</div>
 
           <div id="usage" class="mb-3">
             <div class="text-2xl font-bold">Usage</div>
-
+            <div class="text-lg leading-6 text-gray-900 font-bold my-4">Tool 1: Updating Google Form Items based on Data on Google Sheet:</div>
             <ol class="list-decimal list-inside">
-              <li class="my-2">
-                <span class="font-bold"
-                  >Select
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >Custom Menu</code
-                  >
-                  >
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >Adjust Row Heights</code
-                  ></span
-                >
-                <p>
-                  This initiates a process that adjusts the height of each row
-                  in a specified sheet, starting from a user-defined row number.
-                </p>
-                <p class="mt-2">Here's the step-by-step logic:</p>
-                <ul class="list-disc pl-5">
-                  <li>
-                    <strong>Input Sheet Name and Starting Row</strong>: A dialog
-                    prompts you to input the name of the sheet and the starting
-                    row number.
-                  </li>
-                  <li>
-                    <strong>Data Retrieval</strong>: The script retrieves the
-                    data from the specified sheet and starting row, and gets the
-                    widths of all columns in the sheet.
-                  </li>
-                  <li>
-                    <strong>Row Height Calculation</strong>: For each row, the
-                    script calculates the line count for each cell, taking into
-                    account the physical width of the text and any manual line
-                    breaks. It then determines the largest line count among all
-                    cells in the row.
-                  </li>
-                  <li>
-                    <strong>Height Adjustment</strong>: The row height is
-                    adjusted based on the largest line count. The height is
-                    calculated using a base height for a single line and an
-                    additional height for each additional line.
-                  </li>
-                </ul>
-                <p class="mt-2">
-                  This function ensures that the row height accommodates the
-                  cell with the most content, providing a cleaner and more
-                  organized view of your data.
-                </p>
-              </li>
-            </ol>
+  <li class="my-2">
+    
+    <strong>Pre-define Information in Sheets:</strong> Input necessary information in advance in the following sheets:
+    <ul class="list-disc pl-5">
+      <li class="my-1"><code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'course-lineup'</code> sheet: Enter course lineup for each program.</li>
+      <li><code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'instructor-lineup'</code> sheet: Enter instructor lineup for each program.</li>
+    </ul>
+    <div>
+      <img src="assets/images/gas-tools/form-manage-simplifier/enter-item-options.png" alt="Updated Google Form Items" width="450" height="250">
+      <figcaption class="p-2 text-gray-400">Figure: Input Course Line-up to Be Reflected on Google Form</figcaption>
+    </div>
+  </li>
+  <li class="my-2">
+    <strong>Execute Functions and Update Google Form:</strong> Use the <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'Update Course Lineup'</code> and <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'Update Instructor Lineup'</code> from the Custom Menu to update item options in Google Form. Verify if the target items in the Google Form are updated successfully.
+    <ul class="list-disc pl-5">
+      <li>Update Course Lineup: Synchronize each program's course lineup from the Spreadsheet to the Google Form.</li>
+      <li>Update Instructor Lineup: Synchronize each program's instructor lineup from the Spreadsheet to the Google Form.</li>
+    </ul>
+    <div>
+      <img src="assets/images/gas-tools/form-manage-simplifier/show-custom-menu.png" alt="show-custom-menu" width="450" height="250" class="my-2">
+      <figcaption class="p-2 text-gray-400">Figure: Custom Menu</figcaption>
+    </div>
+    <div>
+      <img src="assets/images/gas-tools/form-manage-simplifier/form-items-update.png" alt="Updated Google Form Items" width="450" height="250" class="my-2">
+      <figcaption class="p-2 text-gray-400">Figure: Updated Google Form Items</figcaption>
+    </div>
+  </li>
+</ol>
+<div class="text-lg leading-6 text-gray-900 font-bold my-4">Tool 2: Automatic Notification Email along with Invalid Choices in Form Submission:</div>
+<ol class="list-decimal list-inside">
+  <li class="my-2">
+    <strong>Set Trigger for onFormSubmit:</strong> Navigate to 'Triggers' in Apps Script and set a trigger for the <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'onFormSubmit'</code> function.
+    <div>
+      <img src="assets/images/gas-tools/form-manage-simplifier/show-trigger.png" alt="Trigger Setup" width="450" height="250">
+      <figcaption class="p-2 text-gray-400">Figure: Trigger Setup</figcaption>
+    </div>
+    <div>
+      <img src="assets/images/gas-tools/form-manage-simplifier/setup-trigger.png" alt="Trigger Setup" width="450" height="250">
+      <figcaption class="p-2 text-gray-400">Figure: Trigger Setup</figcaption>
+    </div>
+  </li>
+  <li class="my-2">
+    <strong>Test Form Submission:</strong> Ensure that the notification email is sent to respondents when a respondent chooses the same instructor twice.
+    <div>
+      <img src="assets/images/gas-tools/form-manage-simplifier/choose-instructors.png" alt="Email Notification Example" width="450" height="250">
+      <figcaption class="p-2 text-gray-400">Figure: Email Notification Example</figcaption>
+    </div>
+    <div>
+      <img src="assets/images/gas-tools/form-manage-simplifier/email-notification.png" alt="Email Notification Example" width="600" height="200">
+      <figcaption class="p-2 text-gray-400">Figure: Email Notification Example</figcaption>
+    </div>
+  </li>
+</ol>
           </div>
 
           <div class="mb-3">
@@ -208,7 +214,7 @@ useHead({
 const pageItems = [
   { label: 'About', id: 'about' },
   { label: 'Prerequisites', id: 'prerequisites' },
-  { label: 'Setup', id: 'setup' },
+  { label: 'Sample Data', id: 'sample-data' },
   { label: 'Usage', id: 'usage' },
   { label: 'Terms and Conditions', id: 'terms-conditions' },
   { label: 'Source Code', id: 'source-code' },
@@ -217,7 +223,7 @@ const pageItems = [
 // An array of objects representing the badges to be displayed.
 const badges = [
   {
-    src: 'https://img.shields.io/badge/Google%20Apps-%20form%26%20sheet-brightgreen?style=flat-square&color=brightgreen',
+    src: 'https://img.shields.io/badge/Google%20Apps-%20form%20%26%20sheet-brightgreen?style=flat-square&color=brightgreen',
     alt: 'Use of Google Apps',
   },
   {
