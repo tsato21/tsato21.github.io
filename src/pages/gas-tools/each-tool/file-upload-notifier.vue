@@ -28,15 +28,18 @@
             <div class="text-2xl font-bold" id="about">About</div>
             <div class="py-3">
               <p>
-                Tracks new file uploads in a specific Google Drive folder.
-                If the time since the last upload is within a set interval, it sends a notification email, ensuring efficient file management.
+                Tracks new file uploads in a specific Google Drive folder. If
+                the time since the last upload is within a set interval, it
+                sends a notification email, ensuring efficient file management.
               </p>
               <blockquote
-  class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
->
-  This tool is invaluable for collaborative works between two parties using a specific Google Drive folder for file sharing.
-  It provides timely notifications when a file is uploaded by the other party, enhancing efficiency and collaboration.
-</blockquote>
+                class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
+              >
+                This tool is invaluable for collaborative works between two
+                parties using a specific Google Drive folder for file sharing.
+                It provides timely notifications when a file is uploaded by the
+                other party, enhancing efficiency and collaboration.
+              </blockquote>
             </div>
           </div>
 
@@ -50,7 +53,8 @@
                   A Google account with access to Google Drive.
                 </li>
                 <li class="text-gray-700">
-                  A foundational understanding of Google Drive and Google Apps Script.
+                  A foundational understanding of Google Drive and Google Apps
+                  Script.
                 </li>
               </ul>
             </div>
@@ -60,72 +64,125 @@
             <div class="mb-3">
               <div class="text-2xl font-bold" id="setup">Setup</div>
               <div class="py-3">
-  <ol class="list-decimal list-inside space-y-2">
-    <li class="text-gray-700">
-      <strong>Open Your Google Drive Where you Store Files:</strong>
-    </li>
-    <li class="text-gray-700">
-      <strong>Copy the Sample Google Apps Script:</strong> Copy the sample script from 
-      <a
-        href="https://drive.google.com/drive/folders/1hDkf17mY0jaKqlWOcNdBzpzBz1vHWj9-?usp=drive_link"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="text-lightblue underline hover:text-darkblue"
-      >HERE</a>
-      , make a new Apps Script project, and paste the codes which is automatically stored in your `My Drive`.
-      <div>
-        <img src="assets/images/gas-tools/file-upload-notifier/copy-sample-file.png" alt="Copy Sample" class="w-96 h-64 my-2">
-        <figcaption class="p-2 text-gray-400">Figure: Copy Sample</figcaption>
-      </div>
-    </li>
-    <li class="text-gray-700">
-      Set the constant variables (folder url/ email address/ interval) in `variables.gs`.
-      <div>
-        <img src="assets/images/gas-tools/file-upload-notifier/set-constant-variables.png" alt="Set Constant Variables" class="w-96 h-64 my-2">
-        <figcaption class="p-2 text-gray-400">Figure: Set Constant Variables</figcaption>
-      </div>
-    </li>
-    <li class="text-gray-700">
-      <strong>Set Trigger:</strong> Set the trigger for the script to run periodically. You can set the trigger in your preferred way.
-      <div>
-        <img src="assets/images/gas-tools/file-upload-notifier/set-trigger.png" alt="Set Triggers" class="w-96 h-64 my-2">
-        <figcaption class="p-2 text-gray-400">Figure: Set Triggers</figcaption>
-      </div>
-    </li>
-    <li class="text-gray-700">
-      <strong>Upload a File to the Folder:</strong> Upload a file to the folder to test the script.
-    </li>
-    <li class="text-gray-700">
-      <strong>Run the Script:</strong> Run the script to test the notification email. If you receive the email, the script is working correctly.
-      <div>
-        <img src="assets/images/gas-tools/file-upload-notifier/email-notification.png" alt="Email Notification" class="w-96 h-64 my-2">
-        <figcaption class="p-2 text-gray-400">Figure: Email Notification</figcaption>
-      </div>
-    </li>
-  </ol>
-</div>
+                <ol class="list-decimal list-inside space-y-2">
+                  <li class="text-gray-700">
+                    <strong
+                      >Copyt the Sample Google Apps Script and Store it in your
+                      Google Drive:</strong
+                    >
+                    Copy the sample script from
+                    <a
+                      href="https://drive.google.com/drive/folders/16WEoOo_bTAKJSM6HAPCdPQj64cfeZCvt"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-lightblue underline hover:text-darkblue font-bold"
+                      >HERE</a
+                    >
+                    ,which is automatically stored in your Google Drive.
+                    <div>
+                      <img
+                        src="assets/images/gas-tools/file-upload-notifier/copy-sample-file.png"
+                        alt="Copy Sample"
+                        class="w-96 h-64 my-2"
+                      />
+                      <figcaption class="p-2 text-gray-400">
+                        Figure: Copy Sample
+                      </figcaption>
+                    </div>
+                  </li>
+                  <li class="text-gray-700">
+                    Set the constant variables (folder url/ email address/
+                    interval) in
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
+                      variables.gs</code
+                    >.
+                    <div>
+                      <img
+                        src="assets/images/gas-tools/file-upload-notifier/set-constant-variables.png"
+                        alt="Set Constant Variables"
+                        class="w-96 h-36 my-2"
+                      />
+                      <figcaption class="p-2 text-gray-400">
+                        Figure: Set Constant Variables
+                      </figcaption>
+                    </div>
+                  </li>
+                  <li class="text-gray-700">
+                    <strong>Set Trigger:</strong> Set the trigger for the script
+                    to run periodically. You can set the trigger in your
+                    preferred way.
+                    <div>
+                      <img
+                        src="assets/images/gas-tools/file-upload-notifier/set-trigger.png"
+                        alt="Set Triggers"
+                        class="w-96 h- my-2"
+                      />
+                      <figcaption class="p-2 text-gray-400">
+                        Figure: Set Triggers
+                      </figcaption>
+                    </div>
+                  </li>
+                  <li class="text-gray-700">
+                    <strong>Upload a File to the Folder:</strong> Upload a file
+                    to the folder to test the script.
+                  </li>
+                  <li class="text-gray-700">
+                    <strong>Run the Script:</strong> Run the script to test the
+                    notification email. If you receive the email, the script is
+                    working correctly.
+                    <div>
+                      <img
+                        src="assets/images/gas-tools/file-upload-notifier/email-notification.png"
+                        alt="Email Notification"
+                        class="w-96 h-48 my-2"
+                      />
+                      <figcaption class="p-2 text-gray-400">
+                        Figure: Email Notification
+                      </figcaption>
+                    </div>
+                  </li>
+                </ol>
+              </div>
             </div>
           </div>
 
           <div id="usage" class="mb-3">
             <div class="text-2xl font-bold">Usage</div>
-<ol class="list-decimal list-inside">
-  <li class="my-2">
-    <strong>File Monitoring:</strong> The script checks for new uploads in a specific Google Drive folder.
-  </li>
-  <li class="my-2">
-    <strong>Notifications:</strong> An email is sent if a new file is uploaded within a set time interval.
-    
-  </li>
-</ol>
-<div class="text-lg leading-6 text-gray-900 font-bold my-4">
-  Find the logic for file existence and notifications 
-  <a href="https://docs.google.com/presentation/d/1eaOfzJpEgpluX5kBIWKeiQHy_zm3yx5ktHjfPBqo90s/edit#slide=id.p" target="_blank" rel="noopener noreferrer" class="text-lightblue underline hover:text-darkblue">HERE</a>.
-</div>
-<div class="text-lg leading-6 text-gray-900 font-bold my-4">
-  You can find logics for new file existence and the notification from 
-  <a href="https://docs.google.com/presentation/d/1eaOfzJpEgpluX5kBIWKeiQHy_zm3yx5ktHjfPBqo90s/edit#slide=id.p" target="_blank" rel="noopener noreferrer" class="text-lightblue underline hover:text-darkblue">HERE</a>.
-</div>
+            <ol class="list-decimal list-inside">
+              <li class="my-2">
+                <strong>File Monitoring:</strong> The script checks for new
+                uploads in the designated Google Drive folder (by the pre-set
+                triggers).
+              </li>
+              <li class="my-2">
+                <strong>Notifications:</strong> An email is sent if a new file
+                is uploaded within a set time interval.
+              </li>
+            </ol>
+            <div class="text-lg leading-6 text-gray-900 font-bold my-4">
+              Find the logic for file existence and notifications
+              <a
+                href="https://docs.google.com/presentation/d/1eaOfzJpEgpluX5kBIWKeiQHy_zm3yx5ktHjfPBqo90s/edit#slide=id.p"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-lightblue underline hover:text-darkblue"
+                >HERE</a
+              >.
+            </div>
+          </div>
+          <div id="others" class="mb-3">
+            <div class="text-2xl font-bold">Others</div>
+            <div class="text-lg leading-6 text-gray-900 font-bold my-4">
+              You can find logics for new file existence and the notification
+              from
+              <a
+                href="https://docs.google.com/presentation/d/1eaOfzJpEgpluX5kBIWKeiQHy_zm3yx5ktHjfPBqo90s/edit#slide=id.p"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-lightblue underline hover:text-darkblue"
+                >HERE</a
+              >.
+            </div>
           </div>
 
           <div class="mb-3">
@@ -199,6 +256,7 @@ const pageItems = [
   { label: 'Prerequisites', id: 'prerequisites' },
   { label: 'Setup', id: 'setup' },
   { label: 'Usage', id: 'usage' },
+  { label: 'Others', id: 'others' },
   { label: 'Terms and Conditions', id: 'terms-conditions' },
   { label: 'Source Code', id: 'source-code' },
 ];

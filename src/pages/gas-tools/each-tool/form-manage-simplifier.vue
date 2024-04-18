@@ -185,8 +185,8 @@
             </div>
             <ol class="list-decimal list-inside">
               <li class="my-2">
-                <strong>Set Trigger:</strong> Navigate to
-                Triggers in Apps Script and set a trigger for the
+                <strong>Set Trigger:</strong> Navigate to Triggers in Apps
+                Script and set a trigger for the
                 <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                   >onFormSubmit</code
                 >

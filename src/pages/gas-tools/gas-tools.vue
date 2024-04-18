@@ -71,6 +71,12 @@ const tools = ref([
     filePath: '/gas-tools/each-tool/manual-builder.en',
   },
   {
+    title: 'SheetTasker',
+    description:
+      'XXX.',
+    filePath: '/gas-tools/each-tool/sheet-tasker.en',
+  },
+  {
     title: 'Course Data Aligner',
     description:
       'Harmonizes course data between two Google Sheets with differing structures, effectively resolving data structure inconsistencies across multiple stakeholders.',
