@@ -119,7 +119,7 @@ let date = ref(
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-  }).format(new Date('2024-04-12'))
+  }).format(new Date('2024-04-18'))
 );
 
 useHead({

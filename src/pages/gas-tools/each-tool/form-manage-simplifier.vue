@@ -112,13 +112,13 @@
                 <ul class="list-disc pl-5">
                   <li class="my-1">
                     <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >'course-lineup'</code
+                      >course-lineup</code
                     >
                     sheet: Enter course lineup for each program.
                   </li>
                   <li>
                     <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >'instructor-lineup'</code
+                      >instructor-lineup</code
                     >
                     sheet: Enter instructor lineup for each program.
                   </li>
@@ -127,8 +127,7 @@
                   <img
                     src="assets/images/gas-tools/form-manage-simplifier/enter-item-options.png"
                     alt="Updated Google Form Items"
-                    width="450"
-                    height="250"
+                    class="w-full h-64"
                   />
                   <figcaption class="p-2 text-gray-400">
                     Figure: Input Course Line-up to Be Reflected on Google Form
@@ -139,11 +138,11 @@
                 <strong>Execute Functions and Update Google Form:</strong> Use
                 the
                 <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                  >'Update Course Lineup'</code
+                  >Update Course Lineup</code
                 >
                 and
                 <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                  >'Update Instructor Lineup'</code
+                  >Update Instructor Lineup</code
                 >
                 from the Custom Menu to update item options in Google Form.
                 Verify if the target items in the Google Form are updated
@@ -162,9 +161,7 @@
                   <img
                     src="assets/images/gas-tools/form-manage-simplifier/show-custom-menu.png"
                     alt="show-custom-menu"
-                    width="450"
-                    height="250"
-                    class="my-2"
+                    class="w-64 h-48 my-2"
                   />
                   <figcaption class="p-2 text-gray-400">
                     Figure: Custom Menu
@@ -174,9 +171,7 @@
                   <img
                     src="assets/images/gas-tools/form-manage-simplifier/form-items-update.png"
                     alt="Updated Google Form Items"
-                    width="450"
-                    height="250"
-                    class="my-2"
+                    class="w-96 h-64 my-2"
                   />
                   <figcaption class="p-2 text-gray-400">
                     Figure: Updated Google Form Items
@@ -190,18 +185,17 @@
             </div>
             <ol class="list-decimal list-inside">
               <li class="my-2">
-                <strong>Set Trigger for onFormSubmit:</strong> Navigate to
-                'Triggers' in Apps Script and set a trigger for the
+                <strong>Set Trigger:</strong> Navigate to
+                Triggers in Apps Script and set a trigger for the
                 <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                  >'onFormSubmit'</code
+                  >onFormSubmit</code
                 >
                 function.
                 <div>
                   <img
                     src="assets/images/gas-tools/form-manage-simplifier/show-trigger.png"
                     alt="Trigger Setup"
-                    width="450"
-                    height="250"
+                    class="w-96 h-72 my-2"
                   />
                   <figcaption class="p-2 text-gray-400">
                     Figure: Trigger Setup
@@ -211,8 +205,7 @@
                   <img
                     src="assets/images/gas-tools/form-manage-simplifier/setup-trigger.png"
                     alt="Trigger Setup"
-                    width="450"
-                    height="250"
+                    class="w-96 h-96 my-2"
                   />
                   <figcaption class="p-2 text-gray-400">
                     Figure: Trigger Setup
@@ -227,8 +220,7 @@
                   <img
                     src="assets/images/gas-tools/form-manage-simplifier/choose-instructors.png"
                     alt="Email Notification Example"
-                    width="450"
-                    height="250"
+                    class="w-96 h-64 my-2"
                   />
                   <figcaption class="p-2 text-gray-400">
                     Figure: Email Notification Example
@@ -238,8 +230,7 @@
                   <img
                     src="assets/images/gas-tools/form-manage-simplifier/email-notification.png"
                     alt="Email Notification Example"
-                    width="600"
-                    height="200"
+                    class="w-full h-64 my-2"
                   />
                   <figcaption class="p-2 text-gray-400">
                     Figure: Email Notification Example
@@ -259,7 +250,7 @@
               <p class="text-lg mt-4">
                 You can find the source code for this tool on Github. Click
                 <a
-                  href="https://github.com/tsato21/row-height-optimizer"
+                  href="https://github.com/tsato21/form-manage-simplifier"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
@@ -282,7 +273,7 @@
       >
         <div class="text-3xl mt-2 font-bold lg:hidden block">
           <div class="my-2 flex items-center">
-            <span class="text-3xl font-bold">Manual Builder</span>
+            <span class="text-3xl font-bold">Form Manage Simplifier</span>
           </div>
           <!-- Badges Component -->
           <Badges :badges="badges" />

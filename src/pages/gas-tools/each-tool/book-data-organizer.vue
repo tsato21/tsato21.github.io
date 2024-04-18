@@ -400,7 +400,7 @@
       >
         <div class="text-3xl mt-2 font-bold lg:hidden block">
           <div class="my-2 flex items-center">
-            <span class="text-3xl font-bold">Course Data Aligner</span>
+            <span class="text-3xl font-bold">Book Data Organizer</span>
           </div>
           <!-- Badges Component -->
           <Badges :badges="badges" />

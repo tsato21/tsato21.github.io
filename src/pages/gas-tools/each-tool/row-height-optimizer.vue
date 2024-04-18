@@ -247,7 +247,7 @@
       >
         <div class="text-3xl mt-2 font-bold lg:hidden block">
           <div class="my-2 flex items-center">
-            <span class="text-3xl font-bold">Manual Builder</span>
+            <span class="text-3xl font-bold">Row Height Optimizer</span>
           </div>
           <!-- Badges Component -->
           <Badges :badges="badges" />
