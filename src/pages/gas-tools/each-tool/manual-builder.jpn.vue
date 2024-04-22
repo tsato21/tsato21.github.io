@@ -29,6 +29,11 @@
           <Badges :badges="badges" />
         </div>
 
+        <div class="my-3 mx-2 bottom-shadow">
+          <!-- Banner Component -->
+          <img src="assets/images/gas-tools/manual-builder/banner.png" alt="Tool Banner" class="w-64 h-64" />
+        </div>
+
         <div class="mb-5 p-5 bottom-shadow">
           <div class="mb-3">
             <div class="text-2xl font-bold" id="about">概要</div>
@@ -111,7 +116,7 @@
                       <img
                         src="assets/images/gas-tools/manual-builder/setting_menu.png"
                         alt="Setting Menu"
-                        class="w-80 h-40"
+                        class="w-96 h-48"
                       />
                       <figcaption class="p-2 text-gray-400">
                         図: 設定メニュー
@@ -159,7 +164,7 @@
                   <img
                     src="assets/images/gas-tools/manual-builder/slide-pattern.png"
                     alt="Customize Constants"
-                    class="w-80 h-35"
+                    class="w-96 h-48"
                   />
                   <figcaption class="p-2 text-gray-400">
                     図: スライドの構造
@@ -186,7 +191,7 @@
                       <img
                         src="assets/images/gas-tools/manual-builder/update-button.png"
                         alt="Customize Constants"
-                        class="w-80 h-35"
+                        class="w-64 h-32"
                       />
                       <figcaption class="p-2 text-gray-400">
                         図: 更新ボタン
@@ -198,7 +203,7 @@
                       <img
                         src="assets/images/gas-tools/manual-builder/index-sheet.png"
                         alt="Customize Constants"
-                        class="w-80 h-35"
+                        class="w-96 h-48"
                       />
                       <figcaption class="p-2 text-gray-400">
                         図: インデックスシートの更新
@@ -210,7 +215,7 @@
                       <img
                         src="assets/images/gas-tools/manual-builder/task-sheet.png"
                         alt="Customize Constants"
-                        class="w-100 h-50"
+                        class="w-80 h-48"
                       />
                       <figcaption class="p-2 text-gray-400">
                         図: タスクシートの更新

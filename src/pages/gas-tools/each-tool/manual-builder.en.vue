@@ -29,6 +29,10 @@
           <Badges :badges="badges" />
         </div>
 
+        <div class="my-3 mx-2 bottom-shadow">
+          <Banner :imgSrc="imgSrc"/>
+        </div>
+
         <div class="mb-5 p-5 bottom-shadow">
           <div class="mb-3">
             <div class="text-2xl font-bold" id="about">About</div>
@@ -123,7 +127,7 @@
                       <img
                         src="assets/images/gas-tools/manual-builder/setting_menu.png"
                         alt="Setting Menu"
-                        class="w-80 h-40"
+                        class="w-96 h-48"
                       />
                       <figcaption class="p-2 text-gray-400">
                         Fig: Setting Menu
@@ -172,7 +176,7 @@
                   <img
                     src="assets/images/gas-tools/manual-builder/slide-pattern.png"
                     alt="Customize Constants"
-                    class="w-80 h-35"
+                    class="w-96 h-48"
                   />
                   <figcaption class="p-2 text-gray-400">
                     Figure: Slide Structure
@@ -204,7 +208,7 @@
                       <img
                         src="assets/images/gas-tools/manual-builder/update-button.png"
                         alt="Customize Constants"
-                        class="w-80 h-35"
+                        class="w-72 h-36"
                       />
                       <figcaption class="p-2 text-gray-400">
                         Figure: Update Button
@@ -216,7 +220,7 @@
                       <img
                         src="assets/images/gas-tools/manual-builder/index-sheet.png"
                         alt="Customize Constants"
-                        class="w-80 h-35"
+                        class="w-96 h-48"
                       />
                       <figcaption class="p-2 text-gray-400">
                         Figure: Updates in Index Sheet
@@ -228,7 +232,7 @@
                       <img
                         src="assets/images/gas-tools/manual-builder/task-sheet.png"
                         alt="Customize Constants"
-                        class="w-100 h-50"
+                        class="w-96 h-48"
                       />
                       <figcaption class="p-2 text-gray-400">
                         Figure: Updates in Task Sheet
@@ -279,6 +283,11 @@
               </p>
             </div>
           </div>
+
+          <div class="mb-3">
+            
+          </div>
+
         </div>
         <p>
           <Icon name="material-symbols:calendar-month-sharp" /> Last updated:
@@ -378,4 +387,8 @@ let date = ref(
     day: 'numeric',
   }).format(new Date('2024-04-17'))
 );
+
+//imgSrc for Banner component
+const imgSrc = "/_nuxt/assets/images/gas-tools/manual-builder/banner.png";
+
 </script>
