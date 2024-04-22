@@ -10,7 +10,7 @@
           <img
             src="assets/images/profile/profile.jpeg"
             alt="Fit to Data Feature"
-            class="w-24 h-24 rounded-full"
+            class="w-20 h-20 rounded-full"
           />
           <div class="text-2xl font-bold">Taiga Sato</div>
 
