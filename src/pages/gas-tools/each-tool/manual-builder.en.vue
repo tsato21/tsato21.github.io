@@ -388,7 +388,10 @@ let date = ref(
   }).format(new Date('2024-04-17'))
 );
 
-//imgSrc for Banner component
-const imgSrc = "assets/images/gas-tools/manual-builder/banner.png";
+/*
+imgSrc for Banner component
+This should be stored in the public folder since it won't be included in your final build, and it will be resolved relative to the public path of your application at runtime.
+*/
+const imgSrc = "/banner/manual-builder.png";
 
 </script>
