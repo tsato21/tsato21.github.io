@@ -49,10 +49,10 @@
             <div class="py-3">
               <ul class="list-disc list-inside space-y-2">
                 <li class="text-gray-700">
-                  GoogleシートとスライドにアクセスできるGoogleアカウント。
+                  Google Sheet, SlideにアクセスできるGoogleアカウント。
                 </li>
                 <li class="text-gray-700">
-                  Googleシート、Googleスライド、Google Apps
+                  Google Sheet、Slide、Google Apps
                   Scriptの基本的な理解。
                 </li>
               </ul>
@@ -64,12 +64,12 @@
             <div class="py-3">
               <ol class="list-decimal list-inside space-y-2">
                 <li class="text-gray-700">
-                  <strong>Googleシートにアクセスする</strong>: まず、<a
+                  <strong>Googleシートにアクセスする</strong>:<a
                     href="https://docs.google.com/spreadsheets/d/1PMzgfemPZhTKBubqUDWp5gbM-veuWCbT0IKKOw3fsL8/edit#gid=0"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="text-lightblue underline hover:text-darkblue"
-                    >サンプルのGoogleシート</a
+                    >サンプルのGoogle Sheet</a
                   >を開きます。また、<a
                     href="https://docs.google.com/presentation/d/1pUxDKtwHA4GMXfmGXmwzXnjuAbW9g6DE9lFTj55wAn8/edit#slide=id.g2aa00057ea4_0_0"
                     target="_blank"
@@ -95,8 +95,14 @@
                   すべての事前設定情報をリセット/
                   インデックスシートの内容をクリア）。<code
                     class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >Custom Menu > Settings</code
-                  >をクリックし、<code
+                    >Custom Menu</code
+                  >
+                  >
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Settings</code
+                  >
+                  >
+                  <code
                     class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                     >Delete All Sheets and Pre-Set Info</code
                   >をクリックします。
@@ -118,7 +124,10 @@
                     >スライドのURLとインデックスシートの名前を設定する</strong
                   >:
                   <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >Custom Menu > Settings</code
+                    >Custom Menu
+                  </code>
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Settings</code
                   >に移動し、<code
                     class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                     >Set Necessary Info</code

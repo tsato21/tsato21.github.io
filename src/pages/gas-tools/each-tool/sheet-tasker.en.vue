@@ -17,7 +17,7 @@
       >
         <div class="lg:block hidden">
           <div class="my-2 flex items-center">
-            <span class="text-3xl font-bold">シートタスカー</span>
+            <span class="text-3xl font-bold">SheetTasker</span>
             <!-- Language Section Option -->
             <LanguageSelections
               :languages="languages"
@@ -31,254 +31,406 @@
 
         <div class="mb-5 p-5 bottom-shadow">
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="about">概要</div>
+            <div class="text-2xl font-bold" id="about">About</div>
             <div class="py-3">
               <p>
-                Googleスライドから必要な情報を抽出し、それらをGoogleシートに出力して作業マニュアルを自動作成します。これにより、ワークフローの効率が向上します。
+                Manages tasks in Google Sheets, output target tasks in Google Docs, and send reminders via Gmail, allowing for efficient task management on Google Workspace.
               </p>
               <blockquote
                 class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
               >
-                このツールは、マニュアル文書をGoogleドライブに一元化することを検討している会社や組織にとって有効なツールになると考えます。マニュアルを一つのプラットフォームに集約することで、関係者が必要な情報に簡単にアクセスできるようになります。さらに、各作業マニュアル内の記載方法を一律化することで、関係者間での情報共有や引継などの効率化も期待できます。
+                This tool is a database-style task management tool designed for managing tasks. It enables efficient task management within Google Workspace without using external apps. Unlike Google's built-in apps like Keep and Tasks, SheetTasker offers various features such as embedding URLs into specific words, notifying task reminders via Gmail, and more. In addition to individual-level task management, it also allows for task management at the team level.
               </blockquote>
             </div>
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="prerequisites">前提条件</div>
+            <div class="text-2xl font-bold" id="prerequisites">
+              Prerequisites
+            </div>
             <div class="py-3">
               <ul class="list-disc list-inside space-y-2">
                 <li class="text-gray-700">
-                  GoogleシートとスライドにアクセスできるGoogleアカウント。
+                  A Google account with access to Google Sheets, Docs, and
+                  Gmail.
                 </li>
                 <li class="text-gray-700">
-                  Googleシート、Googleスライド、Google Apps
-                  Scriptの基本的な理解。
+                  A foundational understanding of Google Sheets, Docs, Gmail,
+                  and Google Apps Script.
                 </li>
               </ul>
             </div>
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="setup">セットアップ</div>
+            <div class="text-2xl font-bold" id="setup">Setup</div>
             <div class="py-3">
               <ol class="list-decimal list-inside space-y-2">
                 <li class="text-gray-700">
-                  <strong>Googleシートにアクセスする</strong>: まず、<a
-                    href="https://docs.google.com/spreadsheets/d/1PMzgfemPZhTKBubqUDWp5gbM-veuWCbT0IKKOw3fsL8/edit#gid=0"
+                  <strong>Access Your Google Sheet</strong>: Begin by opening
+                  the
+                  <a
+                    href="https://docs.google.com/spreadsheets/d/1POCm-y8m7gonF4plOzVxxAk_1y8vjSP1xLR-4-mcMTU/edit#gid=0"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="text-lightblue underline hover:text-darkblue"
-                    >サンプルのGoogleシート</a
-                  >を開きます。また、<a
-                    href="https://docs.google.com/presentation/d/1pUxDKtwHA4GMXfmGXmwzXnjuAbW9g6DE9lFTj55wAn8/edit#slide=id.g2aa00057ea4_0_0"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-lightblue underline hover:text-darkblue"
-                    >サンプルのGoogleスライド</a
-                  >も見つけることができます。
-                  <p class="mt-2">
-                    *注:
-                    サンプルシート・スライドの内容は教育機関のマニュアルを想定した一例です。
-                  </p>
+                    >Sample Google Sheet</a
+                  >.
+                  <ul class="list-disc ms-5">
+                    【Note】
+                    <li class="ms-6">
+                      For your reference, you can find sample Google Documents
+                      used to display tasks from
+                      <a
+                        href="https://drive.google.com/drive/folders/1lAcVzQ62BFrIlk0XRJJugsWFGrQZj_xb"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-lightblue underline hover:text-darkblue"
+                        >HERE</a
+                      >, which will be explained later.
+                    </li>
+                    <li class="ms-6">
+                      The samples provided are merely illustrative, showcasing a
+                      tasks managements for an educational institution.
+                    </li>
+                  </ul>
                 </li>
                 <li class="text-gray-700">
-                  <strong>Googleシートをコピーする</strong>:
-                  Googleシートのコピーを作成して、自分専用のバージョンを作成します。
+                  <strong>Copy the Google Sheet</strong>: Make a copy of the
+                  Google Sheet to create your personalized version.
                 </li>
                 <li class="text-gray-700">
-                  <GASWarningJp />
+                  <GASWarningEn />
                 </li>
                 <li class="text-gray-700">
-                  <strong>元のフォーマットに戻す</strong>:
-                  Googleシートを元のフォーマットにリセットするためのオプションです（インデックスシートを除くすべてのサンプルシートを削除/
-                  すべての事前設定情報をリセット/
-                  インデックスシートの内容をクリア）。<code
-                    class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >Custom Menu > Settings</code
-                  >をクリックし、<code
-                    class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >Delete All Sheets and Pre-Set Info</code
-                  >をクリックします。
-                  <div class="mt-3">
-                    <figure>
-                      <img
-                        src="assets/images/gas-tools/manual-builder/setting_menu.png"
-                        alt="Setting Menu"
-                        class="w-80 h-40"
-                      />
-                      <figcaption class="p-2 text-gray-400">
-                        図: 設定メニュー
-                      </figcaption>
-                    </figure>
-                  </div>
-                </li>
-                <li class="text-gray-700">
-                  <strong
-                    >スライドのURLとインデックスシートの名前を設定する</strong
-                  >:
+                  <strong>Return to Original Format</strong>: Use this option to
+                  reset the Google Sheet to its original format (i.e., Delete
+                  sample task sheets, clear contents in index sheets, reset
+                  pre-defined sample information, and delete sample triggers).
+                  Navigate to
                   <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >Custom Menu > Settings</code
-                  >に移動し、<code
-                    class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >Set Necessary Info</code
-                  >をクリックして、GoogleスライドのURLとGoogleシートのインデックスシートの名前を指定します。
+                    >Custom Menu</code
+                  >
+                  > 
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >SETTINGS</code
+                  >
+                  and click
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Reset All Pre-Defined Info & Triggers</code
+                  >.
+                </li>
+                <li class="text-gray-700">
+                  <strong>Set Information to be Pre-defined</strong>: Navigate
+                  to
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Custom Menu</code
+                  >
+                  >
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
+                    SETTINGS</code
+                  >
+                  >
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Set Pre-Defined Info</code
+                  >
+                  to customize the system to your specific requirements.
+                  <ul class="list-disc">
+                    <li class="ms-6">
+                      <strong>General Setting</strong>: Essential to use this
+                      tool such as defining index-sheets and name of the editors
+                      (work staff) in the Google Sheet.
+                    </li>
+                    <li class="ms-6">
+                      <strong>Setting for Each Type of Reminder</strong>: This
+                      setting is designed to configure each type of reminder:
+                      general reminders, which notify designated staff of all
+                      incomplete tasks, and staff-based reminders. For each
+                      reminder type, users need to set information such as the
+                      staff to receive the reminder, the URL of the Google Doc
+                      displaying target tasks, and the trigger to execute
+                      sending reminder email.
+                    </li>
+                    <li class="ms-6">
+                      <strong>Google Sheet and Doc Integration</strong>: Set a
+                      trigger to monitor task completion statuses in Google Doc
+                      and update the completion field in Google Sheet.
+                    </li>
+                  </ul>
+                  <div class="flex flex-wrap mt-2">
+                    <div class="w-full md:w-1/2">
+                      <figure>
+                        <img
+                          src="assets/images/gas-tools/sheet-tasker/setup-image-1.png"
+                          alt="Access Setting Button"
+                          class="w-72 h-36"
+                        />
+                        <figcaption class="p-2 text-gray-400">
+                          Figure: Access Setting Button
+                        </figcaption>
+                      </figure>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                      <figure>
+                        <img
+                          src="assets/images/gas-tools/sheet-tasker/setup-image-2.png"
+                          alt="Features in Settings"
+                          class="w-96 h-72"
+                        />
+                        <figcaption class="p-2 text-gray-400">
+                          Figure: Features in Settings
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
                 </li>
               </ol>
             </div>
           </div>
 
           <div id="usage" class="mb-3">
-            <div class="text-2xl font-bold">使用方法</div>
+            <div class="text-2xl font-bold">Usage</div>
 
             <ol class="list-decimal list-inside">
               <li class="my-2">
-                <span class="font-bold"
-                  >指定されたパターンでスライドを作成</span
+                <strong>Task Sheet Generation</strong>: Create task sheets by
+                selecting
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >Custom Menu</code
                 >
-                <p>
-                  ユーザーは、設定画面で指定したGoogleスライド上で、特定のパターンに従ってスライドを作成する必要があります。各セクションの最初のスライドは、次の構造で作成してください。
-                </p>
-                <blockquote
-                  class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
                 >
-                  Category:【Category Name】Subcategory Name<br />
-                  Task: Task Name<br />
-                  Summary: Summary Descriptions
-                </blockquote>
-                <div class="resize-image my-3 container-img">
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >TASK SHEETS</code
+                >
+                >
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >Create a New Task Sheet</code
+                >, designed to support a structured format for task management
+                sheet.
+                <ul class="list-disc">
+                  <li class="ms-6">
+                    Delegate tasks to team members using the in-built
+                    dropdown functionality within the task sheet.
+                  </li>
+                  <li class="ms-6">
+                    To alter the task sheet's access permissions, proceed to
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >Custom Menu</code
+                    >
+                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >TASK SHEETS</code
+                    >
+                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >Modify Editors of the Current Sheet</code
+                    >.
+                  </li>
+                </ul>
+                <div class="my-3 container-img">
                   <img
-                    src="assets/images/gas-tools/manual-builder/slide-pattern.png"
-                    alt="Customize Constants"
+                    src="assets/images/gas-tools/sheet-tasker/task-sheet-creation.png"
+                    alt="Task Sheet Interface"
+                    class="w-96 h-48"
+                  />
+                  <figcaption class="p-2 text-gray-400">
+                    Fig: Task Sheet Interface
+                  </figcaption>
+                </div>
+              </li>
+
+              <li class="my-2">
+                <strong>Reminders Testing</strong>: Test the reminder system via
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >Custom Menu</code
+                >
+                >
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >TEST</code
+                >.
+                <ul class="list-disc">
+                  <li class="ms-6">
+                    Ensure Google Docs are established for each reminder type
+                    prior to utilization of this feature.
+                  </li>
+                </ul>
+
+                <div class="flex flex-wrap mt-2">
+                  <div class="w-full md:w-1/2">
+                    <figure class="my-3">
+                      <img
+                        src="assets/images/gas-tools/sheet-tasker/reminder-email.png"
+                        alt="Email Reminder Notification"
+                        class="w-72 h-48"
+                      />
+                      <figcaption class="p-2 text-gray-400">
+                        Fig: Email Reminder Notification
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="w-full md:w-1/2">
+                    <figure class="my-3">
+                      <img
+                        src="assets/images/gas-tools/sheet-tasker/reminder-general-doc-today.png"
+                        alt="General Reminder Doc Today"
+                        class="w-72 h-48"
+                      />
+                      <figcaption class="p-2 text-gray-400">
+                        Fig: General Reminder Today's Doc
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                  <figure class="my-3">
+                    <img
+                      src="assets/images/gas-tools/sheet-tasker/reminder-general-doc-week.png"
+                      alt="General Reminder Doc Week"
+                      class="w-72 h-48"
+                    />
+                    <figcaption class="p-2 text-gray-400">
+                      Fig: General Reminder Week's Doc
+                    </figcaption>
+                  </figure>
+                </div>
+              </li>
+
+              <li class="my-2">
+                <strong>Status Synchronization</strong>: Input "C" in "Complete"
+                column for tasks in Google Docs, which is synchronized with your
+                Google Sheets.
+                <ul class="list-disc">
+                  <li class="ms-6">
+                    You can test this synchronization by
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >Custom Menu</code
+                    >
+                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >TEST</code
+                    >
+                    ><code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >Update Completion Status</code
+                    >.
+                  </li>
+                </ul>
+                <div class="row">
+                  <div class="col-md-4">
+                    <figure class="my-3">
+                      <img
+                        src="assets/images/gas-tools/sheet-tasker/input-c-doc.png"
+                        alt="Input C into Google Doc"
+                        class="w-96 h-48"
+                      />
+                      <figcaption class="p-2 text-gray-400">
+                        Fig: Input "C" to Indicate Task Completion in Google Doc
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-md-4">
+                    <figure class="my-3">
+                      <img
+                        src="assets/images/gas-tools/sheet-tasker/reflect-status-spr.png"
+                        alt="Status Reflection in Google Sheet"
+                        class="w-full h-48"
+                      />
+                      <figcaption class="p-2 text-gray-400">
+                        Fig: Task Completion Status Reflection in Google Sheet
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </li>
+
+              <li class="my-2">
+                <strong>Organization of Sheet Info</strong>: Optimize your
+                sheet organization by using
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >Custom Menu</code
+                >
+                >
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >Update Index Sheets and Sort Task Sheets</code
+                >.
+                <ul class="list-disc">
+                  <li class="ms-6">
+                    This sorts task sheets by date and update index sheets.
+                  </li>
+                  <li class="ms-6">
+                    Add the pre-set completion flag to the sheet with all tasks
+                    completed. This makes the sheet information automatically
+                    included in the
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >completed-task-index</code
+                    > (e.g., If you set "Fin" as the sheet completion flag and include "Fin" in the sheet name, the information of the corresponding sheet will be automatically reflected in the completed-task-index.).
+                  </li>
+                </ul>
+                <div class="my-3 container-img">
+                  <img
+                    src="assets/images/gas-tools/sheet-tasker/update-index-sort-taskSh.png"
+                    alt="Organization of Sheet Info"
                     class="w-80 h-35"
                   />
                   <figcaption class="p-2 text-gray-400">
-                    図: スライドの構造
+                    Fig: Organization of Sheet Info
                   </figcaption>
-                </div>
-                <p>
-                  スクリプトは、URLやカテゴリー名などを最初のスライドから取得・保存し、後ほどGoogleシートに出力します。
-                </p>
-              </li>
-              <li class="my-2">
-                <span class="font-bold">インデックスとタスクシートの更新</span>
-                <p>
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >Custom Menu</code
-                  >に移動し、<code
-                    class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >Update Index & Task Sheets</code
-                  >をクリックします。この操作により、最新のスライドデータに基づいてインデックスとタスクシートが自動的に更新されます。
-                </p>
-
-                <div class="row">
-                  <div class="col-md-4">
-                    <figure class="resize-image my-3">
-                      <img
-                        src="assets/images/gas-tools/manual-builder/update-button.png"
-                        alt="Customize Constants"
-                        class="w-80 h-35"
-                      />
-                      <figcaption class="p-2 text-gray-400">
-                        図: 更新ボタン
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="col-md-4">
-                    <figure class="resize-image my-3">
-                      <img
-                        src="assets/images/gas-tools/manual-builder/index-sheet.png"
-                        alt="Customize Constants"
-                        class="w-80 h-35"
-                      />
-                      <figcaption class="p-2 text-gray-400">
-                        図: インデックスシートの更新
-                      </figcaption>
-                    </figure>
-                  </div>
-                  <div class="col-md-4">
-                    <figure class="resize-image my-3">
-                      <img
-                        src="assets/images/gas-tools/manual-builder/task-sheet.png"
-                        alt="Customize Constants"
-                        class="w-100 h-50"
-                      />
-                      <figcaption class="p-2 text-gray-400">
-                        図: タスクシートの更新
-                      </figcaption>
-                    </figure>
-                  </div>
                 </div>
               </li>
             </ol>
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="others">その他</div>
-            <div class="py-3">
-              <p class="text-lg mt-4">
-                Googleスライドから詳細がどのように抽出され、それらがGoogleシートに出力されるロジックに興味がある場合は、<a
-                  href="https://docs.google.com/presentation/d/1xSyIpb7w24os4EEhpNBP5CCTxS70q5PeTGKm2Vndumw/edit#slide=id.g6f52a3fb7eed7995_31"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-lightblue underline hover:text-darkblue"
-                  >こちら</a
-                >をクリックして、詳細な説明をご覧ください。
-              </p>
-            </div>
+            <TermsAndConditionsEn />
           </div>
 
           <div class="mb-3">
-            <TermsAndConditionsJp />
-          </div>
-
-          <div class="mb-3">
-            <div class="text-2xl font-bold" id="source-code">ソースコード</div>
+            <div class="text-2xl font-bold" id="source-code">Source Code</div>
             <div class="py-3">
               <p class="text-lg mt-4">
-                Github上でソースコードを参照できます。
+                You can find the source code for this tool on Github. Click
                 <a
-                  href="https://github.com/tsato21/manual-builder"
+                  href="https://github.com/tsato21/sheet-tasker"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
-                  >こちら</a
+                  >HERE</a
                 >
-                をクリックしてください.
+                .
               </p>
             </div>
           </div>
         </div>
         <p>
-          <Icon name="material-symbols:calendar-month-sharp" /> 最終更新日:
+          <Icon name="material-symbols:calendar-month-sharp" /> Last updated:
           {{ date }}
         </p>
       </div>
-    </div>
 
-    <!-- Part C: Displayed at right on large screen and at second on other sized screen) -->
-    <div
-      class="col-span-12 order-2 lg:col-span-2 lg:order-3 md:col-span-12 md:order-2 sm:col-span-12 sm:order-2"
-    >
-      <div class="text-3xl mt-2 font-bold lg:hidden block">
-        <div class="my-2 flex items-center">
-          <span class="text-3xl font-bold">シートタスカー</span>
-          <!-- Language Section Option -->
-          <LanguageSelections
-            :languages="languages"
-            :currentLanguage="currentLanguage"
-            class="ml-4"
-          />
+      <!-- Part C: Displayed at right on large screen and at second on other sized screen) -->
+      <div
+        class="col-span-12 order-2 lg:col-span-2 lg:order-3 md:col-span-12 md:order-2 sm:col-span-12 sm:order-2"
+      >
+        <div class="text-3xl mt-2 font-bold lg:hidden block">
+          <div class="my-2 flex items-center">
+            <span class="text-3xl font-bold">SheetTasker</span>
+            <!-- Language Section Option -->
+            <LanguageSelections
+              :languages="languages"
+              :currentLanguage="currentLanguage"
+              class="ml-4"
+            />
+          </div>
+          <!-- Badges Component -->
+          <Badges :badges="badges" />
         </div>
-        <!-- Badges Component -->
-        <Badges :badges="badges" />
-      </div>
-      <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed lg:mr-2">
-        <div class="mb-5 pt-5">
-          <p class="text-l font-bold p-1 bg-gray-400 text-white">
-            <Icon name="map:book-store"></Icon> このページの内容
-          </p>
-          <PageItems :pageItems="pageItems" />
+        <!-- Page Menu Bar: fixed on large screen and relative on other sized screen -->
+        <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed lg:mr-2">
+          <div class="mb-5 pt-5">
+            <p class="text-l font-bold p-1 bg-gray-400 text-white">
+              <Icon name="map:book-store"></Icon> On this page
+            </p>
+            <PageItems :pageItems="pageItems" />
+          </div>
         </div>
       </div>
     </div>
@@ -288,25 +440,24 @@
 <script setup lang="ts">
 // An array of objects representing the breadcrumb navigation links.
 const breadCrumbs = [
-  { label: 'ホーム', to: '/' },
-  { label: 'GASツール', to: '/gas-tools/gas-tools' },
-  { label: 'シートタスカー' },
+  { label: 'Home', to: '/' },
+  { label: 'GAS Tools', to: '/gas-tools/gas-tools' },
+  { label: 'SheetTasker' },
 ];
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'Manual Builder',
+  title: 'SheetTasker',
 });
 
 // An array of objects representing the page items or sections.
 const pageItems = [
-  { label: '概要', id: 'about' },
-  { label: '前提条件', id: 'prerequisites' },
-  { label: 'セットアップ', id: 'setup' },
-  { label: '使用方法', id: 'usage' },
-  { label: 'その他', id: 'others' },
-  { label: '利用規約', id: 'terms-conditions' },
-  { label: 'ソースコード', id: 'source-code' },
+  { label: 'About', id: 'about' },
+  { label: 'Prerequisites', id: 'prerequisites' },
+  { label: 'Setup', id: 'setup' },
+  { label: 'Usage', id: 'usage' },
+  { label: 'Terms and Conditions', id: 'terms-conditions' },
+  { label: 'Source Code', id: 'source-code' },
 ];
 
 // An array of objects representing the badges to be displayed.
@@ -330,20 +481,20 @@ const badges = [
 // An array of objects representing the available languages for the page.
 const languages = [
   {
-    name: 'English',
-    filePath: '/gas-tools/each-tool/manual-builder.en',
+    name: '日本語',
+    filePath: '/gas-tools/each-tool/sheet-tasker.jpn',
   },
 ];
 
 // The current language of the page.
-const currentLanguage = '日本語';
+const currentLanguage = 'English';
 
-// The date, formatted according to the Japanese locale.
+// The date, formatted according to the US locale.
 let date = ref(
-  new Intl.DateTimeFormat('ja-JP', {
+  new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-  }).format(new Date('2024-04-18'))
+  }).format(new Date('2024-04-19'))
 );
 </script>

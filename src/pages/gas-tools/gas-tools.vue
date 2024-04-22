@@ -73,7 +73,7 @@ const tools = ref([
   {
     title: 'SheetTasker',
     description:
-      'XXX.',
+      'Manages tasks in Google Sheets, output target tasks in Google Docs, and send reminders via Gmail, allowing for efficient task management on Google Workspace.',
     filePath: '/gas-tools/each-tool/sheet-tasker.en',
   },
   {
