@@ -8,7 +8,7 @@
           class="text-xl font-bold text-primary text-black no-underline flex items-center"
         >
           <img
-            src="/assets/images/nav-bar/icon.png"
+            src="~/assets/images/nav-bar/icon.png"
             alt="Site's Icon"
             class="mr-2 w-12 h-12"
           />

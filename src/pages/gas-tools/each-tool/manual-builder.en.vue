@@ -389,6 +389,6 @@ let date = ref(
 );
 
 //imgSrc for Banner component
-const imgSrc = "/_nuxt/assets/images/gas-tools/manual-builder/banner.png";
+const imgSrc = "assets/images/gas-tools/manual-builder/banner.png";
 
 </script>
