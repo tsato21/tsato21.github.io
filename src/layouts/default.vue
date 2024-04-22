@@ -12,7 +12,7 @@
             alt="Site's Icon"
             class="mr-2 w-12 h-12"
           />
-          Tiger's Scripts Showcase
+          Scripts Showcase
         </NuxtLink>
         <ul
           class="nav bg-white rounded-lg p-3 right-2 flex md:flex hidden"

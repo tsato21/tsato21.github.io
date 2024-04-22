@@ -108,11 +108,15 @@
                   pre-defined information, and clear contents in index sheet).
                   Navigate to
                   <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >'Custom Menu' > Click 'Setting'</code
+                    >Custom Menu</code
+                  >Click<code
+                    class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >
+                    Setting</code
                   >
                   and click
                   <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >'Delete All Sheets and Pre-Set Info'</code
+                    >Delete All Sheets and Pre-Set Info</code
                   >.
                   <div class="mt-3">
                     <figure>
