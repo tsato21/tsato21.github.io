@@ -1,6 +1,6 @@
 <template>
   <Cursor />
-  <div class="flex flex-col min-h-screen relative">
+  <div class="flex flex-col">
     <header class="shadow-sm bg-white relative p-5">
       <nav class="flex justify-between items-center">
         <NuxtLink
@@ -21,7 +21,7 @@
           <NavbarItems @close="isOpen = false" />
         </ul>
         <div class="relative">
-          <button @click="toggleMenu" class="navbar-toggler">
+          <button @click="toggleMenu" class="navbar-toggler transform transition hover:-translate-y-1">
             <Icon name="material-symbols-light:menu" class="custom-icon"></Icon>
           </button>
           <Transition name="menu-bar-out">
@@ -30,15 +30,15 @@
               class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50"
               @click="isOpen = false"
             >
-              <Transition name="menu-bar-in">
+              
                 <ul
                   v-if="isOpen"
-                  class="nav absolute bg-white rounded-lg p-5 mt-5 right-2"
+                  class="absolute bg-white rounded-lg p-5 mt-5 right-2"
                   @click.stop
                 >
                   <NavbarItems @close="isOpen = false" />
                 </ul>
-              </Transition>
+              
             </div>
           </Transition>
         </div>
@@ -50,11 +50,12 @@
       <slot />
       <!-- Button to scroll to top of the page: fixed at bottom right corner -->
       <button
-        @click="scrollTop"
-        class="fixed bottom-5 right-5 bg-blue-500 text-white p-2 rounded-full top-btn"
-      >
-        Top
-      </button>
+    v-if="isScrolled"
+    @click="scrollTop"
+    class="fixed bottom-5 right-5 bg-blue-500 text-white p-2 rounded-full top-btn"
+  >
+    Top
+  </button>
     </div>
 
     <!-- footer -->
@@ -63,12 +64,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import NavbarItems from '~/components/NavbarItems.vue';
-import Footer from '~/components/Footer.vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 
 const isOpen = ref(false);
-const route = useRoute();
 
 const toggleMenu = () => {
   isOpen.value = !isOpen.value;
@@ -78,6 +76,18 @@ const toggleMenu = () => {
 const scrollTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 };
-</script>
 
-<style scoped></style>
+const isScrolled = ref(false);
+
+const checkScroll = () => {
+  isScrolled.value = window.scrollY > 0;
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', checkScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', checkScroll);
+});
+</script>
