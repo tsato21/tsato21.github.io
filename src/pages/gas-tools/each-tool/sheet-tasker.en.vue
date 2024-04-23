@@ -29,7 +29,12 @@
           <Badges :badges="badges" />
         </div>
 
-        <div class="mb-5 p-5 bottom-shadow">
+        <div class="my-3 mx-2">
+          <Banner :imgSrc="imgSrc"/>
+        </div>
+
+
+        <div class="mb-5 p-5">
           <div class="mb-3">
             <div class="text-2xl font-bold" id="about">About</div>
             <div class="py-3">
@@ -399,6 +404,12 @@
               </p>
             </div>
           </div>
+
+          <div class="mb-3">
+            <AttributesEn
+              :attributes="attributes"
+            />
+          </div>
         </div>
         <p>
           <Icon name="material-symbols:calendar-month-sharp" /> Last updated:
@@ -458,6 +469,7 @@ const pageItems = [
   { label: 'Usage', id: 'usage' },
   { label: 'Terms and Conditions', id: 'terms-conditions' },
   { label: 'Source Code', id: 'source-code' },
+  { label: 'Attributes', id: 'attributes' },
 ];
 
 // An array of objects representing the badges to be displayed.
@@ -497,4 +509,17 @@ let date = ref(
     day: 'numeric',
   }).format(new Date('2024-04-19'))
 );
+
+/*
+imgSrc for Banner component
+This should be stored in the public folder since it won't be included in your final build, and it will be resolved relative to the public path of your application at runtime.
+*/
+const imgSrc = "/banner/sheet-tasker.png";
+
+//values for Attribute component
+const attributes = {
+  href: 'https://www.flaticon.com/free-icons/list',
+  title: 'list icons',
+  hyperLinkedDescription: 'List icons created by Freepik - Flaticon',
+};
 </script>

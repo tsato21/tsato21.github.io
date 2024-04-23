@@ -22,16 +22,16 @@
           <div
             v-for="(tool, index) in tools"
             :key="index"
-            class="mt-5 flex justify-between items-start"
+            class="mt-5 flex justify-between items-start border-b-2 pb-5"
           >
             <div class="flex-grow">
               <div class="text-2xl font-semibold">{{ tool.title }}</div>
               <p class="mt-2">{{ tool.description }}</p>
             </div>
             <NuxtLink :to="tool.filePath" class="self-start ml-5">
-              <button class="mt-3 px-4 py-2 bg-gray-400 text-white rounded">
-                Details
-              </button>
+              <button class="mt-3 px-4 py-2 bg-gray-400 text-white rounded hover:bg-gray-500">
+  Details
+</button>
             </NuxtLink>
           </div>
         </div>
@@ -138,5 +138,3 @@ useHead({
   title: 'GAS Tools',
 });
 </script>
-
-<style scoped></style>

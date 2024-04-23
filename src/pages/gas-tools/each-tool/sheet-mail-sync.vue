@@ -23,7 +23,7 @@
           <Badges :badges="badges" />
         </div>
 
-        <div class="mb-5 p-5 bottom-shadow">
+        <div class="mb-5 p-5">
           <div class="mb-3">
             <div class="text-2xl font-bold" id="about">About</div>
             <div class="py-3">

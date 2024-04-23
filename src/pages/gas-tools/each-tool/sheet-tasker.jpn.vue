@@ -29,7 +29,11 @@
           <Badges :badges="badges" />
         </div>
 
-        <div class="mb-5 p-5 bottom-shadow">
+        <div class="my-3 mx-2">
+          <Banner :imgSrc="imgSrc"/>
+        </div>
+
+        <div class="mb-5 p-5">
           <div class="mb-3">
             <div class="text-2xl font-bold" id="about">概要</div>
             <div class="py-3">
@@ -94,7 +98,7 @@
                   <strong>Googleシートをコピーする</strong>: Googleシートのコピーを作成して、自分専用のバージョンを作成します。
                 </li>
                 <li class="text-gray-700">
-                  <GASWarningJp />
+                  <GASWarningJpn />
                 </li>
                 <li class="text-gray-700">
                   <strong>元のフォーマットに戻す</strong>:  Googleシートを元のフォーマットにリセットするためのオプションです (サンプルタスクシートの削除、目次シートの内容クリア、事前設定情報やトリガーを削除)。
@@ -348,7 +352,7 @@
           </div>
 
           <div class="mb-3">
-            <TermsAndConditionsJp />
+            <TermsAndConditionsJpn />
           </div>
 
           <div class="mb-3">
@@ -367,11 +371,18 @@
               </p>
             </div>
           </div>
+
+          <div class="mb-3">
+            <AttributesJpn
+              :attributes="attributes"
+            />
+          </div>
         </div>
         <p>
           <Icon name="material-symbols:calendar-month-sharp" /> 最終更新日:
           {{ date }}
         </p>
+        
       </div>
 
       <!-- Part C: Displayed at right on large screen and at second on other sized screen) -->
@@ -426,6 +437,7 @@ const pageItems = [
   { label: '使用方法', id: 'usage' },
   { label: '利用規約', id: 'terms-conditions' },
   { label: 'ソースコード', id: 'source-code' },
+  { label: '表記', id: 'attributes' },
 ];
 
 // An array of objects representing the badges to be displayed.
@@ -465,4 +477,17 @@ let date = ref(
     day: 'numeric',
   }).format(new Date('2024-04-19'))
 );
+
+/*
+imgSrc for Banner component
+This should be stored in the public folder since it won't be included in your final build, and it will be resolved relative to the public path of your application at runtime.
+*/
+const imgSrc = "/banner/sheet-tasker.png";
+
+//values for Attribute component
+const attributes = {
+  href: 'https://www.flaticon.com/free-icons/list',
+  title: 'list icons',
+  hyperLinkedDescription: 'List icons created by Freepik - Flaticon',
+};
 </script>

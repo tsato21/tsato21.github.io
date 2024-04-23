@@ -29,12 +29,11 @@
           <Badges :badges="badges" />
         </div>
 
-        <div class="my-3 mx-2 bottom-shadow">
-          <!-- Banner Component -->
-          <img src="assets/images/gas-tools/manual-builder/banner.png" alt="Tool Banner" class="w-64 h-64" />
+        <div class="my-3 mx-2">
+          <Banner :imgSrc="imgSrc"/>
         </div>
 
-        <div class="mb-5 p-5 bottom-shadow">
+        <div class="mb-5 p-5">
           <div class="mb-3">
             <div class="text-2xl font-bold" id="about">概要</div>
             <div class="py-3">
@@ -92,7 +91,7 @@
                   Googleシートのコピーを作成して、自分専用のバージョンを作成します。
                 </li>
                 <li class="text-gray-700">
-                  <GASWarningJp />
+                  <GASWarningJpn />
                 </li>
                 <li class="text-gray-700">
                   <strong>元のフォーマットに戻す</strong>:
@@ -243,7 +242,7 @@
           </div>
 
           <div class="mb-3">
-            <TermsAndConditionsJp />
+            <TermsAndConditionsJpn />
           </div>
 
           <div class="mb-3">
@@ -262,11 +261,23 @@
               </p>
             </div>
           </div>
+
+          <div class="mb-3">
+            <AttributesJpn
+              :attributes="attributes"
+            />
+          </div>
+
+          
+        
         </div>
-        <p>
+        
+            <p>
           <Icon name="material-symbols:calendar-month-sharp" /> 最終更新日:
           {{ date }}
         </p>
+          
+
       </div>
     </div>
 
@@ -321,6 +332,7 @@ const pageItems = [
   { label: 'その他', id: 'others' },
   { label: '利用規約', id: 'terms-conditions' },
   { label: 'ソースコード', id: 'source-code' },
+  { label: '表記', id: 'attributes' },
 ];
 
 // An array of objects representing the badges to be displayed.
@@ -358,6 +370,20 @@ let date = ref(
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-  }).format(new Date('2024-04-17'))
+  }).format(new Date('2024-04-23'))
 );
+
+/*
+imgSrc for Banner component
+This should be stored in the public folder since it won't be included in your final build, and it will be resolved relative to the public path of your application at runtime.
+*/
+const imgSrc = "/banner/manual-builder.png";
+
+//values for Attribute component
+const attributes = {
+  href: 'https://www.flaticon.com/free-icons/manual',
+  title: 'manual icons',
+  hyperLinkedDescription: 'Manual icons created by Freepik - Flaticon',
+};
+
 </script>

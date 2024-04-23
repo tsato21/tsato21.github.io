@@ -33,12 +33,9 @@
 }
 .nav-link {
   margin-right: 1rem;
-  transition-property: all;
   transition-duration: 250ms;
-  transition-timing-function: ease-in-out;
 }
 .nav-link:hover {
-  transform: translateY(-0.25rem) scale(1.1);
   color: #4b5563;
   border-bottom: 2px solid #4b5563;
 }
@@ -46,20 +43,9 @@
 .menu-bar-out-leave-active {
   transition: opacity 0.5s;
 }
-
 .menu-bar-out-enter-from,
 .menu-bar-out-leave-to {
   opacity: 0;
-}
-
-.menu-bar-in-enter-active,
-.menu-bar-in-leave-active {
-  transition: transform 0.5s;
-}
-
-.menu-bar-in-enter-from,
-.menu-bar-in-leave-to {
-  transform: scale(0.5);
 }
 
 /* for the navbar icon */
