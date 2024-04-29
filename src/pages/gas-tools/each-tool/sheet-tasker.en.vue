@@ -30,21 +30,29 @@
         </div>
 
         <div class="my-3 mx-2">
-          <Banner :imgSrc="imgSrc"/>
+          <Banner :imgSrc="imgSrc" />
         </div>
-
 
         <div class="mb-5 p-5">
           <div class="mb-3">
             <div class="text-2xl font-bold" id="about">About</div>
             <div class="py-3">
               <p>
-                Manages tasks in Google Sheets, output target tasks in Google Docs, and send reminders via Gmail, allowing for efficient task management on Google Workspace.
+                Manages tasks in Google Sheets, output target tasks in Google
+                Docs, and send reminders via Gmail, allowing for efficient task
+                management on Google Workspace.
               </p>
               <blockquote
                 class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
               >
-                This tool is a database-style task management tool designed for managing tasks. It enables efficient task management within Google Workspace without using external apps. Unlike Google's built-in apps like Keep and Tasks, SheetTasker offers various features such as embedding URLs into specific words, notifying task reminders via Gmail, and more. In addition to individual-level task management, it also allows for task management at the team level.
+                This tool is a database-style task management tool designed for
+                managing tasks. It enables efficient task management within
+                Google Workspace without using external apps. Unlike Google's
+                built-in apps like Keep and Tasks, SheetTasker offers various
+                features such as embedding URLs into specific words, notifying
+                task reminders via Gmail, and more. In addition to
+                individual-level task management, it also allows for task
+                management at the team level.
               </blockquote>
             </div>
           </div>
@@ -116,7 +124,7 @@
                   <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                     >Custom Menu</code
                   >
-                  > 
+                  >
                   <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                     >SETTINGS</code
                   >
@@ -214,8 +222,8 @@
                 sheet.
                 <ul class="list-disc">
                   <li class="ms-6">
-                    Delegate tasks to team members using the in-built
-                    dropdown functionality within the task sheet.
+                    Delegate tasks to team members using the in-built dropdown
+                    functionality within the task sheet.
                   </li>
                   <li class="ms-6">
                     To alter the task sheet's access permissions, proceed to
@@ -348,8 +356,8 @@
               </li>
 
               <li class="my-2">
-                <strong>Organization of Sheet Info</strong>: Optimize your
-                sheet organization by using
+                <strong>Organization of Sheet Info</strong>: Optimize your sheet
+                organization by using
                 <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                   >Custom Menu</code
                 >
@@ -367,7 +375,11 @@
                     included in the
                     <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                       >completed-task-index</code
-                    > (e.g., If you set "Fin" as the sheet completion flag and include "Fin" in the sheet name, the information of the corresponding sheet will be automatically reflected in the completed-task-index.).
+                    >
+                    (e.g., If you set "Fin" as the sheet completion flag and
+                    include "Fin" in the sheet name, the information of the
+                    corresponding sheet will be automatically reflected in the
+                    completed-task-index.).
                   </li>
                 </ul>
                 <div class="my-3 container-img">
@@ -406,9 +418,7 @@
           </div>
 
           <div class="mb-3">
-            <AttributesEn
-              :attributes="attributes"
-            />
+            <AttributesEn :attributes="attributes" />
           </div>
         </div>
         <p>
@@ -514,7 +524,7 @@ let date = ref(
 imgSrc for Banner component
 This should be stored in the public folder since it won't be included in your final build, and it will be resolved relative to the public path of your application at runtime.
 */
-const imgSrc = "/banner/sheet-tasker.png";
+const imgSrc = '/banner/sheet-tasker.png';
 
 //values for Attribute component
 const attributes = {

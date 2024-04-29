@@ -18,7 +18,7 @@
         <div class="text-3xl mt-2 font-bold lg:block hidden">
           GAS Tools (Google Apps Script Tools)
         </div>
-        <div class="mb-5 p-5 bottom-shadow">
+        <div class="mb-5 p-5">
           <div
             v-for="(tool, index) in tools"
             :key="index"
@@ -29,9 +29,11 @@
               <p class="mt-2">{{ tool.description }}</p>
             </div>
             <NuxtLink :to="tool.filePath" class="self-start ml-5">
-              <button class="mt-3 px-4 py-2 bg-gray-400 text-white rounded hover:bg-gray-500">
-  Details
-</button>
+              <button
+                class="mt-3 px-4 py-2 bg-gray-400 text-white rounded hover:bg-gray-500"
+              >
+                Details
+              </button>
             </NuxtLink>
           </div>
         </div>
