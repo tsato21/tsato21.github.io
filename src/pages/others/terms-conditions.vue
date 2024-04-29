@@ -26,7 +26,7 @@
             </div>
             <div class="py-3">
               <p>
-                The following Terms and Conditions (“Terms”) govern Your access
+                The following Terms and Conditions (“Terms”) govern your access
                 to and use of this Scripts ShowCase website at
                 https://tsato21.github.io/ (“Website”). The scope of these Terms
                 extend also to the google apps script tools mentioned explicitly
