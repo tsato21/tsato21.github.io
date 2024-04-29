@@ -18,8 +18,117 @@
         <div class="text-3xl mt-2 font-bold lg:block hidden">
           TERMS & CONDITIONS
         </div>
-        <div class="mb-5 p-5 bottom-shadow">
+        <div class="mb-5 p-5">
           <!-- contents -->
+          <div class="mb-3">
+            <div class="text-2xl font-bold border-b-2 pb-3" id="introduction">
+              Thank you for coming to Scripts Showcase!
+            </div>
+            <div class="py-3">
+              <p>
+                The following Terms and Conditions (“Terms”) govern your access
+                to and use of this Scripts ShowCase website at
+                https://tsato21.github.io/ (“Website”). The scope of these Terms
+                extend also to the google apps script tools mentioned explicitly
+                in this Website ("Services") to which I, Taiga SATO, the sole
+                administrator of this Website, have the right to distribute.
+                Please read these Terms carefully. By accessing this Website or
+                using any of the Services, You agree to be bound by these Terms.
+                You also confirm You have read and agreed to My Privacy Policy
+                at https://tsato21.github.io/privacy-policy/.
+              </p>
+            </div>
+
+            <div class="py-5 bg-light-blue-400">
+              <p>
+                “You”, “Your”, or “the user” in this page refers to the viewer
+                of this Website or the user of the Services. These Terms herein
+                constitutes a legal agreement between You and I (“both
+                parties”). You must be of sufficient age, in Your timezone and
+                local jurisdication, to legally bind Yourself to these Terms. If
+                You are entering into these Terms on behalf of a company, You
+                represent that You have the authority to bind that company to
+                these Terms.
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <div class="text-2xl font-bold border-b-2 pb-3" id="services">
+              Services
+            </div>
+            <div class="py-3">
+              <p>
+                “You”, “Your”, or “the user” in this page refers to the viewer
+                of this Website or the user of the Services. These Terms herein
+                constitutes a legal agreement between You and I (“both
+                parties”). You must be of sufficient age, in Your timezone and
+                local jurisdication, to legally bind Yourself to these Terms. If
+                You are entering into these Terms on behalf of a company, You
+                represent that You have the authority to bind that company to
+                these Terms.
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <div
+              class="text-2xl font-bold border-b-2 pb-3"
+              id="use-of-services"
+            >
+              Use of the Services
+            </div>
+            <div class="py-3">
+              <p>
+                You may use the Services, free of charge, as long as you agree
+                and comply to these Terms. Note that if You are installing the
+                Services via a hosting website, You will also be bound by the
+                terms of that website; for example, if You are going to install
+                a Service via the Chrome Web Store, You must agree to the Google
+                Chrome Web Store Terms of Service.
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <div
+              class="text-2xl font-bold border-b-2 pb-3"
+              id="restriction-of-services"
+            >
+              Restrictions on Use
+            </div>
+            <div class="py-3">
+              <ul class="list-disk list-inside">
+                In addition to all other terms and conditions contained herein,
+                You shall not and shall not permit others to:
+                <li>
+                  use the Service for spamming or any other illegal or
+                  unauthorized purpose or engage in illegal or deceptive trade
+                  practices;
+                </li>
+                <li>
+                  otherwise use the Service in violation of any laws in Your
+                  jurisdiction (including but not limited to copyright laws).
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <div class="text-2xl font-bold border-b-2 pb-3" id="copyright">
+              Copyright
+            </div>
+            <div class="py-3">
+              <p>
+                You may use the Services, free of charge, as long as you agree
+                and comply to these Terms. Note that if You are installing the
+                Services via a hosting website, You will also be bound by the
+                terms of that website; for example, if You are going to install
+                a Service via the Chrome Web Store, You must agree to the Google
+                Chrome Web Store Terms of Service.
+              </p>
+            </div>
+          </div>
         </div>
         <p>
           <Icon name="material-symbols:calendar-month-sharp" /> Last updated:

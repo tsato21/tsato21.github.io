@@ -37,5 +37,9 @@
         </NuxtLink>
       </li>
     </ul>
+    <div class="text-center mt-1 text-sm">
+      &copy; {{ new Date().getFullYear() }} Scripts Showcase. Powered by Vue &
+      Nuxt.
+    </div>
   </footer>
 </template>

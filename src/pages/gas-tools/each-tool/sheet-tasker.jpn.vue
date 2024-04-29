@@ -30,7 +30,7 @@
         </div>
 
         <div class="my-3 mx-2">
-          <Banner :imgSrc="imgSrc"/>
+          <Banner :imgSrc="imgSrc" />
         </div>
 
         <div class="mb-5 p-5">
@@ -38,28 +38,29 @@
             <div class="text-2xl font-bold" id="about">概要</div>
             <div class="py-3">
               <p>
-                Google Sheetsでのタスク管理し、Google Docsで対象タスクの出力し、Gmailでリマインダーを送信することで、Google WorkSpace上で効率的にタスクを管理できます。
+                Google Sheetsでのタスク管理し、Google
+                Docsで対象タスクの出力し、Gmailでリマインダーを送信することで、Google
+                WorkSpace上で効率的にタスクを管理できます。
               </p>
               <blockquote
                 class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
               >
-                このツールは、タスクを管理するために設計されたデータベース型のタスク管理ツールです。外部アプリを使用せず、Google Workspace内での効率的なタスク管理を実現することができます。Google KeepやTasksなどのGoogleの組み込みアプリとは異なり、SheetTaskerは特定の単語にURLを埋め込んだり、Gmailでタスクリマインダーを通知したりなど、さまざまな機能を搭載しています。また、個々レベルでのタスク管理だけではなく、チームレベルでのタスク管理も可能です。
+                このツールは、タスクを管理するために設計されたデータベース型のタスク管理ツールです。外部アプリを使用せず、Google
+                Workspace内での効率的なタスク管理を実現することができます。Google
+                KeepやTasksなどのGoogleの組み込みアプリとは異なり、SheetTaskerは特定の単語にURLを埋め込んだり、Gmailでタスクリマインダーを通知したりなど、さまざまな機能を搭載しています。また、個々レベルでのタスク管理だけではなく、チームレベルでのタスク管理も可能です。
               </blockquote>
             </div>
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="prerequisites">
-              前提条件
-            </div>
+            <div class="text-2xl font-bold" id="prerequisites">前提条件</div>
             <div class="py-3">
               <ul class="list-disc list-inside space-y-2">
                 <li class="text-gray-700">
                   Google Sheet、Docs、GmailにアクセスできるGoogleアカウント。
                 </li>
                 <li class="text-gray-700">
-                  Google Sheet、Docs、Gmail, Google Apps
-                  Scriptの基本的な理解。
+                  Google Sheet、Docs、Gmail, Google Apps Scriptの基本的な理解。
                 </li>
               </ul>
             </div>
@@ -70,7 +71,8 @@
             <div class="py-3">
               <ol class="list-decimal list-inside space-y-2">
                 <li class="text-gray-700">
-                  <strong>Googleシートにアクセスする</strong>: <a
+                  <strong>Googleシートにアクセスする</strong>:
+                  <a
                     href="https://docs.google.com/spreadsheets/d/1POCm-y8m7gonF4plOzVxxAk_1y8vjSP1xLR-4-mcMTU/edit#gid=0"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -95,13 +97,16 @@
                   </ul>
                 </li>
                 <li class="text-gray-700">
-                  <strong>Googleシートをコピーする</strong>: Googleシートのコピーを作成して、自分専用のバージョンを作成します。
+                  <strong>Googleシートをコピーする</strong>:
+                  Googleシートのコピーを作成して、自分専用のバージョンを作成します。
                 </li>
                 <li class="text-gray-700">
                   <GASWarningJpn />
                 </li>
                 <li class="text-gray-700">
-                  <strong>元のフォーマットに戻す</strong>:  Googleシートを元のフォーマットにリセットするためのオプションです (サンプルタスクシートの削除、目次シートの内容クリア、事前設定情報やトリガーを削除)。
+                  <strong>元のフォーマットに戻す</strong>:
+                  Googleシートを元のフォーマットにリセットするためのオプションです
+                  (サンプルタスクシートの削除、目次シートの内容クリア、事前設定情報やトリガーを削除)。
                   <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                     >Custom Menu</code
                   >
@@ -115,7 +120,7 @@
                   >をクリック。
                 </li>
                 <li class="text-gray-700">
-                  <strong>事前設定情報の入力</strong>: 
+                  <strong>事前設定情報の入力</strong>:
                   <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                     >Custom Menu</code
                   >
@@ -130,13 +135,18 @@
                   をクリックし、事前設定情報のうち、必要なものを入力。
                   <ul class="list-disc">
                     <li class="ms-6">
-                      <strong>General Setting</strong>: 目次シートやスタッフ名などの本ツール使用において必要な設定です。
+                      <strong>General Setting</strong>:
+                      目次シートやスタッフ名などの本ツール使用において必要な設定です。
                     </li>
                     <li class="ms-6">
-                      <strong>Setting for Each Type of Reminder</strong>: 一般リマインダー (全未完了タスクを指定したスタッフに通知)、スタッフベースのリマインダーなどの各種リマインダーの設定。各タイプごとに、リマインダーを受け取るスタッフ、対象タスクを表示するGoogle DocのURL、リマインダーメールの送信を実行するトリガーなどを設定する必要があります。
+                      <strong>Setting for Each Type of Reminder</strong>:
+                      一般リマインダー
+                      (全未完了タスクを指定したスタッフに通知)、スタッフベースのリマインダーなどの各種リマインダーの設定。各タイプごとに、リマインダーを受け取るスタッフ、対象タスクを表示するGoogle
+                      DocのURL、リマインダーメールの送信を実行するトリガーなどを設定する必要があります。
                     </li>
                     <li class="ms-6">
-                      <strong>Google Sheet and Doc Integration</strong>: Google Docでタスクの完了ステータスを確認し、Googleシートの完了欄を更新するトリガーを設定します。
+                      <strong>Google Sheet and Doc Integration</strong>: Google
+                      Docでタスクの完了ステータスを確認し、Googleシートの完了欄を更新するトリガーを設定します。
                     </li>
                   </ul>
                   <div class="flex flex-wrap mt-2">
@@ -219,7 +229,7 @@
               </li>
 
               <li class="my-2">
-                <strong>リマインダー機能のテスト</strong>: 
+                <strong>リマインダー機能のテスト</strong>:
                 <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                   >Custom Menu</code
                 >
@@ -229,7 +239,8 @@
                 >からリマインドメールがGmailに送信されるか確認してください。
                 <ul class="list-disc">
                   <li class="ms-6">
-                    この機能の使用前に、各リマインダーごとのGoogle Docsが設定されていることを確認してください。
+                    この機能の使用前に、各リマインダーごとのGoogle
+                    Docsが設定されていることを確認してください。
                   </li>
                 </ul>
 
@@ -274,7 +285,10 @@
               </li>
 
               <li class="my-2">
-                <strong>タスク管理状態の連携</strong>: タスクが完了したら、Google Docsに「C」と入力してください。これにより、Google Sheetの完了欄(チェックボックス)にチェックが自動で入ります。
+                <strong>タスク管理状態の連携</strong>:
+                タスクが完了したら、Google
+                Docsに「C」と入力してください。これにより、Google
+                Sheetの完了欄(チェックボックス)にチェックが自動で入ります。
                 <ul class="list-disc">
                   <li class="ms-6">
                     <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
@@ -334,7 +348,8 @@
                     シート自体の完了フラグ(SETTINGSで事前設定が必要)をシート名に追加すると、当該シート情報が
                     <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                       >completed-task-index</code
-                    >に自動で反映されます。(例: 「Fin」をシート完了フラグに設定し、シート名に「Fin」を入れると、当該シート情報がcompleted-task-indexに自動で反映されます。)
+                    >に自動で反映されます。(例:
+                    「Fin」をシート完了フラグに設定し、シート名に「Fin」を入れると、当該シート情報がcompleted-task-indexに自動で反映されます。)
                   </li>
                 </ul>
                 <div class="my-3 container-img">
@@ -373,16 +388,13 @@
           </div>
 
           <div class="mb-3">
-            <AttributesJpn
-              :attributes="attributes"
-            />
+            <AttributesJpn :attributes="attributes" />
           </div>
         </div>
         <p>
           <Icon name="material-symbols:calendar-month-sharp" /> 最終更新日:
           {{ date }}
         </p>
-        
       </div>
 
       <!-- Part C: Displayed at right on large screen and at second on other sized screen) -->
@@ -482,7 +494,7 @@ let date = ref(
 imgSrc for Banner component
 This should be stored in the public folder since it won't be included in your final build, and it will be resolved relative to the public path of your application at runtime.
 */
-const imgSrc = "/banner/sheet-tasker.png";
+const imgSrc = '/banner/sheet-tasker.png';
 
 //values for Attribute component
 const attributes = {

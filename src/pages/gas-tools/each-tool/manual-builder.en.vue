@@ -30,7 +30,7 @@
         </div>
 
         <div class="my-3 mx-2">
-          <Banner :imgSrc="imgSrc"/>
+          <Banner :imgSrc="imgSrc" />
         </div>
 
         <div class="mb-5 p-5">
@@ -285,11 +285,8 @@
           </div>
 
           <div class="mb-3">
-            <AttributesEn
-              :attributes="attributes"
-            />
+            <AttributesEn :attributes="attributes" />
           </div>
-
         </div>
         <p>
           <Icon name="material-symbols:calendar-month-sharp" /> Last updated:
@@ -395,7 +392,7 @@ let date = ref(
 imgSrc for Banner component
 This should be stored in the public folder since it won't be included in your final build, and it will be resolved relative to the public path of your application at runtime.
 */
-const imgSrc = "/banner/manual-builder.png";
+const imgSrc = '/banner/manual-builder.png';
 
 //values for Attribute component
 const attributes = {
@@ -403,5 +400,4 @@ const attributes = {
   title: 'manual icons',
   hyperLinkedDescription: 'Manual icons created by Freepik - Flaticon',
 };
-
 </script>

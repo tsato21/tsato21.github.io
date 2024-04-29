@@ -30,7 +30,7 @@
         </div>
 
         <div class="my-3 mx-2">
-          <Banner :imgSrc="imgSrc"/>
+          <Banner :imgSrc="imgSrc" />
         </div>
 
         <div class="mb-5 p-5">
@@ -56,8 +56,7 @@
                   Google Sheet, SlideにアクセスできるGoogleアカウント。
                 </li>
                 <li class="text-gray-700">
-                  Google Sheet、Slide、Google Apps
-                  Scriptの基本的な理解。
+                  Google Sheet、Slide、Google Apps Scriptの基本的な理解。
                 </li>
               </ul>
             </div>
@@ -106,8 +105,7 @@
                     >Settings</code
                   >
                   >
-                  <code
-                    class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                     >Delete All Sheets and Pre-Set Info</code
                   >をクリックします。
                   <div class="mt-3">
@@ -263,21 +261,14 @@
           </div>
 
           <div class="mb-3">
-            <AttributesJpn
-              :attributes="attributes"
-            />
+            <AttributesJpn :attributes="attributes" />
           </div>
-
-          
-        
         </div>
-        
-            <p>
+
+        <p>
           <Icon name="material-symbols:calendar-month-sharp" /> 最終更新日:
           {{ date }}
         </p>
-          
-
       </div>
     </div>
 
@@ -377,7 +368,7 @@ let date = ref(
 imgSrc for Banner component
 This should be stored in the public folder since it won't be included in your final build, and it will be resolved relative to the public path of your application at runtime.
 */
-const imgSrc = "/banner/manual-builder.png";
+const imgSrc = '/banner/manual-builder.png';
 
 //values for Attribute component
 const attributes = {
@@ -385,5 +376,4 @@ const attributes = {
   title: 'manual icons',
   hyperLinkedDescription: 'Manual icons created by Freepik - Flaticon',
 };
-
 </script>
