@@ -20,6 +20,60 @@
         </div>
         <div class="mb-5 p-5 bottom-shadow">
           <!-- contents -->
+          <p>
+            Your privacy holds utmost significance to Me. This Privacy Policy
+            delineates the types of personal information that is gathered and
+            how it is utilized.
+          </p>
+          <br />
+          <p>
+            Above all, rest assured that I will never disclose Your email
+            address or any other personal details to anyone without Your
+            explicit permission.
+          </p>
+        </div>
+        <div class="py-3">
+          <ol class="list-set">
+            <li class="text-2xl font-bold border-b-2 pb-3" id="definition">
+<!-- <NuxtLink :to="{ hash: 'definition' }" class="group">
+  Definitions
+  <div class="-ml-6 pr-2 py-2 inline-flex transition-opacity">
+    <span class="i-heroicons-hashtag-20-solid w-4 h-4 text-primary opacity-0 group-hover:opacity-100">a</span>
+  </div>
+</NuxtLink> -->
+<a aria-current="page" href="/components/carousel#usage" class="router-link-active router-link-exact-active group">
+  <div class="-ml-6 pr-2 py-2 inline-flex opacity-0 group-hover:opacity-100 transition-opacity absolute">
+    <span class="i-heroicons-hashtag-20-solid w-4 h-4 text-primary"></span>
+  </div>
+  Usage
+</a>
+              
+              <!-- <a href="#definition">a</a> -->
+                      
+              <ol class="list-set">
+                <li>Item 1-1</li>
+                <li>Item 1-2</li>
+              </ol>
+            </li>
+            <li>
+              Item 2
+              <ol class="list-set">
+                <li>Item 2-1</li>
+                <li>Item 2-2</li>
+              </ol>
+            </li>
+            
+          </ol>
+          <p>
+            “You”, “Your”, or “the user” in this page refers to the viewer
+            of this Website or the user of the Services. These Terms herein
+            constitutes a legal agreement between You and I (“both
+            parties”). You must be of sufficient age, in Your timezone and
+            local jurisdication, to legally bind Yourself to these Terms. If
+            You are entering into these Terms on behalf of a company, You
+            represent that You have the authority to bind that company to
+            these Terms.
+          </p>
         </div>
         <p>
           <Icon name="material-symbols:calendar-month-sharp" /> Last updated:
@@ -73,4 +127,13 @@ let date = ref(
 );
 </script>
 
-<style scoped></style>
+<style scoped>
+.list-set {
+  counter-reset: item;
+}
+
+.list-set > li::before {
+  content: counters(item, "-") ". ";
+  counter-increment: item;
+}
+</style>

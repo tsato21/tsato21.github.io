@@ -47,7 +47,7 @@
       <div
         class="col-span-12 order-2 lg:col-span-2 lg:order-3 md:col-span-12 md:order-2 sm:col-span-12 sm:order-2"
       >
-        <div class="text-3xl mt-2 font-bold sm:ml-3 lg:hidden block">
+        <div class="text-3xl mt-2 font-bold ms-3 lg:hidden block">
           GAS Tools
         </div>
         <div class="mb-5 pt-5">

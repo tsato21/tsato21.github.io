@@ -1,7 +1,8 @@
 <template>
   <Cursor />
   <div class="flex flex-col min-h-screen">
-    <header class="shadow-sm bg-white relative px-5">
+    <!-- <header class="shadow-sm bg-white relative px-5"> -->
+    <header class="fixed top-0 w-full z-50 shadow-sm bg-white px-5">
       <nav class="flex justify-between items-center">
         <NuxtLink
           to="/"
@@ -10,12 +11,12 @@
           <img
             src="~/assets/images/nav-bar/icon.png"
             alt="Site's Icon"
-            class="mr-2 w-12 h-12"
+            class="mr-2 w-12 h-12 my-1"
           />
           Scripts Showcase
         </NuxtLink>
         <ul
-          class="nav bg-white rounded-lg p-3 right-2 flex md:flex hidden"
+          class="nav bg-white rounded-lg px-3 py-1 flex md:flex hidden"
           @click.stop
         >
           <NavbarItems @close="isOpen = false" />
@@ -47,7 +48,7 @@
     </header>
 
     <!-- output the page content -->
-    <div class="container flex-grow py-5 mx-auto flex flex-col justify-between">
+    <div class="container flex-grow py-5 mx-auto mt-16">
       <div>
         <slot />
       </div>
