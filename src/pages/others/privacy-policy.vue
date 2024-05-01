@@ -41,7 +41,7 @@
     <span class="i-heroicons-hashtag-20-solid w-4 h-4 text-primary opacity-0 group-hover:opacity-100">a</span>
   </div>
 </NuxtLink> -->
-<a aria-current="page" href="/components/carousel#usage" class="router-link-active router-link-exact-active group">
+<a aria-current="page" href="#" class="router-link-active router-link-exact-active group">
   <div class="-ml-6 pr-2 py-2 inline-flex opacity-0 group-hover:opacity-100 transition-opacity absolute">
     <span class="i-heroicons-hashtag-20-solid w-4 h-4 text-primary"></span>
   </div>
