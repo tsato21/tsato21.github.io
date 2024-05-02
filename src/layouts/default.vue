@@ -48,7 +48,7 @@
     </header>
 
     <!-- output the page content -->
-      <div class="container flex-grow py-5 mx-auto">
+    <div class="container flex-grow py-5 mx-auto">
       <div>
         <slot />
       </div>
@@ -61,7 +61,6 @@
         Top
       </button>
     </div>
-    
 
     <!-- footer -->
     <Footer />

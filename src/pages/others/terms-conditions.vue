@@ -21,26 +21,46 @@
         <div class="mb-5 p-5">
           <!-- contents -->
           <div class="mb-3">
-            <div class="text-2xl font-bold border-b-2 pb-3" id="introduction">
-              Thank you for coming to Scripts Showcase!
+            <div class="text-2xl font-bold" id="introduction">
+              <span class="group/item">
+                <NuxtLink to="#intro"
+                  >Thank you for coming to Scripts Showcase!</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
             </div>
-            <div class="py-3">
+            <div class="my-5 ms-2">
               <p>
                 The following Terms and Conditions (“Terms”) govern your access
                 to and use of this Scripts ShowCase website at
-                https://tsato21.github.io/ (“Website”). The scope of these Terms
-                extend also to the google apps script tools mentioned explicitly
-                in this Website ("Services") to which I, Taiga SATO, the sole
+                <NuxtLink
+                  to="https://tsato21.github.io/"
+                  class="text-lightblue underline hover:text-darkblue"
+                  target="_blank"
+                  >https://tsato21.github.io/ (“Website”)</NuxtLink
+                >. The scope of these Terms extend also to all of the services
+                such as the google apps script tools mentioned explicitly in
+                this Website ("Services") to which I, Taiga SATO, the sole
                 administrator of this Website, have the right to distribute.
                 Please read these Terms carefully. By accessing this Website or
                 using any of the Services, You agree to be bound by these Terms.
                 You also confirm You have read and agreed to My Privacy Policy
-                at https://tsato21.github.io/privacy-policy/.
+                at
+                <NuxtLink
+                  to="/others/privacy-policy"
+                  class="text-lightblue underline hover:text-darkblue"
+                  target="_blank"
+                  >https://tsato21.github.io/privacy-policy/</NuxtLink
+                >.
               </p>
             </div>
 
-            <div class="py-5 bg-light-blue-400">
-              <p>
+            <div class="py-5 bg-blue-100">
+              <p class="text-sm p-2">
                 “You”, “Your”, or “the user” in this page refers to the viewer
                 of this Website or the user of the Services. These Terms herein
                 constitutes a legal agreement between You and I (“both
@@ -53,32 +73,37 @@
             </div>
           </div>
 
-          <div class="mb-3">
-            <div class="text-2xl font-bold border-b-2 pb-3" id="services">
-              Services
-            </div>
-            <div class="py-3">
+          <ol class="list-set">
+            <li class="text-2xl font-bold" id="services">
+              <span class="group/item">
+                <NuxtLink to="#services">Services</NuxtLink>
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </li>
+            <div class="my-5 ms-2">
               <p>
-                “You”, “Your”, or “the user” in this page refers to the viewer
-                of this Website or the user of the Services. These Terms herein
-                constitutes a legal agreement between You and I (“both
-                parties”). You must be of sufficient age, in Your timezone and
-                local jurisdication, to legally bind Yourself to these Terms. If
-                You are entering into these Terms on behalf of a company, You
-                represent that You have the authority to bind that company to
-                these Terms.
+                This Website functions as a central point for a variety of
+                open-source solutions that I maintain. The term "Service" or
+                "Services" within these Terms pertains to any or all of such
+                solutions specifically mentioned on this Website.
               </p>
             </div>
-          </div>
 
-          <div class="mb-3">
-            <div
-              class="text-2xl font-bold border-b-2 pb-3"
-              id="use-of-services"
-            >
-              Use of the Services
-            </div>
-            <div class="py-3">
+            <li class="text-2xl font-bold" id="use-of-services">
+              <span class="group/item">
+                <NuxtLink to="#use-of-services">Use of the Services</NuxtLink>
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </li>
+            <div class="my-5 ms-2">
               <p>
                 You may use the Services, free of charge, as long as you agree
                 and comply to these Terms. Note that if You are installing the
@@ -88,47 +113,256 @@
                 Chrome Web Store Terms of Service.
               </p>
             </div>
-          </div>
 
-          <div class="mb-3">
-            <div
-              class="text-2xl font-bold border-b-2 pb-3"
-              id="restriction-of-services"
-            >
-              Restrictions on Use
-            </div>
+            <li class="text-2xl font-bold" id="restrictions-of-use">
+              <span class="group/item">
+                <NuxtLink to="#restrictions-of-use"
+                  >Restrictions on Use</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </li>
             <div class="py-3">
-              <ul class="list-disk list-inside">
-                In addition to all other terms and conditions contained herein,
-                You shall not and shall not permit others to:
-                <li>
-                  use the Service for spamming or any other illegal or
-                  unauthorized purpose or engage in illegal or deceptive trade
-                  practices;
+              <ul class="list-disc list-inside">
+                In conjunction with all other stipulations and conditions
+                outlined in this page, you are prohibited from, and should not
+                allow others to:
+                <li class="ms-3">
+                  Utilize the Service for unsolicited communications or any
+                  unlawful or unapproved activities, or participate in unlawful
+                  or misleading commercial behaviors;
                 </li>
-                <li>
-                  otherwise use the Service in violation of any laws in Your
-                  jurisdiction (including but not limited to copyright laws).
+                <li class="ms-3">
+                  Use the Service in any other way that contravenes any laws
+                  applicable in your jurisdiction (including, but not limited
+                  to, laws related to copyright).
                 </li>
               </ul>
             </div>
-          </div>
 
-          <div class="mb-3">
-            <div class="text-2xl font-bold border-b-2 pb-3" id="copyright">
-              Copyright
+            <li class="text-2xl font-bold" id="copyright">
+              <span class="group/item">
+                <NuxtLink to="#copyright">Copyright</NuxtLink>
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </li>
+            <div class="my-5 ms-2">
+              I retain copyright to the content of this Website and all the
+              Services (open-sourced), released under
+              <NuxtLink
+                to="https://creativecommons.org/licenses/by/4.0/"
+                class="text-lightblue underline hover:text-darkblue"
+                external
+                >CC-BY-4.0</NuxtLink
+              >.
             </div>
-            <div class="py-3">
+
+            <li class="text-2xl font-bold" id="right-to-modify">
+              <span class="group/item">
+                <NuxtLink to="#right-to-modify">Right to Modify</NuxtLink>
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </li>
+            <div class="my-5 ms-2">
               <p>
-                You may use the Services, free of charge, as long as you agree
-                and comply to these Terms. Note that if You are installing the
-                Services via a hosting website, You will also be bound by the
-                terms of that website; for example, if You are going to install
-                a Service via the Chrome Web Store, You must agree to the Google
-                Chrome Web Store Terms of Service.
+                I hold the authority to revise and alter these Terms. If these
+                Terms are changed in a way that significantly impacts your
+                rights in relation to the use of the Services, you have the
+                option to discontinue your use of the Services. Your ongoing use
+                of the Services following any such modifications will be deemed
+                as your acceptance of these changes. You can always view the
+                most recent version of the Terms at
+                <NuxtLink
+                  to="/others/terms-conditions"
+                  target="blank"
+                  class="text-lightblue underline hover:text-darkblue"
+                  >https://tsato21.github.io/others/terms-conditions</NuxtLink
+                >.
+              </p>
+              <p>
+                I may also introduce modifications to this Website and the
+                Services periodically. Any enhancements, upgrades, additions, or
+                new features to the Services ("Updates") will be governed by
+                these Terms.
               </p>
             </div>
-          </div>
+
+            <li class="text-2xl font-bold" id="ownership-data-privcy">
+              <span class="group/item">
+                <NuxtLink to="#ownership-data-privacy"
+                  >Ownership of Data and Privacy</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </li>
+            <div class="my-5 ms-2">
+              <p>
+                In the relationship between You and Me, You continue to hold all
+                rights, ownership, and interest in any data you process through
+                the Services. This includes, but is not limited to, files,
+                attachments, text, images, personally identifiable information,
+                and other types of content.
+              </p>
+              <p>
+                Should this Website or its Services collect any data, it will be
+                treated in a manner that is consistent with our Privacy Policy.
+              </p>
+            </div>
+
+            <li class="text-2xl font-bold" id="warranty-disclaimer">
+              <span class="group/item">
+                <NuxtLink to="#warranty-disclaimer"
+                  >Warranty Disclaimer</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </li>
+            <div class="my-5 ms-2">
+              <p>
+                THIS WEBSITE AND ITS SERVICES ARE OFFERED "AS IS", WITHOUT ANY
+                WARRANTIES, EITHER STATED OR IMPLIED. THIS ENCOMPASSES, BUT IS
+                NOT RESTRICTED TO, IMPLIED WARRANTIES OF OWNERSHIP, SUITABILITY
+                FOR TRADE, ADEQUACY FOR A SPECIFIC USE, OR NON-VIOLATION OF
+                RIGHTS.
+              </p>
+              <p>
+                I DO NOT ASSURE THAT: (I) THE SERVICES WILL BE EXEMPT FROM
+                VIRUSES OR OTHER DAMAGING ELEMENTS; (II) THE SERVICES WILL
+                OPERATE WITHOUT INTERRUPTIONS OR ERRORS, INCLUDING DURING
+                PERIODS OF ROUTINE MAINTENANCE; (III) ANY INFORMATION OR
+                GUIDANCE YOU ACQUIRE IN RELATION TO THE SERVICES WILL BE PRECISE
+                OR COMPLETE; OR (IV) THE OUTCOMES OF UTILIZING THE SERVICES WILL
+                FULFILL YOUR EXPECTATIONS.
+              </p>
+            </div>
+
+            <li class="text-2xl font-bold" id="limitation-liability">
+              <span class="group/item">
+                <NuxtLink to="#limitation-liability"
+                  >Limitation Liability</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </li>
+            <div class="my-5 ms-2">
+              <p>
+                UNDER NO CIRCUMSTANCES SHALL I BE HELD RESPONSIBLE FOR ANY
+                INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE
+                DAMAGES, OR ANY OTHER DAMAGES WHATSOEVER (INCLUDING, BUT NOT
+                LIMITED TO, LOSS OF DATA, LOSS OF PROFITS, INTERRUPTION OF
+                BUSINESS, COMPUTER MALFUNCTION, LOSS OF BUSINESS INFORMATION),
+                RESULTING FROM OR CAUSED BY YOUR USE OR INABILITY TO USE THE
+                SERVICE OR THIS WEBSITE, EVEN IF I HAVE BEEN PREVIOUSLY ADVISED
+                OF THE POSSIBILITY OF SUCH DAMAGES. YOUR ONLY AND EXCLUSIVE
+                RESOLUTION FOR ANY DISPUTE WITH ME IN RELATION TO ANY OF THE
+                SERVICE SHALL BE THE TERMINATION OF THAT SERVICE. UNDER NO
+                CIRCUMSTANCES SHALL MY TOTAL LIABILITY TO YOU FOR ANY SERVICE,
+                WHETHER DIRECT OR INDIRECT, EXCEED THE FEES YOU HAVE PAID FOR
+                THAT SERVICE.
+              </p>
+              <p>
+                Neither party shall be held responsible to the other party or
+                any third party for any failure or delay in fulfilling its
+                obligations under these Terms when such failure or delay is due
+                to any cause beyond the control of the concerned party,
+                including, but not limited to, acts of nature, governmental
+                actions, fire, or flood, provided that once such events cease,
+                the concerned party shall promptly resume or complete the
+                performance of its obligations hereunder.
+              </p>
+            </div>
+
+            <li class="text-2xl font-bold" id="governing-law">
+              <span class="group/item">
+                <NuxtLink to="#governing-law">Governing Law</NuxtLink>
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </li>
+            <div class="my-5 ms-2">
+              <p>
+                The interpretation, performance, or any breach of these Terms
+                will be guided by the laws of Japan. Any questions related to
+                these Terms will also be determined by the same laws. Both
+                parties irrevocably agree to submit any disputes arising from
+                these Terms to the jurisdiction of the local court located in
+                Nakano-city, Tokyo, Japan.
+              </p>
+            </div>
+            <li class="text-2xl font-bold" id="contact">
+              <span class="group/item">
+                <NuxtLink to="#contact">Contact</NuxtLink>
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </li>
+
+            <div class="my-4 ms-2">
+              <p>
+                If You have any questions regarding this Privacy Policy, please
+                contact Me through
+                <NuxtLink
+                  to="/contact/contact"
+                  target="blank"
+                  class="text-lightblue underline hover:text-darkblue"
+                  >the contact form</NuxtLink
+                >.
+              </p>
+            </div>
+
+            <li class="text-2xl font-bold" id="history">
+              <span class="group/item">
+                <NuxtLink to="#history">History</NuxtLink>
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </li>
+
+            <div class="my-4 ms-2">
+              <p>
+                You can find any changes on this Privacy Policy on
+                <NuxtLink
+                  to="https://github.com/tsato21/tsato21.github.io"
+                  target="blank"
+                  class="text-lightblue underline hover:text-darkblue"
+                  >the Github</NuxtLink
+                >.
+              </p>
+            </div>
+          </ol>
         </div>
         <p>
           <Icon name="material-symbols:calendar-month-sharp" /> Last updated:
@@ -143,7 +377,7 @@
         <div class="text-3xl mt-2 font-bold sm:ml-3 lg:hidden block">
           TERMS & CONDITIONS
         </div>
-        <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed">
+        <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed lg:mr-2">
           <div class="mb-5 pt-5">
             <p class="text-l font-bold p-1 bg-gray-400 text-white">
               <Icon name="map:book-store"></Icon> On this page
@@ -170,9 +404,18 @@ const breadCrumbs = [
 ];
 
 const pageItems = [
-  { label: 'XXX', id: '#XX' },
-  { label: 'XXX', id: '#XX' },
-  { label: 'XXX', id: '#XX' },
+  { label: 'Introduction', id: 'introduction' },
+  { label: 'Services', id: 'services' },
+  { label: 'Use of the Services', id: 'use-of-services' },
+  { label: 'Restrictions on Use', id: 'restrictions-of-use' },
+  { label: 'Copyright', id: 'copyright' },
+  { label: 'Right to Modify', id: 'right-to-modify' },
+  { label: 'Ownership of Data and Privacy', id: 'ownership-data-privacy' },
+  { label: 'Warranty Disclaimer', id: 'warranty-disclaimer' },
+  { label: 'Limitation Liability', id: 'limitation-liability' },
+  { label: 'Governing Law', id: 'governing-law' },
+  { label: 'Contact', id: 'contact' },
+  { label: 'History', id: 'history' },
 ];
 
 let date = ref(
@@ -180,8 +423,13 @@ let date = ref(
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-  }).format(new Date('2024-04-06'))
+  }).format(new Date('2024-05-02'))
 );
 </script>
 
-<style scoped></style>
+<style scoped>
+li {
+  text-indent: -1em;
+  padding-left: 1em;
+}
+</style>
