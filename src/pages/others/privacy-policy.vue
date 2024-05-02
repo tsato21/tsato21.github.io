@@ -47,7 +47,7 @@
             <div class="my-5 ms-2">
               <ul class="list-disc list-inside space-y-2">
                 <li>
-                  <strong>I</strong> and <strong>Me</strong> refers to
+                  <strong>I</strong> and <strong>Me</strong> refer to
                   <NuxtLink
                     to="https://github.com/tsato21"
                     class="text-lightblue underline hover:text-darkblue"
