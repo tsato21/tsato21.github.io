@@ -306,8 +306,8 @@ const pageItems = [
         { label: 'Contact Information', id: 'contact-information' },
       ]
    },
-  { label: 'Contact', id: '#contact' },
-  { label: 'History', id: '#history' },
+  { label: 'Contact', id: 'contact' },
+  { label: 'History', id: 'history' },
 ];
 
 let date = ref(
