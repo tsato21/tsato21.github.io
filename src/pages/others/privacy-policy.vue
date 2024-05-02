@@ -15,7 +15,6 @@
       <div
         class="col-span-12 order-3 lg:col-span-8 lg:order-2 md:col-span-12 md:order-3 sm:col-span-12 sm:order-3"
       >
-      
         <div class="text-3xl mt-2 font-bold lg:block hidden">
           PRIVACY POLICY
         </div>
@@ -35,14 +34,14 @@
         </div>
         <div class="py-1">
           <ol class="list-set">
-            <div class="aa">
-              
-            </div>
             <li class="text-2xl font-bold" id="definition">
-                <span class="group/item">
-                  <NuxtLink to="#definition">Definition</NuxtLink>
-                  <span class="invisible group-hover/item:visible text-blue-300 text-base">#</span>
-                </span>
+              <span class="group/item">
+                <NuxtLink to="#definition">Definition</NuxtLink>
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                  >#</span
+                >
+              </span>
             </li>
             <div class="my-5 ms-2">
               <ul class="list-disc list-inside space-y-2">
@@ -76,8 +75,6 @@
                 </li>
               </ul>
             </div>
-            
-            
 
             <li class="text-2xl font-bold" id="data-collection">
               <span class="group/item">
@@ -103,9 +100,9 @@
               </li>
               <div class="my-5 ms-2">
                 <p>
-                  Other than the data collection explained below, GitHub may collect
-                  user data in accordance with its own privacy policy. For more
-                  details, please refer to
+                  Other than the data collection explained below, GitHub may
+                  collect user data in accordance with its own privacy policy.
+                  For more details, please refer to
                   <NuxtLink
                     to="https://docs.github.com/en/github/site-policy/github-privacy-statement"
                     target="blank"
@@ -150,8 +147,7 @@
 
               <li class="text-xl font-bold" id="cookies-web-beacons">
                 <span class="group/item">
-                  <NuxtLink
-                    to="#cookies-web-beacons"
+                  <NuxtLink to="#cookies-web-beacons"
                     >Cookies and Web Beacons</NuxtLink
                   >
                   <span
@@ -203,54 +199,53 @@
               </div>
             </ol>
 
-              <li class="text-2xl font-bold" id="contact">
-                <span class="group/item">
-                  <NuxtLink to="#contact">Contact</NuxtLink>
-                  <span
-                    class="invisible group-hover/item:visible text-blue-300 text-base"
-                  >
-                    #</span
-                  >
-                </span>
-              </li>
+            <li class="text-2xl font-bold" id="contact">
+              <span class="group/item">
+                <NuxtLink to="#contact">Contact</NuxtLink>
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </li>
 
-              <div class="my-4 ms-2">
-                <p>
-                  If You have any questions regarding this Privacy Policy,
-                  please contact Me through
-                  <NuxtLink
-                    to="/contact/contact"
-                    target="blank"
-                    class="text-lightblue underline hover:text-darkblue"
-                    >the contact form</NuxtLink
-                  >.
-                </p>
-              </div>
+            <div class="my-4 ms-2">
+              <p>
+                If You have any questions regarding this Privacy Policy, please
+                contact Me through
+                <NuxtLink
+                  to="/contact/contact"
+                  target="blank"
+                  class="text-lightblue underline hover:text-darkblue"
+                  >the contact form</NuxtLink
+                >.
+              </p>
+            </div>
 
-              <li class="text-2xl font-bold" id="history">
-                <span class="group/item">
-                  <NuxtLink to="#history">History</NuxtLink>
-                  <span
-                    class="invisible group-hover/item:visible text-blue-300 text-base"
-                  >
-                    #</span
-                  >
-                </span>
-              </li>
+            <li class="text-2xl font-bold" id="history">
+              <span class="group/item">
+                <NuxtLink to="#history">History</NuxtLink>
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </li>
 
-              <div class="my-4 ms-2">
-                <p>
-                  You can find any changes on this Privacy Policy on
-                  <NuxtLink
-                    to="https://github.com/tsato21/tsato21.github.io"
-                    target="blank"
-                    class="text-lightblue underline hover:text-darkblue"
-                    >the Github</NuxtLink
-                  >.
-                </p>
-              </div>
+            <div class="my-4 ms-2">
+              <p>
+                You can find any changes on this Privacy Policy on
+                <NuxtLink
+                  to="https://github.com/tsato21/tsato21.github.io"
+                  target="blank"
+                  class="text-lightblue underline hover:text-darkblue"
+                  >the Github</NuxtLink
+                >.
+              </p>
+            </div>
           </ol>
-
         </div>
         <div class="my-5">
           <p>
@@ -258,28 +253,25 @@
             {{ date }}
           </p>
         </div>
-        </div>
-      
-        
+      </div>
 
-        <!-- Third part -->
-        <div
-          class="col-span-12 order-2 lg:col-span-2 lg:order-3 md:col-span-12 md:order-2 sm:col-span-12 sm:order-2"
-        >
-          <div class="text-3xl mt-2 font-bold sm:ml-3 lg:hidden block">
-            PRIVACY POLICY
-          </div>
-          <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed">
-            <div class="mb-5 pt-5">
-              <p class="text-l font-bold p-1 bg-gray-400 text-white">
-                <Icon name="map:book-store"></Icon> On this page
-              </p>
-              <PageItems :pageItems="pageItems" />
-            </div>
+      <!-- Third part -->
+      <div
+        class="col-span-12 order-2 lg:col-span-2 lg:order-3 md:col-span-12 md:order-2 sm:col-span-12 sm:order-2"
+      >
+        <div class="text-3xl mt-2 font-bold sm:ml-3 lg:hidden block">
+          PRIVACY POLICY
+        </div>
+        <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed lg:mr-2">
+          <div class="mb-5 pt-5">
+            <p class="text-l font-bold p-1 bg-gray-400 text-white">
+              <Icon name="map:book-store"></Icon> On this page
+            </p>
+            <PageItems :pageItems="pageItems" />
           </div>
         </div>
       </div>
-    
+    </div>
   </div>
 </template>
 
@@ -295,17 +287,20 @@ useHead({
 const breadCrumbs = [{ label: 'Home', to: '/' }, { label: 'Privacy Policy' }];
 
 const pageItems = [
-  { 
-    label: 'Definition', id: 'definition',
+  {
+    label: 'Definition',
+    id: 'definition',
   },
-  { label: 'Data Collection', id: 'data-collection',
+  {
+    label: 'Data Collection',
+    id: 'data-collection',
     subItems: [
-        { label: 'Github', id: 'github' },
-        { label: 'Google Analytics', id: 'google-analytics' },
-        { label: 'Cookies and Web Beacons', id: 'cookies-web-beacons' },
-        { label: 'Contact Information', id: 'contact-information' },
-      ]
-   },
+      { label: 'Github', id: 'github' },
+      { label: 'Google Analytics', id: 'google-analytics' },
+      { label: 'Cookies and Web Beacons', id: 'cookies-web-beacons' },
+      { label: 'Contact Information', id: 'contact-information' },
+    ],
+  },
   { label: 'Contact', id: 'contact' },
   { label: 'History', id: 'history' },
 ];
@@ -318,29 +313,3 @@ let date = ref(
   }).format(new Date('2024-05-02'))
 );
 </script>
-
-<style scoped>
-.list-set {
-  counter-reset: item;
-}
-
-.list-set > li {
-  counter-increment: item;
-}
-
-.list-set > li::before {
-  content: counter(item) '. ';
-}
-
-.list-set .list-set-nested {
-  counter-reset: subitem;
-}
-
-.list-set .list-set-nested > li {
-  counter-increment: subitem;
-}
-
-.list-set .list-set-nested > li::before {
-  content: counter(item, decimal) '-' counter(subitem, decimal) '. ';
-}
-</style>
