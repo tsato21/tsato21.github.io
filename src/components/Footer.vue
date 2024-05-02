@@ -30,7 +30,7 @@
       </li>
       <li>
         <NuxtLink
-          to="/about/contact/contact"
+          to="/contact/contact"
           class="text-white no-underline flex items-center footer-link"
         >
           <Icon name="grommet-icons:mail" class="mr-2" /> CONTACT

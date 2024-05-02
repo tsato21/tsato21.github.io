@@ -43,18 +43,18 @@
               About Scripts Showcase
             </div>
             <div class="py-3">
-              <p class="text-lg mb-2">
+              <p class="mb-2">
                 Scripts Showcase serves as a platform for sharing open-source
                 solutions that I have developed, including Google Add-ons, aimed
                 at enhancing automation and efficiency. You are welcome to
                 utilize these tools for your needs.
               </p>
-              <p class="text-lg">
+              <p>
                 Should you wish to delve into the source code, rest assured that
                 it will always be accessible via GitHub repositories.
               </p>
 
-              <p class="text-lg mt-4">
+              <p class="mt-4">
                 Kindly be advised that the use of this website is governed by
                 our
                 <NuxtLink
@@ -69,14 +69,14 @@
           <div class="mb-3">
             <div class="text-2xl font-bold" id="about-me">About Me</div>
             <div class="py-3">
-              <p class="text-lg mb-2">
+              <p class="mb-2">
                 I developed an interest in programming through the lens of
                 improving work efficiency. My primary focus has been on projects
                 based on Google Apps Script, leveraging its powerful automation
                 capabilities to streamline processes and enhance productivity in
                 Google Workspace.
               </p>
-              <p class="text-lg mb-2">
+              <p class="mb-2">
                 Beyond Google Apps Script, I'm broadening my skills with
                 Laravel, PHP, Nuxt.js, and TypeScript, driven by my passion for
                 technology and dedication to my growth as a software engineer.
@@ -90,10 +90,10 @@
             </div>
             <div class="py-3">
               <ul class="list-disc list-inside">
-                <li class="text-lg mb-2">
+                <li class="mb-2">
                   The outline of the Privacy Policy of this website ~~.
                 </li>
-                <li class="text-lg mb-2">
+                <li class="mb-2">
                   Favicon of this website is made by
                   <a
                     href="https://www.canva.com/"
@@ -103,7 +103,7 @@
                     >Canva</a
                   >.
                 </li>
-                <li class="text-lg mb-2">
+                <li class="mb-2">
                   The profile photo is of my cherished Golden Retriever, Haru.
                   Haru is not just a pet, but a valued member of our family. She
                   has an immense love for people, always wagging her tail and

@@ -1,8 +1,8 @@
 <template>
   <Cursor />
-  <div class="flex flex-col min-h-screen">
+  <div class="flex flex-col min-h-screen text-lg">
     <!-- <header class="shadow-sm bg-white relative px-5"> -->
-    <header class="fixed top-0 w-full z-50 shadow-sm bg-white px-5">
+    <header class="top-0 w-full z-50 shadow-sm bg-white px-5">
       <nav class="flex justify-between items-center">
         <NuxtLink
           to="/"
@@ -48,7 +48,7 @@
     </header>
 
     <!-- output the page content -->
-    <div class="container flex-grow py-5 mx-auto mt-16">
+      <div class="container flex-grow py-5 mx-auto">
       <div>
         <slot />
       </div>
@@ -61,6 +61,7 @@
         Top
       </button>
     </div>
+    
 
     <!-- footer -->
     <Footer />
