@@ -129,6 +129,12 @@ const tools = ref([
     description:
       'Tracks new file uploads in a specific Google Drive folder. If the time since the last upload is within a set interval, it sends a notification email, ensuring efficient file management.',
     filePath: '/gas-tools/each-tool/file-upload-notifier'
+  },
+  {
+    title: 'NotionSheets Integrator',
+    description:
+      'Integrates Notion databases with Google Sheets, and generate dynamic pie charts, providing a powerful and intuitive way to visualize and analyze data.',
+    filePath: '/gas-tools/each-tool/notion-sheets-integrator'
   }
 ])
 
