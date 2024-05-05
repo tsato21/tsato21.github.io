@@ -143,7 +143,7 @@ const date = ref(
     year: 'numeric',
     month: 'long',
     day: 'numeric'
-  }).format(new Date('2024-04-18'))
+  }).format(new Date('2024-05-05'))
 )
 
 useHead({
