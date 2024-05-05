@@ -114,13 +114,13 @@
                   </li>
                   <ul class="list-disc list-inside ml-5">
                     <li>
-                      <span class="font-bold">Item</span>: Title
+                      <span class="font-bold"><code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Item</code></span>: Title
                     </li>
                     <li>
-                      <span class="font-bold">Category</span>: Select or Relation
+                      <span class="font-bold"><code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Category</code></span>: Select or Relation
                     </li>
                     <li>
-                      <span class="font-bold">Pay Amount</span>: Number
+                      <span class="font-bold"><code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Pay Amount</code></span>: Number
                     </li>
                   </ul>
                   <li>Input each item record in the database.</li>
