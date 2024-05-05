@@ -36,11 +36,11 @@
         <div class="mb-5 p-5">
           <div class="mb-3">
             <div id="about" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#about" @click.prevent="scrollTo('about')">About</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#about" @click.prevent="scrollTo('about')">About</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+              </span>
+            </div>
             <div class="py-3">
               <p>
                 Automates the creation of work manuals by extracting essential
@@ -62,11 +62,11 @@
 
           <div class="mb-3">
             <div id="prerequisites" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#prerequisites" @click.prevent="scrollTo('prerequisites')">Prerequisites</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#prerequisites" @click.prevent="scrollTo('prerequisites')">Prerequisites</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+              </span>
+            </div>
             <div class="py-3">
               <ul class="list-disc list-inside space-y-2">
                 <li class="text-gray-700">
@@ -82,11 +82,11 @@
 
           <div class="mb-3">
             <div id="setup" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#setup" @click.prevent="scrollTo('setup')">Setup</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#setup" @click.prevent="scrollTo('setup')">Setup</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+              </span>
+            </div>
             <div class="py-3">
               <ol class="list-decimal list-inside space-y-2">
                 <li class="text-gray-700">
@@ -156,11 +156,11 @@
 
           <div class="mb-3">
             <div id="usage" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#usage" @click.prevent="scrollTo('usage')">Usage</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')">Usage</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+              </span>
+            </div>
 
             <ol class="list-decimal list-inside">
               <li class="my-2">
@@ -248,11 +248,11 @@
 
           <div class="mb-3">
             <div id="others" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#others" @click.prevent="scrollTo('others')">Others</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#others" @click.prevent="scrollTo('others')">Others</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+              </span>
+            </div>
             <div class="py-3">
               <p class="text-lg mt-4">
                 If you are interested in the logics on how the details from
@@ -275,11 +275,11 @@
 
           <div class="mb-3">
             <div id="source-code" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#source-code" @click.prevent="scrollTo('source-code')">Source Code</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#source-code" @click.prevent="scrollTo('source-code')">Source Code</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+              </span>
+            </div>
             <div class="py-3">
               <p class="text-lg mt-4">
                 You can find the source code for this tool on Github. Click

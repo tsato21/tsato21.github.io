@@ -1,9 +1,9 @@
 <template>
   <div id="attributes" class="text-2xl font-bold">
     <span class="group/item">
-    <NuxtLink to="#attributes" @click.prevent="scrollTo('attributes')">Attributes</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">#</span>
-  </span>
+      <NuxtLink to="#attributes" @click.prevent="scrollTo('attributes')">Attributes</NuxtLink>
+      <span class="invisible group-hover/item:visible text-blue-300 text-base">#</span>
+    </span>
   </div>
   <div class="py-3 text-lg">
     <ul class="list-disc list-inside space-y-2">
