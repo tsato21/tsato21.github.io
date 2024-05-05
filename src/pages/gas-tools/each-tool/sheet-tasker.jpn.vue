@@ -36,11 +36,11 @@
         <div class="mb-5 p-5">
           <div class="mb-3">
             <div id="about" class="text-2xl font-bold">
-<span class="group/item">
-    <NuxtLink to="#about" @click.prevent="scrollTo('about')">概要</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
-</span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#about" @click.prevent="scrollTo('about')">概要</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+              </span>
+            </div>
             <div class="py-3">
               <p>
                 Google Sheetsでのタスク管理し、Google
@@ -59,11 +59,11 @@
 
           <div class="mb-3">
             <div id="prerequisites" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#prerequisites" @click.prevent="scrollTo('prerequisites')">前提条件</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#prerequisites" @click.prevent="scrollTo('prerequisites')">前提条件</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+              </span>
+            </div>
             <div class="py-3">
               <ul class="list-disc list-inside space-y-2">
                 <li class="text-gray-700">
@@ -78,11 +78,11 @@
 
           <div class="mb-3">
             <div id="setup" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#setup" @click.prevent="scrollTo('setup')">セットアップ</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#setup" @click.prevent="scrollTo('setup')">セットアップ</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+              </span>
+            </div>
             <div class="py-3">
               <ol class="list-decimal list-inside space-y-2">
                 <li class="text-gray-700">
@@ -184,11 +184,11 @@
 
           <div class="mb-3">
             <div id="usage" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#usage" @click.prevent="scrollTo('usage')">使用方法</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')">使用方法</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+              </span>
+            </div>
 
             <ol class="list-decimal list-inside">
               <li class="my-2">
@@ -351,11 +351,11 @@
 
           <div class="mb-3">
             <div id="source-code" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#source-code" @click.prevent="scrollTo('source-code')">ソースコード</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#source-code" @click.prevent="scrollTo('source-code')">ソースコード</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+              </span>
+            </div>
             <div class="py-3">
               <p class="text-lg mt-4">
                 You can find the source code for this tool on Github. Click

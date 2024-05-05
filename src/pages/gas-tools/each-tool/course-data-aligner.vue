@@ -26,11 +26,11 @@
         <div class="mb-5 p-5">
           <div class="mb-3">
             <div id="about" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#about" @click.prevent="scrollTo('about')">About</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#about" @click.prevent="scrollTo('about')">About</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+              </span>
+            </div>
             <div class="py-3">
               <p>
                 Harmonizes course data between two Google Sheets with differing
@@ -42,11 +42,11 @@
 
           <div class="mb-3">
             <div id="prerequisites" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#prerequisites" @click.prevent="scrollTo('prerequisites')">Prerequisites</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#prerequisites" @click.prevent="scrollTo('prerequisites')">Prerequisites</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+              </span>
+            </div>
             <div class="py-3">
               <ul class="list-disc list-inside space-y-2">
                 <li class="text-gray-700">
@@ -62,11 +62,11 @@
 
           <div class="mb-3">
             <div id="setup" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#setup" @click.prevent="scrollTo('setup')">Setup</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#setup" @click.prevent="scrollTo('setup')">Setup</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+              </span>
+            </div>
             <div class="py-3">
               <ol class="list-decimal list-inside space-y-2">
                 <li class="text-gray-700">
@@ -96,20 +96,20 @@
 
           <div class="mb-3">
             <div id="usage" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#usage" @click.prevent="scrollTo('usage')">Usage</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')">Usage</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+              </span>
+            </div>
             <div class="py-3">
               <!-- 1_organize-offering-data.gs -->
               <section class="my-5">
                 <div id="tool_1_organize-offering-data" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#tool_1_organize-offering-data" @click.prevent="scrollTo('tool_1_organize-offering-data')">Tool 1: Course Offering Data Alignment</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+                  <span class="group/item">
+                    <NuxtLink to="#tool_1_organize-offering-data" @click.prevent="scrollTo('tool_1_organize-offering-data')">Tool 1: Course Offering Data Alignment</NuxtLink>
+                    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                  </span>
+                </div>
                 <p>
                   This script aligns course offering data from a dataset to
                   match the institution's database format.
@@ -189,11 +189,11 @@
               <!-- 2-1_organize-schedule-data.gs -->
               <section class="my-5">
                 <div id="tool_2-1_organize-schedule-data" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#tool_2-1_organize-schedule-data" @click.prevent="scrollTo('tool_2-1_organize-schedule-data')">Tool 2-1: Schedule Data Alignment (Type A)</NuxtLink>
-    <span class="invisible group-hover/item visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+                  <span class="group/item">
+                    <NuxtLink to="#tool_2-1_organize-schedule-data" @click.prevent="scrollTo('tool_2-1_organize-schedule-data')">Tool 2-1: Schedule Data Alignment (Type A)</NuxtLink>
+                    <span class="invisible group-hover/item visible text-blue-300 text-base">  #</span>
+                  </span>
+                </div>
                 <p>
                   This script structures class schedule data from a given
                   dataset to match the institution's database format.
@@ -278,11 +278,11 @@
               <!-- 2-2_organize-schedule-data.gs -->
               <section class="my-5">
                 <div id="tool_2-2_organize-schedule-data" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#tool_2-2_organize-schedule-data" @click.prevent="scrollTo('tool_2-2_organize-schedule-data')">Tool 2-2: Schedule Data Alignment (Type B)</NuxtLink>
-    <span class="invisible group-hover/item visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+                  <span class="group/item">
+                    <NuxtLink to="#tool_2-2_organize-schedule-data" @click.prevent="scrollTo('tool_2-2_organize-schedule-data')">Tool 2-2: Schedule Data Alignment (Type B)</NuxtLink>
+                    <span class="invisible group-hover/item visible text-blue-300 text-base">  #</span>
+                  </span>
+                </div>
                 <p>
                   This script structures class schedule data from a given
                   dataset to match the institution's database format.
@@ -363,11 +363,11 @@
               <!-- 2-3_organize-schedule-data.gs -->
               <section class="my-5">
                 <div id="tool_2-3_organize-schedule-data" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#tool_2-3_organize-schedule-data" @click.prevent="scrollTo('tool_2-3_organize-schedule-data')">Tool 2-3: Schedule Data Alignment (Type C)</NuxtLink>
-    <span class="invisible group-hover/item visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+                  <span class="group/item">
+                    <NuxtLink to="#tool_2-3_organize-schedule-data" @click.prevent="scrollTo('tool_2-3_organize-schedule-data')">Tool 2-3: Schedule Data Alignment (Type C)</NuxtLink>
+                    <span class="invisible group-hover/item visible text-blue-300 text-base">  #</span>
+                  </span>
+                </div>
                 <p>
                   This script structures class schedule data from a given
                   dataset to match the institution's database format.
@@ -461,11 +461,11 @@
 
           <div class="mb-3">
             <div id="source-code" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#source-code" @click.prevent="scrollTo('source-code')">Source Code</NuxtLink>
-    <span class="invisible group-hover/item visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#source-code" @click.prevent="scrollTo('source-code')">Source Code</NuxtLink>
+                <span class="invisible group-hover/item visible text-blue-300 text-base">  #</span>
+              </span>
+            </div>
             <div class="py-3">
               <p class="text-lg mt-4">
                 You can find the source code for this tool on Github. Click

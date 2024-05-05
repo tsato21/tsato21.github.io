@@ -44,11 +44,11 @@
         <div class="mb-5 p-5 bottom-shadow">
           <div class="mb-3">
             <div id="about-scripts-showcase" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#about-scripts-showcase" @click.prevent="scrollTo('about-scripts-showcase')">About Scripts Showcase</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">#</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#about-scripts-showcase" @click.prevent="scrollTo('about-scripts-showcase')">About Scripts Showcase</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">#</span>
+              </span>
+            </div>
             <div class="py-3">
               <p class="mb-2">
                 Scripts Showcase serves as a platform for sharing open-source
@@ -76,11 +76,11 @@
 
           <div class="mb-3">
             <div id="about-me" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#about-me" @click.prevent="scrollTo('about-me')">About Me</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">#</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#about-me" @click.prevent="scrollTo('about-me')">About Me</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">#</span>
+              </span>
+            </div>
             <div class="py-3">
               <p class="mb-2">
                 I developed an interest in programming through the lens of
@@ -99,11 +99,11 @@
 
           <div class="mb-3">
             <div id="acknowledgements" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#acknowledgements" @click.prevent="scrollTo('acknowledgements')">Acknowledgements</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">#</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#acknowledgements" @click.prevent="scrollTo('acknowledgements')">Acknowledgements</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">#</span>
+              </span>
+            </div>
             <div class="py-3">
               <ul class="list-disc list-inside">
                 <li class="mb-2">
