@@ -36,8 +36,11 @@
         <div class="mb-5 p-5">
           <div class="mb-3">
             <div id="about" class="text-2xl font-bold">
-              概要
-            </div>
+  <span class="group/item">
+    <NuxtLink to="#about" @click.prevent="scrollTo('about')">概要</NuxtLink>
+    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+  </span>
+</div>
             <div class="py-3">
               <p>
                 Googleスライドから必要な情報を抽出し、それらをGoogleシートに出力して作業マニュアルを自動作成します。これにより、ワークフローの効率が向上します。
@@ -52,8 +55,11 @@
 
           <div class="mb-3">
             <div id="prerequisites" class="text-2xl font-bold">
-              前提条件
-            </div>
+  <span class="group/item">
+    <NuxtLink to="#prerequisites" @click.prevent="scrollTo('prerequisites')">前提条件</NuxtLink>
+    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+  </span>
+</div>
             <div class="py-3">
               <ul class="list-disc list-inside space-y-2">
                 <li class="text-gray-700">
@@ -68,8 +74,11 @@
 
           <div class="mb-3">
             <div id="setup" class="text-2xl font-bold">
-              セットアップ
-            </div>
+  <span class="group/item">
+    <NuxtLink to="#setup" @click.prevent="scrollTo('setup')">セットアップ</NuxtLink>
+    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+  </span>
+</div>
             <div class="py-3">
               <ol class="list-decimal list-inside space-y-2">
                 <li class="text-gray-700">
@@ -132,10 +141,13 @@
             </div>
           </div>
 
-          <div id="usage" class="mb-3">
-            <div class="text-2xl font-bold">
-              使用方法
-            </div>
+          <div class="mb-3">
+            <div id="usage" class="text-2xl font-bold">
+  <span class="group/item">
+    <NuxtLink to="#usage" @click.prevent="scrollTo('usage')">使用方法</NuxtLink>
+    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+  </span>
+</div>
 
             <ol class="list-decimal list-inside">
               <li class="my-2">
@@ -216,8 +228,11 @@
 
           <div class="mb-3">
             <div id="others" class="text-2xl font-bold">
-              その他
-            </div>
+  <span class="group/item">
+    <NuxtLink to="#others" @click.prevent="scrollTo('others')">その他</NuxtLink>
+    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+  </span>
+</div>
             <div class="py-3">
               <p class="text-lg mt-4">
                 Googleスライドから詳細がどのように抽出され、それらがGoogleシートに出力されるロジックに興味がある場合は、<a
@@ -236,8 +251,11 @@
 
           <div class="mb-3">
             <div id="source-code" class="text-2xl font-bold">
-              ソースコード
-            </div>
+  <span class="group/item">
+    <NuxtLink to="#source-code" @click.prevent="scrollTo('source-code')">ソースコード</NuxtLink>
+    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+  </span>
+</div>
             <div class="py-3">
               <p class="text-lg mt-4">
                 Github上でソースコードを参照できます。
@@ -353,7 +371,7 @@ const date = ref(
     year: 'numeric',
     month: 'long',
     day: 'numeric'
-  }).format(new Date('2024-04-23'))
+  }).format(new Date('2024-05-05'))
 )
 
 /*
@@ -368,4 +386,6 @@ const attributes = {
   title: 'manual icons',
   hyperLinkedDescription: 'Manual icons created by Freepik - Flaticon'
 }
+
+const scrollTo = inject('scrollTo') as (id: string) => Promise<void>
 </script>
