@@ -34,13 +34,15 @@
         </div>
         <div class="py-1">
           <section>
-            <div id="definition" class="text-2xl font-bold">
-              <span class="group/item">
-                <NuxtLink to="#definition" @click.prevent="scrollTo('definition')">1. Definition</NuxtLink>
-                <span
-                  class="invisible group-hover/item:visible text-blue-300 text-base"
-                >#</span>
-              </span>
+            <div class="mb-3">
+              <div id="definition" class="text-2xl font-bold">
+                <span class="group/item">
+                  <NuxtLink to="#definition" @click.prevent="scrollTo('definition')">1. Definition</NuxtLink>
+                  <span
+                    class="invisible group-hover/item:visible text-blue-300 text-base"
+                  >  #</span>
+                </span>
+              </div>
             </div>
           </section>
           <div class="ms-2">
@@ -77,7 +79,9 @@
               </li>
             </ul>
           </div>
+        </div>
 
+        <div class="mb-3">
           <div id="data-collection" class="text-2xl font-bold">
             <span class="group/item">
               <NuxtLink to="#data-collection" @click.prevent="scrollTo('data-collection')">2. Data Collection</NuxtLink>
@@ -88,7 +92,7 @@
             </span>
           </div>
 
-          <div id="github" class="text-xl font-bold">
+          <div id="github" class="text-xl font-bold my-5">
             <span class="group/item">
               <NuxtLink to="#github" @click.prevent="scrollTo('github')">2-1. Github</NuxtLink>
               <span
@@ -114,10 +118,12 @@
               </NuxtLink>.
             </p>
           </div>
+        </div>
 
+        <div class="mb-3">
           <div id="google-analytics" class="text-xl font-bold">
             <span class="group/item">
-              <NuxtLink to="#google-analytics">Google Analytics</NuxtLink>
+              <NuxtLink to="#google-analytics">2-2. Google Analytics</NuxtLink>
               <span
                 class="invisible group-hover/item:visible text-blue-300 text-base"
               >
@@ -147,10 +153,12 @@
               </NuxtLink>.
             </p>
           </div>
+        </div>
 
+        <div class="mb-3">
           <div id="cookies-web-beacons" class="text-xl font-bold">
             <span class="group/item">
-              <NuxtLink to="#cookies-web-beacons" @click.prevent="scrollTo('cookies-web-beacons')">Cookies and Web Beacons</NuxtLink>
+              <NuxtLink to="#cookies-web-beacons" @click.prevent="scrollTo('cookies-web-beacons')">2-3. Cookies and Web Beacons</NuxtLink>
               <span
                 class="invisible group-hover/item:visible text-blue-300 text-base"
               >
@@ -169,10 +177,12 @@
               our website and the services we may offer.
             </p>
           </div>
+        </div>
 
+        <div class="mb-3">
           <div id="contact-information" class="text-xl font-bold">
             <span class="group/item">
-              <NuxtLink to="#contact-information" @click.prevent="scrollTo('contact-information')">Contact Information</NuxtLink>
+              <NuxtLink to="#contact-information" @click.prevent="scrollTo('contact-information')">2-4. Contact Information</NuxtLink>
               <span
                 class="invisible group-hover/item:visible text-blue-300 text-base"
               >
@@ -197,10 +207,12 @@
               specifying which communications You would like to be deleted.
             </p>
           </div>
+        </div>
 
+        <div class="mb-3">
           <div id="contact" class="text-2xl font-bold">
             <span class="group/item">
-              <NuxtLink to="#contact" @click.prevent="scrollTo('contact')">Contact</NuxtLink>
+              <NuxtLink to="#contact" @click.prevent="scrollTo('contact')">3. Contact</NuxtLink>
               <span
                 class="invisible group-hover/item:visible text-blue-300 text-base"
               >
@@ -221,10 +233,12 @@
               </NuxtLink>.
             </p>
           </div>
+        </div>
 
+        <div class="mb-3">
           <div id="history" class="text-2xl font-bold">
             <span class="group/item">
-              <NuxtLink to="#history" @click.prevent="scrollTo('history')">History</NuxtLink>
+              <NuxtLink to="#history" @click.prevent="scrollTo('history')">4. History</NuxtLink>
               <span
                 class="invisible group-hover/item:visible text-blue-300 text-base"
               >
@@ -274,9 +288,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, inject } from 'vue'
-import UBreadcrumbs from '~/components/UBreadcrumbs.vue'
-import PageItems from '~/components/PageItems.vue'
+import { ref } from 'vue'
 
 useHead({
   title: 'Privacy Policy'

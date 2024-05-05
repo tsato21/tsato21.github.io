@@ -1,6 +1,9 @@
 <template>
   <div id="attributes" class="text-2xl font-bold">
-    表記
+    <span class="group/item">
+    <NuxtLink to="#attributes" @click.prevent="scrollTo('attributes')">表記</NuxtLink>
+    <span class="invisible group-hover/item:visible text-blue-300 text-base">#</span>
+  </span>
   </div>
   <div class="py-3 text-lg">
     <ul class="list-disc list-inside space-y-2">
@@ -45,4 +48,7 @@ defineProps({
     required: true
   }
 })
+
+const scrollTo = inject('scrollTo') as (id: string) => Promise<void>
+
 </script>

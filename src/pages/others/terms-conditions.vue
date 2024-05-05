@@ -23,7 +23,7 @@
           <div class="mb-3">
             <div id="introduction" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#intro">Thank you for coming to Scripts Showcase!</NuxtLink>
+                <NuxtLink to="#intro" @click.prevent="scrollTo('intro')">Thank you for coming to Scripts Showcase!</NuxtLink>
                 <span
                   class="invisible group-hover/item:visible text-blue-300 text-base"
                 >
@@ -74,7 +74,7 @@
 
           <div id="services" class="text-2xl font-bold">
             <span class="group/item">
-              <NuxtLink to="#services">Services</NuxtLink>
+              <NuxtLink to="#services" @click.prevent="scrollTo('services')">Services</NuxtLink>
               <span
                 class="invisible group-hover/item:visible text-blue-300 text-base"
               >
@@ -92,7 +92,7 @@
 
           <div id="use-of-services" class="text-2xl font-bold">
             <span class="group/item">
-              <NuxtLink to="#use-of-services">Use of the Services</NuxtLink>
+              <NuxtLink to="#use-of-services" @click.prevent="scrollTo('use-of-services')">Use of the Services</NuxtLink>
               <span
                 class="invisible group-hover/item:visible text-blue-300 text-base"
               >
@@ -112,7 +112,7 @@
 
           <div id="restrictions-of-use" class="text-2xl font-bold">
             <span class="group/item">
-              <NuxtLink to="#restrictions-of-use">Restrictions on Use</NuxtLink>
+              <NuxtLink to="#restrictions-of-use" @click.prevent="scrollTo('restrictions-of-use')">Restrictions on Use</NuxtLink>
               <span
                 class="invisible group-hover/item:visible text-blue-300 text-base"
               >
@@ -139,7 +139,7 @@
 
           <div id="copyright" class="text-2xl font-bold">
             <span class="group/item">
-              <NuxtLink to="#copyright">Copyright</NuxtLink>
+              <NuxtLink to="#copyright" @click.prevent="scrollTo('copyright')">Copyright</NuxtLink>
               <span
                 class="invisible group-hover/item:visible text-blue-300 text-base"
               >
@@ -161,7 +161,7 @@
 
           <div id="right-to-modify" class="text-2xl font-bold">
             <span class="group/item">
-              <NuxtLink to="#right-to-modify">Right to Modify</NuxtLink>
+              <NuxtLink to="#right-to-modify" @click.prevent="scrollTo('right-to-modify')">Right to Modify</NuxtLink>
               <span
                 class="invisible group-hover/item:visible text-blue-300 text-base"
               >
@@ -193,9 +193,9 @@
             </p>
           </div>
 
-          <div id="ownership-data-privcy" class="text-2xl font-bold">
+          <div id="ownership-data-privacy" class="text-2xl font-bold">
             <span class="group/item">
-              <NuxtLink to="#ownership-data-privacy">Ownership of Data and Privacy</NuxtLink>
+              <NuxtLink to="#ownership-data-privacy" @click.prevent="scrollTo('ownership-data-privacy')">Ownership of Data and Privacy</NuxtLink>
               <span
                 class="invisible group-hover/item:visible text-blue-300 text-base"
               >
@@ -218,7 +218,7 @@
 
           <div id="warranty-disclaimer" class="text-2xl font-bold">
             <span class="group/item">
-              <NuxtLink to="#warranty-disclaimer">Warranty Disclaimer</NuxtLink>
+              <NuxtLink to="#warranty-disclaimer" @click.prevent="scrollTo('warranty-disclaimer')">Warranty Disclaimer</NuxtLink>
               <span
                 class="invisible group-hover/item:visible text-blue-300 text-base"
               >
@@ -246,7 +246,7 @@
 
           <div id="limitation-liability" class="text-2xl font-bold">
             <span class="group/item">
-              <NuxtLink to="#limitation-liability">Limitation Liability</NuxtLink>
+              <NuxtLink to="#limitation-liability" @click.prevent="scrollTo('limitation-liability')">Limitation Liability</NuxtLink>
               <span
                 class="invisible group-hover/item:visible text-blue-300 text-base"
               >
@@ -283,7 +283,7 @@
 
           <div id="governing-law" class="text-2xl font-bold">
             <span class="group/item">
-              <NuxtLink to="#governing-law">Governing Law</NuxtLink>
+              <NuxtLink to="#governing-law" @click.prevent="scrollTo('governing-law')">Governing Law</NuxtLink>
               <span
                 class="invisible group-hover/item:visible text-blue-300 text-base"
               >
@@ -302,7 +302,7 @@
           </div>
           <div id="contact" class="text-2xl font-bold">
             <span class="group/item">
-              <NuxtLink to="#contact">Contact</NuxtLink>
+              <NuxtLink to="#contact" @click.prevent="scrollTo('contact')">Contact</NuxtLink>
               <span
                 class="invisible group-hover/item:visible text-blue-300 text-base"
               >
@@ -326,7 +326,7 @@
 
           <div id="history" class="text-2xl font-bold">
             <span class="group/item">
-              <NuxtLink to="#history">History</NuxtLink>
+              <NuxtLink to="#history" @click.prevent="scrollTo('history')">History</NuxtLink>
               <span
                 class="invisible group-hover/item:visible text-blue-300 text-base"
               >
@@ -376,8 +376,6 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import UBreadcrumbs from '~/components/UBreadcrumbs.vue'
-import PageItems from '~/components/PageItems.vue'
 
 useHead({
   title: 'Terms & Conditions'
@@ -409,4 +407,6 @@ const date = ref(
     day: 'numeric'
   }).format(new Date('2024-05-05'))
 )
+
+const scrollTo = inject('scrollTo') as (id: string) => Promise<void>
 </script>
