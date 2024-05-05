@@ -115,28 +115,3 @@
   background-color: #3c3e40;
   transition: background-color 0.3s ease;
 }
-
-/* for list numbering */
-.list-set {
-  counter-reset: item;
-}
-
-.list-set > li {
-  counter-increment: item;
-}
-
-.list-set > li::before {
-  content: counter(item) '. ';
-}
-
-.list-set .list-set-nested {
-  counter-reset: subitem;
-}
-
-.list-set .list-set-nested > li {
-  counter-increment: subitem;
-}
-
-.list-set .list-set-nested > li::before {
-  content: counter(item, decimal) '-' counter(subitem, decimal) '. ';
-}
