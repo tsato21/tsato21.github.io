@@ -68,7 +68,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
+import { provide, ref, onMounted, onUnmounted } from 'vue'
 
 const isOpen = ref(false)
 
@@ -94,4 +94,21 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('scroll', checkScroll)
 })
+
+const headerOffset = 72 // Header's height (69px) + 3px margin
+const scrollTo = (id: string) => {
+  setTimeout(() => {
+    const element = document.getElementById(id)
+    if (element) {
+      const elementPosition = element.getBoundingClientRect().top
+      const offsetPosition = window.scrollY + elementPosition - headerOffset
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      })
+    }
+  }, 0)
+}
+provide('scrollTo', scrollTo)
 </script>

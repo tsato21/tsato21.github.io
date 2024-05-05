@@ -9,6 +9,7 @@
         <NuxtLink
           :to="'#' + pageItem.id"
           class="text-xs font-bold text-gray-400 hover:text-blue-700 cursor-pointer about-menu-link"
+          @click.prevent="scrollTo(pageItem.id)"
         >
           {{ pageItem.label }}
         </NuxtLink>
@@ -21,6 +22,7 @@
             <NuxtLink
               :to="'#' + subItem.id"
               class="text-xs font-bold text-gray-400 hover:text-blue-700 cursor-pointer about-menu-link"
+              @click.prevent="scrollTo(subItem.id)"
             >
               {{ subItem.label }}
             </NuxtLink>
@@ -40,10 +42,12 @@ interface PageItem {
   subItems?: PageItem[];
 }
 
-const props = defineProps({
+defineProps({
   pageItems: {
     type: Array as () => PageItem[],
     required: true
   }
 })
+
+const scrollTo = inject('scrollTo') as (id: string) => Promise<void>
 </script>
