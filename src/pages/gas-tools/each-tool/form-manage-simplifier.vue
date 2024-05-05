@@ -26,11 +26,11 @@
         <div class="mb-5 p-5">
           <div class="mb-3">
             <div id="about" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#about" @click.prevent="scrollTo('about')">About</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#about" @click.prevent="scrollTo('about')">About</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+              </span>
+            </div>
             <div class="py-3">
               <p>
                 Streamlines the task of managing and processing Google Forms
@@ -55,11 +55,11 @@
 
           <div class="mb-3">
             <div id="prerequisites" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#prerequisites" @click.prevent="scrollTo('prerequisites')">Prerequisites</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#prerequisites" @click.prevent="scrollTo('prerequisites')">Prerequisites</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+              </span>
+            </div>
             <div class="py-3">
               <ul class="list-disc list-inside space-y-2">
                 <li class="text-gray-700">
@@ -76,11 +76,11 @@
           <div class="mb-3">
             <div class="mb-3">
               <div id="sample-data" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#sample-data" @click.prevent="scrollTo('sample-data')">Sample Data</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+                <span class="group/item">
+                  <NuxtLink to="#sample-data" @click.prevent="scrollTo('sample-data')">Sample Data</NuxtLink>
+                  <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                </span>
+              </div>
               <div class="py-3">
                 <p class="text-gray-700">
                   You can access the sample Google Form and Google Sheet,
@@ -113,11 +113,11 @@
 
           <div class="mb-3">
             <div id="usage" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#usage" @click.prevent="scrollTo('usage')">Usage</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')">Usage</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+              </span>
+            </div>
             <div class="text-lg leading-6 text-gray-900 font-bold my-4">
               Tool 1: Updating Google Form Items based on Data on Google Sheet:
             </div>
@@ -252,11 +252,11 @@
 
           <div class="mb-3">
             <div id="source-code" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#source-code" @click.prevent="scrollTo('source-code')">Source Code</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
-  </span>
-</div>
+              <span class="group/item">
+                <NuxtLink to="#source-code" @click.prevent="scrollTo('source-code')">Source Code</NuxtLink>
+                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+              </span>
+            </div>
             <div class="py-3">
               <p class="text-lg mt-4">
                 You can find the source code for this tool on Github. Click

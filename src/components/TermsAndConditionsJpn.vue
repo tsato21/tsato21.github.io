@@ -1,10 +1,10 @@
 <template>
   <div id="terms-conditions" class="text-2xl font-bold">
-  <span class="group/item">
-    <NuxtLink to="#terms-conditions" @click.prevent="scrollTo('terms-conditions')">利用規約</NuxtLink>
-    <span class="invisible group-hover/item:visible text-blue-300 text-base">#</span>
-  </span>
-</div>
+    <span class="group/item">
+      <NuxtLink to="#terms-conditions" @click.prevent="scrollTo('terms-conditions')">利用規約</NuxtLink>
+      <span class="invisible group-hover/item:visible text-blue-300 text-base">#</span>
+    </span>
+  </div>
   <div class="py-3">
     <p class="text-lg mt-4">
       このウェブサイトの利用は、<NuxtLink
