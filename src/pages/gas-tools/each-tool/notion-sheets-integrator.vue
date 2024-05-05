@@ -272,6 +272,10 @@ const badges = [
     alt: 'Use of Google Apps'
   },
   {
+    src: 'https://img.shields.io/badge/Other%20Apps-%20notion%20database%20%26%20api-blue?style=flat-square',
+    alt: 'Use of Other Apps'
+  },
+  {
     url: 'https://github.com/google/clasp',
     src: 'https://img.shields.io/badge/built%20with-clasp-FFA500.svg?style=flat-square',
     alt: 'Built with Clasp'
