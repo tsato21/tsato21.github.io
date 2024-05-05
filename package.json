@@ -8,7 +8,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "format": "prettier --write src/**/*"
+    "format": "prettier --write src/**/*",
+    "lint": "eslint --ext .ts,.js,.vue src --fix"
   },
   "dependencies": {
     "nuxt": "^3.11.1",
@@ -18,7 +19,10 @@
     "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/tailwindcss": "^6.11.4",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "eslint": "^8.57.0",
     "nuxt-icon": "^0.6.10",
     "prettier": "^3.2.5",
     "typescript": "^5.4.3"

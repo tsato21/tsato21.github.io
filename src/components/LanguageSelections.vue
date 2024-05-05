@@ -1,12 +1,12 @@
 <template>
   <div class="relative inline-block text-left">
     <button
-      type="button"
-      @click="toggleDropdown"
-      class="inline-flex items-center px-1 py-0.5 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
       id="options-menu"
+      type="button"
+      class="inline-flex items-center px-1 py-0.5 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
       aria-haspopup="true"
       :aria-expanded="isOpen"
+      @click="toggleDropdown"
     >
       {{ currentLanguage }}
       <svg
@@ -40,35 +40,36 @@
           :to="language.filePath"
           class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
           role="menuitem"
-          >{{ language.name }}</NuxtLink
         >
+          {{ language.name }}
+        </NuxtLink>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, defineProps } from 'vue';
+import { ref, defineProps } from 'vue'
 
 interface Language {
   name: string;
   filePath: string;
 }
 
-let isOpen = ref(false);
+const isOpen = ref(false)
 
 const toggleDropdown = () => {
-  isOpen.value = !isOpen.value;
-};
+  isOpen.value = !isOpen.value
+}
 
 const props = defineProps({
   languages: {
     type: Array as () => Language[],
-    required: true,
+    required: true
   },
   currentLanguage: {
     type: String,
-    required: true,
-  },
-});
+    required: true
+  }
+})
 </script>

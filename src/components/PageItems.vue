@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
+import { defineProps } from 'vue'
 
 interface PageItem {
   label: string;
@@ -43,7 +43,7 @@ interface PageItem {
 const props = defineProps({
   pageItems: {
     type: Array as () => PageItem[],
-    required: true,
-  },
-});
+    required: true
+  }
+})
 </script>

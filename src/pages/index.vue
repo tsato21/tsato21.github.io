@@ -16,13 +16,17 @@
       >
         <div class="flex justify-between flex-wrap mb-5 border-b-2 pb-2">
           <div
-            class="w-full md:w-1/2 mb-3 p-2"
             v-for="tool in tools"
             :key="tool.name"
+            class="w-full md:w-1/2 mb-3 p-2"
           >
-            <img :src="tool.banner" :alt="tool.name" class="w-80 h-72" />
-            <div class="text-2xl font-bold my-3">{{ tool.name }}</div>
-            <p class="mt-2">{{ tool.description }}</p>
+            <img :src="tool.banner" :alt="tool.name" class="w-80 h-72">
+            <div class="text-2xl font-bold my-3">
+              {{ tool.name }}
+            </div>
+            <p class="mt-2">
+              {{ tool.description }}
+            </p>
             <NuxtLink :to="tool.filePath">
               <button
                 class="mt-3 px-4 py-2 bg-gray-400 text-white rounded hover:bg-gray-500"
@@ -33,14 +37,15 @@
           </div>
         </div>
         <div class="mt-2">
-          <div class="text-2xl font-bold">Feel free to utilize the tools!</div>
+          <div class="text-2xl font-bold">
+            Feel free to utilize the tools!
+          </div>
           <p class="text-lg mb-2">
             As for the source code, you can always access it via
             <a
               href="https://github.com/tsato21"
               class="text-lightblue underline hover:text-darkblue"
-              >GitHub repositories</a
-            >.
+            >GitHub repositories</a>.
           </p>
         </div>
       </div>
@@ -48,13 +53,13 @@
       <!-- Part C: Displayed at right on large screen and at second on other sized screen) -->
       <div
         class="col-span-12 order-2 lg:col-span-2 lg:order-3 md:col-span-12 md:order-2 sm:col-span-12 sm:order-2"
-      ></div>
+      />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 const tools = ref([
   {
@@ -62,14 +67,14 @@ const tools = ref([
     description:
       'Automates the creation of work manuals by extracting essential details from Google Slides and organizing them into Google Sheets, improving workflow efficiency.',
     banner: '/banner/manual-builder.png',
-    filePath: '/gas-tools/each-tool/manual-builder.en',
+    filePath: '/gas-tools/each-tool/manual-builder.en'
   },
   {
     name: 'SheetTasker',
     description:
       'Manages tasks in Google Sheets, output target tasks in Google Docs, and send reminders via Gmail, allowing for efficient task management on Google Workspace.',
     banner: '/banner/sheet-tasker.png',
-    filePath: '/gas-tools/each-tool/sheet-tasker.en',
-  },
-]);
+    filePath: '/gas-tools/each-tool/sheet-tasker.en'
+  }
+])
 </script>

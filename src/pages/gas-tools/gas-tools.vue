@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UBreadcrumbs :breadCrumbs="breadCrumbs" />
+    <UBreadcrumbs :bread-crumbs="breadCrumbs" />
     <div class="mb-5 pt-2 grid grid-cols-12 gap-3 md:gap-6">
       <!-- Section A (left in lg/ first in md/sm/xs) -->
       <div
@@ -25,8 +25,12 @@
             class="mt-5 flex justify-between items-start border-b-2 pb-5"
           >
             <div class="flex-grow">
-              <div class="text-2xl font-semibold">{{ tool.title }}</div>
-              <p class="mt-2">{{ tool.description }}</p>
+              <div class="text-2xl font-semibold">
+                {{ tool.title }}
+              </div>
+              <p class="mt-2">
+                {{ tool.description }}
+              </p>
             </div>
             <NuxtLink :to="tool.filePath" class="self-start ml-5">
               <button
@@ -59,10 +63,10 @@
 </template>
 
 <script setup lang="ts">
-import UBreadcrumbs from '~/components/UBreadcrumbs.vue';
-import { ref } from 'vue';
+import { ref } from 'vue'
+import UBreadcrumbs from '~/components/UBreadcrumbs.vue'
 
-const breadCrumbs = [{ label: 'Home', to: '/' }, { label: 'GAS Tools' }];
+const breadCrumbs = [{ label: 'Home', to: '/' }, { label: 'GAS Tools' }]
 
 const tools = ref([
   // tool 1
@@ -70,73 +74,73 @@ const tools = ref([
     title: 'Manual Builder',
     description:
       'Automates the creation of work manuals by extracting essential details from Google Slides and organizing them into Google Sheets, improving workflow efficiency.',
-    filePath: '/gas-tools/each-tool/manual-builder.en',
+    filePath: '/gas-tools/each-tool/manual-builder.en'
   },
   {
     title: 'SheetTasker',
     description:
       'Manages tasks in Google Sheets, output target tasks in Google Docs, and send reminders via Gmail, allowing for efficient task management on Google Workspace.',
-    filePath: '/gas-tools/each-tool/sheet-tasker.en',
+    filePath: '/gas-tools/each-tool/sheet-tasker.en'
   },
   {
     title: 'Course Data Aligner',
     description:
       'Harmonizes course data between two Google Sheets with differing structures, effectively resolving data structure inconsistencies across multiple stakeholders.',
-    filePath: '/gas-tools/each-tool/course-data-aligner',
+    filePath: '/gas-tools/each-tool/course-data-aligner'
   },
   {
     title: 'Book Data Organizer',
     description:
       'Automates e-book data organization in Google Sheets and uses Group Merge Add-on for personalized email sending. Handles confirmation and link share emails.',
-    filePath: '/gas-tools/each-tool/book-data-organizer',
+    filePath: '/gas-tools/each-tool/book-data-organizer'
   },
   {
     title: 'Row Height Optimizer',
     description:
       'Automates the adjustment of row heights in Google Sheets, enhancing readability and visual appeal by providing adequate padding for cell contents.',
-    filePath: '/gas-tools/each-tool/row-height-optimizer',
+    filePath: '/gas-tools/each-tool/row-height-optimizer'
   },
   {
     title: 'SheetMail Sync',
     description:
       'Automates email extraction and categorization in Gmail, and updates Google Sheets with the information.',
-    filePath: '/gas-tools/each-tool/sheet-mail-sync',
+    filePath: '/gas-tools/each-tool/sheet-mail-sync'
   },
   {
     title: 'SheetMail WorkAutomator',
     description:
       'Automates tasks in Google Sheets, Drive, and Gmail. It streamlines file management, email creation, and sharing for efficient document organization and communication.',
-    filePath: '/gas-tools/each-tool/sheet-mail-work-automator',
+    filePath: '/gas-tools/each-tool/sheet-mail-work-automator'
   },
   {
     title: 'PDF Info Inserter',
     description:
       'Automates the process of extracting and inserting PDF metadata into Google Sheets.',
-    filePath: '/gas-tools/each-tool/pdf-info-inserter',
+    filePath: '/gas-tools/each-tool/pdf-info-inserter'
   },
   {
     title: 'Form Manage Simplifier',
     description:
       'Streamlines the task of managing and processing Google Forms responses including efficiently updating form items based on reference lists in Google Sheets, validating submitted forms, and sending email notifications for invalid submissions.',
-    filePath: '/gas-tools/each-tool/form-manage-simplifier',
+    filePath: '/gas-tools/each-tool/form-manage-simplifier'
   },
   {
     title: 'File Upload Notifier',
     description:
       'Tracks new file uploads in a specific Google Drive folder. If the time since the last upload is within a set interval, it sends a notification email, ensuring efficient file management.',
-    filePath: '/gas-tools/each-tool/file-upload-notifier',
-  },
-]);
+    filePath: '/gas-tools/each-tool/file-upload-notifier'
+  }
+])
 
-let date = ref(
+const date = ref(
   new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric',
+    day: 'numeric'
   }).format(new Date('2024-04-18'))
-);
+)
 
 useHead({
-  title: 'GAS Tools',
-});
+  title: 'GAS Tools'
+})
 </script>

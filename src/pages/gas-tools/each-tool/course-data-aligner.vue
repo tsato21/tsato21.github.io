@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UBreadcrumbs :breadCrumbs="breadCrumbs" />
+    <UBreadcrumbs :bread-crumbs="breadCrumbs" />
     <div class="mb-5 p-4 grid grid-cols-12 gap-3 md:gap-6">
       <!-- Part A: Displayed at left on large screen and at first on other sized screen) -->
       <div
@@ -25,7 +25,9 @@
 
         <div class="mb-5 p-5">
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="about">About</div>
+            <div id="about" class="text-2xl font-bold">
+              About
+            </div>
             <div class="py-3">
               <p>
                 Harmonizes course data between two Google Sheets with differing
@@ -36,7 +38,7 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="prerequisites">
+            <div id="prerequisites" class="text-2xl font-bold">
               Prerequisites
             </div>
             <div class="py-3">
@@ -53,7 +55,9 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="setup">Setup</div>
+            <div id="setup" class="text-2xl font-bold">
+              Setup
+            </div>
             <div class="py-3">
               <ol class="list-decimal list-inside space-y-2">
                 <li class="text-gray-700">
@@ -64,8 +68,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="text-lightblue underline hover:text-darkblue"
-                    >Sample Google Sheet</a
-                  >.
+                  >Sample Google Sheet</a>.
                   <p class="mt-2">
                     *Note: The samples provided are merely illustrative,
                     showcasing course data at an educational institution.
@@ -83,7 +86,9 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="setup">Usage</div>
+            <div id="setup" class="text-2xl font-bold">
+              Usage
+            </div>
             <div class="py-3">
               <!-- 1_organize-offering-data.gs -->
               <section class="my-5">
@@ -95,13 +100,13 @@
                   match the institution's database format.
                 </p>
 
-                <p class="font-bold my-2">How it works:</p>
+                <p class="font-bold my-2">
+                  How it works:
+                </p>
                 <ol class="list-decimal list-inside">
                   <li>
                     Fetches data from the
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >'1_Offering Data by Program'</code
-                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'1_Offering Data by Program'</code>
                     sheet.
                   </li>
                   <li>
@@ -111,27 +116,23 @@
                   <li>
                     Displays structured data (Course Code, Semester, Faculty) on
                     the
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >'1_Organized Offering Data'</code
-                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'1_Organized Offering Data'</code>
                     sheet.
                   </li>
                 </ol>
 
-                <p class="font-bold my-1">How to use it:</p>
+                <p class="font-bold my-1">
+                  How to use it:
+                </p>
                 <ol class="list-decimal list-inside">
                   <li>
                     Paste (*value only) given course offering data into the
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >'1_Offering Data by Program'</code
-                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'1_Offering Data by Program'</code>
                     sheet.
                   </li>
                   <li>
                     Click the button on the
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >'1_Organized Offering Data'</code
-                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'1_Organized Offering Data'</code>
                     sheet.
                   </li>
                   <li>
@@ -147,7 +148,7 @@
                         src="assets/images/gas-tools/course-data-aligner/1_Offering Data by Program.png"
                         alt="Data Insertion"
                         class="w-80 h-40"
-                      />
+                      >
                       <figcaption class="p-2 text-gray-400">
                         Figure: Data Insertion
                       </figcaption>
@@ -159,7 +160,7 @@
                         src="assets/images/gas-tools/course-data-aligner/1_Organized Offering Data.png"
                         alt="Organized Data Display"
                         class="w-80 h-40"
-                      />
+                      >
                       <figcaption class="p-2 text-gray-400">
                         Figure: Organized Data Display
                       </figcaption>
@@ -168,7 +169,7 @@
                 </div>
               </section>
               <!-- Divider -->
-              <hr />
+              <hr>
 
               <!-- 2-1_organize-schedule-data.gs -->
               <section class="my-5">
@@ -183,13 +184,13 @@
                   dataset to match the institution's database format.
                 </p>
 
-                <p class="font-bold my-2">How it works:</p>
+                <p class="font-bold my-2">
+                  How it works:
+                </p>
                 <ol class="list-decimal list-inside">
                   <li>
                     Fetches data from the
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >'2-1_Schedule Data by Program'</code
-                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'2-1_Schedule Data by Program'</code>
                     sheet.
                   </li>
                   <li>
@@ -202,27 +203,23 @@
                   </li>
                   <li>
                     Displays structured data on the
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >'2-1_Organized Schedule Data'</code
-                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'2-1_Organized Schedule Data'</code>
                     sheet. Exceptions are listed in column G.
                   </li>
                 </ol>
 
-                <p class="font-bold my-1">How to use it:</p>
+                <p class="font-bold my-1">
+                  How to use it:
+                </p>
                 <ol class="list-decimal list-inside">
                   <li>
                     Paste (*value only) given class schedule data into the
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >'2-1_Schedule Data by Program'</code
-                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'2-1_Schedule Data by Program'</code>
                     sheet.
                   </li>
                   <li>
                     Click the button on the
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >'2-1_Organized Schedule Data'</code
-                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'2-1_Organized Schedule Data'</code>
                     sheet.
                   </li>
                   <li>
@@ -238,7 +235,7 @@
                         src="assets/images/gas-tools/course-data-aligner/2-1_Schedule Data by Program.png"
                         alt="Data Insertion"
                         class="w-80 h-40"
-                      />
+                      >
                       <figcaption class="p-2 text-gray-400">
                         Figure: Data Insertion
                       </figcaption>
@@ -250,7 +247,7 @@
                         src="assets/images/gas-tools/course-data-aligner/2-1_Organized Schedule Data.png"
                         alt="Organized Data Display"
                         class="w-80 h-40"
-                      />
+                      >
                       <figcaption class="p-2 text-gray-400">
                         Figure: Organized Data Display
                       </figcaption>
@@ -258,10 +255,10 @@
                   </div>
                 </div>
               </section>
-              <hr />
+              <hr>
 
               <!-- Divider -->
-              <hr />
+              <hr>
 
               <!-- 2-2_organize-schedule-data.gs -->
               <section class="my-5">
@@ -276,13 +273,13 @@
                   dataset to match the institution's database format.
                 </p>
 
-                <p class="font-bold my-2">How it works:</p>
+                <p class="font-bold my-2">
+                  How it works:
+                </p>
                 <ol class="list-decimal list-inside">
                   <li>
                     Fetches data from the
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >'2-2_Schedule Data by Program'</code
-                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'2-2_Schedule Data by Program'</code>
                     sheet.
                   </li>
                   <li>
@@ -295,27 +292,23 @@
                   </li>
                   <li>
                     Displays structured data on the
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >'2-2_Organized Schedule Data'</code
-                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'2-2_Organized Schedule Data'</code>
                     sheet.
                   </li>
                 </ol>
 
-                <p class="font-bold my-1">How to use it:</p>
+                <p class="font-bold my-1">
+                  How to use it:
+                </p>
                 <ol class="list-decimal list-inside">
                   <li>
                     Paste (*value only) given class schedule data into the
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >'2-2_Schedule Data by Program'</code
-                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'2-2_Schedule Data by Program'</code>
                     sheet.
                   </li>
                   <li>
                     Click the button on the
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >'2-2_Organized Schedule Data'</code
-                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'2-2_Organized Schedule Data'</code>
                     sheet.
                   </li>
                   <li>
@@ -330,7 +323,7 @@
                         src="assets/images/gas-tools/course-data-aligner/2-2_Schedule Data by Program.png"
                         alt="Data Insertion"
                         class="w-80 h-40"
-                      />
+                      >
                       <figcaption class="p-2 text-gray-400">
                         Figure: Data Insertion
                       </figcaption>
@@ -342,7 +335,7 @@
                         src="assets/images/gas-tools/course-data-aligner/2-2_Organized Schedule Data.png"
                         alt="Organized Data Display"
                         class="w-80 h-40"
-                      />
+                      >
                       <figcaption class="p-2 text-gray-400">
                         Figure: Organized Data Display
                       </figcaption>
@@ -350,7 +343,7 @@
                   </div>
                 </div>
               </section>
-              <hr />
+              <hr>
 
               <!-- 2-3_organize-schedule-data.gs -->
               <section class="my-5">
@@ -365,13 +358,13 @@
                   dataset to match the institution's database format.
                 </p>
 
-                <p class="font-bold my-2">How it works:</p>
+                <p class="font-bold my-2">
+                  How it works:
+                </p>
                 <ol class="list-decimal list-inside">
                   <li>
                     Fetches data from the
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >'2-3_Schedule Data by Program'</code
-                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'2-3_Schedule Data by Program'</code>
                     sheet.
                   </li>
                   <li>
@@ -390,29 +383,25 @@
                   </li>
                   <li>
                     Displays structured data on the
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >'2-3_Organized Schedule Data'</code
-                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'2-3_Organized Schedule Data'</code>
                     sheet. This script evaluates the data after displaying it on
                     the sheet. If a value is found to be invalid, it is
                     highlighted in red for easy identification.
                   </li>
                 </ol>
 
-                <p class="font-bold my-1">How to use it:</p>
+                <p class="font-bold my-1">
+                  How to use it:
+                </p>
                 <ol class="list-decimal list-inside">
                   <li>
                     Enter class schedule data into the
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >'2-3_Schedule Data by Program'</code
-                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'2-3_Schedule Data by Program'</code>
                     sheet.
                   </li>
                   <li>
                     Click the button on the
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >'2-3_Organized Schedule Data'</code
-                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">'2-3_Organized Schedule Data'</code>
                     sheet.
                   </li>
                   <li>
@@ -427,7 +416,7 @@
                         src="assets/images/gas-tools/course-data-aligner/2-3_Schedule Data by Program.png"
                         alt="Data Insertion"
                         class="w-80 h-40"
-                      />
+                      >
                       <figcaption class="p-2 text-gray-400">
                         Figure: Data Insertion
                       </figcaption>
@@ -439,7 +428,7 @@
                         src="assets/images/gas-tools/course-data-aligner/2-3_Organized Schedule Data.png"
                         alt="Organized Data Display"
                         class="w-80 h-40"
-                      />
+                      >
                       <figcaption class="p-2 text-gray-400">
                         Figure: Organized Data Display
                       </figcaption>
@@ -447,7 +436,7 @@
                   </div>
                 </div>
               </section>
-              <hr />
+              <hr>
             </div>
           </div>
 
@@ -456,7 +445,9 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="source-code">Source Code</div>
+            <div id="source-code" class="text-2xl font-bold">
+              Source Code
+            </div>
             <div class="py-3">
               <p class="text-lg mt-4">
                 You can find the source code for this tool on Github. Click
@@ -465,8 +456,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
-                  >HERE</a
-                >
+                >HERE</a>
                 .
               </p>
             </div>
@@ -492,9 +482,9 @@
         <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed lg:mr-2">
           <div class="mb-5 pt-5">
             <p class="text-l font-bold p-1 bg-gray-400 text-white">
-              <Icon name="map:book-store"></Icon> On this page
+              <Icon name="map:book-store" /> On this page
             </p>
-            <PageItems :pageItems="pageItems" />
+            <PageItems :page-items="pageItems" />
           </div>
         </div>
       </div>
@@ -507,13 +497,13 @@
 const breadCrumbs = [
   { label: 'Home', to: '/' },
   { label: 'Gas Tools', to: '/gas-tools/gas-tools' },
-  { label: 'Course Data Aligner' },
-];
+  { label: 'Course Data Aligner' }
+]
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'Course Data Aligner',
-});
+  title: 'Course Data Aligner'
+})
 
 // An array of objects representing the page items or sections.
 const pageItems = [
@@ -523,48 +513,48 @@ const pageItems = [
   { label: 'Usage', id: 'usage' },
   {
     label: 'Tool 1: Course Offering Data Alignment',
-    id: 'tool_1_organize-offering-data',
+    id: 'tool_1_organize-offering-data'
   },
   {
     label: 'Tool 2-1: Schedule Data Structuring (Type A)',
-    id: 'tool_2-1_organize-schedule-data',
+    id: 'tool_2-1_organize-schedule-data'
   },
   {
     label: 'Tool 2-2: Schedule Data Structuring (Type B)',
-    id: 'tool_2-2_organize-schedule-data',
+    id: 'tool_2-2_organize-schedule-data'
   },
   {
     label: 'Tool 2-3: Schedule Data Structuring (Type C)',
-    id: 'tool_2-3_organize-schedule-data',
+    id: 'tool_2-3_organize-schedule-data'
   },
   { label: 'Terms and Conditions', id: 'terms-conditions' },
-  { label: 'Source Code', id: 'source-code' },
-];
+  { label: 'Source Code', id: 'source-code' }
+]
 
 // An array of objects representing the badges to be displayed.
 const badges = [
   {
     src: 'https://img.shields.io/badge/Google%20Apps-%20sheet-brightgreen?style=flat-square&color=brightgreen',
-    alt: 'Use of Google Apps',
+    alt: 'Use of Google Apps'
   },
   {
     url: 'https://github.com/google/clasp',
     src: 'https://img.shields.io/badge/built%20with-clasp-FFA500.svg?style=flat-square',
-    alt: 'Built with Clasp',
+    alt: 'Built with Clasp'
   },
   {
     url: 'https://github.com/prettier/prettier',
     src: 'https://img.shields.io/badge/code_style-prettier-800080.svg?style=flat-square',
-    alt: 'Code style: Prettier',
-  },
-];
+    alt: 'Code style: Prettier'
+  }
+]
 
 // The date, formatted according to the US locale.
-let date = ref(
+const date = ref(
   new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric',
+    day: 'numeric'
   }).format(new Date('2024-04-17'))
-);
+)
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UBreadcrumbs :breadCrumbs="breadCrumbs" />
+    <UBreadcrumbs :bread-crumbs="breadCrumbs" />
     <div class="mb-5 p-4 grid grid-cols-12 gap-3 md:gap-6">
       <!-- First part -->
       <div
@@ -25,7 +25,7 @@
             delineates the types of personal information that is gathered and
             how it is utilized.
           </p>
-          <br />
+          <br>
           <p>
             Above all, rest assured that I will never disclose Your email
             address or any other personal details to anyone without Your
@@ -34,13 +34,12 @@
         </div>
         <div class="py-1">
           <ol class="list-set">
-            <li class="text-2xl font-bold" id="definition">
+            <li id="definition" class="text-2xl font-bold">
               <span class="group/item">
                 <NuxtLink to="#definition">Definition</NuxtLink>
                 <span
                   class="invisible group-hover/item:visible text-blue-300 text-base"
-                  >#</span
-                >
+                >#</span>
               </span>
             </li>
             <div class="my-5 ms-2">
@@ -52,8 +51,9 @@
                     class="text-lightblue underline hover:text-darkblue"
                     target="_blank"
                     external
-                    >Taiga SATO</NuxtLink
-                  >, the sole administrator of this Website.
+                  >
+                    Taiga SATO
+                  </NuxtLink>, the sole administrator of this Website.
                 </li>
                 <li>
                   <strong>Website</strong> refers to this website at
@@ -61,8 +61,9 @@
                     to="https://tsato21.github.io/"
                     class="text-lightblue underline hover:text-darkblue"
                     target="_blank"
-                    >https://tsato21.github.io/</NuxtLink
-                  >.
+                  >
+                    https://tsato21.github.io/
+                  </NuxtLink>.
                 </li>
                 <li>
                   <strong>Services</strong> collectively denotes this Website
@@ -76,19 +77,18 @@
               </ul>
             </div>
 
-            <li class="text-2xl font-bold" id="data-collection">
+            <li id="data-collection" class="text-2xl font-bold">
               <span class="group/item">
                 <NuxtLink to="#data-collection">Data Collection</NuxtLink>
                 <span
                   class="invisible group-hover/item:visible text-blue-300 text-base"
                 >
-                  #</span
-                >
+                  #</span>
               </span>
             </li>
             <!-- nested-list -->
             <ol class="my-3 list-set-nested">
-              <li class="text-xl font-bold" id="github">
+              <li id="github" class="text-xl font-bold">
                 <span class="group/item">
                   <NuxtLink to="#github">Github</NuxtLink>
                   <span
@@ -108,12 +108,13 @@
                     target="blank"
                     class="text-lightblue underline hover:text-darkblue"
                     external
-                    >GitHub's privacy policy</NuxtLink
-                  >.
+                  >
+                    GitHub's privacy policy
+                  </NuxtLink>.
                 </p>
               </div>
 
-              <li class="text-xl font-bold" id="google-analytics">
+              <li id="google-analytics" class="text-xl font-bold">
                 <span class="group/item">
                   <NuxtLink to="#google-analytics">Google Analytics</NuxtLink>
                   <span
@@ -139,17 +140,16 @@
                     target="blank"
                     class="text-lightblue underline hover:text-darkblue"
                     external
-                    >HOW GOOGLE USES INFORMATION FROM SITES OR APPS THAT USE OUR
-                    SERVICES</NuxtLink
-                  >.
+                  >
+                    HOW GOOGLE USES INFORMATION FROM SITES OR APPS THAT USE OUR
+                    SERVICES
+                  </NuxtLink>.
                 </p>
               </div>
 
-              <li class="text-xl font-bold" id="cookies-web-beacons">
+              <li id="cookies-web-beacons" class="text-xl font-bold">
                 <span class="group/item">
-                  <NuxtLink to="#cookies-web-beacons"
-                    >Cookies and Web Beacons</NuxtLink
-                  >
+                  <NuxtLink to="#cookies-web-beacons">Cookies and Web Beacons</NuxtLink>
                   <span
                     class="invisible group-hover/item:visible text-blue-300 text-base"
                   >
@@ -168,16 +168,13 @@
                   our website and the services we may offer.
                 </p>
               </div>
-              <li class="text-xl font-bold" id="contact-information">
+              <li id="contact-information" class="text-xl font-bold">
                 <span class="group/item">
-                  <NuxtLink to="#contact-information"
-                    >Contact Information</NuxtLink
-                  >
+                  <NuxtLink to="#contact-information">Contact Information</NuxtLink>
                   <span
                     class="invisible group-hover/item:visible text-blue-300 text-base"
                   >
-                    #</span
-                  >
+                    #</span>
                 </span>
               </li>
               <div class="my-5 ms-2">
@@ -187,8 +184,9 @@
                     to="/contact/contact"
                     target="blank"
                     class="text-lightblue underline hover:text-darkblue"
-                    >contact Me</NuxtLink
-                  >, I will utilize Your provided name and email address solely
+                  >
+                    contact Me
+                  </NuxtLink>, I will utilize Your provided name and email address solely
                   for the purpose of responding to Your inquiry. Rest assured,
                   Your information will not be shared with any third parties. By
                   default, all correspondence, including Your emails and My
@@ -199,14 +197,13 @@
               </div>
             </ol>
 
-            <li class="text-2xl font-bold" id="contact">
+            <li id="contact" class="text-2xl font-bold">
               <span class="group/item">
                 <NuxtLink to="#contact">Contact</NuxtLink>
                 <span
                   class="invisible group-hover/item:visible text-blue-300 text-base"
                 >
-                  #</span
-                >
+                  #</span>
               </span>
             </li>
 
@@ -218,19 +215,19 @@
                   to="/contact/contact"
                   target="blank"
                   class="text-lightblue underline hover:text-darkblue"
-                  >the contact form</NuxtLink
-                >.
+                >
+                  the contact form
+                </NuxtLink>.
               </p>
             </div>
 
-            <li class="text-2xl font-bold" id="history">
+            <li id="history" class="text-2xl font-bold">
               <span class="group/item">
                 <NuxtLink to="#history">History</NuxtLink>
                 <span
                   class="invisible group-hover/item:visible text-blue-300 text-base"
                 >
-                  #</span
-                >
+                  #</span>
               </span>
             </li>
 
@@ -241,8 +238,9 @@
                   to="https://github.com/tsato21/tsato21.github.io"
                   target="blank"
                   class="text-lightblue underline hover:text-darkblue"
-                  >the Github</NuxtLink
-                >.
+                >
+                  the Github
+                </NuxtLink>.
               </p>
             </div>
           </ol>
@@ -265,9 +263,9 @@
         <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed lg:mr-2">
           <div class="mb-5 pt-5">
             <p class="text-l font-bold p-1 bg-gray-400 text-white">
-              <Icon name="map:book-store"></Icon> On this page
+              <Icon name="map:book-store" /> On this page
             </p>
-            <PageItems :pageItems="pageItems" />
+            <PageItems :page-items="pageItems" />
           </div>
         </div>
       </div>
@@ -276,20 +274,20 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import UBreadcrumbs from '~/components/UBreadcrumbs.vue';
-import PageItems from '~/components/PageItems.vue';
+import { ref } from 'vue'
+import UBreadcrumbs from '~/components/UBreadcrumbs.vue'
+import PageItems from '~/components/PageItems.vue'
 
 useHead({
-  title: 'Privacy Policy',
-});
+  title: 'Privacy Policy'
+})
 
-const breadCrumbs = [{ label: 'Home', to: '/' }, { label: 'Privacy Policy' }];
+const breadCrumbs = [{ label: 'Home', to: '/' }, { label: 'Privacy Policy' }]
 
 const pageItems = [
   {
     label: 'Definition',
-    id: 'definition',
+    id: 'definition'
   },
   {
     label: 'Data Collection',
@@ -298,18 +296,18 @@ const pageItems = [
       { label: 'Github', id: 'github' },
       { label: 'Google Analytics', id: 'google-analytics' },
       { label: 'Cookies and Web Beacons', id: 'cookies-web-beacons' },
-      { label: 'Contact Information', id: 'contact-information' },
-    ],
+      { label: 'Contact Information', id: 'contact-information' }
+    ]
   },
   { label: 'Contact', id: 'contact' },
-  { label: 'History', id: 'history' },
-];
+  { label: 'History', id: 'history' }
+]
 
-let date = ref(
+const date = ref(
   new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric',
+    day: 'numeric'
   }).format(new Date('2024-05-02'))
-);
+)
 </script>

@@ -2,7 +2,7 @@
   <Cursor />
   <div class="flex flex-col min-h-screen text-lg">
     <!-- <header class="shadow-sm bg-white relative px-5"> -->
-    <header class="top-0 w-full z-50 shadow-sm bg-white px-5">
+    <header class="top-0 w-full z-50 shadow-sm bg-white px-5 fixed">
       <nav class="flex justify-between items-center">
         <NuxtLink
           to="/"
@@ -12,7 +12,7 @@
             src="~/assets/images/nav-bar/icon.png"
             alt="Site's Icon"
             class="mr-2 w-12 h-12 my-1"
-          />
+          >
           Scripts Showcase
         </NuxtLink>
         <ul
@@ -23,10 +23,10 @@
         </ul>
         <div class="relative">
           <button
-            @click="toggleMenu"
             class="navbar-toggler transform transition hover:-translate-y-1"
+            @click="toggleMenu"
           >
-            <Icon name="material-symbols-light:menu" class="custom-icon"></Icon>
+            <Icon name="material-symbols-light:menu" class="custom-icon" />
           </button>
           <Transition name="menu-bar-out">
             <div
@@ -48,15 +48,15 @@
     </header>
 
     <!-- output the page content -->
-    <div class="container flex-grow py-5 mx-auto">
+    <div class="container flex-grow py-5 mx-auto mt-16">
       <div>
         <slot />
       </div>
       <!-- Button to scroll to top of the page: fixed at bottom right corner -->
       <button
         v-if="isScrolled"
-        @click="scrollTop"
         class="fixed bottom-5 right-5 bg-blue-500 text-white p-2 rounded-full top-btn"
+        @click="scrollTop"
       >
         Top
       </button>
@@ -68,30 +68,30 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue'
 
-const isOpen = ref(false);
+const isOpen = ref(false)
 
 const toggleMenu = () => {
-  isOpen.value = !isOpen.value;
-};
+  isOpen.value = !isOpen.value
+}
 
 // A function that scrolls the page to the top smoothly.
 const scrollTop = () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-};
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
 
-const isScrolled = ref(false);
+const isScrolled = ref(false)
 
 const checkScroll = () => {
-  isScrolled.value = window.scrollY > 0;
-};
+  isScrolled.value = window.scrollY > 0
+}
 
 onMounted(() => {
-  window.addEventListener('scroll', checkScroll);
-});
+  window.addEventListener('scroll', checkScroll)
+})
 
 onUnmounted(() => {
-  window.removeEventListener('scroll', checkScroll);
-});
+  window.removeEventListener('scroll', checkScroll)
+})
 </script>

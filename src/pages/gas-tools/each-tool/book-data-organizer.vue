@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UBreadcrumbs :breadCrumbs="breadCrumbs" />
+    <UBreadcrumbs :bread-crumbs="breadCrumbs" />
     <div class="mb-5 p-4 grid grid-cols-12 gap-3 md:gap-6">
       <!-- Part A: Displayed at left on large screen and at first on other sized screen) -->
       <div
@@ -25,7 +25,9 @@
 
         <div class="mb-5 p-5">
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="about">About</div>
+            <div id="about" class="text-2xl font-bold">
+              About
+            </div>
             <div class="py-3">
               <p>
                 Automates book data organization in Google Sheets and uses
@@ -34,8 +36,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
-                  >Group Merge Add-on</a
-                >
+                >Group Merge Add-on</a>
                 for personalized email sending to share book information.
               </p>
               <blockquote
@@ -49,7 +50,7 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="prerequisites">
+            <div id="prerequisites" class="text-2xl font-bold">
               Prerequisites
             </div>
             <div class="py-3">
@@ -66,7 +67,9 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="setup">Setup</div>
+            <div id="setup" class="text-2xl font-bold">
+              Setup
+            </div>
             <div class="py-3">
               <ol class="list-decimal list-inside space-y-2">
                 <li class="text-gray-700">
@@ -77,8 +80,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="text-lightblue underline hover:text-darkblue"
-                    >Sample Google Sheet</a
-                  >.
+                  >Sample Google Sheet</a>.
                   <p class="mt-2">
                     *Note: The samples provided are merely illustrative,
                     showcasing e-book data at an educational institution.
@@ -96,7 +98,9 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="setup">Usage</div>
+            <div id="setup" class="text-2xl font-bold">
+              Usage
+            </div>
             <div class="py-3">
               <!-- 1_Confirmation Emails -->
               <section class="my-5">
@@ -111,7 +115,9 @@
                 </p>
 
                 <div class="ml-3">
-                  <p class="font-bold my-2">Usage and its Logics</p>
+                  <p class="font-bold my-2">
+                    Usage and its Logics
+                  </p>
                   <ul class="list-decimal list-inside">
                     <li>
                       <strong>Input Reference Data</strong>: Enter reference
@@ -119,15 +125,14 @@
                       reference sheet,
                       <code
                         class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                        >Confirm Mail-Ref Data</code
-                      >
+                      >Confirm Mail-Ref Data</code>
                       .
                       <div class="ml-5">
                         <img
                           src="assets/images/gas-tools/book-data-organizer/input-ref-data.png"
                           alt="Image of Input Ref Data"
                           class="w-96 h-48"
-                        />
+                        >
                         <figcaption class="p-2 text-gray-400">
                           Figure: Input Reference Data
                         </figcaption>
@@ -137,16 +142,14 @@
                       <strong>Process data</strong>: Select
                       <code
                         class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                        >Output Mail Merge Data for Confirm Email</code
-                      >
+                      >Output Mail Merge Data for Confirm Email</code>
                       from
                       <code
                         class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                        >Custom Menu</code
-                      >
+                      >Custom Menu</code>
                       to process data for confirmation emails.
                       <div class="ml-5">
-                        <br />This function processes data to generate mail
+                        <br>This function processes data to generate mail
                         merge data specifically for confirmation emails. The
                         function's logic is as follows:
                         <blockquote
@@ -184,7 +187,7 @@
                             src="assets/images/gas-tools/book-data-organizer/ref-data-confirm.png"
                             alt="Image of Input Data for Confirm"
                             class="w-full h-72"
-                          />
+                          >
                           <figcaption class="p-2 text-gray-400">
                             Figure: Input Data for Confirm
                           </figcaption>
@@ -194,7 +197,7 @@
                             src="assets/images/gas-tools/book-data-organizer/output-data-confirm.png"
                             alt="Output Data for Confirm"
                             class="w-96 h-96"
-                          />
+                          >
                           <figcaption class="p-2 text-gray-400">
                             Figure: Output Data for Confirm
                           </figcaption>
@@ -206,22 +209,20 @@
                       data are output in output sheet,
                       <code
                         class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                        >Confirm Mail-Mail Merge Data</code
-                      >. Use the data for Mail Merge. As for the usage of Mail
+                      >Confirm Mail-Mail Merge Data</code>. Use the data for Mail Merge. As for the usage of Mail
                       Merge, click
                       <a
                         href="https://www.scriptable-assets.page/add-ons/group-merge/"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="text-lightblue underline hover:text-darkblue"
-                        >HERE</a
-                      >.
+                      >HERE</a>.
                     </li>
                   </ul>
                 </div>
               </section>
               <!-- Divider -->
-              <hr />
+              <hr>
 
               <!-- 2_Link Share Emails -->
               <section class="my-5">
@@ -240,7 +241,9 @@
                   relevant links to access e-books or resources.
                 </p>
                 <div class="ml-3">
-                  <p class="font-bold my-2">Usage and its Logics</p>
+                  <p class="font-bold my-2">
+                    Usage and its Logics
+                  </p>
                   <ul class="list-decimal list-inside">
                     <li>
                       <strong>Input Reference Data</strong>: Enter reference
@@ -248,24 +251,21 @@
                       reference sheet,
                       <code
                         class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                        >Link Share Mail-Ref Data</code
-                      >.
+                      >Link Share Mail-Ref Data</code>.
                     </li>
                     <li>
                       <strong>Process data</strong>: Select
                       <code
                         class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                        >Output Mail Merge Data for Link Share Email</code
-                      >
+                      >Output Mail Merge Data for Link Share Email</code>
                       from
                       <code
                         class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                        >Custom Menu</code
-                      >
+                      >Custom Menu</code>
                       to process data for link share emails.
                       <ul>
                         <li>
-                          <br />This function handles the processing of data to
+                          <br>This function handles the processing of data to
                           generate mail merge data specifically for link share
                           emails. Once the button is clicked, you will be
                           prompted to enter the discount code and expiration
@@ -306,7 +306,7 @@
                                 src="assets/images/gas-tools/book-data-organizer/input-discount-code.png"
                                 alt="Image of Input Screen for Discount Code"
                                 class="w-full h-48"
-                              />
+                              >
                               <figcaption class="p-2 text-gray-400">
                                 Figure: Input Screen for Discount Code
                               </figcaption>
@@ -316,7 +316,7 @@
                                 src="assets/images/gas-tools/book-data-organizer/input-expiry-date.png"
                                 alt="Image of Input Screen for Expiry Date"
                                 class="w-full h-48"
-                              />
+                              >
                               <figcaption class="p-2 text-gray-400">
                                 Figure: Input Screen for Expiry Date
                               </figcaption>
@@ -327,7 +327,7 @@
                               src="assets/images/gas-tools/book-data-organizer/ref-data-elink.png"
                               alt="Image of Input Data for E-link Share"
                               class="w-full h-48"
-                            />
+                            >
                             <figcaption class="p-2 text-gray-400">
                               Figure: Input Data for E-link Share
                             </figcaption>
@@ -337,7 +337,7 @@
                               src="assets/images/gas-tools/book-data-organizer/output-data-elink.png"
                               alt="Image of Output Data for E-link Share"
                               class="w-full h-48"
-                            />
+                            >
                             <figcaption class="p-2 text-gray-400">
                               Figure: Output Data for E-link Share
                             </figcaption>
@@ -350,16 +350,14 @@
                       data are output in output sheet,
                       <code
                         class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                        >Link Share Mail-Mail Merge Data</code
-                      >. Use the data for Mail Merge. As for the usage of Mail
+                      >Link Share Mail-Mail Merge Data</code>. Use the data for Mail Merge. As for the usage of Mail
                       Merge, click
                       <a
                         href="https://www.scriptable-assets.page/add-ons/group-merge/"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="text-lightblue underline hover:text-darkblue"
-                        >HERE</a
-                      >.
+                      >HERE</a>.
                     </li>
                   </ul>
                 </div>
@@ -372,7 +370,9 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="source-code">Source Code</div>
+            <div id="source-code" class="text-2xl font-bold">
+              Source Code
+            </div>
             <div class="py-3">
               <p class="text-lg mt-4">
                 You can find the source code for this tool on Github. Click
@@ -381,8 +381,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
-                  >HERE</a
-                >
+                >HERE</a>
                 .
               </p>
             </div>
@@ -409,9 +408,9 @@
         <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed lg:mr-2">
           <div class="mb-5 pt-5">
             <p class="text-l font-bold p-1 bg-gray-400 text-white">
-              <Icon name="map:book-store"></Icon> On this page
+              <Icon name="map:book-store" /> On this page
             </p>
-            <PageItems :pageItems="pageItems" />
+            <PageItems :page-items="pageItems" />
           </div>
         </div>
       </div>
@@ -424,13 +423,13 @@
 const breadCrumbs = [
   { label: 'Home', to: '/' },
   { label: 'Gas Tools', to: '/gas-tools/gas-tools' },
-  { label: 'Book Data Organizer' },
-];
+  { label: 'Book Data Organizer' }
+]
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'Book Data Organizer',
-});
+  title: 'Book Data Organizer'
+})
 
 // An array of objects representing the page items or sections.
 const pageItems = [
@@ -439,33 +438,33 @@ const pageItems = [
   { label: 'Setup', id: 'setup' },
   { label: 'Usage', id: 'usage' },
   { label: 'Terms and Conditions', id: 'terms-conditions' },
-  { label: 'Source Code', id: 'source-code' },
-];
+  { label: 'Source Code', id: 'source-code' }
+]
 
 // An array of objects representing the badges to be displayed.
 const badges = [
   {
     src: 'https://img.shields.io/badge/Google%20Apps-%20sheet-brightgreen?style=flat-square&color=brightgreen',
-    alt: 'Use of Google Apps',
+    alt: 'Use of Google Apps'
   },
   {
     url: 'https://github.com/google/clasp',
     src: 'https://img.shields.io/badge/built%20with-clasp-FFA500.svg?style=flat-square',
-    alt: 'Built with Clasp',
+    alt: 'Built with Clasp'
   },
   {
     url: 'https://github.com/prettier/prettier',
     src: 'https://img.shields.io/badge/code_style-prettier-800080.svg?style=flat-square',
-    alt: 'Code style: Prettier',
-  },
-];
+    alt: 'Code style: Prettier'
+  }
+]
 
 // The date, formatted according to the US locale.
-let date = ref(
+const date = ref(
   new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric',
+    day: 'numeric'
   }).format(new Date('2024-04-17'))
-);
+)
 </script>

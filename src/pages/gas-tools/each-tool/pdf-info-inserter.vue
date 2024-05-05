@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UBreadcrumbs :breadCrumbs="breadCrumbs" />
+    <UBreadcrumbs :bread-crumbs="breadCrumbs" />
     <div class="mb-5 p-4 grid grid-cols-12 gap-3 md:gap-6">
       <!-- Part A: Displayed at left on large screen and at first on other sized screen) -->
       <div
@@ -25,7 +25,9 @@
 
         <div class="mb-5 p-5">
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="about">About</div>
+            <div id="about" class="text-2xl font-bold">
+              About
+            </div>
             <div class="py-3">
               <p>
                 Automates the process of extracting and inserting PDF metadata
@@ -43,7 +45,7 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="prerequisites">
+            <div id="prerequisites" class="text-2xl font-bold">
               Prerequisites
             </div>
             <div class="py-3">
@@ -61,7 +63,9 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="setup">Setup</div>
+            <div id="setup" class="text-2xl font-bold">
+              Setup
+            </div>
             <div class="py-3">
               <ol class="list-decimal list-inside space-y-2">
                 <li class="text-gray-700">
@@ -72,8 +76,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="text-lightblue underline hover:text-darkblue"
-                    >Sample Google Sheet</a
-                  >
+                  >Sample Google Sheet</a>
                 </li>
                 <li class="text-gray-700">
                   <strong>Copy the Google Sheet</strong>: Make a copy of the
@@ -87,12 +90,13 @@
           </div>
 
           <div id="usage" class="mb-3">
-            <div class="text-2xl font-bold">Usage</div>
+            <div class="text-2xl font-bold">
+              Usage
+            </div>
 
             <ol class="list-decimal list-inside">
               <li class="my-2">
-                <span class="font-bold"
-                  >Copy the Google Drive Folder URL:
+                <span class="font-bold">Copy the Google Drive Folder URL:
                 </span>
                 <p>
                   Copy the URL of the Google Drive folder that contains target
@@ -103,7 +107,7 @@
                     src="assets/images/gas-tools/pdf-info-inserter/copy-folder-url.png"
                     alt="Image of Copy Folder URL"
                     class="w-96 h-48"
-                  />
+                  >
                   <figcaption class="p-2 text-gray-400">
                     Figure: Copy Folder URL
                   </figcaption>
@@ -120,20 +124,16 @@
                 <span class="font-bold">Access the Custom Menu: </span>
                 <p>
                   Click on the
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >Custom Menu</code
-                  >
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Custom Menu</code>
                   that appears in the menu bar of the Google Sheet and select
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >Insert PDF info into Sheet</code
-                  >.
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Insert PDF info into Sheet</code>.
                 </p>
                 <div class="ml-5">
                   <img
                     src="assets/images/gas-tools/pdf-info-inserter/access-custom-menu.png"
                     alt="Image of Access Custom Menu"
                     class="w-full h-32 mt-2"
-                  />
+                  >
                   <figcaption class="p-2 text-gray-400">
                     Figure: Access Custom Menu
                   </figcaption>
@@ -150,7 +150,7 @@
                     src="assets/images/gas-tools/pdf-info-inserter/display-pdf-info.png"
                     alt="Image of Display PDF Info"
                     class="w-96 h-48"
-                  />
+                  >
                   <figcaption class="p-2 text-gray-400">
                     Figure: Display PDF Info
                   </figcaption>
@@ -164,7 +164,9 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="source-code">Source Code</div>
+            <div id="source-code" class="text-2xl font-bold">
+              Source Code
+            </div>
             <div class="py-3">
               <p class="text-lg mt-4">
                 You can find the source code for this tool on Github. Click
@@ -173,8 +175,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
-                  >HERE</a
-                >
+                >HERE</a>
                 .
               </p>
             </div>
@@ -201,9 +202,9 @@
         <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed lg:mr-2">
           <div class="mb-5 pt-5 mr-2">
             <p class="text-l font-bold p-1 bg-gray-400 text-white">
-              <Icon name="map:book-store"></Icon> On this page
+              <Icon name="map:book-store" /> On this page
             </p>
-            <PageItems :pageItems="pageItems" />
+            <PageItems :page-items="pageItems" />
           </div>
         </div>
       </div>
@@ -216,13 +217,13 @@
 const breadCrumbs = [
   { label: 'Home', to: '/' },
   { label: 'GAS Tools', to: '/gas-tools/gas-tools' },
-  { label: 'PDF Info Inserter' },
-];
+  { label: 'PDF Info Inserter' }
+]
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'PDF Info Inserter',
-});
+  title: 'PDF Info Inserter'
+})
 
 // An array of objects representing the page items or sections.
 const pageItems = [
@@ -231,33 +232,33 @@ const pageItems = [
   { label: 'Setup', id: 'setup' },
   { label: 'Usage', id: 'usage' },
   { label: 'Terms and Conditions', id: 'terms-conditions' },
-  { label: 'Source Code', id: 'source-code' },
-];
+  { label: 'Source Code', id: 'source-code' }
+]
 
 // An array of objects representing the badges to be displayed.
 const badges = [
   {
     src: 'https://img.shields.io/badge/Google%20Apps-%20sheet-brightgreen?style=flat-square&color=brightgreen',
-    alt: 'Use of Google Apps',
+    alt: 'Use of Google Apps'
   },
   {
     url: 'https://github.com/google/clasp',
     src: 'https://img.shields.io/badge/built%20with-clasp-FFA500.svg?style=flat-square',
-    alt: 'Built with Clasp',
+    alt: 'Built with Clasp'
   },
   {
     url: 'https://github.com/prettier/prettier',
     src: 'https://img.shields.io/badge/code_style-prettier-800080.svg?style=flat-square',
-    alt: 'Code style: Prettier',
-  },
-];
+    alt: 'Code style: Prettier'
+  }
+]
 
 // The date, formatted according to the US locale.
-let date = ref(
+const date = ref(
   new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric',
+    day: 'numeric'
   }).format(new Date('2024-04-06'))
-);
+)
 </script>

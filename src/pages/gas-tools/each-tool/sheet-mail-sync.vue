@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UBreadcrumbs :breadCrumbs="breadCrumbs" />
+    <UBreadcrumbs :bread-crumbs="breadCrumbs" />
     <div class="mb-5 p-4 grid grid-cols-12 gap-3 md:gap-6">
       <!-- Part A: Displayed at left on large screen and at first on other sized screen) -->
       <div
@@ -25,7 +25,9 @@
 
         <div class="mb-5 p-5">
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="about">About</div>
+            <div id="about" class="text-2xl font-bold">
+              About
+            </div>
             <div class="py-3">
               <p>
                 Automates email extraction and categorization in Gmail, and
@@ -43,7 +45,7 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="prerequisites">
+            <div id="prerequisites" class="text-2xl font-bold">
               Prerequisites
             </div>
             <div class="py-3">
@@ -60,7 +62,9 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="setup">Setup</div>
+            <div id="setup" class="text-2xl font-bold">
+              Setup
+            </div>
             <div class="py-3">
               <ol class="list-decimal list-inside space-y-2">
                 <li class="text-gray-700">
@@ -71,8 +75,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="text-lightblue underline hover:text-darkblue"
-                    >Sample Google Sheet</a
-                  >
+                  >Sample Google Sheet</a>
                   <p class="mt-2">
                     *Note: The samples provided are merely illustrative,
                     showcasing course evaluation survey for an educational
@@ -80,16 +83,14 @@
                   </p>
                 </li>
                 <li class="text-gray-700">
-                  <strong
-                    >Customize the values in the orange range of each
-                    sheet:</strong
-                  >
+                  <strong>Customize the values in the orange range of each
+                    sheet:</strong>
                   The pre-set information is just a sample. Adjust these values
                   to fit your specific requirements.
                   <img
                     src="assets/images/gas-tools/sheet-mail-sync/sheet-name_pre-criteria.png"
                     class="w-100 h-50"
-                  />
+                  >
                   <figcaption class="p-2 text-gray-400">
                     Figure: Sheet Name and Pre-Criteria
                   </figcaption>
@@ -102,7 +103,9 @@
           </div>
 
           <div id="usage" class="mb-3">
-            <div class="text-2xl font-bold">Usage</div>
+            <div class="text-2xl font-bold">
+              Usage
+            </div>
 
             <ol class="list-decimal list-inside">
               <li class="my-2">
@@ -114,13 +117,12 @@
                 </code>
                 and
                 <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
-                  Display Result and Pass Mail Info </code
-                >.
+                  Display Result and Pass Mail Info </code>.
                 <img
                   src="assets/images/gas-tools/sheet-mail-sync/custom-menu.png"
                   alt="Custom Menu Button"
                   class="w-80 h-40"
-                />
+                >
                 <figcaption class="p-2 text-gray-400">
                   Figure: Custom Menu Button
                 </figcaption>
@@ -143,7 +145,7 @@
                       src="assets/images/gas-tools/sheet-mail-sync/keys-url-share-email.png"
                       alt="URL Share Email Keys"
                       class="w-80 h-40"
-                    />
+                    >
                     <figcaption class="p-2 text-gray-400">
                       Figure: URL Share Email Keys
                     </figcaption>
@@ -151,7 +153,7 @@
                       src="assets/images/gas-tools/sheet-mail-sync/display-url-share-email.png"
                       alt="URL Share Email Sheet"
                       class="w-80 h-40"
-                    />
+                    >
                     <figcaption class="p-2 text-gray-400">
                       Figure: URL Share Email Sheet
                     </figcaption>
@@ -165,7 +167,7 @@
                       src="assets/images/gas-tools/sheet-mail-sync/keys-result-share-email.png"
                       alt="Result Share Email Keys"
                       class="w-80 h-40"
-                    />
+                    >
                     <figcaption class="p-2 text-gray-400">
                       Figure: Result Share Email Keys
                     </figcaption>
@@ -173,7 +175,7 @@
                       src="assets/images/gas-tools/sheet-mail-sync/display-result-share-full-email.png"
                       alt="Result Share Email Sheet Faculty Type A"
                       class="w-80 h-40"
-                    />
+                    >
                     <figcaption class="p-2 text-gray-400">
                       Figure: Result Share Email Sheet Faculty Type A
                     </figcaption>
@@ -181,7 +183,7 @@
                       src="assets/images/gas-tools/sheet-mail-sync/display-result-share-adj-email.png"
                       alt="Result Share Email Sheet Faculty Type B"
                       class="w-80 h-40"
-                    />
+                    >
                     <figcaption class="p-2 text-gray-400">
                       Figure: Result Share Email Sheet Faculty Type B
                     </figcaption>
@@ -189,7 +191,7 @@
                       src="assets/images/gas-tools/sheet-mail-sync/keys-pass-share-email.png"
                       alt="Pass Share Email Keys"
                       class="w-80 h-40"
-                    />
+                    >
                     <figcaption class="p-2 text-gray-400">
                       Figure: Pass Share Email Keys
                     </figcaption>
@@ -197,7 +199,7 @@
                       src="assets/images/gas-tools/sheet-mail-sync/display-pass-share-email.png"
                       alt="Pass Share Email Sheet"
                       class="w-80 h-40"
-                    />
+                    >
                     <figcaption class="p-2 text-gray-400">
                       Figure: Pass Share Email Sheet
                     </figcaption>
@@ -206,10 +208,8 @@
               </li>
 
               <li class="my-2">
-                <strong
-                  >Comparing Email Information and Original Information for
-                  Final Check:</strong
-                >
+                <strong>Comparing Email Information and Original Information for
+                  Final Check:</strong>
                 This process involves comparing the information extracted from
                 emails with the original data you have with Google Sheet
                 formula.
@@ -217,7 +217,7 @@
                   src="assets/images/gas-tools/sheet-mail-sync/check-url-share-email.png"
                   alt="Pass Share Email Sheet"
                   class="w-80 h-40"
-                />
+                >
                 <figcaption class="p-2 text-gray-400">
                   Figure: Check URL Share Email
                 </figcaption>
@@ -230,7 +230,9 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="source-code">Source Code</div>
+            <div id="source-code" class="text-2xl font-bold">
+              Source Code
+            </div>
             <div class="py-3">
               <p class="text-lg mt-4">
                 You can find the source code for this tool on Github. Click
@@ -239,8 +241,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
-                  >HERE</a
-                >
+                >HERE</a>
                 .
               </p>
             </div>
@@ -267,9 +268,9 @@
         <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed lg:mr-2">
           <div class="mb-5 pt-5 mr-2">
             <p class="text-l font-bold p-1 bg-gray-400 text-white">
-              <Icon name="map:book-store"></Icon> On this page
+              <Icon name="map:book-store" /> On this page
             </p>
-            <PageItems :pageItems="pageItems" />
+            <PageItems :page-items="pageItems" />
           </div>
         </div>
       </div>
@@ -282,13 +283,13 @@
 const breadCrumbs = [
   { label: 'Home', to: '/' },
   { label: 'GAS Tools', to: '/gas-tools/gas-tools' },
-  { label: 'SheetMail Sync' },
-];
+  { label: 'SheetMail Sync' }
+]
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'SheetMail Sync',
-});
+  title: 'SheetMail Sync'
+})
 
 // An array of objects representing the page items or sections.
 const pageItems = [
@@ -297,33 +298,33 @@ const pageItems = [
   { label: 'Setup', id: 'setup' },
   { label: 'Usage', id: 'usage' },
   { label: 'Terms and Conditions', id: 'terms-conditions' },
-  { label: 'Source Code', id: 'source-code' },
-];
+  { label: 'Source Code', id: 'source-code' }
+]
 
 // An array of objects representing the badges to be displayed.
 const badges = [
   {
     src: 'https://img.shields.io/badge/Google%20Apps-%20sheet%20%26%20mail-brightgreen?style=flat-square&color=brightgreen',
-    alt: 'Use of Google Apps',
+    alt: 'Use of Google Apps'
   },
   {
     url: 'https://github.com/google/clasp',
     src: 'https://img.shields.io/badge/built%20with-clasp-FFA500.svg?style=flat-square',
-    alt: 'Built with Clasp',
+    alt: 'Built with Clasp'
   },
   {
     url: 'https://github.com/prettier/prettier',
     src: 'https://img.shields.io/badge/code_style-prettier-800080.svg?style=flat-square',
-    alt: 'Code style: Prettier',
-  },
-];
+    alt: 'Code style: Prettier'
+  }
+]
 
 // The date, formatted according to the US locale.
-let date = ref(
+const date = ref(
   new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric',
+    day: 'numeric'
   }).format(new Date('2024-04-18'))
-);
+)
 </script>

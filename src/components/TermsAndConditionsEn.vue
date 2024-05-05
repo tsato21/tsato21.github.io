@@ -1,5 +1,5 @@
 <template>
-  <div class="text-2xl font-bold" id="terms-conditions">
+  <div id="terms-conditions" class="text-2xl font-bold">
     Terms and Conditions
   </div>
   <div class="py-3">
@@ -8,8 +8,9 @@
       <NuxtLink
         to="/others/terms-conditions"
         class="text-lightblue underline hover:text-darkblue"
-        >Terms and Conditions.</NuxtLink
       >
+        Terms and Conditions.
+      </NuxtLink>
     </p>
   </div>
 </template>
