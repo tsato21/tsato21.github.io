@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UBreadcrumbs :breadCrumbs="breadCrumbs" />
+    <UBreadcrumbs :bread-crumbs="breadCrumbs" />
     <div class="mb-5 p-4 grid grid-cols-12 gap-3 md:gap-6">
       <!-- Part A: Displayed at left on large screen and at first on other sized screen) -->
       <div
@@ -21,7 +21,7 @@
             <!-- Language Section Option -->
             <LanguageSelections
               :languages="languages"
-              :currentLanguage="currentLanguage"
+              :current-language="currentLanguage"
               class="ml-4"
             />
           </div>
@@ -30,12 +30,14 @@
         </div>
 
         <div class="my-3 mx-2">
-          <Banner :imgSrc="imgSrc" />
+          <Banner :img-src="imgSrc" />
         </div>
 
         <div class="mb-5 p-5">
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="about">About</div>
+            <div id="about" class="text-2xl font-bold">
+              About
+            </div>
             <div class="py-3">
               <p>
                 Automates the creation of work manuals by extracting essential
@@ -56,7 +58,7 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="prerequisites">
+            <div id="prerequisites" class="text-2xl font-bold">
               Prerequisites
             </div>
             <div class="py-3">
@@ -73,7 +75,9 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="setup">Setup</div>
+            <div id="setup" class="text-2xl font-bold">
+              Setup
+            </div>
             <div class="py-3">
               <ol class="list-decimal list-inside space-y-2">
                 <li class="text-gray-700">
@@ -84,15 +88,13 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="text-lightblue underline hover:text-darkblue"
-                    >Sample Google Sheet</a
-                  >. You can also find the
+                  >Sample Google Sheet</a>. You can also find the
                   <a
                     href="https://docs.google.com/presentation/d/1pUxDKtwHA4GMXfmGXmwzXnjuAbW9g6DE9lFTj55wAn8/edit#slide=id.g2aa00057ea4_0_0"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="text-lightblue underline hover:text-darkblue"
-                    >Sample Google Slide</a
-                  >.
+                  >Sample Google Slide</a>.
                   <p class="mt-2">
                     *Note: The samples provided are merely illustrative,
                     showcasing a manual for an educational institution.
@@ -111,24 +113,19 @@
                   all of the sample sheets except index sheet, reset all
                   pre-defined information, and clear contents in index sheet).
                   Navigate to
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >Custom Menu</code
-                  >Click<code
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Custom Menu</code>Click<code
                     class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                   >
-                    Setting</code
-                  >
+                    Setting</code>
                   and click
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >Delete All Sheets and Pre-Set Info</code
-                  >.
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Delete All Sheets and Pre-Set Info</code>.
                   <div class="mt-3">
                     <figure>
                       <img
                         src="assets/images/gas-tools/manual-builder/setting_menu.png"
                         alt="Setting Menu"
                         class="w-96 h-48"
-                      />
+                      >
                       <figcaption class="p-2 text-gray-400">
                         Fig: Setting Menu
                       </figcaption>
@@ -138,13 +135,9 @@
                 <li class="text-gray-700">
                   <strong>Set Slide URL and Name of Index Sheet</strong>:
                   Navigate to
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >Custom Menu > Setting</code
-                  >
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Custom Menu > Setting</code>
                   and click
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >Set Necessary Info</code
-                  >
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Set Necessary Info</code>
                   designating URL of Google Slide and name of the index sheet of
                   Google Sheet.
                 </li>
@@ -153,13 +146,13 @@
           </div>
 
           <div id="usage" class="mb-3">
-            <div class="text-2xl font-bold">Usage</div>
+            <div class="text-2xl font-bold">
+              Usage
+            </div>
 
             <ol class="list-decimal list-inside">
               <li class="my-2">
-                <span class="font-bold"
-                  >Make Slides with Designated Patterns</span
-                >
+                <span class="font-bold">Make Slides with Designated Patterns</span>
                 <p>
                   Users need to create slides in the designated Google Slide
                   following a certain pattern. The first slide of each section
@@ -168,8 +161,8 @@
                 <blockquote
                   class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
                 >
-                  Category:【Category Name】Subcategory Name<br />
-                  Task: Task Name<br />
+                  Category:【Category Name】Subcategory Name<br>
+                  Task: Task Name<br>
                   Summary: Summary Descriptions
                 </blockquote>
                 <div class="resize-image my-3 container-img">
@@ -177,7 +170,7 @@
                     src="assets/images/gas-tools/manual-builder/slide-pattern.png"
                     alt="Customize Constants"
                     class="w-96 h-48"
-                  />
+                  >
                   <figcaption class="p-2 text-gray-400">
                     Figure: Slide Structure
                   </figcaption>
@@ -192,13 +185,10 @@
                 <span class="font-bold">Update Index & Task Sheets</span>
                 <p>
                   Navigate to
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >Custom Menu</code
-                  >
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Custom Menu</code>
                   and click
                   <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
-                    Update Index & Task Sheets</code
-                  >. This action automatically updates the index and task sheets
+                    Update Index & Task Sheets</code>. This action automatically updates the index and task sheets
                   based on the latest slide data.
                 </p>
 
@@ -209,7 +199,7 @@
                         src="assets/images/gas-tools/manual-builder/update-button.png"
                         alt="Customize Constants"
                         class="w-72 h-36"
-                      />
+                      >
                       <figcaption class="p-2 text-gray-400">
                         Figure: Update Button
                       </figcaption>
@@ -221,7 +211,7 @@
                         src="assets/images/gas-tools/manual-builder/index-sheet.png"
                         alt="Customize Constants"
                         class="w-96 h-48"
-                      />
+                      >
                       <figcaption class="p-2 text-gray-400">
                         Figure: Updates in Index Sheet
                       </figcaption>
@@ -233,7 +223,7 @@
                         src="assets/images/gas-tools/manual-builder/task-sheet.png"
                         alt="Customize Constants"
                         class="w-96 h-48"
-                      />
+                      >
                       <figcaption class="p-2 text-gray-400">
                         Figure: Updates in Task Sheet
                       </figcaption>
@@ -245,7 +235,9 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="others">Others</div>
+            <div id="others" class="text-2xl font-bold">
+              Others
+            </div>
             <div class="py-3">
               <p class="text-lg mt-4">
                 If you are interested in the logics on how the details from
@@ -256,8 +248,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
-                  >HERE</a
-                >
+                >HERE</a>
                 for the detailed explanation.
               </p>
             </div>
@@ -268,7 +259,9 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="source-code">Source Code</div>
+            <div id="source-code" class="text-2xl font-bold">
+              Source Code
+            </div>
             <div class="py-3">
               <p class="text-lg mt-4">
                 You can find the source code for this tool on Github. Click
@@ -277,8 +270,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
-                  >HERE</a
-                >
+                >HERE</a>
                 .
               </p>
             </div>
@@ -304,7 +296,7 @@
             <!-- Language Section Option -->
             <LanguageSelections
               :languages="languages"
-              :currentLanguage="currentLanguage"
+              :current-language="currentLanguage"
               class="ml-4"
             />
           </div>
@@ -315,9 +307,9 @@
         <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed lg:mr-2">
           <div class="mb-5 pt-5">
             <p class="text-l font-bold p-1 bg-gray-400 text-white">
-              <Icon name="map:book-store"></Icon> On this page
+              <Icon name="map:book-store" /> On this page
             </p>
-            <PageItems :pageItems="pageItems" />
+            <PageItems :page-items="pageItems" />
           </div>
         </div>
       </div>
@@ -330,13 +322,13 @@
 const breadCrumbs = [
   { label: 'Home', to: '/' },
   { label: 'GAS Tools', to: '/gas-tools/gas-tools' },
-  { label: 'Manual Builder' },
-];
+  { label: 'Manual Builder' }
+]
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'Manual Builder',
-});
+  title: 'Manual Builder'
+})
 
 // An array of objects representing the page items or sections.
 const pageItems = [
@@ -347,57 +339,57 @@ const pageItems = [
   { label: 'Others', id: 'others' },
   { label: 'Terms and Conditions', id: 'terms-conditions' },
   { label: 'Source Code', id: 'source-code' },
-  { label: 'Attributes', id: 'attributes' },
-];
+  { label: 'Attributes', id: 'attributes' }
+]
 
 // An array of objects representing the badges to be displayed.
 const badges = [
   {
     src: 'https://img.shields.io/badge/Google%20Apps-slide%20%26%20sheet-brightgreen?style=flat-square&color=brightgreen',
-    alt: 'Use of Google Apps',
+    alt: 'Use of Google Apps'
   },
   {
     url: 'https://github.com/google/clasp',
     src: 'https://img.shields.io/badge/built%20with-clasp-FFA500.svg?style=flat-square',
-    alt: 'Built with Clasp',
+    alt: 'Built with Clasp'
   },
   {
     url: 'https://github.com/prettier/prettier',
     src: 'https://img.shields.io/badge/code_style-prettier-800080.svg?style=flat-square',
-    alt: 'Code style: Prettier',
-  },
-];
+    alt: 'Code style: Prettier'
+  }
+]
 
 // An array of objects representing the available languages for the page.
 const languages = [
   {
     name: '日本語',
-    filePath: '/gas-tools/each-tool/manual-builder.jpn',
-  },
-];
+    filePath: '/gas-tools/each-tool/manual-builder.jpn'
+  }
+]
 
 // The current language of the page.
-const currentLanguage = 'English';
+const currentLanguage = 'English'
 
 // The date, formatted according to the US locale.
-let date = ref(
+const date = ref(
   new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric',
+    day: 'numeric'
   }).format(new Date('2024-04-23'))
-);
+)
 
 /*
 imgSrc for Banner component
 This should be stored in the public folder since it won't be included in your final build, and it will be resolved relative to the public path of your application at runtime.
 */
-const imgSrc = '/banner/manual-builder.png';
+const imgSrc = '/banner/manual-builder.png'
 
-//values for Attribute component
+// values for Attribute component
 const attributes = {
   href: 'https://www.flaticon.com/free-icons/manual',
   title: 'manual icons',
-  hyperLinkedDescription: 'Manual icons created by Freepik - Flaticon',
-};
+  hyperLinkedDescription: 'Manual icons created by Freepik - Flaticon'
+}
 </script>

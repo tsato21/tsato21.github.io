@@ -1,5 +1,7 @@
 <template>
-  <div class="text-2xl font-bold" id="attributes">Attributes</div>
+  <div id="attributes" class="text-2xl font-bold">
+    Attributes
+  </div>
   <div class="py-3 text-lg">
     <ul class="list-disc list-inside space-y-2">
       <li>
@@ -10,14 +12,12 @@
           target="_blank"
           class="text-lightblue underline hover:text-darkblue"
         >
-          {{ attributes.hyperLinkedDescription }} </a
-        >, modified by
+          {{ attributes.hyperLinkedDescription }} </a>, modified by
         <a
           href="https://github.com/tsato21"
           target="_blank"
           class="text-lightblue underline hover:text-darkblue"
-          >tsato21</a
-        >.
+        >tsato21</a>.
       </li>
       <li>
         The banner of this tool is made by
@@ -26,15 +26,14 @@
           target="_blank"
           class="text-lightblue underline hover:text-darkblue"
         >
-          Canva</a
-        >, using the above icon.
+          Canva</a>, using the above icon.
       </li>
     </ul>
   </div>
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
+import { defineProps } from 'vue'
 
 defineProps({
   attributes: {
@@ -43,7 +42,7 @@ defineProps({
       title: string;
       hyperLinkedDescription: string;
     },
-    required: true,
-  },
-});
+    required: true
+  }
+})
 </script>

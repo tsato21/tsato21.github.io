@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UBreadcrumbs :breadCrumbs="breadCrumbs" />
+    <UBreadcrumbs :bread-crumbs="breadCrumbs" />
     <div class="mb-5 p-4 grid grid-cols-12 gap-3 md:gap-6">
       <!-- Part A: Displayed at left on large screen and at first on other sized screen) -->
       <div
@@ -25,7 +25,9 @@
 
         <div class="mb-5 p-5">
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="about">About</div>
+            <div id="about" class="text-2xl font-bold">
+              About
+            </div>
             <div class="py-3">
               <p>
                 Automates the adjustment of row heights in Google Sheets,
@@ -37,13 +39,9 @@
               >
                 This tool optimizes row height in Google Sheets, addressing the
                 shortcomings of the built-in
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                  >Resize row</code
-                >
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Resize row</code>
                 and
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                  >Fit to data</code
-                >
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Fit to data</code>
                 features. The built-in functionality often results in rows that
                 are too short when they contain a single line of text, and lacks
                 sufficient padding for rows with multiple lines, making them
@@ -56,7 +54,7 @@
                 src="assets/images/gas-tools/row-height-optimizer/fit-to-data-feature.png"
                 alt="Fit to Data Feature"
                 class="w-70 h-60"
-              />
+              >
               <figcaption class="p-2 text-gray-400">
                 Figure: Fit to Data Feature in Google Sheets
               </figcaption>
@@ -64,7 +62,7 @@
                 src="assets/images/gas-tools/row-height-optimizer/fit-to-data-result.png"
                 alt="Fit to Data Result"
                 class="w-70 h-25"
-              />
+              >
               <figcaption class="p-2 text-gray-400">
                 Figure: Fit to Data Result in Google Sheets
               </figcaption>
@@ -72,7 +70,7 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="prerequisites">
+            <div id="prerequisites" class="text-2xl font-bold">
               Prerequisites
             </div>
             <div class="py-3">
@@ -89,7 +87,9 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="setup">Setup</div>
+            <div id="setup" class="text-2xl font-bold">
+              Setup
+            </div>
             <div class="py-3">
               <ol class="list-decimal list-inside space-y-2">
                 <li class="text-gray-700">
@@ -100,8 +100,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="text-lightblue underline hover:text-darkblue"
-                    >Sample Google Sheet</a
-                  >
+                  >Sample Google Sheet</a>
                   <p class="mt-2">
                     *Note: The samples provided are merely illustrative,
                     showcasing course schedule for an educational institution.
@@ -119,35 +118,27 @@
                       <strong>
                         <code
                           class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                          >AVERAGE_CHART_WIDTH</code
-                        > </strong
-                      >: This represents the average width of a character in
+                        >AVERAGE_CHART_WIDTH</code> </strong>: This represents the average width of a character in
                       your sheet. The pre-set value is "4.5". This might change
                       based on which font to be used.
                     </li>
                     <li>
-                      <strong
-                        ><code
-                          class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                          >BASE_ROW_HEIGHT</code
-                        ></strong
-                      >: The base height of a row with a single line of text.
+                      <strong><code
+                        class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >BASE_ROW_HEIGHT</code></strong>: The base height of a row with a single line of text.
                       Pre-set value is "25".
                     </li>
                     <li>
-                      <strong
-                        ><code
-                          class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                          >ADDITIONAL_ROW_HEIGHT</code
-                        ></strong
-                      >: The additional height for each additional line of text.
+                      <strong><code
+                        class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >ADDITIONAL_ROW_HEIGHT</code></strong>: The additional height for each additional line of text.
                       Pre-set value is "20".
                     </li>
                     <img
                       src="assets/images/gas-tools/row-height-optimizer/customize-constant-variables.png"
                       alt="Fit to Data Feature"
                       class="w-50 h-20"
-                    />
+                    >
                     <figcaption class="p-2 text-gray-400">
                       Figure: Customize Constant Variables
                     </figcaption>
@@ -161,25 +152,23 @@
           </div>
 
           <div id="usage" class="mb-3">
-            <div class="text-2xl font-bold">Usage</div>
+            <div class="text-2xl font-bold">
+              Usage
+            </div>
 
             <ol class="list-decimal list-inside">
               <li class="my-2">
-                <span class="font-bold"
-                  >Select
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >Custom Menu</code
+                <span class="font-bold">Select
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Custom Menu</code>
                   >
-                  >
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                    >Adjust Row Heights</code
-                  ></span
-                >
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Adjust Row Heights</code></span>
                 <p>
                   This initiates a process that adjusts the height of each row
                   in a specified sheet, starting from a user-defined row number.
                 </p>
-                <p class="mt-2">Here's the step-by-step logic:</p>
+                <p class="mt-2">
+                  Here's the step-by-step logic:
+                </p>
                 <ul class="list-disc pl-5">
                   <li>
                     <strong>Input Sheet Name and Starting Row</strong>: A dialog
@@ -219,7 +208,9 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="source-code">Source Code</div>
+            <div id="source-code" class="text-2xl font-bold">
+              Source Code
+            </div>
             <div class="py-3">
               <p class="text-lg mt-4">
                 You can find the source code for this tool on Github. Click
@@ -228,8 +219,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
-                  >HERE</a
-                >
+                >HERE</a>
                 .
               </p>
             </div>
@@ -256,9 +246,9 @@
         <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed lg:mr-2">
           <div class="mb-5 pt-5 mr-2">
             <p class="text-l font-bold p-1 bg-gray-400 text-white">
-              <Icon name="map:book-store"></Icon> On this page
+              <Icon name="map:book-store" /> On this page
             </p>
-            <PageItems :pageItems="pageItems" />
+            <PageItems :page-items="pageItems" />
           </div>
         </div>
       </div>
@@ -271,13 +261,13 @@
 const breadCrumbs = [
   { label: 'Home', to: '/' },
   { label: 'GAS Tools', to: '/gas-tools/gas-tools' },
-  { label: 'Row Height Optimizer' },
-];
+  { label: 'Row Height Optimizer' }
+]
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'Row Height Optimizer',
-});
+  title: 'Row Height Optimizer'
+})
 
 // An array of objects representing the page items or sections.
 const pageItems = [
@@ -286,33 +276,33 @@ const pageItems = [
   { label: 'Setup', id: 'setup' },
   { label: 'Usage', id: 'usage' },
   { label: 'Terms and Conditions', id: 'terms-conditions' },
-  { label: 'Source Code', id: 'source-code' },
-];
+  { label: 'Source Code', id: 'source-code' }
+]
 
 // An array of objects representing the badges to be displayed.
 const badges = [
   {
     src: 'https://img.shields.io/badge/Google%20Apps-%20sheet-brightgreen?style=flat-square&color=brightgreen',
-    alt: 'Use of Google Apps',
+    alt: 'Use of Google Apps'
   },
   {
     url: 'https://github.com/google/clasp',
     src: 'https://img.shields.io/badge/built%20with-clasp-FFA500.svg?style=flat-square',
-    alt: 'Built with Clasp',
+    alt: 'Built with Clasp'
   },
   {
     url: 'https://github.com/prettier/prettier',
     src: 'https://img.shields.io/badge/code_style-prettier-800080.svg?style=flat-square',
-    alt: 'Code style: Prettier',
-  },
-];
+    alt: 'Code style: Prettier'
+  }
+]
 
 // The date, formatted according to the US locale.
-let date = ref(
+const date = ref(
   new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric',
+    day: 'numeric'
   }).format(new Date('2024-04-17'))
-);
+)
 </script>

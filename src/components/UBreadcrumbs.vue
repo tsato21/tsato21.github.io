@@ -28,9 +28,9 @@
 defineProps({
   breadCrumbs: {
     type: Array,
-    required: true,
-  },
-});
+    required: true
+  }
+})
 </script>
 
 <style scoped></style>

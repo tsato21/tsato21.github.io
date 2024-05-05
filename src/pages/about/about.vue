@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UBreadcrumbs :breadCrumbs="breadCrumbs" />
+    <UBreadcrumbs :bread-crumbs="breadCrumbs" />
     <div class="mb-5 p-4 grid grid-cols-12 gap-3 md:gap-6">
       <!-- Section A (left in lg/ first in md/sm/xs) -->
       <div
@@ -11,8 +11,10 @@
             src="assets/images/profile/profile.jpeg"
             alt="Fit to Data Feature"
             class="w-20 h-20 rounded-full"
-          />
-          <div class="text-2xl font-bold">Taiga Sato</div>
+          >
+          <div class="text-2xl font-bold">
+            Taiga Sato
+          </div>
 
           <!-- Short introduction -->
           <p class="mt-2 text-gray-600">
@@ -36,10 +38,12 @@
       <div
         class="col-span-12 order-3 lg:col-span-8 lg:order-2 md:col-span-12 md:order-3 sm:col-span-12 sm:order-3"
       >
-        <div class="text-3xl mt-2 font-bold lg:block hidden">About</div>
+        <div class="text-3xl mt-2 font-bold lg:block hidden">
+          About
+        </div>
         <div class="mb-5 p-5 bottom-shadow">
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="about-scripts-showcase">
+            <div id="about-scripts-showcase" class="text-2xl font-bold">
               About Scripts Showcase
             </div>
             <div class="py-3">
@@ -60,14 +64,17 @@
                 <NuxtLink
                   to="#"
                   class="text-lightblue underline hover:text-darkblue"
-                  >Terms and Conditions.</NuxtLink
                 >
+                  Terms and Conditions.
+                </NuxtLink>
               </p>
             </div>
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="about-me">About Me</div>
+            <div id="about-me" class="text-2xl font-bold">
+              About Me
+            </div>
             <div class="py-3">
               <p class="mb-2">
                 I developed an interest in programming through the lens of
@@ -85,7 +92,7 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="acknowledgements">
+            <div id="acknowledgements" class="text-2xl font-bold">
               Acknowledgements
             </div>
             <div class="py-3">
@@ -100,8 +107,7 @@
                     target="_blank"
                     rel="noopener"
                     class="text-lightblue underline hover:text-darkblue"
-                    >Canva</a
-                  >.
+                  >Canva</a>.
                 </li>
                 <li class="mb-2">
                   The profile photo is of my cherished Golden Retriever, Haru.
@@ -123,14 +129,16 @@
       <div
         class="col-span-12 order-2 lg:col-span-2 lg:order-3 md:col-span-12 md:order-2 sm:col-span-12 sm:order-2"
       >
-        <div class="text-3xl mt-2 font-bold sm:ml-3 lg:hidden block">About</div>
+        <div class="text-3xl mt-2 font-bold sm:ml-3 lg:hidden block">
+          About
+        </div>
         <div
           class="bg-white shadow-lg rounded-lg md:relative lg:fixed mb-5 pt-5"
         >
           <p class="text-l font-bold p-1 bg-gray-400 text-white">
-            <Icon name="map:book-store"></Icon> On this page
+            <Icon name="map:book-store" /> On this page
           </p>
-          <PageItems :pageItems="pageItems" :pageTitle="pageTitle" />
+          <PageItems :page-items="pageItems" :page-title="pageTitle" />
         </div>
       </div>
     </div>
@@ -138,30 +146,30 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import UBreadcrumbs from '~/components/UBreadcrumbs.vue';
-import PageItems from '~/components/PageItems.vue';
+import { ref } from 'vue'
+import UBreadcrumbs from '~/components/UBreadcrumbs.vue'
+import PageItems from '~/components/PageItems.vue'
 
-const breadCrumbs = [{ label: 'Home', to: '/' }, { label: 'About' }];
+const breadCrumbs = [{ label: 'Home', to: '/' }, { label: 'About' }]
 
-const pageTitle = 'On this page';
+const pageTitle = 'On this page'
 const pageItems = [
   { label: 'About Scripts Showcase', id: 'about-scripts-showcase' },
   { label: 'About Me', id: 'about-me' },
-  { label: 'Acknowledgements', id: 'acknowledgements' },
-];
+  { label: 'Acknowledgements', id: 'acknowledgements' }
+]
 
 useHead({
-  title: 'About',
-});
+  title: 'About'
+})
 
-let date = ref(
+const date = ref(
   new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric',
+    day: 'numeric'
   }).format(new Date('2024-04-06'))
-);
+)
 </script>
 
 <style scoped></style>

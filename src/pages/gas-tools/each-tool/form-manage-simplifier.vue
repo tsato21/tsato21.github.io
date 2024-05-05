@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UBreadcrumbs :breadCrumbs="breadCrumbs" />
+    <UBreadcrumbs :bread-crumbs="breadCrumbs" />
     <div class="mb-5 p-4 grid grid-cols-12 gap-3 md:gap-6">
       <!-- Part A: Displayed at left on large screen and at first on other sized screen) -->
       <div
@@ -25,7 +25,9 @@
 
         <div class="mb-5 p-5">
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="about">About</div>
+            <div id="about" class="text-2xl font-bold">
+              About
+            </div>
             <div class="py-3">
               <p>
                 Streamlines the task of managing and processing Google Forms
@@ -49,7 +51,7 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="prerequisites">
+            <div id="prerequisites" class="text-2xl font-bold">
               Prerequisites
             </div>
             <div class="py-3">
@@ -67,7 +69,9 @@
 
           <div class="mb-3">
             <div class="mb-3">
-              <div class="text-2xl font-bold" id="sample-data">Sample Data</div>
+              <div id="sample-data" class="text-2xl font-bold">
+                Sample Data
+              </div>
               <div class="py-3">
                 <p class="text-gray-700">
                   You can access the sample Google Form and Google Sheet,
@@ -82,8 +86,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       class="text-lightblue underline hover:text-darkblue"
-                      >Access here</a
-                    >
+                    >Access here</a>
                   </li>
                   <li class="text-gray-700">
                     <strong>Sample Google Sheet</strong>:
@@ -92,8 +95,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       class="text-lightblue underline hover:text-darkblue"
-                      >Access here</a
-                    >
+                    >Access here</a>
                   </li>
                 </ul>
               </div>
@@ -101,7 +103,9 @@
           </div>
 
           <div id="usage" class="mb-3">
-            <div class="text-2xl font-bold">Usage</div>
+            <div class="text-2xl font-bold">
+              Usage
+            </div>
             <div class="text-lg leading-6 text-gray-900 font-bold my-4">
               Tool 1: Updating Google Form Items based on Data on Google Sheet:
             </div>
@@ -111,15 +115,11 @@
                 necessary information in advance in the following sheets:
                 <ul class="list-disc pl-5">
                   <li class="my-1">
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >course-lineup</code
-                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">course-lineup</code>
                     sheet: Enter course lineup for each program.
                   </li>
                   <li>
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >instructor-lineup</code
-                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">instructor-lineup</code>
                     sheet: Enter instructor lineup for each program.
                   </li>
                 </ul>
@@ -128,7 +128,7 @@
                     src="assets/images/gas-tools/form-manage-simplifier/enter-item-options.png"
                     alt="Updated Google Form Items"
                     class="w-full h-64"
-                  />
+                  >
                   <figcaption class="p-2 text-gray-400">
                     Figure: Input Course Line-up to Be Reflected on Google Form
                   </figcaption>
@@ -137,13 +137,9 @@
               <li class="my-2">
                 <strong>Execute Functions and Update Google Form:</strong> Use
                 the
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                  >Update Course Lineup</code
-                >
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Update Course Lineup</code>
                 and
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                  >Update Instructor Lineup</code
-                >
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Update Instructor Lineup</code>
                 from the Custom Menu to update item options in Google Form.
                 Verify if the target items in the Google Form are updated
                 successfully.
@@ -162,7 +158,7 @@
                     src="assets/images/gas-tools/form-manage-simplifier/show-custom-menu.png"
                     alt="show-custom-menu"
                     class="w-64 h-48 my-2"
-                  />
+                  >
                   <figcaption class="p-2 text-gray-400">
                     Figure: Custom Menu
                   </figcaption>
@@ -172,7 +168,7 @@
                     src="assets/images/gas-tools/form-manage-simplifier/form-items-update.png"
                     alt="Updated Google Form Items"
                     class="w-96 h-64 my-2"
-                  />
+                  >
                   <figcaption class="p-2 text-gray-400">
                     Figure: Updated Google Form Items
                   </figcaption>
@@ -187,16 +183,14 @@
               <li class="my-2">
                 <strong>Set Trigger:</strong> Navigate to Triggers in Apps
                 Script and set a trigger for the
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                  >onFormSubmit</code
-                >
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">onFormSubmit</code>
                 function.
                 <div>
                   <img
                     src="assets/images/gas-tools/form-manage-simplifier/show-trigger.png"
                     alt="Trigger Setup"
                     class="w-96 h-72 my-2"
-                  />
+                  >
                   <figcaption class="p-2 text-gray-400">
                     Figure: Trigger Setup
                   </figcaption>
@@ -206,7 +200,7 @@
                     src="assets/images/gas-tools/form-manage-simplifier/setup-trigger.png"
                     alt="Trigger Setup"
                     class="w-96 h-96 my-2"
-                  />
+                  >
                   <figcaption class="p-2 text-gray-400">
                     Figure: Trigger Setup
                   </figcaption>
@@ -221,7 +215,7 @@
                     src="assets/images/gas-tools/form-manage-simplifier/choose-instructors.png"
                     alt="Email Notification Example"
                     class="w-96 h-64 my-2"
-                  />
+                  >
                   <figcaption class="p-2 text-gray-400">
                     Figure: Email Notification Example
                   </figcaption>
@@ -231,7 +225,7 @@
                     src="assets/images/gas-tools/form-manage-simplifier/email-notification.png"
                     alt="Email Notification Example"
                     class="w-full h-64 my-2"
-                  />
+                  >
                   <figcaption class="p-2 text-gray-400">
                     Figure: Email Notification Example
                   </figcaption>
@@ -245,7 +239,9 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="source-code">Source Code</div>
+            <div id="source-code" class="text-2xl font-bold">
+              Source Code
+            </div>
             <div class="py-3">
               <p class="text-lg mt-4">
                 You can find the source code for this tool on Github. Click
@@ -254,8 +250,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
-                  >HERE</a
-                >
+                >HERE</a>
                 .
               </p>
             </div>
@@ -282,9 +277,9 @@
         <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed lg:mr-2">
           <div class="mb-5 pt-5 mr-2">
             <p class="text-l font-bold p-1 bg-gray-400 text-white">
-              <Icon name="map:book-store"></Icon> On this page
+              <Icon name="map:book-store" /> On this page
             </p>
-            <PageItems :pageItems="pageItems" />
+            <PageItems :page-items="pageItems" />
           </div>
         </div>
       </div>
@@ -297,13 +292,13 @@
 const breadCrumbs = [
   { label: 'Home', to: '/' },
   { label: 'GAS Tools', to: '/gas-tools/gas-tools' },
-  { label: 'Form Manage Simplifier' },
-];
+  { label: 'Form Manage Simplifier' }
+]
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'Form Manage Simplifier',
-});
+  title: 'Form Manage Simplifier'
+})
 
 // An array of objects representing the page items or sections.
 const pageItems = [
@@ -312,33 +307,33 @@ const pageItems = [
   { label: 'Sample Data', id: 'sample-data' },
   { label: 'Usage', id: 'usage' },
   { label: 'Terms and Conditions', id: 'terms-conditions' },
-  { label: 'Source Code', id: 'source-code' },
-];
+  { label: 'Source Code', id: 'source-code' }
+]
 
 // An array of objects representing the badges to be displayed.
 const badges = [
   {
     src: 'https://img.shields.io/badge/Google%20Apps-%20form%20%26%20sheet-brightgreen?style=flat-square&color=brightgreen',
-    alt: 'Use of Google Apps',
+    alt: 'Use of Google Apps'
   },
   {
     url: 'https://github.com/google/clasp',
     src: 'https://img.shields.io/badge/built%20with-clasp-FFA500.svg?style=flat-square',
-    alt: 'Built with Clasp',
+    alt: 'Built with Clasp'
   },
   {
     url: 'https://github.com/prettier/prettier',
     src: 'https://img.shields.io/badge/code_style-prettier-800080.svg?style=flat-square',
-    alt: 'Code style: Prettier',
-  },
-];
+    alt: 'Code style: Prettier'
+  }
+]
 
 // The date, formatted according to the US locale.
-let date = ref(
+const date = ref(
   new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric',
+    day: 'numeric'
   }).format(new Date('2024-04-18'))
-);
+)
 </script>
