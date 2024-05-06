@@ -91,15 +91,15 @@ This README describes how the website has been created by Nuxt and Github Page.
     └───.github
         │
         └───workflows
-            |
-            └───nuxtjs.yml
     ```
 
 - Codes for `nuxtjs.yml` will be introduced by Github at the later setup. You can find codes that I used in `nuxtjs.yml` in this repository.
 
-10. Create a GitHub repository and set up the `Build and deployment` in the Pages section of the repository settings. Navigate to `Settings` > `Pages` and change `Sources` to `Github Actions`. After changing the setting, GitHub will provide several options for yml codes. Choose `nuxtjs.yml` and paste the codes into the `nuxtjs.yml` file in your local repository.
+10. Create a GitHub repository and set up the `Build and deployment` in the Pages section of the repository settings. Navigate to `Settings` > `Pages` and change `Sources` to `Github Actions`. After changing the setting, GitHub will provide several options for yml codes. Choose `nuxtjs.yml` and configure to put the file.
+![Github Action Setup_1](image.png)
+![Github Action Setup_2](image-1.png)
 
-11. Make your sites in local branch.
+11. Pull the changes from main branch in gihub to local branch. And then, start making your sites in local branch.
 
 - You can check the output by `npm run dev` in Terminal.
 
