@@ -27,8 +27,14 @@
           <div class="mb-3">
             <div id="about" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#about" @click.prevent="scrollTo('about')">About</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#about" @click.prevent="scrollTo('about')"
+                  >About</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -56,8 +62,16 @@
           <div class="mb-3">
             <div id="prerequisites" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#prerequisites" @click.prevent="scrollTo('prerequisites')">Prerequisites</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink
+                  to="#prerequisites"
+                  @click.prevent="scrollTo('prerequisites')"
+                  >Prerequisites</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -77,8 +91,16 @@
             <div class="mb-3">
               <div id="sample-data" class="text-2xl font-bold">
                 <span class="group/item">
-                  <NuxtLink to="#sample-data" @click.prevent="scrollTo('sample-data')">Sample Data</NuxtLink>
-                  <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                  <NuxtLink
+                    to="#sample-data"
+                    @click.prevent="scrollTo('sample-data')"
+                    >Sample Data</NuxtLink
+                  >
+                  <span
+                    class="invisible group-hover/item:visible text-blue-300 text-base"
+                  >
+                    #</span
+                  >
                 </span>
               </div>
               <div class="py-3">
@@ -95,7 +117,8 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       class="text-lightblue underline hover:text-darkblue"
-                    >Access here</a>
+                      >Access here</a
+                    >
                   </li>
                   <li class="text-gray-700">
                     <strong>Sample Google Sheet</strong>:
@@ -104,7 +127,8 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       class="text-lightblue underline hover:text-darkblue"
-                    >Access here</a>
+                      >Access here</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -114,8 +138,14 @@
           <div class="mb-3">
             <div id="usage" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')">Usage</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')"
+                  >Usage</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="text-lg leading-6 text-gray-900 font-bold my-4">
@@ -127,20 +157,24 @@
                 necessary information in advance in the following sheets:
                 <ul class="list-disc pl-5">
                   <li class="my-1">
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">course-lineup</code>
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >course-lineup</code
+                    >
                     sheet: Enter course lineup for each program.
                   </li>
                   <li>
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">instructor-lineup</code>
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >instructor-lineup</code
+                    >
                     sheet: Enter instructor lineup for each program.
                   </li>
                 </ul>
                 <div>
                   <img
                     src="assets/images/gas-tools/form-manage-simplifier/enter-item-options.png"
-                    alt="Updated Google Form Items"
+                    alt="Input Items"
                     class="w-full h-64"
-                  >
+                  />
                   <figcaption class="p-2 text-gray-400">
                     Figure: Input Course Line-up to Be Reflected on Google Form
                   </figcaption>
@@ -149,9 +183,13 @@
               <li class="my-2">
                 <strong>Execute Functions and Update Google Form:</strong> Use
                 the
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Update Course Lineup</code>
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >Update Course Lineup</code
+                >
                 and
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Update Instructor Lineup</code>
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >Update Instructor Lineup</code
+                >
                 from the Custom Menu to update item options in Google Form.
                 Verify if the target items in the Google Form are updated
                 successfully.
@@ -168,9 +206,9 @@
                 <div>
                   <img
                     src="assets/images/gas-tools/form-manage-simplifier/show-custom-menu.png"
-                    alt="show-custom-menu"
+                    alt="Custom Menu"
                     class="w-64 h-48 my-2"
-                  >
+                  />
                   <figcaption class="p-2 text-gray-400">
                     Figure: Custom Menu
                   </figcaption>
@@ -180,7 +218,7 @@
                     src="assets/images/gas-tools/form-manage-simplifier/form-items-update.png"
                     alt="Updated Google Form Items"
                     class="w-96 h-64 my-2"
-                  >
+                  />
                   <figcaption class="p-2 text-gray-400">
                     Figure: Updated Google Form Items
                   </figcaption>
@@ -195,16 +233,18 @@
               <li class="my-2">
                 <strong>Set Trigger:</strong> Navigate to Triggers in Apps
                 Script and set a trigger for the
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">onFormSubmit</code>
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >onFormSubmit</code
+                >
                 function.
                 <div>
                   <img
                     src="assets/images/gas-tools/form-manage-simplifier/show-trigger.png"
-                    alt="Trigger Setup"
+                    alt="Navigate to Apps Script"
                     class="w-96 h-72 my-2"
-                  >
+                  />
                   <figcaption class="p-2 text-gray-400">
-                    Figure: Trigger Setup
+                    Figure: Navigate to Apps Script
                   </figcaption>
                 </div>
                 <div>
@@ -212,7 +252,7 @@
                     src="assets/images/gas-tools/form-manage-simplifier/setup-trigger.png"
                     alt="Trigger Setup"
                     class="w-96 h-96 my-2"
-                  >
+                  />
                   <figcaption class="p-2 text-gray-400">
                     Figure: Trigger Setup
                   </figcaption>
@@ -227,7 +267,7 @@
                     src="assets/images/gas-tools/form-manage-simplifier/choose-instructors.png"
                     alt="Email Notification Example"
                     class="w-96 h-64 my-2"
-                  >
+                  />
                   <figcaption class="p-2 text-gray-400">
                     Figure: Email Notification Example
                   </figcaption>
@@ -237,7 +277,7 @@
                     src="assets/images/gas-tools/form-manage-simplifier/email-notification.png"
                     alt="Email Notification Example"
                     class="w-full h-64 my-2"
-                  >
+                  />
                   <figcaption class="p-2 text-gray-400">
                     Figure: Email Notification Example
                   </figcaption>
@@ -253,8 +293,16 @@
           <div class="mb-3">
             <div id="source-code" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#source-code" @click.prevent="scrollTo('source-code')">Source Code</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink
+                  to="#source-code"
+                  @click.prevent="scrollTo('source-code')"
+                  >Source Code</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -265,7 +313,8 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
-                >HERE</a>
+                  >HERE</a
+                >
                 .
               </p>
             </div>
@@ -307,13 +356,13 @@
 const breadCrumbs = [
   { label: 'Home', to: '/' },
   { label: 'GAS Tools', to: '/gas-tools/gas-tools' },
-  { label: 'Form Manage Simplifier' }
-]
+  { label: 'Form Manage Simplifier' },
+];
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'Form Manage Simplifier'
-})
+  title: 'Form Manage Simplifier',
+});
 
 // An array of objects representing the page items or sections.
 const pageItems = [
@@ -322,35 +371,35 @@ const pageItems = [
   { label: 'Sample Data', id: 'sample-data' },
   { label: 'Usage', id: 'usage' },
   { label: 'Terms and Conditions', id: 'terms-conditions' },
-  { label: 'Source Code', id: 'source-code' }
-]
+  { label: 'Source Code', id: 'source-code' },
+];
 
 // An array of objects representing the badges to be displayed.
 const badges = [
   {
     src: 'https://img.shields.io/badge/Google%20Apps-%20form%20%26%20sheet-brightgreen?style=flat-square&color=brightgreen',
-    alt: 'Use of Google Apps'
+    alt: 'Use of Google Apps',
   },
   {
     url: 'https://github.com/google/clasp',
     src: 'https://img.shields.io/badge/built%20with-clasp-FFA500.svg?style=flat-square',
-    alt: 'Built with Clasp'
+    alt: 'Built with Clasp',
   },
   {
     url: 'https://github.com/prettier/prettier',
     src: 'https://img.shields.io/badge/code_style-prettier-800080.svg?style=flat-square',
-    alt: 'Code style: Prettier'
-  }
-]
+    alt: 'Code style: Prettier',
+  },
+];
 
 // The date, formatted according to the US locale.
 const date = ref(
   new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric'
+    day: 'numeric',
   }).format(new Date('2024-05-05'))
-)
+);
 
-const scrollTo = inject('scrollTo') as (id: string) => Promise<void>
+const scrollTo = inject('scrollTo') as (id: string) => Promise<void>;
 </script>

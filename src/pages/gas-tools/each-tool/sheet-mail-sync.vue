@@ -27,8 +27,14 @@
           <div class="mb-3">
             <div id="about" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#about" @click.prevent="scrollTo('about')">About</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#about" @click.prevent="scrollTo('about')"
+                  >About</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -50,8 +56,16 @@
           <div class="mb-3">
             <div id="prerequisites" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#prerequisites" @click.prevent="scrollTo('prerequisites')">Prerequisites</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink
+                  to="#prerequisites"
+                  @click.prevent="scrollTo('prerequisites')"
+                  >Prerequisites</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -70,8 +84,14 @@
           <div class="mb-3">
             <div id="setup" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#setup" @click.prevent="scrollTo('setup')">Setup</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#setup" @click.prevent="scrollTo('setup')"
+                  >Setup</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -84,7 +104,8 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="text-lightblue underline hover:text-darkblue"
-                  >Sample Google Sheet</a>
+                    >Sample Google Sheet</a
+                  >
                   <p class="mt-2">
                     *Note: The samples provided are merely illustrative,
                     showcasing course evaluation survey for an educational
@@ -92,14 +113,16 @@
                   </p>
                 </li>
                 <li class="text-gray-700">
-                  <strong>Customize the values in the orange range of each
-                    sheet:</strong>
+                  <strong
+                    >Customize the values in the orange range of each
+                    sheet:</strong
+                  >
                   The pre-set information is just a sample. Adjust these values
                   to fit your specific requirements.
                   <img
                     src="assets/images/gas-tools/sheet-mail-sync/sheet-name_pre-criteria.png"
                     class="w-100 h-50"
-                  >
+                  />
                   <figcaption class="p-2 text-gray-400">
                     Figure: Sheet Name and Pre-Criteria
                   </figcaption>
@@ -114,8 +137,14 @@
           <div class="mb-3">
             <div id="usage" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')">Usage</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')"
+                  >Usage</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
 
@@ -129,12 +158,13 @@
                 </code>
                 and
                 <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
-                  Display Result and Pass Mail Info </code>.
+                  Display Result and Pass Mail Info </code
+                >.
                 <img
                   src="assets/images/gas-tools/sheet-mail-sync/custom-menu.png"
                   alt="Custom Menu Button"
                   class="w-80 h-40"
-                >
+                />
                 <figcaption class="p-2 text-gray-400">
                   Figure: Custom Menu Button
                 </figcaption>
@@ -157,7 +187,7 @@
                       src="assets/images/gas-tools/sheet-mail-sync/keys-url-share-email.png"
                       alt="URL Share Email Keys"
                       class="w-80 h-40"
-                    >
+                    />
                     <figcaption class="p-2 text-gray-400">
                       Figure: URL Share Email Keys
                     </figcaption>
@@ -165,7 +195,7 @@
                       src="assets/images/gas-tools/sheet-mail-sync/display-url-share-email.png"
                       alt="URL Share Email Sheet"
                       class="w-80 h-40"
-                    >
+                    />
                     <figcaption class="p-2 text-gray-400">
                       Figure: URL Share Email Sheet
                     </figcaption>
@@ -179,7 +209,7 @@
                       src="assets/images/gas-tools/sheet-mail-sync/keys-result-share-email.png"
                       alt="Result Share Email Keys"
                       class="w-80 h-40"
-                    >
+                    />
                     <figcaption class="p-2 text-gray-400">
                       Figure: Result Share Email Keys
                     </figcaption>
@@ -187,7 +217,7 @@
                       src="assets/images/gas-tools/sheet-mail-sync/display-result-share-full-email.png"
                       alt="Result Share Email Sheet Faculty Type A"
                       class="w-80 h-40"
-                    >
+                    />
                     <figcaption class="p-2 text-gray-400">
                       Figure: Result Share Email Sheet Faculty Type A
                     </figcaption>
@@ -195,7 +225,7 @@
                       src="assets/images/gas-tools/sheet-mail-sync/display-result-share-adj-email.png"
                       alt="Result Share Email Sheet Faculty Type B"
                       class="w-80 h-40"
-                    >
+                    />
                     <figcaption class="p-2 text-gray-400">
                       Figure: Result Share Email Sheet Faculty Type B
                     </figcaption>
@@ -203,7 +233,7 @@
                       src="assets/images/gas-tools/sheet-mail-sync/keys-pass-share-email.png"
                       alt="Pass Share Email Keys"
                       class="w-80 h-40"
-                    >
+                    />
                     <figcaption class="p-2 text-gray-400">
                       Figure: Pass Share Email Keys
                     </figcaption>
@@ -211,7 +241,7 @@
                       src="assets/images/gas-tools/sheet-mail-sync/display-pass-share-email.png"
                       alt="Pass Share Email Sheet"
                       class="w-80 h-40"
-                    >
+                    />
                     <figcaption class="p-2 text-gray-400">
                       Figure: Pass Share Email Sheet
                     </figcaption>
@@ -220,8 +250,10 @@
               </li>
 
               <li class="my-2">
-                <strong>Comparing Email Information and Original Information for
-                  Final Check:</strong>
+                <strong
+                  >Comparing Email Information and Original Information for
+                  Final Check:</strong
+                >
                 This process involves comparing the information extracted from
                 emails with the original data you have with Google Sheet
                 formula.
@@ -229,7 +261,7 @@
                   src="assets/images/gas-tools/sheet-mail-sync/check-url-share-email.png"
                   alt="Pass Share Email Sheet"
                   class="w-80 h-40"
-                >
+                />
                 <figcaption class="p-2 text-gray-400">
                   Figure: Check URL Share Email
                 </figcaption>
@@ -244,8 +276,16 @@
           <div class="mb-3">
             <div id="source-code" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#source-code" @click.prevent="scrollTo('source-code')">Source Code</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink
+                  to="#source-code"
+                  @click.prevent="scrollTo('source-code')"
+                  >Source Code</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -256,7 +296,8 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
-                >HERE</a>
+                  >HERE</a
+                >
                 .
               </p>
             </div>
@@ -298,13 +339,13 @@
 const breadCrumbs = [
   { label: 'Home', to: '/' },
   { label: 'GAS Tools', to: '/gas-tools/gas-tools' },
-  { label: 'SheetMail Sync' }
-]
+  { label: 'SheetMail Sync' },
+];
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'SheetMail Sync'
-})
+  title: 'SheetMail Sync',
+});
 
 // An array of objects representing the page items or sections.
 const pageItems = [
@@ -313,35 +354,35 @@ const pageItems = [
   { label: 'Setup', id: 'setup' },
   { label: 'Usage', id: 'usage' },
   { label: 'Terms and Conditions', id: 'terms-conditions' },
-  { label: 'Source Code', id: 'source-code' }
-]
+  { label: 'Source Code', id: 'source-code' },
+];
 
 // An array of objects representing the badges to be displayed.
 const badges = [
   {
     src: 'https://img.shields.io/badge/Google%20Apps-%20sheet%20%26%20mail-brightgreen?style=flat-square&color=brightgreen',
-    alt: 'Use of Google Apps'
+    alt: 'Use of Google Apps',
   },
   {
     url: 'https://github.com/google/clasp',
     src: 'https://img.shields.io/badge/built%20with-clasp-FFA500.svg?style=flat-square',
-    alt: 'Built with Clasp'
+    alt: 'Built with Clasp',
   },
   {
     url: 'https://github.com/prettier/prettier',
     src: 'https://img.shields.io/badge/code_style-prettier-800080.svg?style=flat-square',
-    alt: 'Code style: Prettier'
-  }
-]
+    alt: 'Code style: Prettier',
+  },
+];
 
 // The date, formatted according to the US locale.
 const date = ref(
   new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric'
+    day: 'numeric',
   }).format(new Date('2024-05-05'))
-)
+);
 
-const scrollTo = inject('scrollTo') as (id: string) => Promise<void>
+const scrollTo = inject('scrollTo') as (id: string) => Promise<void>;
 </script>

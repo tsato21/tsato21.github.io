@@ -27,13 +27,20 @@
           <div class="mb-3">
             <div id="about" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#about" @click.prevent="scrollTo('about')">About</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">#</span>
+                <NuxtLink to="#about" @click.prevent="scrollTo('about')"
+                  >About</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                  >#</span
+                >
               </span>
             </div>
             <div class="py-3">
               <p>
-                Integrates Notion databases with Google Sheets, and generate dynamic pie charts, providing a powerful and intuitive way to visualize and analyze data.
+                Integrates Notion databases with Google Sheets, and generate
+                dynamic pie charts, providing a powerful and intuitive way to
+                visualize and analyze data.
               </p>
             </div>
           </div>
@@ -41,17 +48,27 @@
           <div class="mb-3">
             <div id="prerequisites" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#prerequisites" @click.prevent="scrollTo('prerequisites')">Prerequisites</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base"> #</span>
+                <NuxtLink
+                  to="#prerequisites"
+                  @click.prevent="scrollTo('prerequisites')"
+                  >Prerequisites</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
               <ul class="list-disc list-inside space-y-2">
                 <li class="text-gray-700">
-                  A Google account with access to Google Sheets and Notion account.
+                  A Google account with access to Google Sheets and Notion
+                  account.
                 </li>
                 <li class="text-gray-700">
-                  A foundational understanding of Google Sheets, Google Apps Script, Notion, Notion API.
+                  A foundational understanding of Google Sheets, Google Apps
+                  Script, Notion, and Notion API.
                 </li>
               </ul>
             </div>
@@ -60,8 +77,14 @@
           <div class="mb-3">
             <div id="setup" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#setup" @click.prevent="scrollTo('setup')">Setup</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#setup" @click.prevent="scrollTo('setup')"
+                  >Setup</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -76,8 +99,8 @@
                     class="text-lightblue underline hover:text-darkblue"
                     external
                   >
-                    Sample Google Sheet
-                  </NuxtLink>.
+                    Sample Google Sheet </NuxtLink
+                  >.
                   <p class="mt-2">
                     *Note: The samples provided are merely illustrative,
                     showcasing personal financial management.
@@ -97,88 +120,195 @@
           <div class="mb-3">
             <div id="usage" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')">Usage</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')"
+                  >Usage</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
 
             <ol class="list-decimal list-inside">
               <li class="my-2">
-                <span class="font-bold">Notion API</span>: Create a Notion API for integration.
+                <span class="font-bold">Notion API</span>: Create a Notion API
+                for integration.
               </li>
               <li class="my-2">
                 <span class="font-bold">Notion Database: </span>
-                <ol class="list-decimal list-inside border border-gray-300 p-4 ms-2">
+                <ol
+                  class="list-decimal list-inside border border-gray-300 p-4 ms-2"
+                >
                   <li>
-                    Create a database for integration. When creating a database, ensure the following columns with designated data types are set:
+                    Create a database for integration. When creating a database,
+                    ensure the following columns with designated data types are
+                    set:
                   </li>
                   <ul class="list-disc list-inside ml-5">
                     <li>
-                      <span class="font-bold"><code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Item</code></span>: Title
+                      <span class="font-bold"
+                        ><code
+                          class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                          >Item</code
+                        ></span
+                      >: Title
                     </li>
                     <li>
-                      <span class="font-bold"><code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Category</code></span>: Select or Relation
+                      <span class="font-bold"
+                        ><code
+                          class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                          >Category</code
+                        ></span
+                      >: Select or Relation
                     </li>
                     <li>
-                      <span class="font-bold"><code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Pay Amount</code></span>: Number
+                      <span class="font-bold"
+                        ><code
+                          class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                          >Pay Amount</code
+                        ></span
+                      >: Number
                     </li>
                   </ul>
                   <li>Input each item record in the database.</li>
                   <div class="ml-5">
                     <img
                       src="assets/images/gas-tools/notion-sheets-integrator/sample-database.png"
-                      alt="Image of Access Custom Menu"
+                      alt="Sample Notion Database"
                       class="w-full h-80 mt-2"
-                    >
+                    />
                     <figcaption class="p-2 text-gray-400">
-                      Figure: Access Custom Menu
+                      Figure: Sample Notion Database
                     </figcaption>
                   </div>
+                  <li>Integrate with Notion Api created in the first step.</li>
                 </ol>
               </li>
 
               <li class="my-2">
-                <span class="font-bold">Spreadsheet: </span>
-                <ol class="list-decimal list-inside border border-gray-300 p-4 ms-2">
-                  <li>Create a new sheet to display record details from the Notion database.</li>
+                <span class="font-bold">Google Sheet: </span>
+                <ol
+                  class="list-decimal list-inside border border-gray-300 p-4 ms-2"
+                >
                   <li>
-                    Navigate to Apps Script><code class="text-sm p-1 bg-gray-200 rounded text-gray-800">variables.gs</code> and set each variable.
+                    Create a new sheet to display record details from the Notion
+                    database.
+                  </li>
+                  <li>
+                    Navigate to Apps Script
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >variables.gs</code
+                    >
+                    and set each variable.
                     <ul class="list-disc list-inside ml-5">
                       <li>
-                        For all databases (In creation of second or subsequent databases, skip this step):
+                        For all databases (In creation of second or subsequent
+                        databases, skip this step):
                         <ul class="list-disc list-inside ml-5">
-                          <li><span class="font-bold"><code class="text-sm p-1 bg-gray-200 rounded text-gray-800">notionToken</code></span>: Notion API Secret Key</li>
-                          <li><span class="font-bold"><code class="text-sm p-1 bg-gray-200 rounded text-gray-800">sheetNameChart</code></span>: Name of the sheet where pie charts are displayed. By default, it is named as "Chart"</li>
+                          <li>
+                            <span class="font-bold"
+                              ><code
+                                class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                                >notionToken</code
+                              ></span
+                            >: Notion API Secret Key
+                          </li>
+                          <li>
+                            <span class="font-bold"
+                              ><code
+                                class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                                >sheetNameChart</code
+                              ></span
+                            >: Name of the sheet where pie charts are displayed.
+                            By default, it is named as "Chart"
+                          </li>
                         </ul>
                       </li>
                       <li>
                         For each database:
                         <ul class="list-disc list-inside ml-5">
-                          <li><span class="font-bold"><code class="text-sm p-1 bg-gray-200 rounded text-gray-800">tableId</code></span>: ID of the target Notion database</li>
-                          <li><span class="font-bold"><code class="text-sm p-1 bg-gray-200 rounded text-gray-800">sheetName</code></span>: the name of the sheet where the record details from the target notion database are displayed</li>
-                          <li><span class="font-bold"><code class="text-sm p-1 bg-gray-200 rounded text-gray-800">item/category/monthlyPay</code></span>: Names of each field in Notion database</li>
-                          <li><span class="font-bold"><code class="text-sm p-1 bg-gray-200 rounded text-gray-800">chartName</code></span>: Name of the chart which is displayed at the top of the chart.</li>
+                          <li>
+                            <span class="font-bold"
+                              ><code
+                                class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                                >tableId</code
+                              ></span
+                            >: ID of the target Notion database
+                          </li>
+                          <li>
+                            <span class="font-bold"
+                              ><code
+                                class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                                >sheetName</code
+                              ></span
+                            >: the name of the sheet where the record details
+                            from the target notion database are displayed
+                          </li>
+                          <li>
+                            <span class="font-bold"
+                              ><code
+                                class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                                >item/category/monthlyPay</code
+                              ></span
+                            >: Names of each field in Notion database
+                          </li>
+                          <li>
+                            <span class="font-bold"
+                              ><code
+                                class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                                >chartName</code
+                              ></span
+                            >: Name of the chart which is displayed at the top
+                            of the chart.
+                          </li>
                         </ul>
                       </li>
                     </ul>
                     <p class="ml-10 text-red-500">
-                      * When creating second or subsequent pie charts, copy the variables and change the values of each variable.
+                      * When creating second or subsequent pie charts, copy the
+                      variables and change the values of each variable.
                     </p>
                   </li>
-                  <li>Create a trigger function in <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">codes.gs</code>. Ensure the required parameters are included and the variable names in the parameters are consistent with those set in <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">variables.gs</code>. The row and column parameters can be set as desired.</li>
+                  <li>
+                    Create a trigger function in
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >codes.gs</code
+                    >. Ensure the required parameters are included and the
+                    variable names in the parameters are consistent with those
+                    set in
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >variables.gs</code
+                    >. The row and column parameters can be set as desired.
+                  </li>
                   <p class="ml-3 text-red-500">
-                    * When creating second or subsequent pie charts, copy the previous function codes and change variable names.
+                    * When creating second or subsequent pie charts, copy the
+                    previous function codes and change variable names.
                   </p>
-                  <li>Test the trigger function: Verify that the records of the target Notion database are fetched and the pie chart for the database is successfully generated.</li>
-                  <li>Set the trigger for the function: Navigate to <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Trigger</code> in Apps Script to set the trigger to fire the function. It is recommended to set the trigger as onOpen so that every time the spreadsheet is open, the pie chart is updated.</li>
+                  <li>
+                    Test the trigger function: Verify that the records of the
+                    target Notion database are fetched and the pie chart for the
+                    database is successfully generated.
+                  </li>
+                  <li>
+                    Set the trigger for the function: Navigate to
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >Trigger</code
+                    >
+                    in Apps Script to set the trigger to fire the function. It
+                    is recommended to set the trigger as onOpen so that every
+                    time the spreadsheet is open, the pie chart is updated.
+                  </li>
                   <p class="ml-3 text-red-500">
-                    * You can find a sample of the spreadsheet settings from <NuxtLink
+                    * You can find a sample of the spreadsheet settings from
+                    <NuxtLink
                       to="https://docs.google.com/presentation/d/1-vphEn7APWwV29E1v7d4BBDAvl92EGSXmY5BLAXWpxU/edit#slide=id.g26522cd8648_0_12"
                       target="_blank"
                       class="text-lightblue underline hover:text-darkblue"
                     >
-                      HERE
-                    </NuxtLink>.
+                      HERE </NuxtLink
+                    >.
                   </p>
                 </ol>
               </li>
@@ -192,21 +322,29 @@
           <div class="mb-3">
             <div id="source-code" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#source-code" @click.prevent="scrollTo('source-code')">Source Code</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink
+                  to="#source-code"
+                  @click.prevent="scrollTo('source-code')"
+                  >Source Code</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
               <p class="text-lg mt-4">
                 You can find the source code for this tool on Github. Click
                 <NuxtLink
-                  to="https://github.com/tsato21/pdf-info-inserter"
+                  to="https://github.com/tsato21/notion-reminder"
                   target="_blank"
                   class="text-lightblue underline hover:text-darkblue"
                   external
                 >
-                  HERE
-                </NuxtLink>.
+                  HERE </NuxtLink
+                >.
               </p>
             </div>
           </div>
@@ -247,13 +385,13 @@
 const breadCrumbs = [
   { label: 'Home', to: '/' },
   { label: 'GAS Tools', to: '/gas-tools/gas-tools' },
-  { label: 'NotionSheets Chart' }
-]
+  { label: 'NotionSheets Chart' },
+];
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'NotionSheets Chart'
-})
+  title: 'NotionSheets Chart',
+});
 
 // An array of objects representing the page items or sections.
 const pageItems = [
@@ -262,39 +400,39 @@ const pageItems = [
   { label: 'Setup', id: 'setup' },
   { label: 'Usage', id: 'usage' },
   { label: 'Terms and Conditions', id: 'terms-conditions' },
-  { label: 'Source Code', id: 'source-code' }
-]
+  { label: 'Source Code', id: 'source-code' },
+];
 
 // An array of objects representing the badges to be displayed.
 const badges = [
   {
     src: 'https://img.shields.io/badge/Google%20Apps-%20sheet-brightgreen?style=flat-square&color=brightgreen',
-    alt: 'Use of Google Apps'
+    alt: 'Use of Google Apps',
   },
   {
     src: 'https://img.shields.io/badge/Other%20Apps-%20notion%20database%20%26%20api-blue?style=flat-square',
-    alt: 'Use of Other Apps'
+    alt: 'Use of Other Apps',
   },
   {
     url: 'https://github.com/google/clasp',
     src: 'https://img.shields.io/badge/built%20with-clasp-FFA500.svg?style=flat-square',
-    alt: 'Built with Clasp'
+    alt: 'Built with Clasp',
   },
   {
     url: 'https://github.com/prettier/prettier',
     src: 'https://img.shields.io/badge/code_style-prettier-800080.svg?style=flat-square',
-    alt: 'Code style: Prettier'
-  }
-]
+    alt: 'Code style: Prettier',
+  },
+];
 
 // The date, formatted according to the US locale.
 const date = ref(
   new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric'
+    day: 'numeric',
   }).format(new Date('2024-05-05'))
-)
+);
 
-const scrollTo = inject('scrollTo') as (id: string) => Promise<void>
+const scrollTo = inject('scrollTo') as (id: string) => Promise<void>;
 </script>

@@ -34,7 +34,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { defineProps } from 'vue';
 
 interface PageItem {
   label: string;
@@ -45,9 +45,9 @@ interface PageItem {
 defineProps({
   pageItems: {
     type: Array as () => PageItem[],
-    required: true
-  }
-})
+    required: true,
+  },
+});
 
-const scrollTo = inject('scrollTo') as (id: string) => Promise<void>
+const scrollTo = inject('scrollTo') as (id: string) => Promise<void>;
 </script>

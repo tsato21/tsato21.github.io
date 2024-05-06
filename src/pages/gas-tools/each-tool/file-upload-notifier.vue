@@ -27,8 +27,14 @@
           <div class="mb-3">
             <div id="about" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#about" @click.prevent="scrollTo('about')">About</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#about" @click.prevent="scrollTo('about')"
+                  >About</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -51,8 +57,16 @@
           <div class="mb-3">
             <div id="prerequisites" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#prerequisites" @click.prevent="scrollTo('prerequisites')">Prerequisites</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink
+                  to="#prerequisites"
+                  @click.prevent="scrollTo('prerequisites')"
+                  >Prerequisites</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -72,29 +86,38 @@
             <div class="mb-3">
               <div id="setup" class="text-2xl font-bold">
                 <span class="group/item">
-                  <NuxtLink to="#setup" @click.prevent="scrollTo('setup')">Setup</NuxtLink>
-                  <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                  <NuxtLink to="#setup" @click.prevent="scrollTo('setup')"
+                    >Setup</NuxtLink
+                  >
+                  <span
+                    class="invisible group-hover/item:visible text-blue-300 text-base"
+                  >
+                    #</span
+                  >
                 </span>
               </div>
               <div class="py-3">
                 <ol class="list-decimal list-inside space-y-2">
                   <li class="text-gray-700">
-                    <strong>Copyt the Sample Google Apps Script and Store it in your
-                      Google Drive:</strong>
+                    <strong
+                      >Copyt the Sample Google Apps Script and Store it in your
+                      Google Drive:</strong
+                    >
                     Copy the sample script from
                     <a
                       href="https://drive.google.com/drive/folders/16WEoOo_bTAKJSM6HAPCdPQj64cfeZCvt"
                       target="_blank"
                       rel="noopener noreferrer"
                       class="text-lightblue underline hover:text-darkblue font-bold"
-                    >HERE</a>
+                      >HERE</a
+                    >
                     ,which is automatically stored in your Google Drive.
                     <div>
                       <img
                         src="assets/images/gas-tools/file-upload-notifier/copy-sample-file.png"
                         alt="Copy Sample"
                         class="w-96 h-64 my-2"
-                      >
+                      />
                       <figcaption class="p-2 text-gray-400">
                         Figure: Copy Sample
                       </figcaption>
@@ -104,13 +127,14 @@
                     Set the constant variables (folder url/ email address/
                     interval) in
                     <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
-                      variables.gs</code>.
+                      variables.gs</code
+                    >.
                     <div>
                       <img
                         src="assets/images/gas-tools/file-upload-notifier/set-constant-variables.png"
                         alt="Set Constant Variables"
                         class="w-96 h-36 my-2"
-                      >
+                      />
                       <figcaption class="p-2 text-gray-400">
                         Figure: Set Constant Variables
                       </figcaption>
@@ -125,7 +149,7 @@
                         src="assets/images/gas-tools/file-upload-notifier/set-trigger.png"
                         alt="Set Triggers"
                         class="w-96 h- my-2"
-                      >
+                      />
                       <figcaption class="p-2 text-gray-400">
                         Figure: Set Triggers
                       </figcaption>
@@ -144,7 +168,7 @@
                         src="assets/images/gas-tools/file-upload-notifier/email-notification.png"
                         alt="Email Notification"
                         class="w-96 h-48 my-2"
-                      >
+                      />
                       <figcaption class="p-2 text-gray-400">
                         Figure: Email Notification
                       </figcaption>
@@ -158,8 +182,14 @@
           <div class="mb-3">
             <div id="usage" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')">Usage</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')"
+                  >Usage</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <ol class="list-decimal list-inside">
@@ -180,14 +210,21 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="text-lightblue underline hover:text-darkblue"
-              >HERE</a>.
+                >HERE</a
+              >.
             </div>
           </div>
           <div class="mb-3">
             <div id="others" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#others" @click.prevent="scrollTo('others')">Others</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#others" @click.prevent="scrollTo('others')"
+                  >Others</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="text-lg leading-6 text-gray-900 font-bold my-4">
@@ -198,7 +235,8 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="text-lightblue underline hover:text-darkblue"
-              >HERE</a>.
+                >HERE</a
+              >.
             </div>
           </div>
 
@@ -209,8 +247,16 @@
           <div class="mb-3">
             <div id="source-code" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#source-code" @click.prevent="scrollTo('source-code')">Source Code</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink
+                  to="#source-code"
+                  @click.prevent="scrollTo('source-code')"
+                  >Source Code</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -221,7 +267,8 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
-                >HERE</a>
+                  >HERE</a
+                >
                 .
               </p>
             </div>
@@ -263,13 +310,13 @@
 const breadCrumbs = [
   { label: 'Home', to: '/' },
   { label: 'GAS Tools', to: '/gas-tools/gas-tools' },
-  { label: 'File Upload Notifier' }
-]
+  { label: 'File Upload Notifier' },
+];
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'File Upload Notifier'
-})
+  title: 'File Upload Notifier',
+});
 
 // An array of objects representing the page items or sections.
 const pageItems = [
@@ -279,35 +326,35 @@ const pageItems = [
   { label: 'Usage', id: 'usage' },
   { label: 'Others', id: 'others' },
   { label: 'Terms and Conditions', id: 'terms-conditions' },
-  { label: 'Source Code', id: 'source-code' }
-]
+  { label: 'Source Code', id: 'source-code' },
+];
 
 // An array of objects representing the badges to be displayed.
 const badges = [
   {
     src: 'https://img.shields.io/badge/Google%20Apps-%20drive%20%26%20mail-brightgreen?style=flat-square&color=brightgreen',
-    alt: 'Use of Google Apps'
+    alt: 'Use of Google Apps',
   },
   {
     url: 'https://github.com/google/clasp',
     src: 'https://img.shields.io/badge/built%20with-clasp-FFA500.svg?style=flat-square',
-    alt: 'Built with Clasp'
+    alt: 'Built with Clasp',
   },
   {
     url: 'https://github.com/prettier/prettier',
     src: 'https://img.shields.io/badge/code_style-prettier-800080.svg?style=flat-square',
-    alt: 'Code style: Prettier'
-  }
-]
+    alt: 'Code style: Prettier',
+  },
+];
 
 // The date, formatted according to the US locale.
 const date = ref(
   new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric'
+    day: 'numeric',
   }).format(new Date('2024-05-05'))
-)
+);
 
-const scrollTo = inject('scrollTo') as (id: string) => Promise<void>
+const scrollTo = inject('scrollTo') as (id: string) => Promise<void>;
 </script>
