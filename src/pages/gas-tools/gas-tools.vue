@@ -131,10 +131,16 @@ const tools = ref([
     filePath: '/gas-tools/each-tool/file-upload-notifier'
   },
   {
-    title: 'NotionSheets Integrator',
+    title: 'NotionSheets Chart',
     description:
       'Integrates Notion databases with Google Sheets, and generate dynamic pie charts, providing a powerful and intuitive way to visualize and analyze data.',
-    filePath: '/gas-tools/each-tool/notion-sheets-integrator'
+    filePath: '/gas-tools/each-tool/notion-sheets-chart'
+  },
+  {
+    title: 'Notion Reminder',
+    description:
+      'Integrates Notion databases with Google Sheets, and generate dynamic pie charts, providing a powerful and intuitive way to visualize and analyze data.',
+    filePath: '/gas-tools/each-tool/notion-reminder'
   }
 ])
 

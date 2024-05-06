@@ -17,7 +17,7 @@
       >
         <div class="lg:block hidden">
           <div class="my-2 flex items-center">
-            <span class="text-3xl font-bold">NotionSheets Integrator</span>
+            <span class="text-3xl font-bold">NotionSheets Chart</span>
           </div>
           <!-- Badges Component -->
           <Badges :badges="badges" />
@@ -223,7 +223,7 @@
       >
         <div class="text-3xl mt-2 font-bold lg:hidden block">
           <div class="my-2 flex items-center">
-            <span class="text-3xl font-bold">NotionSheets Integrator</span>
+            <span class="text-3xl font-bold">NotionSheets Chart</span>
           </div>
           <!-- Badges Component -->
           <Badges :badges="badges" />
@@ -247,12 +247,12 @@
 const breadCrumbs = [
   { label: 'Home', to: '/' },
   { label: 'GAS Tools', to: '/gas-tools/gas-tools' },
-  { label: 'NotionSheets Integrator' }
+  { label: 'NotionSheets Chart' }
 ]
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'NotionSheets Integrator'
+  title: 'NotionSheets Chart'
 })
 
 // An array of objects representing the page items or sections.
