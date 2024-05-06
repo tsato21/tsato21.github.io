@@ -27,8 +27,14 @@
           <div class="mb-3">
             <div id="about" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#about" @click.prevent="scrollTo('about')">About</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#about" @click.prevent="scrollTo('about')"
+                  >About</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -42,9 +48,13 @@
               >
                 This tool optimizes row height in Google Sheets, addressing the
                 shortcomings of the built-in
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Resize row</code>
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >Resize row</code
+                >
                 and
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Fit to data</code>
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >Fit to data</code
+                >
                 features. The built-in functionality often results in rows that
                 are too short when they contain a single line of text, and lacks
                 sufficient padding for rows with multiple lines, making them
@@ -57,7 +67,7 @@
                 src="assets/images/gas-tools/row-height-optimizer/fit-to-data-feature.png"
                 alt="Fit to Data Feature"
                 class="w-70 h-60"
-              >
+              />
               <figcaption class="p-2 text-gray-400">
                 Figure: Fit to Data Feature in Google Sheets
               </figcaption>
@@ -65,7 +75,7 @@
                 src="assets/images/gas-tools/row-height-optimizer/fit-to-data-result.png"
                 alt="Fit to Data Result"
                 class="w-70 h-25"
-              >
+              />
               <figcaption class="p-2 text-gray-400">
                 Figure: Fit to Data Result in Google Sheets
               </figcaption>
@@ -75,8 +85,16 @@
           <div class="mb-3">
             <div id="prerequisites" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#prerequisites" @click.prevent="scrollTo('prerequisites')">Prerequisites</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink
+                  to="#prerequisites"
+                  @click.prevent="scrollTo('prerequisites')"
+                  >Prerequisites</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -95,8 +113,14 @@
           <div class="mb-3">
             <div id="setup" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#setup" @click.prevent="scrollTo('setup')">Setup</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#setup" @click.prevent="scrollTo('setup')"
+                  >Setup</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -109,7 +133,8 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="text-lightblue underline hover:text-darkblue"
-                  >Sample Google Sheet</a>
+                    >Sample Google Sheet</a
+                  >
                   <p class="mt-2">
                     *Note: The samples provided are merely illustrative,
                     showcasing course schedule for an educational institution.
@@ -127,27 +152,35 @@
                       <strong>
                         <code
                           class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                        >AVERAGE_CHART_WIDTH</code> </strong>: This represents the average width of a character in
+                          >AVERAGE_CHART_WIDTH</code
+                        > </strong
+                      >: This represents the average width of a character in
                       your sheet. The pre-set value is "4.5". This might change
                       based on which font to be used.
                     </li>
                     <li>
-                      <strong><code
-                        class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >BASE_ROW_HEIGHT</code></strong>: The base height of a row with a single line of text.
+                      <strong
+                        ><code
+                          class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                          >BASE_ROW_HEIGHT</code
+                        ></strong
+                      >: The base height of a row with a single line of text.
                       Pre-set value is "25".
                     </li>
                     <li>
-                      <strong><code
-                        class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                      >ADDITIONAL_ROW_HEIGHT</code></strong>: The additional height for each additional line of text.
+                      <strong
+                        ><code
+                          class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                          >ADDITIONAL_ROW_HEIGHT</code
+                        ></strong
+                      >: The additional height for each additional line of text.
                       Pre-set value is "20".
                     </li>
                     <img
                       src="assets/images/gas-tools/row-height-optimizer/customize-constant-variables.png"
                       alt="Fit to Data Feature"
                       class="w-50 h-20"
-                    >
+                    />
                     <figcaption class="p-2 text-gray-400">
                       Figure: Customize Constant Variables
                     </figcaption>
@@ -163,24 +196,34 @@
           <div class="mb-3">
             <div id="usage" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')">Usage</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')"
+                  >Usage</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
 
             <ol class="list-decimal list-inside">
               <li class="my-2">
-                <span class="font-bold">Select
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Custom Menu</code>
+                <span class="font-bold"
+                  >Select
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Custom Menu</code
                   >
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Adjust Row Heights</code></span>
+                  >
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Adjust Row Heights</code
+                  ></span
+                >
                 <p>
                   This initiates a process that adjusts the height of each row
                   in a specified sheet, starting from a user-defined row number.
                 </p>
-                <p class="mt-2">
-                  Here's the step-by-step logic:
-                </p>
+                <p class="mt-2">Here's the step-by-step logic:</p>
                 <ul class="list-disc pl-5">
                   <li>
                     <strong>Input Sheet Name and Starting Row</strong>: A dialog
@@ -222,8 +265,16 @@
           <div class="mb-3">
             <div id="source-code" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#source-code" @click.prevent="scrollTo('source-code')">Source Code</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink
+                  to="#source-code"
+                  @click.prevent="scrollTo('source-code')"
+                  >Source Code</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -234,7 +285,8 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
-                >HERE</a>
+                  >HERE</a
+                >
                 .
               </p>
             </div>
@@ -276,13 +328,13 @@
 const breadCrumbs = [
   { label: 'Home', to: '/' },
   { label: 'GAS Tools', to: '/gas-tools/gas-tools' },
-  { label: 'Row Height Optimizer' }
-]
+  { label: 'Row Height Optimizer' },
+];
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'Row Height Optimizer'
-})
+  title: 'Row Height Optimizer',
+});
 
 // An array of objects representing the page items or sections.
 const pageItems = [
@@ -291,35 +343,35 @@ const pageItems = [
   { label: 'Setup', id: 'setup' },
   { label: 'Usage', id: 'usage' },
   { label: 'Terms and Conditions', id: 'terms-conditions' },
-  { label: 'Source Code', id: 'source-code' }
-]
+  { label: 'Source Code', id: 'source-code' },
+];
 
 // An array of objects representing the badges to be displayed.
 const badges = [
   {
     src: 'https://img.shields.io/badge/Google%20Apps-%20sheet-brightgreen?style=flat-square&color=brightgreen',
-    alt: 'Use of Google Apps'
+    alt: 'Use of Google Apps',
   },
   {
     url: 'https://github.com/google/clasp',
     src: 'https://img.shields.io/badge/built%20with-clasp-FFA500.svg?style=flat-square',
-    alt: 'Built with Clasp'
+    alt: 'Built with Clasp',
   },
   {
     url: 'https://github.com/prettier/prettier',
     src: 'https://img.shields.io/badge/code_style-prettier-800080.svg?style=flat-square',
-    alt: 'Code style: Prettier'
-  }
-]
+    alt: 'Code style: Prettier',
+  },
+];
 
 // The date, formatted according to the US locale.
 const date = ref(
   new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric'
+    day: 'numeric',
   }).format(new Date('2024-05-05'))
-)
+);
 
-const scrollTo = inject('scrollTo') as (id: string) => Promise<void>
+const scrollTo = inject('scrollTo') as (id: string) => Promise<void>;
 </script>

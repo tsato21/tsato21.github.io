@@ -27,8 +27,14 @@
           <div class="mb-3">
             <div id="about" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#about" @click.prevent="scrollTo('about')">About</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#about" @click.prevent="scrollTo('about')"
+                  >About</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -54,8 +60,16 @@
           <div class="mb-3">
             <div id="prerequisites" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#prerequisites" @click.prevent="scrollTo('prerequisites')">Prerequisites</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink
+                  to="#prerequisites"
+                  @click.prevent="scrollTo('prerequisites')"
+                  >Prerequisites</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -74,8 +88,14 @@
           <div class="mb-3">
             <div id="setup" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#setup" @click.prevent="scrollTo('setup')">Setup</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#setup" @click.prevent="scrollTo('setup')"
+                  >Setup</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -88,7 +108,8 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="text-lightblue underline hover:text-darkblue"
-                  >Sample Google Sheet</a>
+                    >Sample Google Sheet</a
+                  >
                   <p class="mt-2">
                     *Note: The examples given are for illustrative purposes
                     only. They demonstrate the bulk creation of individual
@@ -102,11 +123,16 @@
                   <strong>Set Drive API:</strong>
                   Go to
                   <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
-                    Extension</code>
+                    Extension</code
                   >
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Apps</code>
+                  >
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Apps</code
+                  >
                   Script >
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Service</code>
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Service</code
+                  >
                   and choose
                   <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
                     Drive API
@@ -118,7 +144,7 @@
                       src="assets/images/gas-tools/sheet-mail-work-automator/access-apps-script.png"
                       alt="Image of Initial Setting"
                       class="w-96 h-40"
-                    >
+                    />
                     <figcaption class="p-2 text-gray-400">
                       Figure: Access Apps Script
                     </figcaption>
@@ -126,9 +152,9 @@
                   <div>
                     <img
                       src="assets/images/gas-tools/sheet-mail-work-automator/set-drive-api.png"
-                      alt="set-drive-api"
+                      alt="Set Drive API"
                       class="w-96 h-96"
-                    >
+                    />
                     <figcaption class="p-2 text-gray-400">
                       Figure: Set Drive API
                     </figcaption>
@@ -147,8 +173,14 @@
           <div class="mb-3">
             <div id="features" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#features" @click.prevent="scrollTo('features')">Features</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#features" @click.prevent="scrollTo('features')"
+                  >Features</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
 
@@ -175,8 +207,14 @@
           <div class="mb-3">
             <div id="usage" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')">Usage</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')"
+                  >Usage</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
 
@@ -189,7 +227,7 @@
                   src="assets/images/gas-tools/sheet-mail-work-automator/custom-menu.png"
                   alt="Custom Menu Button"
                   class="w-96 h-48"
-                >
+                />
                 <figcaption class="p-2 text-gray-400">
                   Figure: Custom Menu Button
                 </figcaption>
@@ -205,7 +243,9 @@
                 >
                   <li>
                     Set information in the orange range in
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">system-data</code>
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >system-data</code
+                    >
                     sheet, which is the reference data for other sheets.
                   </li>
                   <div>
@@ -213,7 +253,7 @@
                       src="assets/images/gas-tools/sheet-mail-work-automator/put-base-info.png"
                       alt="Image of Put Base Info"
                       class="w-96 h-48"
-                    >
+                    />
                   </div>
                   <figcaption class="p-2 text-gray-400">
                     Figure: Put Reference Data
@@ -228,7 +268,9 @@
                 >
                   <li>
                     Set the file name information in the orange range in
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">create-file</code>
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >create-file</code
+                    >
                     sheet.
                   </li>
                   <div>
@@ -236,14 +278,16 @@
                       src="assets/images/gas-tools/sheet-mail-work-automator/put-file-name.png"
                       alt="Image of Put File Name"
                       class="w-72 h-48"
-                    >
+                    />
                   </div>
                   <figcaption class="p-2 text-gray-400">
                     Figure: Put File Name
                   </figcaption>
                   <li>
                     Click the
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Copy and Name Files</code>
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >Copy and Name Files</code
+                    >
                     to create copies of a specified file for each entry in the
                     list from the Google Sheet.
                   </li>
@@ -262,10 +306,14 @@
                 >
                   <li>
                     Click
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Output File Info</code>
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >Output File Info</code
+                    >
                     to display detailed information about files in a designated
                     folder in
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">share-file</code>
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >share-file</code
+                    >
                     (Column A - E).
                     <div>
                       *You will be asked to put the URL of the target folder
@@ -274,9 +322,9 @@
                     <div>
                       <img
                         src="assets/images/gas-tools/sheet-mail-work-automator/input-stored-file-url.png"
-                        alt="Image of input-stored-file-url"
+                        alt="Image of Input URL of Designated Folder"
                         class="w-96 h-48"
-                      >
+                      />
                       <figcaption class="p-2 text-gray-400">
                         Figure: Input URL of Designated Folder
                       </figcaption>
@@ -284,9 +332,9 @@
                     <div>
                       <img
                         src="assets/images/gas-tools/sheet-mail-work-automator/output-file-info.png"
-                        alt="Image of output-file-info"
+                        alt="Image of Output File Info"
                         class="w-96 h-48"
-                      >
+                      />
                     </div>
                     <figcaption class="p-2 text-gray-400">
                       Figure: Output File Info
@@ -303,9 +351,13 @@
                 <strong>Manage File Sharing</strong>:
                 <div class="ms-4">
                   Click either
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Share Files Without Notification</code>
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Share Files Without Notification</code
+                  >
                   or
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Reset All Sharing Status</code>
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Reset All Sharing Status</code
+                  >
                   to manage file sharing settings.
                 </div>
                 <ul class="list-disc list-inside pl-5">
@@ -332,14 +384,16 @@
                 <strong>Create Email Drafts</strong>:
                 <div class="ms-4">
                   Click
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Create Drafts</code>
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Create Drafts</code
+                  >
                   to generate personalized draft emails in Gmail.
                   <div class="mt-2">
                     <img
                       src="assets/images/gas-tools/sheet-mail-work-automator/gmail-draft.png"
-                      alt="Image of gmail-draft"
+                      alt="Image of Gmail Draft"
                       class="w-96 h-62"
-                    >
+                    />
                   </div>
                   <figcaption class="p-2 text-gray-400">
                     Figure: Gmail Draft
@@ -356,8 +410,16 @@
           <div class="mb-3">
             <div id="source-code" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#source-code" @click.prevent="scrollTo('source-code')">Source Code</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink
+                  to="#source-code"
+                  @click.prevent="scrollTo('source-code')"
+                  >Source Code</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -368,7 +430,8 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
-                >HERE</a>
+                  >HERE</a
+                >
                 .
               </p>
             </div>
@@ -410,13 +473,13 @@
 const breadCrumbs = [
   { label: 'Home', to: '/' },
   { label: 'GAS Tools', to: '/gas-tools/gas-tools' },
-  { label: 'SheetMail WorkAutomator' }
-]
+  { label: 'SheetMail WorkAutomator' },
+];
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'SheetMail WorkAutomator'
-})
+  title: 'SheetMail WorkAutomator',
+});
 
 // An array of objects representing the page items or sections.
 const pageItems = [
@@ -426,39 +489,39 @@ const pageItems = [
   { label: 'Features', id: 'features' },
   { label: 'Usage', id: 'usage' },
   { label: 'Terms and Conditions', id: 'terms-conditions' },
-  { label: 'Source Code', id: 'source-code' }
-]
+  { label: 'Source Code', id: 'source-code' },
+];
 
 // An array of objects representing the badges to be displayed.
 const badges = [
   {
     src: 'https://img.shields.io/badge/Google%20Apps-%20sheet%20%26%20mail%20%26%20drive-brightgreen?style=flat-square&color=brightgreen',
-    alt: 'Use of Google Apps'
+    alt: 'Use of Google Apps',
   },
   {
     src: 'https://img.shields.io/badge/api-%20drive%20api-blue?style=flat-square&color=blue',
-    alt: 'Use of Google Drive API'
+    alt: 'Use of Google Drive API',
   },
   {
     url: 'https://github.com/google/clasp',
     src: 'https://img.shields.io/badge/built%20with-clasp-FFA500.svg?style=flat-square',
-    alt: 'Built with Clasp'
+    alt: 'Built with Clasp',
   },
   {
     url: 'https://github.com/prettier/prettier',
     src: 'https://img.shields.io/badge/code_style-prettier-800080.svg?style=flat-square',
-    alt: 'Code style: Prettier'
-  }
-]
+    alt: 'Code style: Prettier',
+  },
+];
 
 // The date, formatted according to the US locale.
 const date = ref(
   new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric'
+    day: 'numeric',
   }).format(new Date('2024-05-05'))
-)
+);
 
-const scrollTo = inject('scrollTo') as (id: string) => Promise<void>
+const scrollTo = inject('scrollTo') as (id: string) => Promise<void>;
 </script>

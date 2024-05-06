@@ -37,8 +37,14 @@
           <div class="mb-3">
             <div id="about" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#about" @click.prevent="scrollTo('about')">概要</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#about" @click.prevent="scrollTo('about')"
+                  >概要</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -60,8 +66,16 @@
           <div class="mb-3">
             <div id="prerequisites" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#prerequisites" @click.prevent="scrollTo('prerequisites')">前提条件</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink
+                  to="#prerequisites"
+                  @click.prevent="scrollTo('prerequisites')"
+                  >前提条件</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -79,8 +93,14 @@
           <div class="mb-3">
             <div id="setup" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#setup" @click.prevent="scrollTo('setup')">セットアップ</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#setup" @click.prevent="scrollTo('setup')"
+                  >セットアップ</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -92,7 +112,8 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="text-lightblue underline hover:text-darkblue"
-                  >サンプルのGoogle Sheet</a>を開きます。
+                    >サンプルのGoogle Sheet</a
+                  >を開きます。
                   <ul class="list-disc ms-5">
                     【備考】
                     <li class="ms-6">
@@ -102,7 +123,8 @@
                         target="_blank"
                         rel="noopener noreferrer"
                         class="text-lightblue underline hover:text-darkblue"
-                      >こちら</a>から参照できます。
+                        >こちら</a
+                      >から参照できます。
                     </li>
                     <li class="ms-6">
                       サンプルシート・スライドの内容は教育機関のタスク管理を想定した一例です。
@@ -120,20 +142,31 @@
                   <strong>元のフォーマットに戻す</strong>:
                   Googleシートを元のフォーマットにリセットするためのオプションです
                   (サンプルタスクシートの削除、目次シートの内容クリア、事前設定情報やトリガーを削除)。
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Custom Menu</code>
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Custom Menu</code
                   >
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Setting</code>
                   >
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Reset All Pre-Defined Info & Triggers</code>をクリック。
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Setting</code
+                  >
+                  >
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Reset All Pre-Defined Info & Triggers</code
+                  >をクリック。
                 </li>
                 <li class="text-gray-700">
                   <strong>事前設定情報の入力</strong>:
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Custom Menu</code>
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Custom Menu</code
+                  >
                   >
                   <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">
-                    SETTINGS</code>
+                    SETTINGS</code
                   >
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Set Pre-Defined Info</code>
+                  >
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Set Pre-Defined Info</code
+                  >
                   をクリックし、事前設定情報のうち、必要なものを入力。
                   <ul class="list-disc">
                     <li class="ms-6">
@@ -158,7 +191,7 @@
                           src="assets/images/gas-tools/sheet-tasker/setup-image-1.png"
                           alt="SETTINGSボタンにアクセス"
                           class="w-72 h-36"
-                        >
+                        />
                         <figcaption class="p-2 text-gray-400">
                           図: SETTINGSボタンにアクセス
                         </figcaption>
@@ -170,7 +203,7 @@
                           src="assets/images/gas-tools/sheet-tasker/setup-image-2.png"
                           alt="SETTINGS画面の各種機能"
                           class="w-96 h-72"
-                        >
+                        />
                         <figcaption class="p-2 text-gray-400">
                           図: SETTINGS画面の各種機能
                         </figcaption>
@@ -185,30 +218,48 @@
           <div class="mb-3">
             <div id="usage" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')">使用方法</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')"
+                  >使用方法</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
 
             <ol class="list-decimal list-inside">
               <li class="my-2">
                 <strong>タスクシート作成</strong>:
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Custom Menu</code>
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >Custom Menu</code
                 >
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">TASK SHEETS</code>
                 >
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Create a New Task Sheet</code>をクリックし、タスクシートを新規作成します。(作成されるシートはタスク管理のための機能やフォーマットを搭載しています。)
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >TASK SHEETS</code
+                >
+                >
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >Create a New Task Sheet</code
+                >をクリックし、タスクシートを新規作成します。(作成されるシートはタスク管理のための機能やフォーマットを搭載しています。)
                 <ul class="list-disc">
                   <li class="ms-6">
                     タスクシート内の組み込みドロップダウン機能を使用して、チームメンバーにタスクをアサインします。
                   </li>
                   <li class="ms-6">
                     タスクシートのアクセス権を変更する場合は、
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Custom Menu</code>
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >Custom Menu</code
                     >
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">TASK SHEETS</code>
                     >
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Modify Editors of the Current Sheet</code>から変更可能です。
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >TASK SHEETS</code
+                    >
+                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >Modify Editors of the Current Sheet</code
+                    >から変更可能です。
                   </li>
                 </ul>
                 <div class="my-3 container-img">
@@ -216,7 +267,7 @@
                     src="assets/images/gas-tools/sheet-tasker/task-sheet-creation.png"
                     alt="Task Sheetのインターフェイス"
                     class="w-96 h-48"
-                  >
+                  />
                   <figcaption class="p-2 text-gray-400">
                     図: Task Sheetのインターフェイス
                   </figcaption>
@@ -225,9 +276,13 @@
 
               <li class="my-2">
                 <strong>リマインダー機能のテスト</strong>:
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Custom Menu</code>
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >Custom Menu</code
                 >
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">TEST</code>からリマインドメールがGmailに送信されるか確認してください。
+                >
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >TEST</code
+                >からリマインドメールがGmailに送信されるか確認してください。
                 <ul class="list-disc">
                   <li class="ms-6">
                     この機能の使用前に、各リマインダーごとのGoogle
@@ -242,7 +297,7 @@
                         src="assets/images/gas-tools/sheet-tasker/reminder-email.png"
                         alt="リマインダー通知"
                         class="w-72 h-48"
-                      >
+                      />
                       <figcaption class="p-2 text-gray-400">
                         図: リマインダー通知
                       </figcaption>
@@ -254,7 +309,7 @@
                         src="assets/images/gas-tools/sheet-tasker/reminder-general-doc-today.png"
                         alt="全体リマインダー (本日用)"
                         class="w-72 h-48"
-                      >
+                      />
                       <figcaption class="p-2 text-gray-400">
                         図: 全体リマインダー (本日用)
                       </figcaption>
@@ -267,7 +322,7 @@
                       src="assets/images/gas-tools/sheet-tasker/reminder-general-doc-week.png"
                       alt="全体リマインダー (1週間用)"
                       class="w-72 h-48"
-                    >
+                    />
                     <figcaption class="p-2 text-gray-400">
                       図: 全体リマインダー (1週間用)
                     </figcaption>
@@ -282,10 +337,16 @@
                 Sheetの完了欄(チェックボックス)にチェックが自動で入ります。
                 <ul class="list-disc">
                   <li class="ms-6">
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Custom Menu</code>
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >Custom Menu</code
                     >
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">TEST</code>
-                    ><code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Update Completion Status</code>から当該機能をテストできます。
+                    >
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >TEST</code
+                    >
+                    ><code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >Update Completion Status</code
+                    >から当該機能をテストできます。
                   </li>
                 </ul>
                 <div class="row">
@@ -295,7 +356,7 @@
                         src="assets/images/gas-tools/sheet-tasker/input-c-doc.png"
                         alt="Google Docに「C」と入力"
                         class="w-96 h-48"
-                      >
+                      />
                       <figcaption class="p-2 text-gray-400">
                         図: Google Docに「C」と入力
                       </figcaption>
@@ -307,7 +368,7 @@
                         src="assets/images/gas-tools/sheet-tasker/reflect-status-spr.png"
                         alt="Google Sheetのチェックボックスに完了状態が反映"
                         class="w-full h-48"
-                      >
+                      />
                       <figcaption class="p-2 text-gray-400">
                         図: Google Sheetのチェックボックスに完了状態が反映
                       </figcaption>
@@ -318,16 +379,22 @@
 
               <li class="my-2">
                 <strong>シート情報の整理</strong>:
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Custom Menu</code>
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >Custom Menu</code
                 >
-                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Update Index Sheets and Sort Task Sheets</code>をクリックし、シート情報を整理できます。
+                >
+                <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                  >Update Index Sheets and Sort Task Sheets</code
+                >をクリックし、シート情報を整理できます。
                 <ul class="list-disc">
                   <li class="ms-6">
                     タスクシートを日付順に並び替え、目次シートを最新情報を元に更新します。
                   </li>
                   <li class="ms-6">
                     シート自体の完了フラグ(SETTINGSで事前設定が必要)をシート名に追加すると、当該シート情報が
-                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">completed-task-index</code>に自動で反映されます。(例:
+                    <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                      >completed-task-index</code
+                    >に自動で反映されます。(例:
                     「Fin」をシート完了フラグに設定し、シート名に「Fin」を入れると、当該シート情報がcompleted-task-indexに自動で反映されます。)
                   </li>
                 </ul>
@@ -336,7 +403,7 @@
                     src="assets/images/gas-tools/sheet-tasker/update-index-sort-taskSh.png"
                     alt="シート情報の整理"
                     class="w-80 h-35"
-                  >
+                  />
                   <figcaption class="p-2 text-gray-400">
                     Fig: シート情報の整理
                   </figcaption>
@@ -352,8 +419,16 @@
           <div class="mb-3">
             <div id="source-code" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#source-code" @click.prevent="scrollTo('source-code')">ソースコード</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink
+                  to="#source-code"
+                  @click.prevent="scrollTo('source-code')"
+                  >ソースコード</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -364,7 +439,8 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
-                >こちら</a>
+                  >こちら</a
+                >
                 をクリックしてください。
               </p>
             </div>
@@ -416,13 +492,13 @@
 const breadCrumbs = [
   { label: 'ホーム', to: '/' },
   { label: 'GASツール', to: '/gas-tools/gas-tools' },
-  { label: 'シートタスカー' }
-]
+  { label: 'シートタスカー' },
+];
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'シートタスカー'
-})
+  title: 'シートタスカー',
+});
 
 // An array of objects representing the page items or sections.
 const pageItems = [
@@ -432,58 +508,58 @@ const pageItems = [
   { label: '使用方法', id: 'usage' },
   { label: '利用規約', id: 'terms-conditions' },
   { label: 'ソースコード', id: 'source-code' },
-  { label: '表記', id: 'attributes' }
-]
+  { label: '表記', id: 'attributes' },
+];
 
 // An array of objects representing the badges to be displayed.
 const badges = [
   {
     src: 'https://img.shields.io/badge/Google%20Apps-sheet%20%26%20doc%20%26%20mail-brightgreen?style=flat-square&color=brightgreen',
-    alt: 'Use of Google Apps'
+    alt: 'Use of Google Apps',
   },
   {
     url: 'https://github.com/google/clasp',
     src: 'https://img.shields.io/badge/built%20with-clasp-FFA500.svg?style=flat-square',
-    alt: 'Built with Clasp'
+    alt: 'Built with Clasp',
   },
   {
     url: 'https://github.com/prettier/prettier',
     src: 'https://img.shields.io/badge/code_style-prettier-800080.svg?style=flat-square',
-    alt: 'Code style: Prettier'
-  }
-]
+    alt: 'Code style: Prettier',
+  },
+];
 
 // An array of objects representing the available languages for the page.
 const languages = [
   {
     name: 'English',
-    filePath: '/gas-tools/each-tool/sheet-tasker.en'
-  }
-]
+    filePath: '/gas-tools/each-tool/sheet-tasker.en',
+  },
+];
 
 // The current language of the page.
-const currentLanguage = '日本語'
+const currentLanguage = '日本語';
 
 // The date, formatted according to the Japanese locale.
 const date = ref(
   new Intl.DateTimeFormat('ja-JP', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric'
+    day: 'numeric',
   }).format(new Date('2024-05-05'))
-)
+);
 
 /*
 imgSrc for Banner component
 This should be stored in the public folder since it won't be included in your final build, and it will be resolved relative to the public path of your application at runtime.
 */
-const imgSrc = '/banner/sheet-tasker.png'
+const imgSrc = '/banner/sheet-tasker.png';
 
 // values for Attribute component
 const attributes = {
   href: 'https://www.flaticon.com/free-icons/list',
   title: 'list icons',
-  hyperLinkedDescription: 'List icons created by Freepik - Flaticon'
-}
-const scrollTo = inject('scrollTo') as (id: string) => Promise<void>
+  hyperLinkedDescription: 'List icons created by Freepik - Flaticon',
+};
+const scrollTo = inject('scrollTo') as (id: string) => Promise<void>;
 </script>

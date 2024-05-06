@@ -12,7 +12,7 @@
             src="~/assets/images/nav-bar/icon.png"
             alt="Site's Icon"
             class="mr-2 w-12 h-12 my-1"
-          >
+          />
           Scripts Showcase
         </NuxtLink>
         <ul
@@ -68,47 +68,47 @@
 </template>
 
 <script setup lang="ts">
-import { provide, ref, onMounted, onUnmounted } from 'vue'
+import { provide, ref, onMounted, onUnmounted } from 'vue';
 
-const isOpen = ref(false)
+const isOpen = ref(false);
 
 const toggleMenu = () => {
-  isOpen.value = !isOpen.value
-}
+  isOpen.value = !isOpen.value;
+};
 
 // A function that scrolls the page to the top smoothly.
 const scrollTop = () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' })
-}
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 
-const isScrolled = ref(false)
+const isScrolled = ref(false);
 
 const checkScroll = () => {
-  isScrolled.value = window.scrollY > 0
-}
+  isScrolled.value = window.scrollY > 0;
+};
 
 onMounted(() => {
-  window.addEventListener('scroll', checkScroll)
-})
+  window.addEventListener('scroll', checkScroll);
+});
 
 onUnmounted(() => {
-  window.removeEventListener('scroll', checkScroll)
-})
+  window.removeEventListener('scroll', checkScroll);
+});
 
-const headerOffset = 72 // Header's height (69px) + 3px margin
+const headerOffset = 72; // Header's height (69px) + 3px margin
 const scrollTo = (id: string) => {
   setTimeout(() => {
-    const element = document.getElementById(id)
+    const element = document.getElementById(id);
     if (element) {
-      const elementPosition = element.getBoundingClientRect().top
-      const offsetPosition = window.scrollY + elementPosition - headerOffset
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = window.scrollY + elementPosition - headerOffset;
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth'
-      })
+        behavior: 'smooth',
+      });
     }
-  }, 0)
-}
-provide('scrollTo', scrollTo)
+  }, 0);
+};
+provide('scrollTo', scrollTo);
 </script>

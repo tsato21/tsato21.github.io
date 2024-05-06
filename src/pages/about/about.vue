@@ -11,10 +11,8 @@
             src="assets/images/profile/profile.jpeg"
             alt="Fit to Data Feature"
             class="w-20 h-20 rounded-full"
-          >
-          <div class="text-2xl font-bold">
-            Taiga Sato
-          </div>
+          />
+          <div class="text-2xl font-bold">Taiga Sato</div>
 
           <!-- Short introduction -->
           <p class="mt-2 text-gray-600">
@@ -38,15 +36,20 @@
       <div
         class="col-span-12 order-3 lg:col-span-8 lg:order-2 md:col-span-12 md:order-3 sm:col-span-12 sm:order-3"
       >
-        <div class="text-3xl mt-2 font-bold lg:block hidden">
-          About
-        </div>
+        <div class="text-3xl mt-2 font-bold lg:block hidden">About</div>
         <div class="mb-5 p-5 bottom-shadow">
           <div class="mb-3">
             <div id="about-scripts-showcase" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#about-scripts-showcase" @click.prevent="scrollTo('about-scripts-showcase')">About Scripts Showcase</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">#</span>
+                <NuxtLink
+                  to="#about-scripts-showcase"
+                  @click.prevent="scrollTo('about-scripts-showcase')"
+                  >About Scripts Showcase</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                  >#</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -77,8 +80,13 @@
           <div class="mb-3">
             <div id="about-me" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#about-me" @click.prevent="scrollTo('about-me')">About Me</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">#</span>
+                <NuxtLink to="#about-me" @click.prevent="scrollTo('about-me')"
+                  >About Me</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                  >#</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -100,8 +108,15 @@
           <div class="mb-3">
             <div id="acknowledgements" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#acknowledgements" @click.prevent="scrollTo('acknowledgements')">Acknowledgements</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">#</span>
+                <NuxtLink
+                  to="#acknowledgements"
+                  @click.prevent="scrollTo('acknowledgements')"
+                  >Acknowledgements</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                  >#</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -116,7 +131,8 @@
                     target="_blank"
                     rel="noopener"
                     class="text-lightblue underline hover:text-darkblue"
-                  >Canva</a>.
+                    >Canva</a
+                  >.
                 </li>
                 <li class="mb-2">
                   The profile photo is of my cherished Golden Retriever, Haru.
@@ -138,9 +154,7 @@
       <div
         class="col-span-12 order-2 lg:col-span-2 lg:order-3 md:col-span-12 md:order-2 sm:col-span-12 sm:order-2"
       >
-        <div class="text-3xl mt-2 font-bold sm:ml-3 lg:hidden block">
-          About
-        </div>
+        <div class="text-3xl mt-2 font-bold sm:ml-3 lg:hidden block">About</div>
         <div
           class="bg-white shadow-lg rounded-lg md:relative lg:fixed mb-5 pt-5"
         >
@@ -155,30 +169,30 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import UBreadcrumbs from '~/components/UBreadcrumbs.vue'
-import PageItems from '~/components/PageItems.vue'
+import { ref } from 'vue';
+import UBreadcrumbs from '~/components/UBreadcrumbs.vue';
+import PageItems from '~/components/PageItems.vue';
 
-const breadCrumbs = [{ label: 'Home', to: '/' }, { label: 'About' }]
+const breadCrumbs = [{ label: 'Home', to: '/' }, { label: 'About' }];
 
-const pageTitle = 'On this page'
+const pageTitle = 'On this page';
 const pageItems = [
   { label: 'About Scripts Showcase', id: 'about-scripts-showcase' },
   { label: 'About Me', id: 'about-me' },
-  { label: 'Acknowledgements', id: 'acknowledgements' }
-]
+  { label: 'Acknowledgements', id: 'acknowledgements' },
+];
 
 useHead({
-  title: 'About'
-})
+  title: 'About',
+});
 
 const date = ref(
   new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric'
+    day: 'numeric',
   }).format(new Date('2024-05-05'))
-)
+);
 
-const scrollTo = inject('scrollTo') as (id: string) => Promise<void>
+const scrollTo = inject('scrollTo') as (id: string) => Promise<void>;
 </script>

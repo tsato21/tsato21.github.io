@@ -1,8 +1,12 @@
 <template>
   <div id="attributes" class="text-2xl font-bold">
     <span class="group/item">
-      <NuxtLink to="#attributes" @click.prevent="scrollTo('attributes')">Attributes</NuxtLink>
-      <span class="invisible group-hover/item:visible text-blue-300 text-base">#</span>
+      <NuxtLink to="#attributes" @click.prevent="scrollTo('attributes')"
+        >Attributes</NuxtLink
+      >
+      <span class="invisible group-hover/item:visible text-blue-300 text-base"
+        >#</span
+      >
     </span>
   </div>
   <div class="py-3 text-lg">
@@ -15,12 +19,14 @@
           target="_blank"
           class="text-lightblue underline hover:text-darkblue"
         >
-          {{ attributes.hyperLinkedDescription }} </a>, modified by
+          {{ attributes.hyperLinkedDescription }} </a
+        >, modified by
         <a
           href="https://github.com/tsato21"
           target="_blank"
           class="text-lightblue underline hover:text-darkblue"
-        >tsato21</a>.
+          >tsato21</a
+        >.
       </li>
       <li>
         The banner of this tool is made by
@@ -29,14 +35,15 @@
           target="_blank"
           class="text-lightblue underline hover:text-darkblue"
         >
-          Canva</a>, using the above icon.
+          Canva</a
+        >, using the above icon.
       </li>
     </ul>
   </div>
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { defineProps } from 'vue';
 
 defineProps({
   attributes: {
@@ -45,9 +52,9 @@ defineProps({
       title: string;
       hyperLinkedDescription: string;
     },
-    required: true
-  }
-})
+    required: true,
+  },
+});
 
-const scrollTo = inject('scrollTo') as (id: string) => Promise<void>
+const scrollTo = inject('scrollTo') as (id: string) => Promise<void>;
 </script>

@@ -37,8 +37,14 @@
           <div class="mb-3">
             <div id="about" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#about" @click.prevent="scrollTo('about')">概要</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#about" @click.prevent="scrollTo('about')"
+                  >概要</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -56,8 +62,16 @@
           <div class="mb-3">
             <div id="prerequisites" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#prerequisites" @click.prevent="scrollTo('prerequisites')">前提条件</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink
+                  to="#prerequisites"
+                  @click.prevent="scrollTo('prerequisites')"
+                  >前提条件</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -75,8 +89,14 @@
           <div class="mb-3">
             <div id="setup" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#setup" @click.prevent="scrollTo('setup')">セットアップ</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#setup" @click.prevent="scrollTo('setup')"
+                  >セットアップ</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -87,12 +107,14 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="text-lightblue underline hover:text-darkblue"
-                  >サンプルのGoogle Sheet</a>を開きます。また、<a
+                    >サンプルのGoogle Sheet</a
+                  >を開きます。また、<a
                     href="https://docs.google.com/presentation/d/1pUxDKtwHA4GMXfmGXmwzXnjuAbW9g6DE9lFTj55wAn8/edit#slide=id.g2aa00057ea4_0_0"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="text-lightblue underline hover:text-darkblue"
-                  >サンプルのGoogleスライド</a>も見つけることができます。
+                    >サンプルのGoogleスライド</a
+                  >も見つけることができます。
                   <p class="mt-2">
                     *注:
                     サンプルシート・スライドの内容は教育機関のマニュアルを想定した一例です。
@@ -111,18 +133,23 @@
                   すべての事前設定情報をリセット/
                   インデックスシートの内容をクリア）。<code
                     class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                  >Custom Menu</code>
+                    >Custom Menu</code
                   >
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Settings</code>
                   >
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Delete All Sheets and Pre-Set Info</code>をクリックします。
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Settings</code
+                  >
+                  >
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Delete All Sheets and Pre-Set Info</code
+                  >をクリックします。
                   <div class="mt-3">
                     <figure>
                       <img
                         src="assets/images/gas-tools/manual-builder/setting_menu.png"
                         alt="Setting Menu"
                         class="w-96 h-48"
-                      >
+                      />
                       <figcaption class="p-2 text-gray-400">
                         図: 設定メニュー
                       </figcaption>
@@ -130,12 +157,18 @@
                   </div>
                 </li>
                 <li class="text-gray-700">
-                  <strong>スライドのURLとインデックスシートの名前を設定する</strong>:
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Custom Menu
+                  <strong
+                    >スライドのURLとインデックスシートの名前を設定する</strong
+                  >:
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Custom Menu
                   </code>
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Settings</code>に移動し、<code
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Settings</code
+                  >に移動し、<code
                     class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                  >Set Necessary Info</code>をクリックして、GoogleスライドのURLとGoogleシートのインデックスシートの名前を指定します。
+                    >Set Necessary Info</code
+                  >をクリックして、GoogleスライドのURLとGoogleシートのインデックスシートの名前を指定します。
                 </li>
               </ol>
             </div>
@@ -144,30 +177,38 @@
           <div class="mb-3">
             <div id="usage" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')">使用方法</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')"
+                  >使用方法</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
 
             <ol class="list-decimal list-inside">
               <li class="my-2">
-                <span class="font-bold">指定されたパターンでスライドを作成</span>
+                <span class="font-bold"
+                  >指定されたパターンでスライドを作成</span
+                >
                 <p>
                   ユーザーは、設定画面で指定したGoogleスライド上で、特定のパターンに従ってスライドを作成する必要があります。各セクションの最初のスライドは、次の構造で作成してください。
                 </p>
                 <blockquote
                   class="mt-2 pl-4 text-lg italic border-l-4 border-gray-400"
                 >
-                  Category:【Category Name】Subcategory Name<br>
-                  Task: Task Name<br>
+                  Category:【Category Name】Subcategory Name<br />
+                  Task: Task Name<br />
                   Summary: Summary Descriptions
                 </blockquote>
                 <div class="resize-image my-3 container-img">
                   <img
                     src="assets/images/gas-tools/manual-builder/slide-pattern.png"
-                    alt="Customize Constants"
+                    alt="Slide Pattern"
                     class="w-96 h-48"
-                  >
+                  />
                   <figcaption class="p-2 text-gray-400">
                     図: スライドの構造
                   </figcaption>
@@ -179,9 +220,12 @@
               <li class="my-2">
                 <span class="font-bold">インデックスとタスクシートの更新</span>
                 <p>
-                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800">Custom Menu</code>に移動し、<code
+                  <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
+                    >Custom Menu</code
+                  >に移動し、<code
                     class="text-sm p-1 bg-gray-200 rounded text-gray-800"
-                  >Update Index & Task Sheets</code>をクリックします。この操作により、最新のスライドデータに基づいてインデックスとタスクシートが自動的に更新されます。
+                    >Update Index & Task Sheets</code
+                  >をクリックします。この操作により、最新のスライドデータに基づいてインデックスとタスクシートが自動的に更新されます。
                 </p>
 
                 <div class="row">
@@ -189,9 +233,9 @@
                     <figure class="resize-image my-3">
                       <img
                         src="assets/images/gas-tools/manual-builder/update-button.png"
-                        alt="Customize Constants"
+                        alt="Update Button"
                         class="w-64 h-32"
-                      >
+                      />
                       <figcaption class="p-2 text-gray-400">
                         図: 更新ボタン
                       </figcaption>
@@ -201,9 +245,9 @@
                     <figure class="resize-image my-3">
                       <img
                         src="assets/images/gas-tools/manual-builder/index-sheet.png"
-                        alt="Customize Constants"
+                        alt="Index Sheet"
                         class="w-96 h-48"
-                      >
+                      />
                       <figcaption class="p-2 text-gray-400">
                         図: インデックスシートの更新
                       </figcaption>
@@ -213,9 +257,9 @@
                     <figure class="resize-image my-3">
                       <img
                         src="assets/images/gas-tools/manual-builder/task-sheet.png"
-                        alt="Customize Constants"
+                        alt="Task Sheet"
                         class="w-80 h-48"
-                      >
+                      />
                       <figcaption class="p-2 text-gray-400">
                         図: タスクシートの更新
                       </figcaption>
@@ -229,8 +273,14 @@
           <div class="mb-3">
             <div id="others" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#others" @click.prevent="scrollTo('others')">その他</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink to="#others" @click.prevent="scrollTo('others')"
+                  >その他</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -240,7 +290,8 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
-                >こちら</a>をクリックして、詳細な説明をご覧ください。
+                  >こちら</a
+                >をクリックして、詳細な説明をご覧ください。
               </p>
             </div>
           </div>
@@ -252,8 +303,16 @@
           <div class="mb-3">
             <div id="source-code" class="text-2xl font-bold">
               <span class="group/item">
-                <NuxtLink to="#source-code" @click.prevent="scrollTo('source-code')">ソースコード</NuxtLink>
-                <span class="invisible group-hover/item:visible text-blue-300 text-base">  #</span>
+                <NuxtLink
+                  to="#source-code"
+                  @click.prevent="scrollTo('source-code')"
+                  >ソースコード</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
               </span>
             </div>
             <div class="py-3">
@@ -264,7 +323,8 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-lightblue underline hover:text-darkblue"
-                >こちら</a>
+                  >こちら</a
+                >
                 をクリックしてください.
               </p>
             </div>
@@ -316,13 +376,13 @@
 const breadCrumbs = [
   { label: 'ホーム', to: '/' },
   { label: 'GASツール', to: '/gas-tools/gas-tools' },
-  { label: 'マニュアルビルダー' }
-]
+  { label: 'マニュアルビルダー' },
+];
 
 // Sets the title of the page for SEO purposes.
 useHead({
-  title: 'Manual Builder'
-})
+  title: 'Manual Builder',
+});
 
 // An array of objects representing the page items or sections.
 const pageItems = [
@@ -333,59 +393,59 @@ const pageItems = [
   { label: 'その他', id: 'others' },
   { label: '利用規約', id: 'terms-conditions' },
   { label: 'ソースコード', id: 'source-code' },
-  { label: '表記', id: 'attributes' }
-]
+  { label: '表記', id: 'attributes' },
+];
 
 // An array of objects representing the badges to be displayed.
 const badges = [
   {
     src: 'https://img.shields.io/badge/Google%20Apps-slide%20%26%20sheet-brightgreen?style=flat-square&color=brightgreen',
-    alt: 'Use of Google Apps'
+    alt: 'Use of Google Apps',
   },
   {
     url: 'https://github.com/google/clasp',
     src: 'https://img.shields.io/badge/built%20with-clasp-FFA500.svg?style=flat-square',
-    alt: 'Built with Clasp'
+    alt: 'Built with Clasp',
   },
   {
     url: 'https://github.com/prettier/prettier',
     src: 'https://img.shields.io/badge/code_style-prettier-800080.svg?style=flat-square',
-    alt: 'Code style: Prettier'
-  }
-]
+    alt: 'Code style: Prettier',
+  },
+];
 
 // An array of objects representing the available languages for the page.
 const languages = [
   {
     name: 'English',
-    filePath: '/gas-tools/each-tool/manual-builder.en'
-  }
-]
+    filePath: '/gas-tools/each-tool/manual-builder.en',
+  },
+];
 
 // The current language of the page.
-const currentLanguage = '日本語'
+const currentLanguage = '日本語';
 
 // The date, formatted according to the Japanese locale.
 const date = ref(
   new Intl.DateTimeFormat('ja-JP', {
     year: 'numeric',
     month: 'long',
-    day: 'numeric'
+    day: 'numeric',
   }).format(new Date('2024-05-05'))
-)
+);
 
 /*
 imgSrc for Banner component
 This should be stored in the public folder since it won't be included in your final build, and it will be resolved relative to the public path of your application at runtime.
 */
-const imgSrc = '/banner/manual-builder.png'
+const imgSrc = '/banner/manual-builder.png';
 
 // values for Attribute component
 const attributes = {
   href: 'https://www.flaticon.com/free-icons/manual',
   title: 'manual icons',
-  hyperLinkedDescription: 'Manual icons created by Freepik - Flaticon'
-}
+  hyperLinkedDescription: 'Manual icons created by Freepik - Flaticon',
+};
 
-const scrollTo = inject('scrollTo') as (id: string) => Promise<void>
+const scrollTo = inject('scrollTo') as (id: string) => Promise<void>;
 </script>

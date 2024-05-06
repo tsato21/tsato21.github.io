@@ -49,27 +49,27 @@
 </template>
 
 <script setup lang="ts">
-import { ref, defineProps } from 'vue'
+import { ref, defineProps } from 'vue';
 
 interface Language {
   name: string;
   filePath: string;
 }
 
-const isOpen = ref(false)
+const isOpen = ref(false);
 
 const toggleDropdown = () => {
-  isOpen.value = !isOpen.value
-}
+  isOpen.value = !isOpen.value;
+};
 
 const props = defineProps({
   languages: {
     type: Array as () => Language[],
-    required: true
+    required: true,
   },
   currentLanguage: {
     type: String,
-    required: true
-  }
-})
+    required: true,
+  },
+});
 </script>
