@@ -77,7 +77,7 @@ My site is at https://tsato21.github.io/.
 
 8. Define srcDir in `nuxt.config.ts`.
 
-    ```ts instead of
+    ```ts
     srcDir: "src/",
     ```
 
@@ -121,7 +121,7 @@ Tailwindcss is a utility-first CSS framework that can be used to build custom de
 
 2. Updated modules in `nuxt.config.ts`.
 
-    ```ts instead of
+    ```ts
     modules: ['@nuxtjs/tailwindcss'],
     ```
 
@@ -137,9 +137,33 @@ Nuxt Icon is a module that makes it easy to use SVG icons in your Nuxt project. 
 
 2. Updated modules in `nuxt.config.ts`.
 
-    ```ts instead of
+    ```ts
     modules: ['nuxt-icon'],
     ```
+
+### Favicon
+
+1. Put an image for the favicon in the `public` directory. The image should be named `favicon.png` and should be in suitable format.
+
+2. Update `nuxt.config.ts`.
+
+    ```ts
+    app: {
+        head: {
+            link: [
+                { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+            ],
+        },
+    },
+    ```
+
+### Pass Image Paths to Component Files
+
+When you need to pass an image path as a variable to component files, place the image files in the `public` directory. This is because files in the `public` directory are served as they are, allowing for reliable referencing in your code.
+
+On the other hand, the `assets/images/` directory is processed by webpack, Nuxt's bundler. This processing can change file names and locations, making it unsuitable for passing reliable image paths to components.
+
+In this repository, the banner for my tool uses the `public` directory approach. See `src/components/Banner.vue`, `src/public/banner`, and `src/pages/gas-tools/each-tool/sheet-tasker.en.vue` for the details.
 
 ## References
 
