@@ -1,6 +1,9 @@
 # Deployment of Nuxt Application to Github Pages Infrastructure
-This repository (my personal website to showcase my tools) uses Nuxt Feature to pre-render the vue files into static HTML files.
-My site is at https://tsato21.github.io/.
+This repository, [Scripts Showcase](https://tsato21.github.io/), is my personal website to feature the tools that I have created.
+
+It uses Nuxt Feature to pre-render the Vue files into static HTML files.
+
+This README describes how the website has been created by Nuxt and Github Page.
 
 ## Setup
 1. Install Node.js and check the version. Nuxt 3 requires Node.js version 18 or higher.
