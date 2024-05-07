@@ -7,6 +7,8 @@ module.exports = {
             },
         },
     },
-    variants: {},
-    plugins: [],
+    variants: {
+    },
+    plugins: [
+        ],
 }

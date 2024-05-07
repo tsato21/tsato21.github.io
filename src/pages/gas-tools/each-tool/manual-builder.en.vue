@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UBreadcrumbs :breadCrumbs="breadCrumbs" />
+    <UBreadcrumbs :bread-crumbs="breadCrumbs" />
     <div class="mb-5 p-4 grid grid-cols-12 gap-3 md:gap-6">
       <!-- Part A: Displayed at left on large screen and at first on other sized screen) -->
       <div
@@ -21,7 +21,7 @@
             <!-- Language Section Option -->
             <LanguageSelections
               :languages="languages"
-              :currentLanguage="currentLanguage"
+              :current-language="currentLanguage"
               class="ml-4"
             />
           </div>
@@ -29,13 +29,24 @@
           <Badges :badges="badges" />
         </div>
 
-        <div class="my-3 mx-2 bottom-shadow">
-          <Banner :imgSrc="imgSrc"/>
+        <div class="my-3 mx-2">
+          <Banner :img-src="imgSrc" />
         </div>
 
-        <div class="mb-5 p-5 bottom-shadow">
+        <div class="mb-5 p-5">
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="about">About</div>
+            <div id="about" class="text-2xl font-bold">
+              <span class="group/item">
+                <NuxtLink to="#about" @click.prevent="scrollTo('about')"
+                  >About</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </div>
             <div class="py-3">
               <p>
                 Automates the creation of work manuals by extracting essential
@@ -56,8 +67,19 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="prerequisites">
-              Prerequisites
+            <div id="prerequisites" class="text-2xl font-bold">
+              <span class="group/item">
+                <NuxtLink
+                  to="#prerequisites"
+                  @click.prevent="scrollTo('prerequisites')"
+                  >Prerequisites</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
             </div>
             <div class="py-3">
               <ul class="list-disc list-inside space-y-2">
@@ -73,7 +95,18 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="setup">Setup</div>
+            <div id="setup" class="text-2xl font-bold">
+              <span class="group/item">
+                <NuxtLink to="#setup" @click.prevent="scrollTo('setup')"
+                  >Setup</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </div>
             <div class="py-3">
               <ol class="list-decimal list-inside space-y-2">
                 <li class="text-gray-700">
@@ -152,8 +185,19 @@
             </div>
           </div>
 
-          <div id="usage" class="mb-3">
-            <div class="text-2xl font-bold">Usage</div>
+          <div class="mb-3">
+            <div id="usage" class="text-2xl font-bold">
+              <span class="group/item">
+                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')"
+                  >Usage</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </div>
 
             <ol class="list-decimal list-inside">
               <li class="my-2">
@@ -175,7 +219,7 @@
                 <div class="resize-image my-3 container-img">
                   <img
                     src="assets/images/gas-tools/manual-builder/slide-pattern.png"
-                    alt="Customize Constants"
+                    alt="Slide Pattern"
                     class="w-96 h-48"
                   />
                   <figcaption class="p-2 text-gray-400">
@@ -207,7 +251,7 @@
                     <figure class="resize-image my-3">
                       <img
                         src="assets/images/gas-tools/manual-builder/update-button.png"
-                        alt="Customize Constants"
+                        alt="Update Button"
                         class="w-72 h-36"
                       />
                       <figcaption class="p-2 text-gray-400">
@@ -219,7 +263,7 @@
                     <figure class="resize-image my-3">
                       <img
                         src="assets/images/gas-tools/manual-builder/index-sheet.png"
-                        alt="Customize Constants"
+                        alt="Index Sheet"
                         class="w-96 h-48"
                       />
                       <figcaption class="p-2 text-gray-400">
@@ -231,7 +275,7 @@
                     <figure class="resize-image my-3">
                       <img
                         src="assets/images/gas-tools/manual-builder/task-sheet.png"
-                        alt="Customize Constants"
+                        alt="Task Sheet"
                         class="w-96 h-48"
                       />
                       <figcaption class="p-2 text-gray-400">
@@ -245,7 +289,18 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="others">Others</div>
+            <div id="others" class="text-2xl font-bold">
+              <span class="group/item">
+                <NuxtLink to="#others" @click.prevent="scrollTo('others')"
+                  >Others</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </div>
             <div class="py-3">
               <p class="text-lg mt-4">
                 If you are interested in the logics on how the details from
@@ -268,7 +323,20 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="source-code">Source Code</div>
+            <div id="source-code" class="text-2xl font-bold">
+              <span class="group/item">
+                <NuxtLink
+                  to="#source-code"
+                  @click.prevent="scrollTo('source-code')"
+                  >Source Code</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </div>
             <div class="py-3">
               <p class="text-lg mt-4">
                 You can find the source code for this tool on Github. Click
@@ -285,9 +353,8 @@
           </div>
 
           <div class="mb-3">
-            
+            <AttributesEn :attributes="attributes" />
           </div>
-
         </div>
         <p>
           <Icon name="material-symbols:calendar-month-sharp" /> Last updated:
@@ -305,7 +372,7 @@
             <!-- Language Section Option -->
             <LanguageSelections
               :languages="languages"
-              :currentLanguage="currentLanguage"
+              :current-language="currentLanguage"
               class="ml-4"
             />
           </div>
@@ -316,9 +383,9 @@
         <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed lg:mr-2">
           <div class="mb-5 pt-5">
             <p class="text-l font-bold p-1 bg-gray-400 text-white">
-              <Icon name="map:book-store"></Icon> On this page
+              <Icon name="map:book-store" /> On this page
             </p>
-            <PageItems :pageItems="pageItems" />
+            <PageItems :page-items="pageItems" />
           </div>
         </div>
       </div>
@@ -348,6 +415,7 @@ const pageItems = [
   { label: 'Others', id: 'others' },
   { label: 'Terms and Conditions', id: 'terms-conditions' },
   { label: 'Source Code', id: 'source-code' },
+  { label: 'Attributes', id: 'attributes' },
 ];
 
 // An array of objects representing the badges to be displayed.
@@ -380,18 +448,26 @@ const languages = [
 const currentLanguage = 'English';
 
 // The date, formatted according to the US locale.
-let date = ref(
+const date = ref(
   new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-  }).format(new Date('2024-04-17'))
+  }).format(new Date('2024-05-05'))
 );
 
 /*
 imgSrc for Banner component
 This should be stored in the public folder since it won't be included in your final build, and it will be resolved relative to the public path of your application at runtime.
 */
-const imgSrc = "/banner/manual-builder.png";
+const imgSrc = '/banner/manual-builder.png';
 
+// values for Attribute component
+const attributes = {
+  href: 'https://www.flaticon.com/free-icons/manual',
+  title: 'manual icons',
+  hyperLinkedDescription: 'Manual icons created by Freepik - Flaticon',
+};
+
+const scrollTo = inject('scrollTo') as (id: string) => Promise<void>;
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UBreadcrumbs :breadCrumbs="breadCrumbs" />
+    <UBreadcrumbs :bread-crumbs="breadCrumbs" />
     <div class="mb-5 p-4 grid grid-cols-12 gap-3 md:gap-6">
       <!-- Part A: Displayed at left on large screen and at first on other sized screen) -->
       <div
@@ -23,9 +23,20 @@
           <Badges :badges="badges" />
         </div>
 
-        <div class="mb-5 p-5 bottom-shadow">
+        <div class="mb-5 p-5">
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="about">About</div>
+            <div id="about" class="text-2xl font-bold">
+              <span class="group/item">
+                <NuxtLink to="#about" @click.prevent="scrollTo('about')"
+                  >About</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </div>
             <div class="py-3">
               <p>
                 Automates tasks in Google Sheets, Drive, and Gmail. It
@@ -47,8 +58,19 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="prerequisites">
-              Prerequisites
+            <div id="prerequisites" class="text-2xl font-bold">
+              <span class="group/item">
+                <NuxtLink
+                  to="#prerequisites"
+                  @click.prevent="scrollTo('prerequisites')"
+                  >Prerequisites</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
             </div>
             <div class="py-3">
               <ul class="list-disc list-inside space-y-2">
@@ -64,7 +86,18 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="setup">Setup</div>
+            <div id="setup" class="text-2xl font-bold">
+              <span class="group/item">
+                <NuxtLink to="#setup" @click.prevent="scrollTo('setup')"
+                  >Setup</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </div>
             <div class="py-3">
               <ol class="list-decimal list-inside space-y-2">
                 <li class="text-gray-700">
@@ -119,7 +152,7 @@
                   <div>
                     <img
                       src="assets/images/gas-tools/sheet-mail-work-automator/set-drive-api.png"
-                      alt="set-drive-api"
+                      alt="Set Drive API"
                       class="w-96 h-96"
                     />
                     <figcaption class="p-2 text-gray-400">
@@ -137,8 +170,19 @@
             </div>
           </div>
 
-          <div id="features" class="mb-3">
-            <div class="text-2xl font-bold">Features</div>
+          <div class="mb-3">
+            <div id="features" class="text-2xl font-bold">
+              <span class="group/item">
+                <NuxtLink to="#features" @click.prevent="scrollTo('features')"
+                  >Features</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </div>
 
             <ul class="list-disc list-inside">
               <li class="my-2">
@@ -160,8 +204,19 @@
             </ul>
           </div>
 
-          <div id="usage" class="mb-3">
-            <div class="text-2xl font-bold">Usage</div>
+          <div class="mb-3">
+            <div id="usage" class="text-2xl font-bold">
+              <span class="group/item">
+                <NuxtLink to="#usage" @click.prevent="scrollTo('usage')"
+                  >Usage</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </div>
 
             <ol class="list-disk list-inside">
               <li class="my-2">
@@ -267,7 +322,7 @@
                     <div>
                       <img
                         src="assets/images/gas-tools/sheet-mail-work-automator/input-stored-file-url.png"
-                        alt="Image of input-stored-file-url"
+                        alt="Image of Input URL of Designated Folder"
                         class="w-96 h-48"
                       />
                       <figcaption class="p-2 text-gray-400">
@@ -277,7 +332,7 @@
                     <div>
                       <img
                         src="assets/images/gas-tools/sheet-mail-work-automator/output-file-info.png"
-                        alt="Image of output-file-info"
+                        alt="Image of Output File Info"
                         class="w-96 h-48"
                       />
                     </div>
@@ -336,7 +391,7 @@
                   <div class="mt-2">
                     <img
                       src="assets/images/gas-tools/sheet-mail-work-automator/gmail-draft.png"
-                      alt="Image of gmail-draft"
+                      alt="Image of Gmail Draft"
                       class="w-96 h-62"
                     />
                   </div>
@@ -353,7 +408,20 @@
           </div>
 
           <div class="mb-3">
-            <div class="text-2xl font-bold" id="source-code">Source Code</div>
+            <div id="source-code" class="text-2xl font-bold">
+              <span class="group/item">
+                <NuxtLink
+                  to="#source-code"
+                  @click.prevent="scrollTo('source-code')"
+                  >Source Code</NuxtLink
+                >
+                <span
+                  class="invisible group-hover/item:visible text-blue-300 text-base"
+                >
+                  #</span
+                >
+              </span>
+            </div>
             <div class="py-3">
               <p class="text-lg mt-4">
                 You can find the source code for this tool on Github. Click
@@ -390,9 +458,9 @@
         <div class="bg-white shadow-lg rounded-lg md:relative lg:fixed lg:mr-2">
           <div class="mb-5 pt-5 mr-2">
             <p class="text-l font-bold p-1 bg-gray-400 text-white">
-              <Icon name="map:book-store"></Icon> On this page
+              <Icon name="map:book-store" /> On this page
             </p>
-            <PageItems :pageItems="pageItems" />
+            <PageItems :page-items="pageItems" />
           </div>
         </div>
       </div>
@@ -447,11 +515,13 @@ const badges = [
 ];
 
 // The date, formatted according to the US locale.
-let date = ref(
+const date = ref(
   new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-  }).format(new Date('2024-04-18'))
+  }).format(new Date('2024-05-05'))
 );
+
+const scrollTo = inject('scrollTo') as (id: string) => Promise<void>;
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UBreadcrumbs :breadCrumbs="breadCrumbs" />
+    <UBreadcrumbs :bread-crumbs="breadCrumbs" />
     <div class="mb-5 pt-2 grid grid-cols-12 gap-3 md:gap-6">
       <!-- Section A (left in lg/ first in md/sm/xs) -->
       <div
@@ -18,22 +18,75 @@
         <div class="text-3xl mt-2 font-bold lg:block hidden">
           GAS Tools (Google Apps Script Tools)
         </div>
-        <div class="mb-5 p-5 bottom-shadow">
+        <div class="mb-5 p-5">
+          <div class="flex justify-center space-x-2">
+            <button
+              @click="prevPage"
+              :disabled="page === 0"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded-l flex items-center justify-center"
+              :class="{ 'opacity-50 cursor-not-allowed': page === 0 }"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="h-4 w-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+            <button
+              @click="nextPage"
+              :disabled="page >= pageCount - 1"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded-r flex items-center justify-center"
+              :class="{
+                'opacity-50 cursor-not-allowed': page >= pageCount - 1,
+              }"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="h-4 w-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
           <div
-            v-for="(tool, index) in tools"
+            v-for="(tool, index) in paginatedData"
             :key="index"
-            class="mt-5 flex justify-between items-start"
+            class="mt-5 flex justify-between items-start border-b-2 pb-5"
           >
             <div class="flex-grow">
-              <div class="text-2xl font-semibold">{{ tool.title }}</div>
-              <p class="mt-2">{{ tool.description }}</p>
+              <div class="text-2xl font-semibold">
+                {{ tool.title }}
+              </div>
+              <p class="mt-2">
+                {{ tool.description }}
+              </p>
             </div>
             <NuxtLink :to="tool.filePath" class="self-start ml-5">
-              <button class="mt-3 px-4 py-2 bg-gray-400 text-white rounded">
+              <button
+                class="mt-3 px-4 py-2 bg-gray-400 text-white rounded hover:bg-gray-500"
+              >
                 Details
               </button>
             </NuxtLink>
           </div>
+          <div></div>
         </div>
         <p>
           <Icon name="material-symbols:calendar-month-sharp" /> Last updated:
@@ -45,7 +98,7 @@
       <div
         class="col-span-12 order-2 lg:col-span-2 lg:order-3 md:col-span-12 md:order-2 sm:col-span-12 sm:order-2"
       >
-        <div class="text-3xl mt-2 font-bold sm:ml-3 lg:hidden block">
+        <div class="text-3xl mt-2 font-bold ms-3 lg:hidden block">
           GAS Tools
         </div>
         <div class="mb-5 pt-5">
@@ -57,10 +110,12 @@
 </template>
 
 <script setup lang="ts">
-import UBreadcrumbs from '~/components/UBreadcrumbs.vue';
-import { ref } from 'vue';
+import { ref, computed, onMounted, onUnmounted } from 'vue';
 
-const breadCrumbs = [{ label: 'Home', to: '/' }, { label: 'GAS Tools' }];
+const breadCrumbs = [
+  { label: 'Home', to: '/' },
+  { label: 'GAS Tools' }
+];
 
 const tools = ref([
   // tool 1
@@ -124,19 +179,64 @@ const tools = ref([
       'Tracks new file uploads in a specific Google Drive folder. If the time since the last upload is within a set interval, it sends a notification email, ensuring efficient file management.',
     filePath: '/gas-tools/each-tool/file-upload-notifier',
   },
+  {
+    title: 'NotionSheets Chart',
+    description:
+      'Integrates Notion databases with Google Sheets, and generate dynamic pie charts, providing a powerful and intuitive way to visualize and analyze data.',
+    filePath: '/gas-tools/each-tool/notion-sheets-chart',
+  },
+  {
+    title: 'Notion Reminder',
+    description:
+      'Integrates with Notion to automate and manage reminders for tasks or events via Gmail. It utilizes Google Sheets for configuration and data management.',
+    filePath: '/gas-tools/each-tool/notion-reminder',
+  },
 ]);
 
-let date = ref(
+const date = ref(
   new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-  }).format(new Date('2024-04-18'))
+  }).format(new Date('2024-05-06'))
 );
 
 useHead({
   title: 'GAS Tools',
 });
-</script>
 
-<style scoped></style>
+const page = ref(0);
+onMounted(() => {
+  const storedPage = localStorage.getItem('lastPage');
+  if (storedPage) {
+    page.value = Number(storedPage);
+  }
+});
+
+onUnmounted(() => {
+  localStorage.setItem('lastPage', String(page.value));
+});
+
+const pageSize = ref(5);
+
+const paginatedData = computed(() => {
+  const start = page.value * pageSize.value;
+  const end = start + pageSize.value;
+  return tools.value.slice(start, end);
+});
+
+const pageCount = computed(() => {
+  return Math.ceil(tools.value.length / pageSize.value);
+});
+
+const prevPage = () => {
+  if (page.value > 0) {
+    page.value--;
+  }
+};
+const nextPage = () => {
+  if (page.value < pageCount.value - 1) {
+    page.value++;
+  }
+};
+</script>

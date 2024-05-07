@@ -30,12 +30,16 @@
       </li>
       <li>
         <NuxtLink
-          to="/about/contact/contact"
+          to="/contact/contact"
           class="text-white no-underline flex items-center footer-link"
         >
           <Icon name="grommet-icons:mail" class="mr-2" /> CONTACT
         </NuxtLink>
       </li>
     </ul>
+    <div class="text-center mt-1 text-sm">
+      &copy; {{ new Date().getFullYear() }} Scripts Showcase. Powered by Vue &
+      Nuxt.
+    </div>
   </footer>
 </template>

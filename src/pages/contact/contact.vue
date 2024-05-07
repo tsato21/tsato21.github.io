@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UBreadcrumbs :breadCrumbs="breadCrumbs" />
+    <UBreadcrumbs :bread-crumbs="breadCrumbs" />
     <div class="flex justify-center">
       <div class="flex flex-col items-start">
         <div class="text-3xl mt-2 font-bold sm: ml-5">Contact</div>

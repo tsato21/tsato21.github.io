@@ -4,7 +4,7 @@
       <NuxtLink
         to="#terms-conditions"
         @click.prevent="scrollTo('terms-conditions')"
-        >Terms and Conditions</NuxtLink
+        >利用規約</NuxtLink
       >
       <span class="invisible group-hover/item:visible text-blue-300 text-base"
         >#</span
@@ -13,13 +13,12 @@
   </div>
   <div class="py-3">
     <p class="text-lg mt-4">
-      Please note that your use of this website is subject to the
-      <NuxtLink
+      このウェブサイトの利用は、<NuxtLink
         to="/others/terms-conditions"
         class="text-lightblue underline hover:text-darkblue"
       >
-        Terms and Conditions.
-      </NuxtLink>
+        利用規約 </NuxtLink
+      >に基づいて行われることにご注意ください。(*注: 英語で記載)
     </p>
   </div>
 </template>
