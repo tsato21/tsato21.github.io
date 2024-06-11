@@ -68,7 +68,7 @@
                 Kindly be advised that the use of this website is governed by
                 our
                 <NuxtLink
-                  to="#"
+                  to="../others/terms-conditions"
                   class="text-lightblue underline hover:text-darkblue"
                 >
                   Terms and Conditions.
@@ -121,9 +121,6 @@
             </div>
             <div class="py-3">
               <ul class="list-disc list-inside">
-                <li class="mb-2">
-                  The outline of the Privacy Policy of this website ~~.
-                </li>
                 <li class="mb-2">
                   Favicon of this website is made by
                   <a
@@ -191,7 +188,7 @@ const date = ref(
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-  }).format(new Date('2024-05-05'))
+  }).format(new Date('2024-06-11'))
 );
 
 const scrollTo = inject('scrollTo') as (id: string) => Promise<void>;
