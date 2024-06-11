@@ -117,7 +117,7 @@ const breadCrumbs = [{ label: 'Home', to: '/' }, { label: 'Github Actions' }];
 const tools = ref([
   {
     title: 'Prod Test Auto-Management',
-    description: '',
+    description: 'Automates workflows for coding, testing, and deployment of Google Apps Script Projects. It leverages GitHub Actions to manage test environments and seamlessly deploy completed projects to the production environment.',
     filePath: '/github-actions/each-action/prod-test-auto-management',
   },
 ]);

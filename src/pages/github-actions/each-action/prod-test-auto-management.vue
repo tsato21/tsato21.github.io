@@ -37,7 +37,7 @@
             </div>
             <div class="py-3">
               <p>
-                This page explains the automation of workflows for coding,
+                Automates workflows for coding,
                 testing, and deployment of Google Apps Script Projects. It
                 leverages GitHub Actions to manage test environments and
                 seamlessly deploy completed projects to the production
@@ -92,7 +92,7 @@
               <code class="text-sm p-1 bg-gray-200 rounded text-gray-800"
                 >README</code
               >
-              of the following repositories. *Language is Japanese.
+              of the following repositories. <span class="text-red-500">*Language is Japanese</span>.
               <ul class="list-disc list-inside space-y-2">
                 <li class="text-gray-700">
                   <a
