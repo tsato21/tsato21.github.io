@@ -17,4 +17,13 @@
       GAS Tools
     </NuxtLink>
   </li>
+  <li class="nav-item">
+    <NuxtLink
+      to="/github-actions/github-actions"
+      class="nav-link mr-3 nav-item-text"
+      @click.native="$emit('close')"
+    >
+      Github Actions
+    </NuxtLink>
+  </li>
 </template>
